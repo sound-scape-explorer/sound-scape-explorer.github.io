@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksound_scape_explorer_github_io=self.webpackChunksound_scape_explorer_github_io||[]).push([[2113],{6561:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/ntm","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
