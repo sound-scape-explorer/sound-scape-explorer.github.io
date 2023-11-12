@@ -4,14 +4,15 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Sun, 12 Nov 2023 20:07:34 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Nov 2023 23:55:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[👋🏽]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Sun, 12 Nov 2023 20:07:34 GMT</pubDate>
+            <pubDate>Sun, 12 Nov 2023 23:55:45 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[<p>Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!</p>]]></content:encoded>
             <category>index</category>
