@@ -83,6 +83,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {to: '/docs', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: APP_GITHUB,
@@ -103,23 +104,19 @@ const config: Config = {
             },
           ],
         },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/docusaurus',
-        //     },
-        //   ],
-        // },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub Discussion',
+              href: 'https://github.com/sound-scape-explorer/sound-scape-explorer.github.io/discussions',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/eRsQPDBeXg',
+            },
+          ],
+        },
         {
           title: 'More',
           items: [
