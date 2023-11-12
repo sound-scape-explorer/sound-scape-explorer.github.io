@@ -1,5 +1,6 @@
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {APP_NAME} from '@site/constants';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
@@ -36,8 +37,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Welcome to ${APP_NAME}`}
+      description={siteConfig.tagline}
     >
       <HomepageHeader />
       <main>
