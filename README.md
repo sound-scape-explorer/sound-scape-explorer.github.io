@@ -7,5 +7,5 @@
 ## Export PDF
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer.github.io/main/export-pdf.sh | sh
+npx docs-to-pdf --initialDocURLs="https://sound-scape-explorer.github.io/docs/intro" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://sound-scape-explorer.github.io/img/sse.png" --coverTitle="SoundScapeExplorer"
 ```
