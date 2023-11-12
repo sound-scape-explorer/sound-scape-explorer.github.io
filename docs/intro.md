@@ -8,6 +8,8 @@ Let's discover **Docusaurus in less than 5 minutes**.
 
 ![car](./car.gif)
 
+![test](../blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg)
+
 ## Getting Started
 
 Get started by **creating a new site**.
