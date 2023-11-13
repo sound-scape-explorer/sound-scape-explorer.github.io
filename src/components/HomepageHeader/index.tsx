@@ -6,7 +6,6 @@ import {APP_NAME} from '@site/constants';
 import demo from '@site/static/img/demo.png';
 import Logo from '@site/static/img/logo.svg';
 import Heading from '@theme/Heading';
-import Image from '@theme/IdealImage';
 import clsx from 'clsx';
 import {Book} from 'react-feather';
 
@@ -22,8 +21,8 @@ export const HomepageHeader = () => {
           className="hero__title"
         >
           <div className={styles.container}>
-            <Image
-              img={demo}
+            <img
+              src={demo}
               className={styles.demo}
             />
           </div>

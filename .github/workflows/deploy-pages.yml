@@ -19,10 +19,8 @@ jobs:
           node-version: 18
       - name: Install pnpm
         run: npm install -g pnpm
-      - name: Install sharp
-        run: npm install --platform=linux --arch=x64 sharp
       - name: Install dependencies
-        run: pnpm i --ignore-scripts
+        run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Build website
         run: pnpm build
 
