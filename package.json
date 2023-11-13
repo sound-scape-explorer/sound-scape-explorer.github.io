@@ -35,7 +35,6 @@
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "plugin-ideal-image": "link:@types/@docusaurus/plugin-ideal-image",
     "typescript": "~5.2.2"
   },
   "browserslist": {

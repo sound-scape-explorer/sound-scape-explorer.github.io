@@ -61,9 +61,6 @@ devDependencies:
   eslint-plugin-simple-import-sort:
     specifier: ^10.0.0
     version: 10.0.0(eslint@8.53.0)
-  plugin-ideal-image:
-    specifier: link:@types/@docusaurus/plugin-ideal-image
-    version: link:@types/@docusaurus/plugin-ideal-image
   typescript:
     specifier: ~5.2.2
     version: 5.2.2
