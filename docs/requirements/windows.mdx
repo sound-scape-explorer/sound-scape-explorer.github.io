@@ -17,13 +17,12 @@ import {APP_NAME} from '../../constants.ts';
 2. Type `PowerShell`
 3. Right-click on the `PowerShell` icon
 4. Select `Run as Administrator` (this will open a new shell window)
-5. Open a new tab in your web browser
-6. Navigate to [chocolatey installation page](https://chocolatey.org/install)
-7. Scroll the installation command
-8. Copy the command
-9. Paste it in your shell window
-10. Press `Enter` (Wait and type `choco --version` to verify installation)
-11. Install `Python`:
+5. Navigate to [chocolatey installation page](https://chocolatey.org/install)
+6. Scroll to the installation command
+7. Copy the command
+8. Paste it in your shell window
+9. Press `Enter` (Wait and type `choco --version` to verify installation)
+10. Install `Python`:
 
 ```powershell
 choco install python3 --version=3.10.11 -y
@@ -38,24 +37,25 @@ choco install python3 --version=3.10.11 -y
 > choco uninstall python3
 > ```
 
-5. Install `Node.js`:
+11. Install `Node.js`:
 
 ```powershell
 choco install nodejs --version=16.20.0 -y
 ```
 
-6. Install `ffmpeg`, `curl` and `pnpm`:
+12. Install `ffmpeg`, `curl` and `pnpm`:
 
 ```powershell
 choco install ffmpeg curl pnpm -y
 ```
 
-7. Close the shell window.
-8. Go to [Microsft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) and
-   click on `Download Build Tools`
-9. Run the executable and continue with the installation until you get the
-   menu `Installing - Visual Studio Build Tools...`
-10. Tick `Desktop development with C++` and press `Install`. The installation
-    will take about 6 Gb of data
-11. Once installed, you can close the Visual Studio Build Tools window
-12. You can now [install {APP_NAME}](../install)
+13. Close the shell window.
+14. Navigate to [Microsft C++ Build
+    Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+15. Click on `Download Build Tools` to download the executable
+16. Run the executable (continue until you get the menu _Installing - Visual
+    Studio Build Tools..._)
+17. Tick `Desktop development with C++`
+18. Press `Install` (6 Gb of disk space will be used)
+19. Wait for completion, you can close the Visual Studio Build Tools window
+20. You can now [install {APP_NAME}](../install)
