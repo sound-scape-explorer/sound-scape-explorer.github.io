@@ -1,4 +1,10 @@
+import ContextWarning from '../../docs-blocks/context-warning.mdx';
+import {ConfigCommandBlock} from '../../src/components/ConfigCommandBlock';
+import {ConfigCommandInline} from '../../src/components/ConfigCommandInline';
+
 # Extracting `.xlsx` from `.h5`
+
+<ContextWarning />
 
 ## Context
 
@@ -12,16 +18,10 @@ to create the storage file.
 
 1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on
    Ubuntu / macOS)
-2. Type `sse_config` followed by a `<space>`
+2. Type <ConfigCommandInline/> followed by a `<space>`
 3. Drag and drop your `.h5` storage file to the shell window
 4. Press `Enter`
 
 Example:
 
-```bash
-# Windows
-sse_config C:\to\storage.h5
-
-# Ubuntu / macOS
-sse_config path/to/storage.h5
-```
+<ConfigCommandBlock />

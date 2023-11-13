@@ -1,15 +1,17 @@
 ---
 sidebar_position: 4
+TODO:
+  - Add small video to illustrate the drag and drop and the active `venv`
 ---
+
+import ContextWarning from '../../docs-blocks/context-warning.mdx';
+import {VisCommandBlock} from '../../src/components/VisCommandBlock';
+import {VisCommandInline} from '../../src/components/VisCommandInline';
+import {VizCommandInline} from '../../src/components/VizCommandInline';
 
 # Visualisation user guide
 
-> **Warning**
->
-> You must have a shell pointing to folder `sound-scape-explorer-VERSION` and
-> active python virtual environment.
->
-> Find related documentation in [running campaigns](./running-campaigns)
+<ContextWarning />
 
 ## Compatibility
 
@@ -17,9 +19,10 @@ While the web app is compatible with most browsers, we experienced random
 issues with Firefox on Windows 11 and Safari on macOS Monterey. Thus, we
 recommend using Chrome.
 
-## `sse_vis` command
+## <VisCommandInline/> command
 
-> `sse_vis` is only available if you have installed the `Processing` module.
+> <VisCommandInline /> is only available if you have installed the `Processing`
+> module.
 
 This is the quickest command to start both `Audio` and `Front` modules.
 
@@ -27,22 +30,14 @@ On an active `venv` shell window, type the following to start both services
 (replace the path to your configuration file by drag and dropping the file
 Excel icon into your shell):
 
-- [ ] Add small video to illustrate the drag and drop and the active `venv`
-
-```bash
-# Windows
-sse_vis C:\path\to\config.xlsx
-
-# Ubuntu / macOS
-(venv)$> sse_vis /path/to/config.xlsx
-```
+<VisCommandBlock />
 
 After pressing `<Enter>`, both modules will start and your default browser will
 open.
 
 > **Note**
 >
-> You can also use `sse_viz` or `viz` as aliases to the `sse_vis` command.
+> You can also use <VizCommandInline/> or `viz` as aliases to the <VisCommandInline/> command.
 
 ## `audio:front` command
 

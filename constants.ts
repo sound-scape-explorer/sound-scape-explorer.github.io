@@ -10,3 +10,4 @@ export const APP_GITHUB =
   'https://github.com/sound-scape-explorer/sound-scape-explorer.github.io';
 
 export const APP_DISCORD_INVITE = 'https://discord.gg/eRsQPDBeXg';
+export const APP_DIRECTORY = 'sound-scape-explorer-VERSION';

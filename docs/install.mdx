@@ -1,8 +1,11 @@
 ---
 sidebar_position: 3
+TODO:
+  - Add small video illustrating the drag and drop
 ---
 
 import {APP_NAME} from '../constants.ts';
+import {AppDirectory} from '../src/components/AppDirectory';
 
 # Installing {APP_NAME}
 
@@ -21,7 +24,7 @@ import {APP_NAME} from '../constants.ts';
 2. Scroll to _Assets_
 3. Download the `Source code (zip)` file
 4. Extract the downloaded archive (Extract here)
-5. Open the extracted folder `sound-scape-explorer-VERSION`
+5. Open the extracted folder <AppDirectory/>
 6. Double click on `start.bat`. Wait for `venv` creation if needed
 7. Enter command `pnpm i`
 8. Enter command `pnpm install:front`
@@ -36,12 +39,9 @@ import {APP_NAME} from '../constants.ts';
 2. Scroll to _Assets_
 3. Download the `Source code (zip)` file
 4. Extract the downloaded archive (Extract here)
-5. Open the extracted folder `sound-scape-explorer-VERSION`
+5. Open the extracted folder <AppDirectory/>
 6. Open a new terminal
-7. Type `cd` followed by a `<space>` and the path to the `sound-scape-explorer-VERSION`. (You can also drag and drop the `sound-scape-explorer-VERSION` folder)
-
-- [ ] TODO: Add small video illustrating the drag and drop
-
+7. Type `cd` followed by a `<space>` and the path to the <AppDirectory/>. (You can also drag and drop the <AppDirectory/> folder)
 8. Enter command `python3.10 -m venv venv`
 9. Enter command `. venv/bin/activate`
 10. Enter command `pnpm i`

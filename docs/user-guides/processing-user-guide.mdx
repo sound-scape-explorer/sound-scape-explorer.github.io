@@ -2,31 +2,25 @@
 sidebar_position: 3
 ---
 
+import ContextWarning from '../../docs-blocks/context-warning.mdx';
+import {AppInline} from '../../src/components/AppInline';
+import {ProcessingCommandBlock} from '../../src/components/ProcessingCommandBlock';
+import {ProcessingMenuBlock} from '../../src/components/ProcessingMenuBlock';
+
 # Processing user guide
 
-> **Warning**
->
-> You must have a shell pointing to folder `sound-scape-explorer-VERSION` and
-> active python virtual environment.
->
-> Find related documentation in [running campaigns](./running-campaigns)
+<ContextWarning />
 
 ## Run
 
-1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on Ubuntu / macOS).
-2. Type `sse` followed by a `<space>`.
-3. Drag and drop your `Excel` file to the shell window.
-4. Press `Enter`.
+1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on Ubuntu / macOS)
+2. Type <AppInline /> followed by a `<space>`
+3. Drag and drop your `Excel` file to the shell window
+4. Press `Enter`
 
 Example:
 
-```bash
-# Windows
-sse C:\to\file.xlsx
-
-# Ubuntu / macOS
-sse path/to/file.xlsx
-```
+<ProcessingCommandBlock />
 
 ## Most frequent use case
 
@@ -46,35 +40,7 @@ You will get the menu below.
 
 Use you `arrow` and `Enter` keys to navigate through it.
 
-```bash
-👋 Welcome to SoundScape Explorer!
-
-┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ File    ┃ Path                                      ┃
-┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ config  │ relative/or/absolute/path/to/config.xlsx  │
-│ storage │ relative/or/absolute/path/to/storage.h5   │
-└─────────┴───────────────────────────────────────────┘
-? Choose your action  (Use arrow keys)
- ❯ Refresh configuration
-   Run extractions and aggregations
-   Run reductions
-   ---------------
-   Run computation UMAPs and mean distances matrix (needed for autocluster)
-   Purge computation UMAPs and mean distances matrix
-   ---------------
-   Run autoclusters
-   Run trajectories
-   Run digests
-   ---------------
-   Run all
-   Export dataframe as .csv
-   Export computation UMAPs as .npy
-   Export mean distances matrix as .npy
-   Repack storage with `h5repack` (UNIX only)
-   ---------------
-   Quit
-```
+<ProcessingMenuBlock />
 
 ## Commands
 
