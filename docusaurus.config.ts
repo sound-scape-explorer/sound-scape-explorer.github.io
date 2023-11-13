@@ -106,7 +106,7 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'GitHub Discussion',
+              label: 'GitHub Discussions',
               href: 'https://github.com/sound-scape-explorer/sound-scape-explorer.github.io/discussions',
             },
             {
