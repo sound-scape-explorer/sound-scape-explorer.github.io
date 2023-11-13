@@ -4,6 +4,8 @@ sidebar_position: 3
 
 import {APP_NAME} from '../../constants.ts';
 
+const {app} = APP_NAME.toLowerCase();
+
 # Processing user guide
 
 > **Warning**
@@ -16,7 +18,7 @@ import {APP_NAME} from '../../constants.ts';
 ## Run
 
 1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on Ubuntu / macOS).
-2. Type `sse` followed by a `<space>`.
+2. Type `{app}` followed by a `<space>`.
 3. Drag and drop your `Excel` file to the shell window.
 4. Press `Enter`.
 
@@ -24,10 +26,10 @@ Example:
 
 ```bash
 # Windows
-sse C:\to\file.xlsx
+{app} C:\to\file.xlsx
 
 # Ubuntu / macOS
-sse path/to/file.xlsx
+{app} path/to/file.xlsx
 ```
 
 ## Most frequent use case

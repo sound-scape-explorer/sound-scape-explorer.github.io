@@ -1,0 +1,77 @@
+---
+sidebar_position: 4
+---
+
+import {APP_NAME} from '../../constants.ts';
+
+const app = APP_NAME.toLowerCase();
+
+# Visualisation user guide
+
+> **Warning**
+>
+> You must have a shell pointing to folder `sound-scape-explorer-VERSION` and
+> active python virtual environment.
+>
+> Find related documentation in [running campaigns](./running-campaigns)
+
+## Compatibility
+
+While the web app is compatible with most browsers, we experienced random
+issues with Firefox on Windows 11 and Safari on macOS Monterey. Thus, we
+recommend using Chrome.
+
+## `{app}_vis` command
+
+> `{app}_vis` is only available if you have installed the `Processing` module.
+
+This is the quickest command to start both `Audio` and `Front` modules.
+
+On an active `venv` shell window, type the following to start both services
+(replace the path to your configuration file by drag and dropping the file
+Excel icon into your shell):
+
+- [ ] Add small video to illustrate the drag and drop and the active `venv`
+
+```bash
+# Windows
+{app}_vis C:\path\to\config.xlsx
+
+# Ubuntu / macOS
+(venv)$> {app}_vis /path/to/config.xlsx
+```
+
+After pressing `<Enter>`, both modules will start and your default browser will
+open.
+
+> **Note**
+>
+> You can also use `{app}_viz` or `viz` as aliases to the `{app}_vis` command.
+
+## `audio:front` command
+
+You can serve both `Front` and `Audio` modules at the same time
+
+```bash
+# Windows
+pnpm audio:front:windows Z:\audio_folder_example
+
+# Ubuntu / macOS
+pnpm audio:front relative/or/absolute/path/to/audio/folder
+```
+
+## `audio` command
+
+Serve `Audio` module on port [5531](http://localhost:5531)
+
+```bash
+pnpm audio -- relative/or/absolute/path/to/audio/folder
+```
+
+## `front` command
+
+Serve `Front` module on port [5530](http://localhost:5530)
+
+```bash
+pnpm front
+```
