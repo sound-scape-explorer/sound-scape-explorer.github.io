@@ -2,10 +2,6 @@
 sidebar_position: 4
 ---
 
-import {APP_NAME} from '../../constants.ts';
-
-const app = APP_NAME.toLowerCase();
-
 # Visualisation user guide
 
 > **Warning**
@@ -21,9 +17,9 @@ While the web app is compatible with most browsers, we experienced random
 issues with Firefox on Windows 11 and Safari on macOS Monterey. Thus, we
 recommend using Chrome.
 
-## `{app}_vis` command
+## `sse_vis` command
 
-> `{app}_vis` is only available if you have installed the `Processing` module.
+> `sse_vis` is only available if you have installed the `Processing` module.
 
 This is the quickest command to start both `Audio` and `Front` modules.
 
@@ -35,10 +31,10 @@ Excel icon into your shell):
 
 ```bash
 # Windows
-{app}_vis C:\path\to\config.xlsx
+sse_vis C:\path\to\config.xlsx
 
 # Ubuntu / macOS
-(venv)$> {app}_vis /path/to/config.xlsx
+(venv)$> sse_vis /path/to/config.xlsx
 ```
 
 After pressing `<Enter>`, both modules will start and your default browser will
@@ -46,7 +42,7 @@ open.
 
 > **Note**
 >
-> You can also use `{app}_viz` or `viz` as aliases to the `{app}_vis` command.
+> You can also use `sse_viz` or `viz` as aliases to the `sse_vis` command.
 
 ## `audio:front` command
 
