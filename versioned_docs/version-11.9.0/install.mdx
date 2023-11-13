@@ -1,0 +1,52 @@
+---
+sidebar_position: 3
+TODO:
+  - Add small video illustrating the drag and drop
+---
+
+import {APP_NAME} from '@site/constants.ts';
+import {AppDirectory} from '@site/src/components/AppDirectory';
+
+# Installing {APP_NAME}
+
+> **Note**
+>
+> You can install all modules at once by using these variants:
+>
+> - `pnpm install:all`
+> - `pnpm install:all:windows`
+> - `pnpm install:all:cpu`
+> - `pnpm install:all:cpu:windows`
+
+## Windows
+
+1. Open the [latest release page](https://github.com/sound-scape-explorer/sound-scape-explorer/releases/latest) in a new tab
+2. Scroll to _Assets_
+3. Download the `Source code (zip)` file
+4. Extract the downloaded archive (Extract here)
+5. Open the extracted folder <AppDirectory/>
+6. Double click on `start.bat`. Wait for `venv` creation if needed
+7. Enter command `pnpm i`
+8. Enter command `pnpm install:front`
+9. Enter command `pnpm install:processing:windows`. If you get an `nvidia-*`
+   error, please use command `pnpm install:processing:cpu:windows`
+10. Close the shell
+11. You can now [run a campaign](./user-guides/running-campaigns)
+
+## Ubuntu / macOS
+
+1. Open the [latest release page](https://github.com/sound-scape-explorer/sound-scape-explorer/releases/latest) in a new tab
+2. Scroll to _Assets_
+3. Download the `Source code (zip)` file
+4. Extract the downloaded archive (Extract here)
+5. Open the extracted folder <AppDirectory/>
+6. Open a new terminal
+7. Type `cd` followed by a `<space>` and the path to the <AppDirectory/>. (You can also drag and drop the <AppDirectory/> folder)
+8. Enter command `python3.10 -m venv venv`
+9. Enter command `. venv/bin/activate`
+10. Enter command `pnpm i`
+11. Enter command `pnpm install:front`
+12. Enter command `pnpm install:processing`. If you get an `nvidia-*`
+    error, please use command `pnpm install:processing:cpu`
+13. Close the terminal
+14. You can now [run a campaign](./user-guides/running-campaigns)

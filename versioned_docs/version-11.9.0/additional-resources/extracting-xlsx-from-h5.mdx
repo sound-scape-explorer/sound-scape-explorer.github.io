@@ -1,0 +1,27 @@
+import ContextWarning from '@site/docs-blocks/context-warning.mdx';
+import {ConfigCommandBlock} from '@site/src/components/ConfigCommandBlock';
+import {ConfigCommandInline} from '@site/src/components/ConfigCommandInline';
+
+# Extracting `.xlsx` from `.h5`
+
+<ContextWarning />
+
+## Context
+
+Use this command to extract the `.xlsx` configuration file from an existing
+`.h5` storage file.
+
+The extracted `storage.h5-config-VERSION.xlsx` is the actual configuration used
+to create the storage file.
+
+## Run
+
+1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on
+   Ubuntu / macOS)
+2. Type <ConfigCommandInline/> followed by a `<space>`
+3. Drag and drop your `.h5` storage file to the shell window
+4. Press `Enter`
+
+Example:
+
+<ConfigCommandBlock />

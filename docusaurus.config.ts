@@ -81,6 +81,9 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Tutorial',
         // },
+        {
+          type: 'docsVersionDropdown',
+        },
         {to: '/docs', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
