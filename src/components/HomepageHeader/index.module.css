@@ -40,3 +40,19 @@
   height: 1em;
   transform: translate3d(0, calc(0.12 * 1em), 0);
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.demo {
+  width: 50%;
+  height: 50%;
+}
+
+.demo img {
+  border-radius: 4px;
+}

@@ -3,8 +3,10 @@ import '@fontsource/merriweather';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {APP_NAME} from '@site/constants';
+import demo from '@site/static/img/demo.png';
 import Logo from '@site/static/img/logo.svg';
 import Heading from '@theme/Heading';
+import Image from '@theme/IdealImage';
 import clsx from 'clsx';
 import {Book} from 'react-feather';
 
@@ -19,6 +21,12 @@ export const HomepageHeader = () => {
           as="h1"
           className="hero__title"
         >
+          <div className={styles.container}>
+            <Image
+              img={demo}
+              className={styles.demo}
+            />
+          </div>
           <Logo
             className={styles.logo}
             role="img"
