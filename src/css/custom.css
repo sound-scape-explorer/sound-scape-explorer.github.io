@@ -1,4 +1,21 @@
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+ol,
+blockquote,
+table,
+thead,
+tbody,
+td,
+th,
+tr {
   font-family: 'Merriweather', serif !important;
 }
 
@@ -9,7 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: var(--ifm-color-primary-darkest);
+  /* color: var(--ifm-color-primary-darkest); */
 }
 
 :root {
@@ -22,7 +39,7 @@ h6 {
   --ifm-color-primary-lightest: #4d9cb0;
   --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  background: #f8f8f8;
+  background: #f4f4f4;
 }
 
 [data-theme='dark'] {
@@ -34,5 +51,5 @@ h6 {
   --ifm-color-primary-lighter: #90daed;
   --ifm-color-primary-lightest: #bae8f4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background: #181818;
+  background: #141414;
 }
