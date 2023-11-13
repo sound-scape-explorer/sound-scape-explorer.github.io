@@ -20,4 +20,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  transition: transform 250ms ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.book {
+  transform: translate3d(5px, 1px, 0);
+}
+
+.logo {
+  width: 1em;
+  height: 1em;
+  transform: translate3d(0, calc(0.12 * 1em), 0);
 }

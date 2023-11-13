@@ -13,32 +13,41 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Campaign',
+    Svg: require('@site/static/img/undraw_spreadsheets_re_alt0.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Add audio files
+        <br />
+        Describe user labels
+        <br />
+        Define intervals & metrics
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Processing',
+    Svg: require('@site/static/img/undraw_data_processing_yrrv.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Extract data with neural networks
+        <br />
+        Reduce spaces to visualisable dimensions
+        <br />
+        Appy statistics
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Visualisation',
+    Svg: require('@site/static/img/undraw_winter_designer_a-2-m7.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Analyse data
+        <br />
+        Listen to intervals
+        <br />
+        Explore results
       </>
     ),
   },

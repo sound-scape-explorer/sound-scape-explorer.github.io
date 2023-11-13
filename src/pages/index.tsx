@@ -4,9 +4,11 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {APP_NAME} from '@site/constants';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Logo from '@site/static/img/logo.svg';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
+import {Book} from 'react-feather';
 
 import styles from './index.module.css';
 
@@ -19,15 +21,25 @@ function HomepageHeader() {
           as="h1"
           className="hero__title"
         >
+          <Logo
+            className={styles.logo}
+            role="img"
+          />{' '}
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          {siteConfig.tagline} using {APP_NAME} software.
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={`button button--secondary button--lg ${styles.button}`}
             to="/docs"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            Get started{' '}
+            <Book
+              size={16}
+              className={styles.book}
+            />
           </Link>
         </div>
       </div>

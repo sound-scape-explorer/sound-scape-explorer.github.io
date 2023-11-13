@@ -9,7 +9,6 @@ import {
   APP_DISCORD_INVITE,
   APP_DOMAIN,
   APP_GITHUB,
-  APP_NAME,
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
@@ -18,7 +17,7 @@ import {
 const config: Config = {
   title: APP_DESCRIPTION,
   tagline: APP_TAGLINE,
-  favicon: `img/${APP_NAME.toLowerCase()}.ico`,
+  favicon: 'img/logo.ico',
 
   // Set the production url of your site here
   url: APP_DOMAIN,
@@ -73,7 +72,7 @@ const config: Config = {
       title: APP_DESCRIPTION,
       logo: {
         alt: `${APP_DESCRIPTION} Logo`,
-        src: `img/${APP_NAME.toLowerCase()}.svg`,
+        src: 'img/logo.svg',
       },
       items: [
         // {
