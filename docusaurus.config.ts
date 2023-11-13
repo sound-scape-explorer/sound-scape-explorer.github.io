@@ -100,6 +100,11 @@ const config: Config = {
         {to: '/docs', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://sound-scape-explorer.github.io/sound-scape-explorer',
+          label: 'Visualise',
+          position: 'left',
+        },
+        {
           href: APP_GITHUB,
           label: 'GitHub',
           position: 'right',
