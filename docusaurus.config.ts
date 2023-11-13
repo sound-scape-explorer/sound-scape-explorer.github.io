@@ -6,6 +6,7 @@ import {
   APP_BASE_URL,
   APP_DEPLOY_BRANCH,
   APP_DESCRIPTION,
+  APP_DISCORD_INVITE,
   APP_DOMAIN,
   APP_GITHUB,
   APP_NAME,
@@ -111,7 +112,7 @@ const config: Config = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/eRsQPDBeXg',
+              href: APP_DISCORD_INVITE,
             },
           ],
         },
