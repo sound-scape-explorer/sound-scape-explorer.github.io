@@ -1,3 +1,7 @@
+---
+title: Audio formats
+---
+
 # Available audio formats and codecs
 
 These following formats have been tested with multiple sampling rates, bit
