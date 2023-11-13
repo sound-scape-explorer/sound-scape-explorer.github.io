@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
       - name: Install pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm sharp
       - name: Install dependencies
         run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Test build website
