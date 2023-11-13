@@ -22,7 +22,7 @@ jobs:
       - name: Install sharp
         run: npm install --platform=linux --arch=x64 sharp
       - name: Install dependencies
-        run: pnpm i --ignore-scripts --frozen-lockfile
+        run: pnpm i --ignore-scripts
       - name: Build website
         run: pnpm build
 
