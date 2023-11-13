@@ -1,0 +1,58 @@
+# Installing on Ubuntu
+
+## Compatibility
+
+- [x] Ubuntu 20.04
+- [x] Ubuntu 22.04
+
+## Install requirements
+
+1. Open a terminal.
+2. Install external libraries:
+
+```bash
+sudo apt install curl ffmpeg hdf5-tools -y
+```
+
+3. Install `Python`:
+
+> **Note**
+>
+> Press `Enter` when you are prompted to add the apt repository.
+
+```shell
+sudo apt install software-properties-common -y && \
+sudo add-apt-repository ppa:deadsnakes/ppa && \
+sudo apt install python3.10 python3.10-distutils python3.10-dev python3-pip python3.10-venv -y && \
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+```
+
+4. Update `.bashrc`:
+
+```bash
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 0 && \
+echo "alias python=python3.10" >> ~/.bashrc && \
+echo "alias pip=pip3" >> ~/.bashrc && \
+source ~/.bashrc
+```
+
+5. Install `Node.js`:
+
+```bash
+sudo apt update && \
+sudo apt install -y ca-certificates curl gnupg && \
+sudo mkdir -p /etc/apt/keyrings && \
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && \
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list && \
+sudo apt update && \
+sudo apt install nodejs -y
+```
+
+6. Install `pnpm`:
+
+```bash
+sudo npm -g i pnpm
+```
+
+7. Close the terminal.
+8. You can now [install SSE](https://github.com/sound-scape-explorer/sound-scape-explorer/wiki/install-sse).
