@@ -7,7 +7,7 @@
 
 ## Install requirements
 
-1. Open a terminal.
+1. Open a terminal
 2. Install external libraries:
 
 ```bash
@@ -18,7 +18,7 @@ sudo apt install curl ffmpeg hdf5-tools -y
 
 > **Note**
 >
-> Press `Enter` when you are prompted to add the apt repository.
+> Press `Enter` when you are prompted to add the apt repository
 
 ```shell
 sudo apt install software-properties-common -y && \
@@ -54,5 +54,5 @@ sudo apt install nodejs -y
 sudo npm -g i pnpm
 ```
 
-7. Close the terminal.
-8. You can now [install SSE](https://github.com/sound-scape-explorer/sound-scape-explorer/wiki/install-sse).
+7. Close the terminal
+8. You can now [install SSE](../software/install)

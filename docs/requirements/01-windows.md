@@ -52,6 +52,6 @@ choco install ffmpeg curl pnpm -y
 9. Run the executable and continue with the installation until you get the
    menu `Installing - Visual Studio Build Tools...`
 10. Tick `Desktop development with C++` and press `Install`. The installation
-    will take about 6 Gb of data.
-11. Once installed, you can close the Visual Studio Build Tools window.
-12. You can now [install SSE](https://github.com/sound-scape-explorer/sound-scape-explorer/wiki/install-sse).
+    will take about 6 Gb of data
+11. Once installed, you can close the Visual Studio Build Tools window
+12. You can now [install SSE](../software/install)
