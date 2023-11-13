@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
         <br />
         Reduce spaces to visualisable dimensions
         <br />
-        Appy statistics
+        Apply statistics
       </>
     ),
   },
