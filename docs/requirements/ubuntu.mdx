@@ -13,13 +13,13 @@ Compatible with Ubuntu 20.04 LTS, and 22.04 LTS.
 ## Installation procedure
 
 1. Open a terminal
-2. Install external libraries:
+2. Install external libraries
 
 ```bash
 sudo apt install curl ffmpeg hdf5-tools -y
 ```
 
-3. Install `Python`:
+3. Install `Python`
 
 :::note
 
@@ -34,7 +34,7 @@ sudo apt install python3.10 python3.10-distutils python3.10-dev python3-pip pyth
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
-4. Update `.bashrc`:
+4. Update `.bashrc`
 
 ```bash
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 0 && \
@@ -43,7 +43,7 @@ echo "alias pip=pip3" >> ~/.bashrc && \
 source ~/.bashrc
 ```
 
-5. Install `Node.js`:
+5. Install `Node.js`
 
 ```bash
 sudo apt update && \
@@ -55,7 +55,7 @@ sudo apt update && \
 sudo apt install nodejs -y
 ```
 
-6. Install `pnpm`:
+6. Install `pnpm`
 
 ```bash
 sudo npm -g i pnpm

@@ -32,8 +32,10 @@ You can install all modules at once by using these variants:
 6. Double click on `start.bat`. Wait for `venv` creation if needed
 7. Enter command `pnpm i`
 8. Enter command `pnpm install:front`
-9. Enter command `pnpm install:processing:windows`. If you get an `nvidia-*`
-   error, please use command `pnpm install:processing:cpu:windows`
+9. Enter command `pnpm install:processing:windows`
+   :::danger
+   If you get an `nvidia-*` error, please use command `pnpm install:processing:cpu:windows`
+   :::
 10. Close the shell
 11. You can now [run a campaign](./user-guides/running-campaigns)
 
@@ -50,7 +52,9 @@ You can install all modules at once by using these variants:
 9. Enter command `. venv/bin/activate`
 10. Enter command `pnpm i`
 11. Enter command `pnpm install:front`
-12. Enter command `pnpm install:processing`. If you get an `nvidia-*`
-    error, please use command `pnpm install:processing:cpu`
+12. Enter command `pnpm install:processing`
+    :::danger
+    If you get an `nvidia-*` error, please use command `pnpm install:processing:cpu`
+    :::
 13. Close the terminal
 14. You can now [run a campaign](./user-guides/running-campaigns)
