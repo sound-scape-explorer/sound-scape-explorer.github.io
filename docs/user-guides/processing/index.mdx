@@ -1,0 +1,60 @@
+---
+sidebar_position: 3
+---
+
+import ContextWarning from '@site/docs-blocks/context-warning.mdx';
+import {AppInline} from '@site/src/components/AppInline';
+import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
+import {ProcessingMenuBlock} from '@site/src/components/ProcessingMenuBlock';
+
+# Processing user guide
+
+<ContextWarning />
+
+## Run
+
+1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on Ubuntu / macOS)
+2. Type <AppInline /> followed by a `<space>`
+3. Drag and drop your `Excel` file to the shell window
+4. Press `Enter`
+
+Example:
+
+<ProcessingCommandBlock />
+
+## Most frequent use case
+
+If you want to execute all the requested metrics declared in your configuration
+file, please use the `Run All` menu choice.
+
+1. Select `Run All`
+2. Wait for the processing to complete. When the menu displays again, the
+   processing has completed
+3. You can now go further to [visualisation user
+   guide](./visualisation-user-guide)
+   in order to display your data
+
+## Menu
+
+You will get the menu below.
+
+Use your `arrow` and `Enter` keys to navigate through it.
+
+<ProcessingMenuBlock />
+
+## Commands
+
+- [Refresh configuration](./01-refresh-configuration.md)
+- [Run extractions and aggregations](./02-run-extractions-and-aggregations.md)
+- [Run reductions](./03-run-reductions.md)
+- [Run computation UMAPs and mean distances matrix](./04-run-computations.md)
+- [Purge computation UMAPs and mean distances matrix](./05-purge-computations.md)
+- [Run autoclusters](./06-run-autoclusters.md)
+- [Run trajectories](./07-run-trajectories.md)
+- [Run digests](./08-run-digests.md)
+- [Run all](./09-run-all.md)
+- [Export dataframe](./10-export-dataframe.md)
+- [Export computation UMAPs](./11-export-computations.md)
+- [Export mean distances matrix](./12-export-mdm.md)
+- [Repack storage](./13-repack-storage.md)
+- [Quit](./14-quit.md)
