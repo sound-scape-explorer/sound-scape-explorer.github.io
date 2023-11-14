@@ -9,6 +9,7 @@ import {
   APP_DISCORD_INVITE,
   APP_DOMAIN,
   APP_GITHUB,
+  APP_GITHUB_DISCUSSIONS,
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
@@ -121,7 +122,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Discussions',
-              href: 'https://github.com/sound-scape-explorer/sound-scape-explorer.github.io/discussions',
+              href: APP_GITHUB_DISCUSSIONS,
             },
             {
               label: 'Discord',

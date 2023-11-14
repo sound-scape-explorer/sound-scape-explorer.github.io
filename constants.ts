@@ -9,5 +9,7 @@ export const APP_DEPLOY_BRANCH = 'gh-pages';
 export const APP_GITHUB =
   'https://github.com/sound-scape-explorer/sound-scape-explorer.github.io';
 
-export const APP_DISCORD_INVITE = 'https://discord.gg/eRsQPDBeXg';
 export const APP_DIRECTORY = 'sound-scape-explorer-VERSION';
+export const APP_DISCORD_INVITE = 'https://discord.gg/eRsQPDBeXg';
+export const APP_GITHUB_DISCUSSIONS =
+  'https://github.com/sound-scape-explorer/sound-scape-explorer/discussions';
