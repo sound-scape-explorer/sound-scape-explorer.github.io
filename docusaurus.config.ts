@@ -68,7 +68,7 @@ const config: Config = {
   themeConfig: {
     algolia: {
       appId: 'JC3D6Z8JYZ',
-      apiKey: '4e697f34f33fcb1c769ce225b7196319',
+      apiKey: '300b83eb5ff105efb8b0413c9ebb821d',
       indexName: 'sound-scape-explorerio',
       contextualSearch: true,
     },
