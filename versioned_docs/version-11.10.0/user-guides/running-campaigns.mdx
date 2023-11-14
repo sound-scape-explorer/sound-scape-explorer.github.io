@@ -1,0 +1,33 @@
+---
+sidebar_position: 1
+---
+
+import {VERSION} from '../version.ts';
+import {APP_NAME} from '@site/constants.ts';
+import {AppDirectory} from '@site/src/components/AppDirectory';
+import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
+
+# Running campaigns
+
+## Requirements
+
+- System requirements installed
+- {APP_NAME} modules installed
+
+## Windows
+
+1. Copy the example folder `new-campaign` located in <ExampleDirectory version={VERSION} />
+2. Paste the example folder where you want and rename it
+3. Open your campaign folder and edit the `.xlsx` configuration file
+4. In your <AppDirectory/> folder, double click on `start.bat`
+5. You can now use [{APP_NAME} modules](./modules-presentation)
+
+## Ubuntu / macOS
+
+1. Copy the example folder `new-campaign` located in <ExampleDirectory version={VERSION} />
+2. Rename the folder to whatever you want
+3. Open your campaign folder and edit the `.xlsx` configuration file
+4. Open a terminal
+5. Type `cd` followed by a `<space>` and the path to the <AppDirectory version={VERSION} />
+6. Enter command `. venv/bin/activate`
+7. You can now use [{APP_NAME} modules](./modules-presentation)
