@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Tue, 14 Nov 2023 17:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Nov 2023 18:15:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,36 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Tue, 14 Nov 2023 17:40:00 GMT</pubDate>
+            <pubDate>Tue, 14 Nov 2023 18:15:04 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[<p>Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introduction to new centralized documentation]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation</guid>
+            <pubDate>Tue, 14 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Dear colleagues,]]></description>
+            <content:encoded><![CDATA[<p>Dear colleagues,</p>
+<p>I trust this message finds you well. In our ongoing efforts to enhance
+communication and transparency between the business and development teams, I am
+pleased to announce the implementation of a new centralized documentation
+portal for the <!-- -->SoundScapeExplorer<!-- --> project.</p>
+<p>This portal serves as a comprehensive hub for all project-related
+documentation, updates, and other pertinent information. It is designed to
+function as a showcase for the platform, providing a convenient space to
+publish evolving documentation for upcoming versions while archiving the older
+ones. Additionally, it facilitates easy export of documentation in PDF format,
+enabling offline access for your convenience.</p>
+<p>I invite you to share the following link :
+<a href="https://sound-scape-explorer.github.io/" target="_blank" rel="noopener noreferrer">sound-scape-explorer.github.io</a></p>
+<p>Your feedback on this initiative is highly valuable, and I encourage you to
+share any thoughts or suggestions you may have.</p>
+<p>Thank you for your attention, and I look forward to further advancing our
+collaboration through improved access to project information.</p>
+<p>Best regards,</p>
+<p>Bamdad</p>]]></content:encoded>
+            <category>article</category>
         </item>
     </channel>
 </rss>

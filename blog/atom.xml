@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2023-11-14T17:40:00.000Z</updated>
+    <updated>2023-11-14T18:15:04.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,12 +11,43 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2023-11-14T17:40:00.000Z</updated>
+        <updated>2023-11-14T18:15:04.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[<p>Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!</p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
         </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to new centralized documentation]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation"/>
+        <updated>2023-11-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dear colleagues,]]></summary>
+        <content type="html"><![CDATA[<p>Dear colleagues,</p>
+<p>I trust this message finds you well. In our ongoing efforts to enhance
+communication and transparency between the business and development teams, I am
+pleased to announce the implementation of a new centralized documentation
+portal for the <!-- -->SoundScapeExplorer<!-- --> project.</p>
+<p>This portal serves as a comprehensive hub for all project-related
+documentation, updates, and other pertinent information. It is designed to
+function as a showcase for the platform, providing a convenient space to
+publish evolving documentation for upcoming versions while archiving the older
+ones. Additionally, it facilitates easy export of documentation in PDF format,
+enabling offline access for your convenience.</p>
+<p>I invite you to share the following link :
+<a href="https://sound-scape-explorer.github.io/" target="_blank" rel="noopener noreferrer">sound-scape-explorer.github.io</a></p>
+<p>Your feedback on this initiative is highly valuable, and I encourage you to
+share any thoughts or suggestions you may have.</p>
+<p>Thank you for your attention, and I look forward to further advancing our
+collaboration through improved access to project information.</p>
+<p>Best regards,</p>
+<p>Bamdad</p>]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+        <category label="article" term="article"/>
     </entry>
 </feed>
