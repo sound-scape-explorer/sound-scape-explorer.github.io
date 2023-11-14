@@ -19,6 +19,20 @@ tr {
   font-family: 'Merriweather', serif !important;
 }
 
+pre,
+code {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+code {
+  font-size: 89%;
+  padding: 2px 4px;
+}
+
+pre {
+  font-size: 90%;
+}
+
 h1,
 h2,
 h3,

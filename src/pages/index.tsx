@@ -1,4 +1,5 @@
 import '@fontsource/merriweather';
+import '@fontsource/jetbrains-mono';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {APP_NAME} from '@site/constants';
