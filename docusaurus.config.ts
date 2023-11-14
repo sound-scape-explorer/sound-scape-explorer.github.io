@@ -99,6 +99,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          href: 'https://github.com/sound-scape-explorer/sound-scape-explorer/issues/new/choose',
+          label: 'Issues',
+          position: 'right',
+        },
+        {
           href: APP_GITHUB,
           label: 'GitHub',
           position: 'right',
