@@ -1,5 +1,12 @@
-import {APP_DIRECTORY} from '@site/constants';
+import {useVersionReplacer} from '@site/hooks/useVersionReplacer';
 
 import {CodeInline} from '../CodeInline';
 
-export const AppDirectory = () => <CodeInline>{APP_DIRECTORY}</CodeInline>;
+interface Props {
+  version?: string;
+}
+
+export const AppDirectory = ({version}: Props) => {
+  const {directory} = useVersionReplacer(version);
+  return <CodeInline>{directory}</CodeInline>;
+};
