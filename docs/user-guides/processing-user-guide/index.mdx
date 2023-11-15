@@ -2,37 +2,31 @@
 sidebar_position: 3
 ---
 
-import ContextWarning from '../../_blocks/context-warning.mdx';
 import {AppInline} from '@site/src/components/AppInline';
 import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
 import {ProcessingMenuBlock} from '@site/src/components/ProcessingMenuBlock';
 
 # Processing user guide
 
-<ContextWarning />
+:::warning
+
+Your must have an **active** python `venv`. Find how to [activate virtual
+environment](../activate-venv.mdx)
+
+:::
 
 ## Run
 
-1. Open a shell window. (Double click `start.bat` on Windows or use `cd` on Ubuntu / macOS)
-2. Type <AppInline /> followed by a `<space>`
-3. Drag and drop your `Excel` file to the shell window
-4. Press `Enter`
+1. Type <AppInline /> followed by a `<space>`
+2. Type the path to your `.xlsx` file (or drag and drop file icon to the
+   terminal)
+3. Press `Enter`
 
-Example:
+```bash
+sse config.xlsx
+```
 
 <ProcessingCommandBlock />
-
-## Most frequent use case
-
-If you want to execute all the requested metrics declared in your configuration
-file, please use the `Run All` menu choice.
-
-1. Select `Run All`
-2. Wait for the processing to complete. When the menu displays again, the
-   processing has completed
-3. You can now go further to [visualisation user
-   guide](../visualisation-user-guide)
-   in order to display your data
 
 ## Menu
 
@@ -41,6 +35,17 @@ You will get the menu below.
 Use your `arrow` and `Enter` keys to navigate through it.
 
 <ProcessingMenuBlock />
+
+## Most frequent use case
+
+If you want to execute all the requested metrics declared in your configuration
+file, please choose `Run All` in the menu.
+
+1. Select `Run All`
+2. Wait for the processing to complete. When the menu displays again, the
+   processing has completed
+3. If you intend to visualise your data, choose `Quit` then proceed to the
+   [visualisation user guide](../visualisation-user-guide.mdx)
 
 ## Commands
 
