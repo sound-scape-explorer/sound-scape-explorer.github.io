@@ -1,8 +1,7 @@
 import {APP_DESCRIPTION} from '@site/constants';
+import CodeBlock from '@theme/CodeBlock';
 
-import {CodeBlock} from '../CodeBlock';
-
-const menuBlock = `👋 Welcome to ${APP_DESCRIPTION}!
+const code = `👋 Welcome to ${APP_DESCRIPTION}!
 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ File    ┃ Path                                      ┃
@@ -31,8 +30,5 @@ const menuBlock = `👋 Welcome to ${APP_DESCRIPTION}!
    Quit`;
 
 export const ProcessingMenuBlock = () => (
-  <CodeBlock
-    language="bash"
-    code={menuBlock}
-  />
+  <CodeBlock language="bash">{code}</CodeBlock>
 );
