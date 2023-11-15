@@ -11,6 +11,7 @@ import {
   APP_DOMAIN,
   APP_GITHUB,
   APP_GITHUB_DISCUSSIONS,
+  APP_NAME,
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
@@ -72,7 +73,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/demo.png',
     navbar: {
-      title: APP_DESCRIPTION,
+      title: APP_NAME,
       logo: {
         alt: `${APP_DESCRIPTION} Logo`,
         src: 'img/logo.svg',
