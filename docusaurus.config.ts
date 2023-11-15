@@ -1,5 +1,6 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Config} from '@docusaurus/types';
+import lunrSearch from 'docusaurus-lunr-search';
 import {themes as prismThemes} from 'prism-react-renderer';
 
 import {
@@ -66,12 +67,8 @@ const config: Config = {
     ],
   ],
 
+  plugins: [lunrSearch],
   themeConfig: {
-    algolia: {
-      appId: 'JC3D6Z8JYZ',
-      apiKey: 'f2dbcf51c07d4cdb979364c5d72fd94e',
-      indexName: 'sound-scape-explorerio',
-    },
     // Replace with your project's social card
     image: 'img/demo.png',
     navbar: {
