@@ -117,6 +117,10 @@ const config: Config = {
               label: 'Docs',
               to: '/docs',
             },
+            {
+              label: 'Contributing guidelines',
+              to: '/contributing',
+            },
           ],
         },
         {
