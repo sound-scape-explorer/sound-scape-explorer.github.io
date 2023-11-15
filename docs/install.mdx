@@ -2,13 +2,14 @@
 sidebar_position: 3
 TODO:
   - Add small video illustrating the drag and drop
-  - Add direct link to zip download
 ---
 
-import {VERSION} from './version.ts';
+import {VERSION, SIZE} from './env.ts';
 import {APP_NAME} from '@site/constants.ts';
 import {AppDirectory} from '@site/src/components/AppDirectory';
 import {ReleaseLink} from '@site/src/components/ReleaseLink';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {SizeInfo} from '@site/src/components/SizeInfo';
 
 # Installing {APP_NAME}
 
@@ -18,44 +19,54 @@ You can install all modules at once by using these variants:
 
 - `pnpm install:all`
 - `pnpm install:all:windows`
-- `pnpm install:all:cpu`
-- `pnpm install:all:cpu:windows`
+- `pnpm install:all:cuda`
+- `pnpm install:all:cuda:windows`
 
 :::
 
 ## Windows
 
-1. Open the <ReleaseLink version={VERSION} />
-2. Scroll to _Assets_
-3. Download the `Source code (zip)` file
-4. Extract the downloaded archive (Extract here)
-5. Open the extracted folder <AppDirectory/>
-6. Double click on `start.bat`. Wait for `venv` creation if needed
-7. Enter command `pnpm i`
-8. Enter command `pnpm install:front`
-9. Enter command `pnpm install:processing:windows`
-   :::danger
-   If you get an `nvidia-*` error, please use command `pnpm install:processing:cpu:windows`
+1. Download <SourceLink version={VERSION} size={SIZE} />
+2. Extract archive (use _Extract here_)
+3. Open folder <AppDirectory version={VERSION} />
+4. Double click on `start.bat` (wait for `venv` creation)
+5. Enter command `pnpm i`
+6. Enter command `pnpm install:front`
+7. Enter command `pnpm install:processing:windows`
+
+   :::tip
+   Have CUDA enabled graphics?
+
+   Enter command `pnpm install:processing:cuda:window`
    :::
-10. Close the shell
-11. You can now [run a campaign](./user-guides/running-campaigns)
+
+8. Close the shell
+9. You can now [run a campaign](./user-guides/running-campaigns)
 
 ## Ubuntu / macOS
 
-1. Open the <ReleaseLink version={VERSION} />
-2. Scroll to _Assets_
-3. Download the `Source code (zip)` file
-4. Extract the downloaded archive (Extract here)
-5. Open the extracted folder <AppDirectory/>
-6. Open a new terminal
-7. Type `cd` followed by a `<space>` and the path to the <AppDirectory/>. (You can also drag and drop the <AppDirectory/> folder)
-8. Enter command `python3.10 -m venv venv`
-9. Enter command `. venv/bin/activate`
-10. Enter command `pnpm i`
-11. Enter command `pnpm install:front`
-12. Enter command `pnpm install:processing`
-    :::danger
-    If you get an `nvidia-*` error, please use command `pnpm install:processing:cpu`
+1. Download <SourceLink version={VERSION} size={SIZE} />
+2. Extract archive (use _Extract here_)
+3. Open folder <AppDirectory version={VERSION} />
+4. Open a new terminal
+5. Type `cd` followed by a `<space>` and the path to the <AppDirectory
+   version={VERSION} /> folder
+
+   :::tip
+   Drag and drop the folder icon into your terminal to avoid typing the path!
+   :::
+
+6. Enter command `python3.10 -m venv venv`
+7. Enter command `. venv/bin/activate`
+8. Enter command `pnpm i` <SizeInfo size={'~50 MB'} />
+9. Enter command `pnpm install:front` <SizeInfo size={'~500 MB'} />
+10. Enter command `pnpm install:processing` <SizeInfo size={'~4 GB'} />
+
+    :::tip
+    Have CUDA enabled graphics?
+
+    Enter command `pnpm install:processing:cuda` <SizeInfo size={'~2 GB'} />
     :::
-13. Close the terminal
-14. You can now [run a campaign](./user-guides/running-campaigns)
+
+11. Close the terminal
+12. You can now [run a campaign](./user-guides/running-campaigns)

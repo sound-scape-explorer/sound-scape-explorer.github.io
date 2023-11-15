@@ -1,7 +1,5 @@
 ---
 sidebar_position: 2
-TODO:
-  - Step 4 might not be necessary anymore
 ---
 
 import {APP_NAME} from '@site/constants.ts';
@@ -34,16 +32,7 @@ sudo apt install python3.10 python3.10-distutils python3.10-dev python3-pip pyth
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
-4. Update `.bashrc`
-
-```bash
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 0 && \
-echo "alias python=python3.10" >> ~/.bashrc && \
-echo "alias pip=pip3" >> ~/.bashrc && \
-source ~/.bashrc
-```
-
-5. Install `Node.js`
+4. Install `Node.js`
 
 ```bash
 sudo apt update && \
@@ -55,11 +44,11 @@ sudo apt update && \
 sudo apt install nodejs -y
 ```
 
-6. Install `pnpm`
+5. Install `pnpm`
 
 ```bash
 sudo npm -g i pnpm
 ```
 
-7. Close the terminal
-8. You can now [install {APP_NAME}](../install)
+6. Close the terminal
+7. You can now [install {APP_NAME}](../install)
