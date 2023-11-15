@@ -69,9 +69,8 @@ const config: Config = {
   themeConfig: {
     algolia: {
       appId: 'JC3D6Z8JYZ',
-      apiKey: '300b83eb5ff105efb8b0413c9ebb821d',
+      apiKey: 'f2dbcf51c07d4cdb979364c5d72fd94e',
       indexName: 'sound-scape-explorerio',
-      contextualSearch: true,
     },
     // Replace with your project's social card
     image: 'img/demo.png',
