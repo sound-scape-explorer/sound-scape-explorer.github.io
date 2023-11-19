@@ -1,0 +1,96 @@
+---
+sidebar_position: 2
+---
+
+import {VERSION, SIZE} from '../../env.ts';
+import {APP_NAME} from '@site/constants';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {AppDirectory} from '@site/src/components/AppDirectory';
+import {SimpleIcon} from '@site/src/components/SimpleIcon';
+import {SizeInfo} from '@site/src/components/SizeInfo';
+
+# 💻 Application
+
+In this part, you will install the {APP_NAME} application.
+
+## 📥 Download <SizeInfo size={SIZE} />
+
+1. Download <SourceLink version={VERSION} size={SIZE} />
+2. Extract archive (use _Extract here_)
+3. Open folder <AppDirectory version={VERSION} />
+4. Proceed to next steps
+
+## 🔮 Virtual environment
+
+### `venv` on <SimpleIcon icon="windows10" color="#00ADEF" /> Windows
+
+Double click on `start.bat` and wait for `venv` creation.
+
+### `venv` on <SimpleIcon icon="ubuntu" color="#E95420" /> Ubuntu / <SimpleIcon icon="apple" color="#BFBFBF" /> macOS
+
+1. Open a new terminal
+2. Type `cd` followed by a `<space>` and the path to the <AppDirectory
+       version={VERSION} /> folder
+   :::tip
+   You can drag and drop the folder icon into your terminal instead of typing.
+   :::
+
+#### Create `venv`
+
+Enter the following command to create a virtual environment
+
+```bash
+python3.10 -m venv venv
+```
+
+#### Activate `venv`
+
+Enter the following command to activate the virtual environment
+
+```bash
+. venv/bin/activate
+```
+
+## 🧩 Modules <SizeInfo size={'~14 GB'} />
+
+### Modules on <SimpleIcon icon="windows10" color="#00ADEF" /> Windows
+
+Install all modules at once by using the following command
+
+```powershell
+pnpm i; pnpm install:front; pnpm install:processing:windows
+```
+
+:::tip
+If you have a compatible GPU, you can install extra dependencies to accelerate
+processing
+
+```bash
+pnpm install:processing:cuda:windows
+```
+
+:::
+
+### Modules on <SimpleIcon icon="ubuntu" color="#E95420" /> Ubuntu / <SimpleIcon icon="apple" color="#BFBFBF" /> macOS
+
+Install all modules at once by using the following command
+
+```bash
+pnpm i && \
+pnpm install:front && \
+pnpm install:processing
+```
+
+:::tip
+If you have a compatible GPU, you can install extra dependencies to accelerate
+processing
+
+```bash
+pnpm install:processing:cuda
+```
+
+:::
+
+## ⏭️ Continue
+
+Go to [🧩 Modules](../../modules/index.mdx)

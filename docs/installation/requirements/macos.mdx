@@ -1,0 +1,68 @@
+---
+sidebar_position: 3
+title: macOS
+---
+
+import {APP_NAME} from '@site/constants';
+import {SimpleIcon} from '@site/src/components/SimpleIcon';
+
+# <SimpleIcon icon="apple" color="#BFBFBF" /> macOS
+
+The following steps have been tested on macOS 13, and macOS 14
+
+## <SimpleIcon icon="homebrew" color="#FBB040" /> Homebrew
+
+Using the package manager <SimpleIcon icon="homebrew" color="#FBB040" />
+[Homebrew](https://brew.sh/) is recommended to install the application
+requirements
+
+### 🛠️ Procedure
+
+1. Navigate to [brew.sh](https://brew.sh/)
+2. Follow the instructions to install <SimpleIcon icon="homebrew"
+   color="#FBB040" /> Homebrew
+3. Open a terminal and proceed through next steps
+
+## 📦 Dependencies
+
+Run the below command to install the dependencies and update your path
+
+- <SimpleIcon
+    icon="c"
+    color="#003366"
+  /> [C compiler](https://gcc.gnu.org/)
+- <SimpleIcon
+    icon="curl"
+    color="#00A7E1"
+  /> [curl](https://curl.se/)
+- <SimpleIcon
+    icon="ffmpeg"
+    color="#00ADEF"
+  /> [ffmpeg](https://www.ffmpeg.org/)
+- <SimpleIcon
+    icon="python"
+    color="#FFD43B"
+  /> [Python](https://www.python.org/)
+- <SimpleIcon
+    icon="nodedotjs"
+    color="#68A063"
+  /> [Node.js](https://nodejs.org/)
+- <SimpleIcon
+    icon="pnpm"
+    color="#F06292"
+  /> [pnpm](https://pnpm.io/)
+
+```bash
+brew install gcc curl ffmpeg python@3.10 node@20 pnpm && \
+echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
+```
+
+### 📦 Xcode command line tools
+
+:::info
+This step is optional. Context is unclear.
+:::
+
+## ⏭️ Continue
+
+You can now close your terminal and [install {APP_NAME}](../application)

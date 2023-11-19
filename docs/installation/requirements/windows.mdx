@@ -1,0 +1,85 @@
+---
+sidebar_position: 1
+title: Windows
+---
+
+import {SimpleIcon} from '@site/src/components/SimpleIcon';
+import {APP_NAME} from '@site/constants';
+import {WinKey} from '@site/src/components/WinKey';
+
+# <SimpleIcon icon="windows10" color="#00ADEF" /> Windows
+
+The following steps have been tested on Windows 10, and Windows 11
+
+## <SimpleIcon icon="c" color="#003366" /> C compiler
+
+In order to install the
+[hdbscan](https://github.com/scikit-learn-contrib/hdbscan) python package later
+on, a C compiler will be required
+
+You can install it on Windows through the [Visual Studio Build
+Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
+### 🛠️ Procedure
+
+1. Navigate to <SimpleIcon icon="microsoft" color="#00A1F1" /> [Microsft C++
+   Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+2. Click on `Download Build Tools` to download the executable
+3. Run the executable (continue until you get the menu _Installing - Visual
+   Studio Build Tools..._)
+4. Tick `Desktop development with C++`
+5. Press `Install` (6 Gb of disk space will be used)
+6. Wait for completion, you can close the Visual Studio Build Tools window
+
+## <SimpleIcon icon="chocolatey" color="#724A7C" /> Chocolatey
+
+Using the package manager <SimpleIcon icon="chocolatey" color="#724A7C" />
+[Chocolatey](https://chocolatey.org/) is recommended to install the application
+requirements
+
+### 🛠️ Procedure
+
+1. Click on the start menu (or press <WinKey/> button on your keyboard)
+2. Type _<SimpleIcon icon="powershell" color="#012456" /> PowerShell_
+3. Right-click on the _<SimpleIcon icon="powershell" color="#012456" />
+   PowerShell_ icon
+4. Select _Run as Administrator_ (this will open a new elevated terminal)
+5. Navigate to <SimpleIcon icon="chocolatey" color="#724A7C" /> [Chocolatey installation page](https://chocolatey.org/install)
+6. Scroll to the installation command
+7. Copy the command
+8. Paste it in your terminal
+9. Press `Enter` (wait for the installation to complete)
+10. Keep the terminal open and process through the next steps
+
+## <SimpleIcon icon="python" color="#FFD43B" /> Python
+
+```powershell
+choco install python3 --version=3.10.11 -y
+```
+
+## 📦 Other dependencies
+
+- <SimpleIcon
+    icon="nodedotjs"
+    color="#68A063"
+  /> [Node.js](https://nodejs.org/)
+- <SimpleIcon
+    icon="pnpm"
+    color="#F06292"
+  /> [pnpm](https://pnpm.io/)
+- <SimpleIcon
+    icon="curl"
+    color="#00A7E1"
+  /> [curl](https://curl.se/)
+- <SimpleIcon
+    icon="ffmpeg"
+    color="#007ACC"
+  /> [ffmpeg](https://www.ffmpeg.org/)
+
+```powershell
+choco install nodejs-lts pnpm curl ffmpeg -y
+```
+
+## ⏭️ Continue
+
+You can now close your terminal and [install {APP_NAME}](../application)

@@ -32,7 +32,7 @@ If you have a prior version of Python and want to uninstall it. Run the
 following command
 
 ```powershell
-choco uninstall python3
+choco uninstall python3 -y
 ```
 
 :::
@@ -40,13 +40,13 @@ choco uninstall python3
 11. Install `Node.js`
 
 ```powershell
-choco install nodejs --version=16.20.0 -y
+choco install nodejs-lts --version=20.9.0 -y
 ```
 
 12. Install `ffmpeg`, `curl` and `pnpm`
 
 ```powershell
-choco install ffmpeg curl pnpm -y
+choco install nodejs-lts ffmpeg curl pnpm -y
 ```
 
 13. Close the shell window

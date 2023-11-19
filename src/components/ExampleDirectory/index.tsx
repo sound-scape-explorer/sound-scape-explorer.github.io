@@ -8,5 +8,5 @@ interface Props {
 
 export const ExampleDirectory = ({version}: Props) => {
   const {directory} = useVersionReplacer(version);
-  return <CodeInline>{directory}</CodeInline>;
+  return <CodeInline>{directory}/examples/campaigns</CodeInline>;
 };

@@ -1,0 +1,71 @@
+---
+sidebar_position: 2
+title: Ubuntu
+---
+
+import {APP_NAME} from '@site/constants';
+import {SimpleIcon, StorageIcon} from '@site/src/components/SimpleIcon';
+
+# <SimpleIcon icon="ubuntu" color="#E95420" /> Ubuntu
+
+The following steps have been tested on Ubuntu 20.04, and Ubuntu 22.04
+
+## <SimpleIcon icon="gnubash" color="#4F5256" /> Oneliner
+
+Using the following command will install all system dependencies
+
+```bash
+/bin/bash <(wget -qO- https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer/next/bamdad/bin/requirements-ubuntu.sh)
+```
+
+## Step by step installation
+
+### <SimpleIcon icon="ubuntu" color="#E95420" /> System update & small dependencies
+
+- <SimpleIcon
+    icon="curl"
+    color="#00A7E1"
+  /> [curl](https://curl.se/)
+- <SimpleIcon
+    icon="ffmpeg"
+    color="#007ACC"
+  /> [ffmpeg](https://www.ffmpeg.org/)
+- <StorageIcon /> [HDF5 Tools](https://support.hdfgroup.org/tools/)
+
+```bash
+sudo apt update && \
+sudo apt upgrade -y && \
+sudo apt install -y curl ffmpeg hdf5-tools
+```
+
+### <SimpleIcon icon="python" color="#FFD43B" /> Python
+
+```bash
+sudo apt update && \
+sudo apt install -y software-properties-common && \
+sudo add-apt-repository -y ppa:deadsnakes/ppa && \
+sudo apt install -y python3.10 python3.10-distutils python3.10-dev python3-pip python3.10-venv && \
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+```
+
+### <SimpleIcon icon="nodedotjs" color="#68A063" /> Node.js
+
+```bash
+sudo apt update && \
+sudo apt install -y ca-certificates curl gnupg && \
+sudo mkdir -p /etc/apt/keyrings && \
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && \
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list && \
+sudo apt update && \
+sudo apt install -y nodejs
+```
+
+### <SimpleIcon icon="pnpm" color="#F06292" /> pnpm
+
+```bash
+sudo npm -g i pnpm
+```
+
+## ⏭️ Continue
+
+You can now close your terminal and [install {APP_NAME}](../application)

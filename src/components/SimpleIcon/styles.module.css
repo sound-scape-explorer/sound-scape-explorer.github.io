@@ -1,0 +1,6 @@
+.icon {
+  height: 1em;
+  width: 1em;
+  transform: translate3d(0, 0.1em, 0);
+  margin: 0 0.1em;
+}
