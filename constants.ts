@@ -13,3 +13,5 @@ export const APP_DIRECTORY = 'sound-scape-explorer-VERSION';
 export const APP_DISCORD_INVITE = 'https://discord.gg/eRsQPDBeXg';
 export const APP_GITHUB_DISCUSSIONS =
   'https://github.com/sound-scape-explorer/sound-scape-explorer/discussions';
+export const CODE_GITHUB =
+  'https://github.com/sound-scape-explorer/sound-scape-explorer';

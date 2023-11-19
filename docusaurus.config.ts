@@ -15,6 +15,7 @@ import {
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
+  CODE_GITHUB,
 } from './constants';
 
 const config: Config = {
@@ -146,6 +147,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: APP_GITHUB,
+            },
+            {
+              label: `${APP_NAME} repository`,
+              href: CODE_GITHUB,
             },
           ],
         },
