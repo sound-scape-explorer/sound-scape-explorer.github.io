@@ -5,18 +5,25 @@ title: Ubuntu
 
 import {APP_NAME} from '@site/constants';
 import {
-  SimpleIcon,
   PythonIcon,
   StorageIcon,
-} from '@site/src/components/SimpleIcon';
+  UbuntuIcon,
+  BashIcon,
+  CurlIcon,
+  FfmpegIcon,
+  NodeIcon,
+  PnpmIcon,
+  TerminalIcon,
+} from '@site/src/components/Icons';
+import {SizeInfo} from '@site/src/components/SizeInfo';
 
-# <SimpleIcon icon="ubuntu" color="#E95420" /> Ubuntu
+# <UbuntuIcon /> Ubuntu
 
 The following steps have been tested on Ubuntu 20.04, and Ubuntu 22.04
 
-## <SimpleIcon icon="gnubash" color="#4F5256" /> Oneliner
+## <BashIcon /> Oneliner
 
-Using the following command will install all system dependencies
+Using the following command will install all system dependencies <SizeInfo size='~500 MB' />
 
 ```bash
 /bin/bash <(wget -qO- https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer/next/bamdad/bin/requirements-ubuntu.sh)
@@ -24,16 +31,10 @@ Using the following command will install all system dependencies
 
 ## Step by step installation
 
-### <SimpleIcon icon="ubuntu" color="#E95420" /> System update & small dependencies
+### <UbuntuIcon /> System update & small dependencies
 
-- <SimpleIcon
-    icon="curl"
-    color="#00A7E1"
-  /> [curl](https://curl.se/)
-- <SimpleIcon
-    icon="ffmpeg"
-    color="#007ACC"
-  /> [ffmpeg](https://www.ffmpeg.org/)
+- <CurlIcon /> [curl](https://curl.se/)
+- <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
 - <StorageIcon /> [HDF5 Tools](https://support.hdfgroup.org/tools/)
 
 ```bash
@@ -52,7 +53,7 @@ sudo apt install -y python3.10 python3.10-distutils python3.10-dev python3-pip p
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
-### <SimpleIcon icon="nodedotjs" color="#68A063" /> Node.js
+### <NodeIcon /> Node.js
 
 ```bash
 sudo apt update && \
@@ -64,12 +65,27 @@ sudo apt update && \
 sudo apt install -y nodejs
 ```
 
-### <SimpleIcon icon="pnpm" color="#F06292" /> pnpm
+### <PnpmIcon /> pnpm
 
 ```bash
 sudo npm -g i pnpm
 ```
 
+## 🗑️ Uninstall
+
+To remove the requirements, open a <TerminalIcon /> terminal window and run the
+command
+
+```bash
+sudo npm -g uninstall pnpm && \
+sudo apt remove -y curl ffmpeg hdf5-tools nodejs python3.10-distutils python3.10-dev python3-pip python3.10-venv && \
+sudo rm /etc/apt/sources.list.d/nodesource.list && \
+sudo rm /etc/apt/keyrings/nodesource.gpg && \
+sudo apt update && \
+sudo apt autoremove -y
+```
+
 ## ⏭️ Continue
 
-You can now close your terminal and [install {APP_NAME}](../application)
+You can now close your <TerminalIcon /> terminal and [install
+{APP_NAME}](../application)

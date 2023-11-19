@@ -5,11 +5,7 @@ interface Props {
   big?: boolean;
 }
 
-const defaultProps = {
-  big: false,
-};
-
-export const VisMenuIcon = ({name, big}: Props = defaultProps) => {
+export const VisMenuIcon = ({name, big = false}: Props) => {
   return (
     <img
       src={`/img/visualisation/menu/${name}.png`}
