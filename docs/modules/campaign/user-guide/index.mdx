@@ -1,0 +1,85 @@
+---
+sidebar_position: 2
+---
+
+import {ExcelIcon} from '@site/src/components/SimpleIcon';
+import {ExcelTab} from '@site/src/components/ExcelTab';
+
+# 📖 User guide
+
+## <ExcelIcon/> _Excel_ configuration
+
+### <ExcelTab background="#eeeeee">Help</ExcelTab>
+
+Find quick information in this tab.
+
+### <ExcelTab background="#ffffa6">Settings</ExcelTab>
+
+Describe your campaign settings in this tab.
+
+#### `audio_path` important note
+
+:::danger
+The `audio_path` on Windows **must not** contain spaces at the risk of breaking
+the audio server.
+
+If you already generated your processing data, you can fix the `audio_path`
+inside your configuration file and refresh the configuration to see the
+changes.
+
+This is a known blocking issue and a fix is being worked on.
+
+Sorry for the inconvenience!
+:::
+
+### <ExcelTab background="#ffffa6">Files</ExcelTab>
+
+Describe your file paths, sites, dates, and labels in this tab.
+
+### <ExcelTab background="#ffffa6">Bands</ExcelTab>
+
+Describe your filtering bands in this tab.
+
+### <ExcelTab background="#ffffa6">Integrations</ExcelTab>
+
+Describe your intervals to integrate in this tab.
+
+### <ExcelTab background="#ffffa6">Ranges</ExcelTab>
+
+Describe your date and time spans in this tab.
+
+### <ExcelTab background="#ffffa6">Trajectories</ExcelTab>
+
+Describe your trajectories in this tab.
+
+### <ExcelTab background="#b4c7dc">Extractors</ExcelTab>
+
+Define your extraction settings in this tab.
+
+See <ExcelTab background="#eeeeee">ListExtractors</ExcelTab> tab for available
+extractors.
+
+### <ExcelTab background="#b4c7dc">Digesters</ExcelTab>
+
+Define your _digesters_ (metrics) in this tab.
+
+See <ExcelTab background="#eeeeee">ListDigesters</ExcelTab> tab for available
+digesters.
+
+### <ExcelTab background="#b4c7dc">Reducers</ExcelTab>
+
+Define your reduction settings in this tab.
+
+See <ExcelTab background="#eeeeee">ListReducers</ExcelTab> tab for available
+reducers.
+
+### <ExcelTab background="#b4c7dc">Autoclusters</ExcelTab>
+
+Define your autoclustering settings in this tab.
+
+See <ExcelTab background="#eeeeee">ListAutoclusters</ExcelTab> tab for available
+autoclusters.
+
+## ⏭️ Continue
+
+You can now generate your data with the [Processing module](../../processing/)

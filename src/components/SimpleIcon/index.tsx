@@ -15,6 +15,20 @@ export const SimpleIcon = ({icon, color}: Props) => (
   />
 );
 
+export const ExcelIcon = () => (
+  <SimpleIcon
+    icon="microsoftexcel"
+    color="#217346"
+  />
+);
+
+export const PythonIcon = () => (
+  <SimpleIcon
+    icon="python"
+    color="#FFD43B"
+  />
+);
+
 export const StorageIcon = () => (
   <Icon
     className={styles.icon}
