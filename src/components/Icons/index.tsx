@@ -148,3 +148,11 @@ export const NumPyIcon = () => (
     color="#4D77CF"
   />
 );
+
+export const AppIcon = () => (
+  <img
+    className={styles.icon}
+    src="/img/logo.png"
+    role="img"
+  />
+);
