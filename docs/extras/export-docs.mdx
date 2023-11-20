@@ -1,0 +1,34 @@
+import {VERSION} from '../env';
+import {ExportingDocsBlock} from '@site/src/components/ExportingDocsBlock';
+import {ExportingBlogBlock} from '@site/src/components/ExportingBlogBlock';
+
+# 📤 Export Docs
+
+The exporting functionality relies on the
+[jean-humann/docs-to-pdf](https://github.com/jean-humann/docs-to-pdf) package.
+
+An active internet connection is necessary to retrieve data for exporting.
+
+## Exporting Documentation as PDF
+
+Use the command below to export the entire documentation to PDF:
+
+:::note
+
+Note that certain hypertext links may not be converted.
+
+:::
+
+To download the current version of the documentation, execute:
+
+<ExportingDocsBlock version={VERSION} />
+
+For the upcoming unreleased version, execute:
+
+<ExportingDocsBlock next />
+
+## Exporting Blog as PDF
+
+Execute the command below to export the blog content to PDF:
+
+<ExportingBlogBlock />

@@ -156,3 +156,24 @@ export const AppIcon = () => (
     role="img"
   />
 );
+
+export const FirefoxIcon = () => (
+  <SimpleIcon
+    icon="firefoxbrowser"
+    color="#D86E1C"
+  />
+);
+
+export const ChromeIcon = () => (
+  <SimpleIcon
+    icon="googlechrome"
+    color="#1A73E9"
+  />
+);
+
+export const SafariIcon = () => (
+  <SimpleIcon
+    icon="safari"
+    color="#0FB0E6"
+  />
+);

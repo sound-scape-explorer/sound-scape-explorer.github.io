@@ -1,8 +1,0 @@
-{
-  "label": "Guides",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "The specific user guides by domains and modules."
-  }
-}
