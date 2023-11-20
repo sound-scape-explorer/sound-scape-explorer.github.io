@@ -21,33 +21,34 @@ import {WinKey} from '@site/src/components/WinKey';
 
 # <WindowsIcon /> Windows
 
-The following steps have been tested on Windows 10, and Windows 11
+The steps provided below have been tested on Windows 10 and Windows 11.
 
-## <CIcon /> C compiler
+## <CIcon /> C Compiler
 
 In order to install the
 [hdbscan](https://github.com/scikit-learn-contrib/hdbscan) python package later
-on, a C compiler will be required
+on, a C compiler will be required.
 
 You can install it on Windows through the [Visual Studio Build
-Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
 ### 🛠️ Procedure
 
-1. Navigate to <MicrosoftIcon /> [Microsft C++
-   Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+1. Navigate to <MicrosoftIcon /> [Microsft C++ Build
+   Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 2. Click on `Download Build Tools` to download the executable
-3. Run the executable (continue until you get the menu _Installing - Visual
+3. Run the executable (proceed until you get the menu _Installing - Visual
    Studio Build Tools..._)
-4. Tick `Desktop development with C++`
-5. Press `Install` (6 Gb of disk space will be used)
-6. Wait for completion, you can close the Visual Studio Build Tools window
+4. Check the first box for `Desktop development with C++`
+5. Click on `Install` (requires 6 Gb of disk space)
+6. Wait for the installation to complete. Once done, you can close the Visual
+   Studio Build Tools window
 
 ## <ChocolateyIcon /> Chocolatey
 
-Using the package manager <ChocolateyIcon />
-[Chocolatey](https://chocolatey.org/) is recommended to install the application
-requirements
+We recommend using <ChocolateyIcon /> [Chocolatey](https://chocolatey.org/) as
+a package manager to install the necessary requirements for the application on
+Windows.
 
 ### 🛠️ Procedure
 
@@ -55,41 +56,48 @@ requirements
 2. Type _<PowershellIcon /> PowerShell_
 3. Right-click on the _<PowershellIcon /> PowerShell_ icon
 4. Select _Run as Administrator_ (this will open a new elevated terminal)
-5. Navigate to <ChocolateyIcon /> [Chocolatey installation page](https://chocolatey.org/install)
-6. Scroll to the installation command
+5. Navigate to <ChocolateyIcon /> [Chocolatey installation
+   page](https://chocolatey.org/install)
+6. Scroll to find the installation command
 7. Copy the command
-8. Paste it in your terminal
-9. Press `Enter` (wait for the installation to complete)
-10. Keep the terminal open and process through the next steps
+8. Paste it in your elevated terminal
+9. Press `Enter` to execute the command. Wait for the installation to finish.
+10. Keep the terminal open for subsequent steps
 
 ## <PythonIcon /> Python
+
+For <PythonIcon /> Python installation, use the following command:
 
 ```powershell
 choco install python3 --version=3.10.11 -y
 ```
 
-## 📦 Other dependencies
+## 📦 Other Dependencies
+
+Install the additional dependencies required by the application:
 
 - <NodeIcon /> [Node.js](https://nodejs.org/)
 - <PnpmIcon /> [pnpm](https://pnpm.io/)
 - <CurlIcon /> [curl](https://curl.se/)
 - <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
 
+Use the command below to install these dependencies:
+
 ```powershell
 choco install nodejs-lts pnpm curl ffmpeg -y
 ```
 
-## 🗑️ Uninstall
+## 🗑️ Uninstallation
 
-To remove the requirements, open an elevated <PowershellIcon /> PowerShell
-window (refer to <ChocolateyIcon /> [Chocolatey](#-chocolatey)) and run the
-command
+To remove the installed requirements, open an elevated <PowershellIcon />
+PowerShell window (as described in the <ChocolateyIcon />
+[Chocolatey](#-chocolatey) section) and run the following command:
 
 ```powershell
 choco uninstall python3 nodejs-lts pnpm curl ffmpeg -y
 ```
 
-## ⏭️ Continue
+## ⏭️ Next step
 
-You can now close your <TerminalIcon /> terminal and [install
-{APP_NAME}](../application)
+Once completed, close your <TerminalIcon /> terminal and proceed to the
+[installation of {APP_NAME}](../application).

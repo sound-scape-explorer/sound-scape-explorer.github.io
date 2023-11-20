@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import {ExcelIcon} from '@site/src/components/Icons';
+import {ExcelIcon, WindowsIcon} from '@site/src/components/Icons';
 import {ExcelTab} from '@site/src/components/ExcelTab';
 
 # 📖 User guide
@@ -10,81 +10,82 @@ import {ExcelTab} from '@site/src/components/ExcelTab';
 ## <ExcelIcon/> _Excel_ configuration
 
 :::tip
-Paths described in the <ExcelIcon />
-configuration are **relative** to this file.
+Paths referenced in the <ExcelIcon /> configuration are **relative** to this
+file.
 :::
 
 ### <ExcelTab background="#eeeeee">Help</ExcelTab>
 
-Find quick information in this tab.
+This tab provides quick information.
 
 ### <ExcelTab background="#ffffa6">Settings</ExcelTab>
 
-Describe your campaign settings in this tab.
+Specify your campaign settings in this tab.
 
-#### `audio_path` important note
+#### `audio_path` Important Note
 
 :::danger
-The `audio_path` on Windows **must not** contain spaces at the risk of breaking
-the audio server.
+For <WindowsIcon /> Windows users, ensure that the `audio_path` does **not**
+contain spaces to avoid disrupting the audio server's functionality.
 
-If you already generated your processing data, you can fix the `audio_path`
-inside your configuration file and refresh the configuration to see the
+If you've already generated processing data, rectify the `audio_path` within
+your configuration file and **refresh the configuration** to implement the
 changes.
 
-This is a known blocking issue and a fix is being worked on.
+This issue is known and a fix is currently under development.
 
-Sorry for the inconvenience!
+Apologies for any inconvenience caused!
 :::
 
 ### <ExcelTab background="#ffffa6">Files</ExcelTab>
 
-Describe your file paths, sites, dates, and labels in this tab.
+Specify file paths, sites, dates, and labels in this tab.
 
 ### <ExcelTab background="#ffffa6">Bands</ExcelTab>
 
-Describe your filtering bands in this tab.
+Specify your filtering bands in this tab.
 
 ### <ExcelTab background="#ffffa6">Integrations</ExcelTab>
 
-Describe your intervals to integrate in this tab.
+Specify integration intervals in this tab.
 
 ### <ExcelTab background="#ffffa6">Ranges</ExcelTab>
 
-Describe your date and time spans in this tab.
+Specify dates and time spans in this tab.
 
 ### <ExcelTab background="#ffffa6">Trajectories</ExcelTab>
 
-Describe your trajectories in this tab.
+Specify trajectories in this tab.
 
 ### <ExcelTab background="#b4c7dc">Extractors</ExcelTab>
 
-Define your extraction settings in this tab.
+Configure extraction settings in this tab.
 
-See <ExcelTab background="#eeeeee">ListExtractors</ExcelTab> tab for available
-extractors.
+Refer to the <ExcelTab background="#eeeeee">ListExtractors</ExcelTab> tab for
+available extractors.
 
 ### <ExcelTab background="#b4c7dc">Digesters</ExcelTab>
 
-Define your _digesters_ (metrics) in this tab.
+Configure _digesters_ (metrics) in this tab.
 
-See <ExcelTab background="#eeeeee">ListDigesters</ExcelTab> tab for available
-digesters.
+Refer to the <ExcelTab background="#eeeeee">ListDigesters</ExcelTab> tab for
+available digesters.
 
 ### <ExcelTab background="#b4c7dc">Reducers</ExcelTab>
 
-Define your reduction settings in this tab.
+Configure reduction settings in this tab.
 
-See <ExcelTab background="#eeeeee">ListReducers</ExcelTab> tab for available
-reducers.
+Refer to the <ExcelTab background="#eeeeee">ListReducers</ExcelTab> tab for
+available reducers.
 
 ### <ExcelTab background="#b4c7dc">Autoclusters</ExcelTab>
 
-Define your autoclustering settings in this tab.
+Configure autoclustering settings in this tab.
 
-See <ExcelTab background="#eeeeee">ListAutoclusters</ExcelTab> tab for available
-autoclusters.
+Refer to the <ExcelTab background="#eeeeee">ListAutoclusters</ExcelTab> tab for
+available autoclusters.
 
-## ⏭️ Continue
+## ⏭️ Next Step
 
-You can now generate your data with the 🧮 [Processing module](../processing/)
+You can now generate your data using the 🧮 [Processing](../../processing)
+module.

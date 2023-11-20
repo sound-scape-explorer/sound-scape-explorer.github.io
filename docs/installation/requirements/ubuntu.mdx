@@ -19,19 +19,23 @@ import {SizeInfo} from '@site/src/components/SizeInfo';
 
 # <UbuntuIcon /> Ubuntu
 
-The following steps have been tested on Ubuntu 20.04, and Ubuntu 22.04
+The steps provided below have been tested on Ubuntu 20.04 and Ubuntu 22.04.
 
-## <BashIcon /> Oneliner
+## <BashIcon /> Oneliner <SizeInfo size='~500 MB' />
 
-Using the following command will install all system dependencies <SizeInfo size='~500 MB' />
+Execute this single command to automatically install all necessary system
+dependencies, consuming roughly 500 MB of storage:
 
 ```bash
 /bin/bash <(wget -qO- https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer/next/bamdad/bin/requirements-ubuntu.sh)
 ```
 
-## Step by step installation
+## Step-by-Step Installation
 
-### <UbuntuIcon /> System update & small dependencies
+### <UbuntuIcon /> System Update & Essential Dependencies
+
+This section ensures your system is updated and equipped with useful
+dependencies:
 
 - <CurlIcon /> [curl](https://curl.se/)
 - <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
@@ -45,6 +49,8 @@ sudo apt install -y curl ffmpeg hdf5-tools
 
 ### <PythonIcon /> Python
 
+Install <PythonIcon /> Python and related components:
+
 ```bash
 sudo apt update && \
 sudo apt install -y software-properties-common && \
@@ -54,6 +60,8 @@ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
 ### <NodeIcon /> Node.js
+
+Install <NodeIcon /> Node.js with the following command:
 
 ```bash
 sudo apt update && \
@@ -67,14 +75,16 @@ sudo apt install -y nodejs
 
 ### <PnpmIcon /> pnpm
 
+Install <PnpmIcon /> pnpm with the following command:
+
 ```bash
 sudo npm -g i pnpm
 ```
 
-## 🗑️ Uninstall
+## 🗑️ Uninstallation
 
-To remove the requirements, open a <TerminalIcon /> terminal window and run the
-command
+To remove the installed requirements, open a <TerminalIcon /> terminal window
+and execute the following command:
 
 ```bash
 sudo npm -g uninstall pnpm && \
@@ -85,7 +95,7 @@ sudo apt update && \
 sudo apt autoremove -y
 ```
 
-## ⏭️ Continue
+## ⏭️ Next Step
 
-You can now close your <TerminalIcon /> terminal and [install
-{APP_NAME}](../application)
+Upon completion, close your <TerminalIcon /> terminal and proceed with the
+[installation of {APP_NAME}](../application).

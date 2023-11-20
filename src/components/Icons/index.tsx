@@ -141,3 +141,10 @@ export const TerminalIcon = () => (
     color="#202B2D"
   />
 );
+
+export const NumPyIcon = () => (
+  <SimpleIcon
+    icon="numpy"
+    color="#4D77CF"
+  />
+);

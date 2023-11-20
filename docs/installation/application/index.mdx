@@ -16,19 +16,22 @@ import {SizeInfo} from '@site/src/components/SizeInfo';
 
 # 💻 Application
 
-In this part, you will install the {APP_NAME} application.
+This section will guide you through the installation process for the {APP_NAME}
+application.
 
 ## 📥 Download <SizeInfo size={SIZE} />
 
 1. Download <SourceLink version={VERSION} size={SIZE} />
-2. Extract archive (use _Extract here_)
-3. Open folder <AppDirectory version={VERSION} />
-4. Proceed to next steps
+2. Extract the archive (use _Extract here_)
+3. Open the folder <AppDirectory version={VERSION} />
+4. Proceed to the next steps
 
-## 🔮 Virtual environment
+## 🔮 Virtual Environment
 
-A virtual environment is created where <PythonIcon /> Python dependencies will
-be installed.
+A virtual environment is established to manage <PythonIcon /> Python
+dependencies.
+
+It needs creation only once but can be activated multiple times.
 
 ### `venv` on <WindowsIcon /> Windows
 
@@ -36,16 +39,16 @@ Double click on `start.bat` and wait for `venv` creation and activation.
 
 ### `venv` on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
 
-1. Open a new terminal
+1. Open a new terminal session
 2. Type `cd` followed by a `<space>` and the path to the <AppDirectory
        version={VERSION} /> folder
    :::tip
-   You can drag and drop the folder icon into your terminal instead of typing.
+   Instead of manual entry, drag and drop the folder icon into your terminal.
    :::
 
 #### Create `venv`
 
-Enter the following command to create a virtual environment
+Execute the following command to create a virtual environment:
 
 ```bash
 python3.10 -m venv venv
@@ -53,25 +56,31 @@ python3.10 -m venv venv
 
 #### Activate `venv`
 
-Enter the following command to activate the virtual environment
+Run this command to activate the virtual environment:
 
 ```bash
 . venv/bin/activate
 ```
 
+:::tip
+You will need to repeat this step each time you open a new terminal session.
+:::
+
 ## 🧩 Modules <SizeInfo size={'~14 GB'} />
+
+Modules constitute the components of {APP_NAME} and occupy approximately 14 GB
+of disk space.
 
 ### Modules on <WindowsIcon /> Windows
 
-Install all modules at once by using the following command
+Install all modules sequentially using the following command:
 
 ```powershell
 pnpm i; pnpm install:front; pnpm install:processing:windows
 ```
 
 :::tip
-If you have a compatible GPU, you can install extra dependencies to accelerate
-processing
+For accelerated processing with a compatible GPU, include additional dependencies:
 
 ```bash
 pnpm install:processing:cuda:windows
@@ -81,7 +90,7 @@ pnpm install:processing:cuda:windows
 
 ### Modules on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
 
-Install all modules at once by using the following command
+Install all modules at once with this command:
 
 ```bash
 pnpm i && \
@@ -90,8 +99,7 @@ pnpm install:processing
 ```
 
 :::tip
-If you have a compatible GPU, you can install extra dependencies to accelerate
-processing
+For accelerated processing with a compatible GPU, include additional dependencies:
 
 ```bash
 pnpm install:processing:cuda
@@ -101,9 +109,9 @@ pnpm install:processing:cuda
 
 ## 🗑️ Uninstall
 
-To remove the application and its dependencies, simply delete the <AppDirectory
+To remove the application and its dependencies, delete the <AppDirectory
 version={VERSION} /> folder.
 
 ## ⏭️ Continue
 
-Go to 🧩 [Modules](../../modules/index.mdx)
+Proceed to the 🧩 [Modules](../../modules/index.mdx) documentation.

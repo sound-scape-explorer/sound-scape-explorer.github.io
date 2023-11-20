@@ -1,13 +1,11 @@
 .default {
-  width: 42px;
-  transform: translate3d(0, 5px, 0);
-  border-radius: 4px;
-  margin-right: 4px;
+  width: 3em;
+  transform: translate3d(0, 0.2em, 0);
+  border-radius: 5px;
 }
 
 .big {
-  width: 54px;
-  transform: translate3d(0, 4px, 0);
-  border-radius: 4px;
-  margin-right: 2px;
+  width: 4em;
+  transform: translate3d(0, 0.2em, 0);
+  border-radius: 5px;
 }
