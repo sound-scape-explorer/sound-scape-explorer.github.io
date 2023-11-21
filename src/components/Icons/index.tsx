@@ -177,3 +177,12 @@ export const SafariIcon = () => (
     color="#0FB0E6"
   />
 );
+
+export const PwaIcon = () => <SimpleIcon icon="pwa" />;
+
+export const InstallIcon = () => (
+  <Icon
+    className={styles.icon}
+    icon="ic:baseline-install-desktop"
+  />
+);

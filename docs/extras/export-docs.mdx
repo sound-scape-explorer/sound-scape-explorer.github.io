@@ -1,15 +1,29 @@
 import {VERSION} from '../env';
+import {APP_NAME} from '@site/constants';
 import {ExportingDocsBlock} from '@site/src/components/ExportingDocsBlock';
 import {ExportingBlogBlock} from '@site/src/components/ExportingBlogBlock';
+import {
+  AppIcon,
+  PwaIcon,
+  InstallIcon,
+  ChromeIcon,
+} from '@site/src/components/Icons';
 
-# 📤 Export Docs
+# 🔌 Offline Access
 
-The exporting functionality relies on the
-[jean-humann/docs-to-pdf](https://github.com/jean-humann/docs-to-pdf) package.
+## <PwaIcon /> Progressive Web App
 
+<AppIcon /> {APP_NAME} Docs can be installed as a <PwaIcon /> Progressive Web
+App using <ChromeIcon /> Chrome browser.
+
+Click on the <InstallIcon /> icon in the address bar to install this portal in
+standalone mode with offline caching.
+
+## 📤 Export Documentation
+
+:::warning
 An active internet connection is necessary to retrieve data for exporting.
-
-## Exporting Documentation as PDF
+:::
 
 :::note
 Certain hypertext links may not be converted.
@@ -25,7 +39,11 @@ For the upcoming unreleased version, execute:
 
 <ExportingDocsBlock next />
 
-## Exporting Blog as PDF
+## 📤 Export Blog
+
+:::warning
+An active internet connection is necessary to retrieve data for exporting.
+:::
 
 Execute the command below to export the blog content to PDF:
 
