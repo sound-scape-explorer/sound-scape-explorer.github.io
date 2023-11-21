@@ -49,6 +49,9 @@ devDependencies:
   '@docusaurus/module-type-aliases':
     specifier: 3.0.0
     version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
+  '@docusaurus/plugin-google-gtag':
+    specifier: ^3.0.0
+    version: 3.0.0(eslint@8.53.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@docusaurus/plugin-pwa':
     specifier: ^3.0.0
     version: 3.0.0(eslint@8.53.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
@@ -1864,7 +1867,6 @@ packages:
       - utf-8-validate
       - vue-template-compiler
       - webpack-cli
-    dev: false
 
   /@docusaurus/plugin-google-tag-manager@3.0.0(eslint@8.53.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2):
     resolution: {integrity: sha512-lytgu2eyn+7p4WklJkpMGRhwC29ezj4IjPPmVJ8vGzcSl6JkR1sADTHLG5xWOMuci420xZl9dGEiLTQ8FjCRyA==}
@@ -2820,7 +2822,6 @@ packages:
 
   /@types/gtag.js@0.0.12:
     resolution: {integrity: sha512-YQV9bUsemkzG81Ea295/nF/5GijnD2Af7QhEofh7xu+kvCN6RdodgNwwGWXB5GMI3NoyvQo0odNctoH/qLMIpg==}
-    dev: false
 
   /@types/hast@2.3.8:
     resolution: {integrity: sha512-aMIqAlFd2wTIDZuvLbhUT+TGvMxrNC8ECUIVtH6xxy0sQLs3iu6NO8Kp/VT5je7i5ufnebXzdV1dNDMnvaH6IQ==}
