@@ -186,3 +186,17 @@ export const InstallIcon = () => (
     icon="ic:baseline-install-desktop"
   />
 );
+
+export const DiscordIcon = () => (
+  <SimpleIcon
+    icon="discord"
+    color="#5865F2"
+  />
+);
+
+export const GithubIcon = () => (
+  <SimpleIcon
+    icon="github"
+    color="#181717"
+  />
+);
