@@ -25,7 +25,7 @@ export const ExcelIcon = () => (
 export const PythonIcon = () => (
   <SimpleIcon
     icon="python"
-    color="#FFD43B"
+    color="#3776AB"
   />
 );
 
@@ -40,7 +40,7 @@ export const StorageIcon = () => (
 export const WindowsIcon = () => (
   <SimpleIcon
     icon="windows10"
-    color="#00ADEF"
+    color="#0078D6"
   />
 );
 
@@ -54,7 +54,7 @@ export const UbuntuIcon = () => (
 export const MacOsIcon = () => (
   <SimpleIcon
     icon="apple"
-    color="#BFBFBF"
+    color="#000000"
   />
 );
 
@@ -68,84 +68,84 @@ export const HomebrewIcon = () => (
 export const CIcon = () => (
   <SimpleIcon
     icon="c"
-    color="#003366"
+    color="#A8B9CC"
   />
 );
 
 export const CurlIcon = () => (
   <SimpleIcon
     icon="curl"
-    color="#00A7E1"
+    color="#073551"
   />
 );
 
 export const FfmpegIcon = () => (
   <SimpleIcon
     icon="ffmpeg"
-    color="#00ADEF"
+    color="#007808"
   />
 );
 
 export const NodeIcon = () => (
   <SimpleIcon
     icon="nodedotjs"
-    color="#68A063"
+    color="#339933"
   />
 );
 
 export const PnpmIcon = () => (
   <SimpleIcon
     icon="pnpm"
-    color="#F06292"
+    color="#F69220"
   />
 );
 
 export const BashIcon = () => (
   <SimpleIcon
     icon="gnubash"
-    color="#4F5256"
+    color="#4EAA25"
   />
 );
 
 export const MicrosoftIcon = () => (
   <SimpleIcon
     icon="microsoft"
-    color="#00A1F1"
+    color="#5E5E5E"
   />
 );
 
 export const ChocolateyIcon = () => (
   <SimpleIcon
     icon="chocolatey"
-    color="#724A7C"
+    color="#80B5E3"
   />
 );
 
 export const PowershellIcon = () => (
   <SimpleIcon
     icon="powershell"
-    color="#012456"
+    color="#5391FE"
   />
 );
 
 export const XcodeIcon = () => (
   <SimpleIcon
     icon="xcode"
-    color="#007ACC"
+    color="#147EFB"
   />
 );
 
 export const TerminalIcon = () => (
   <SimpleIcon
     icon="iterm2"
-    color="#202B2D"
+    color="#000000"
   />
 );
 
 export const NumPyIcon = () => (
   <SimpleIcon
     icon="numpy"
-    color="#4D77CF"
+    color="#013243"
   />
 );
 
@@ -160,21 +160,21 @@ export const AppIcon = () => (
 export const FirefoxIcon = () => (
   <SimpleIcon
     icon="firefoxbrowser"
-    color="#D86E1C"
+    color="#FF7139"
   />
 );
 
 export const ChromeIcon = () => (
   <SimpleIcon
     icon="googlechrome"
-    color="#1A73E9"
+    color="#4285F4"
   />
 );
 
 export const SafariIcon = () => (
   <SimpleIcon
     icon="safari"
-    color="#0FB0E6"
+    color="#000000"
   />
 );
 
