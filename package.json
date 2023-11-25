@@ -27,7 +27,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-feather": "^2.0.10",
-    "react-player": "^2.13.0"
+    "react-player": "^2.13.0",
+    "remove": "^0.1.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.0",
@@ -40,6 +41,7 @@
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.1.0",
     "typescript": "~5.2.2"
   },
   "browserslist": {
