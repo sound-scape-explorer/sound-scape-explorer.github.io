@@ -154,6 +154,7 @@ export const AppIcon = () => (
     className={styles.icon}
     src="/img/logo.png"
     role="img"
+    alt="App Icon"
   />
 );
 
