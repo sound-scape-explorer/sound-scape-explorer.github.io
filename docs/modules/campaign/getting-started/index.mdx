@@ -2,10 +2,12 @@
 sidebar_position: 1
 ---
 
-import {VERSION} from '../../../env.ts';
+
 import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
-import {ExcelIcon} from '@site/src/components/Icons';
 import {ExcelFile} from '@site/src/components/ExcelFile';
+import {ExcelIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+import {VERSION} from '../../../env.ts';
 
 # 🏃 Getting started
 
@@ -18,10 +20,23 @@ The <ExcelIcon /> configuration is in `.xlsx` format.
 
 ## 📥 Download
 
-Download the default <ExcelIcon /> <ExcelFile version={VERSION}>v{VERSION} configuration</ExcelFile>.
+<Fragment>
+  Download the default <ExcelIcon />{' '}
+  <ExcelFile version={VERSION}>v{VERSION} configuration</ExcelFile>.
+</Fragment>
 
 ## 🏠 Local
 
-1. Go to <ExampleDirectory version={VERSION} />
-2. Open the `new-campaign` folder
-3. Duplicate and modify the default <ExcelIcon /> `config.xlsx`
+<ol>
+  <li>
+    {'Go to '}
+    <ExampleDirectory version={VERSION} />
+  </li>
+  <li>Open the `new-campaign` folder</li>
+  <li>
+    {'Duplicate and modify the default '}
+    <ExcelIcon />
+    {'  '}
+    <code>config.xlsx</code>
+  </li>
+</ol>

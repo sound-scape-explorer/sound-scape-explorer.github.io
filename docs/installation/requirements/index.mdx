@@ -2,37 +2,40 @@
 sidebar_position: 1
 ---
 
+
 import {APP_NAME} from '@site/constants';
-import {
-  AppIcon,
-  PythonIcon,
-  NodeIcon,
-  PnpmIcon,
-  CIcon,
-  CurlIcon,
-  FfmpegIcon,
-  WindowsIcon,
-  UbuntuIcon,
-  MacOsIcon,
-} from '@site/src/components/Icons';
+import {Dependencies} from '@site/src/components/Dependencies';
+import {AppIcon, MacOsIcon, UbuntuIcon, WindowsIcon,} from '@site/src/components/Icons';
+import {Fragment} from 'react';
 
 # 📋 Requirements
 
-For the installation of the <AppIcon /> {APP_NAME} application, the following
-prerequisites must be present on your system:
+<Fragment>
+  For the installation of the <AppIcon /> {APP_NAME} application, the following
+  prerequisites must be present on your system:
+</Fragment>
 
-- <PythonIcon /> [Python](https://www.python.org/) 3.10 and above
-- <NodeIcon /> [Node.js](https://nodejs.org/)
-- <PnpmIcon /> [pnpm](https://pnpm.io/)
-- <CIcon /> [C compiler](https://gcc.gnu.org/)
-- <CurlIcon /> [curl](https://curl.se/)
-- <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
+<Dependencies />
 
 ## 🌐 Supported Operating Systems
 
 Refer to the following links for detailed instructions on installing
 requirements based on your operating system:
 
-- <WindowsIcon /> [Windows](./windows)
-- <UbuntuIcon /> [Ubuntu](./ubuntu)
-- <MacOsIcon /> [macOS](./macos)
+<ul>
+  <li>
+    <WindowsIcon />
+    {'  '}
+    <a href={'./windows'}>Windows</a>
+  </li>
+  <li>
+    <UbuntuIcon />
+    {'  '}
+    <a href={'./ubuntu'}>Ubuntu</a>
+  </li>
+  <li>
+    <MacOsIcon />
+    {'  '}
+    <a href={'./macos'}>macOS</a>
+  </li>
+</ul>

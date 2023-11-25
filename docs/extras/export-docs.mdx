@@ -1,23 +1,25 @@
-import {VERSION} from '../env';
 import {APP_NAME} from '@site/constants';
-import {ExportingDocsBlock} from '@site/src/components/ExportingDocsBlock';
 import {ExportingBlogBlock} from '@site/src/components/ExportingBlogBlock';
-import {
-  AppIcon,
-  PwaIcon,
-  InstallIcon,
-  ChromeIcon,
-} from '@site/src/components/Icons';
+import {ExportingDocsBlock} from '@site/src/components/ExportingDocsBlock';
+import {AppIcon, ChromeIcon, InstallIcon, PwaIcon,} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+import {VERSION} from '../env';
 
 # 🔌 Offline Access
 
-## <PwaIcon /> Progressive Web App
+<h2>
+  <PwaIcon /> Progressive Web App
+</h2>
 
-<AppIcon /> {APP_NAME} Docs can be installed as a <PwaIcon /> Progressive Web
-App using <ChromeIcon /> Chrome browser.
+<Fragment>
+  <AppIcon /> {APP_NAME} Docs can be installed as a <PwaIcon /> Progressive Web
+  App using <ChromeIcon /> Chrome browser.
+</Fragment>
 
-Click on the <InstallIcon /> icon in the address bar to install this portal in
-standalone mode with offline caching.
+<Fragment>
+  Click on the <InstallIcon /> icon in the address bar to install this portal in
+  standalone mode with offline caching.
+</Fragment>
 
 ## 📤 Export Documentation
 

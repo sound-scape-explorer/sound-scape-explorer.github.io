@@ -1,15 +1,21 @@
-import {UbuntuIcon, StorageIcon} from '@site/src/components/Icons';
+import {StorageIcon, UbuntuIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
 
 # Repack storage
 
-:::warning
-Currently, this command is exclusively available on <UbuntuIcon /> Ubuntu
-systems.
-:::
+<Fragment>
+  :::warning
+  Currently, this command is exclusively available on <UbuntuIcon /> Ubuntu
+  systems.
+  :::
 
-When you frequently overwrite your <StorageIcon /> storage file, the space
-previously occupied by the deleted dataset isn't immediately freed due to HDF5
-technology's workings.
+</Fragment>
+
+<p>
+  When you frequently overwrite your <StorageIcon /> storage file, the space
+  previously occupied by the deleted dataset isn't immediately freed due to HDF5
+  technology's workings.
+</p>
 
 Repacking enables the creation of a new file containing your data but optimized
 for the smallest possible size.

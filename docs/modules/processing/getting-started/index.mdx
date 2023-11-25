@@ -2,9 +2,11 @@
 sidebar_position: 1
 ---
 
-import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
+
 import {AppInline} from '@site/src/components/AppInline';
+import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
 import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
+import {Fragment} from 'react';
 
 # 🏃 Getting started
 
@@ -12,9 +14,25 @@ import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBloc
 
 To generate data, ensure you have:
 
-- Ran the 🔧 [Installation](../../../installation)
-- Completed a <ExcelIcon /> configuration appropriately
-- An active <PythonIcon /> Python `venv` in a terminal window
+<ul>
+  <li>
+    <Fragment>Ran the 🔧 [Installation](../../../installation)</Fragment>
+  </li>
+  <li>
+    <Fragment>
+      {'Completed a '}
+      <ExcelIcon />
+      {' configuration appropriately'}
+    </Fragment>
+  </li>
+  <li>
+    {'An active '}
+    <PythonIcon />
+    {' Python '}
+    <code>venv</code>
+    {' in a terminal window'}
+  </li>
+</ul>
 
 :::info
 [Learn how to activate 🔮 virtual
@@ -23,10 +41,24 @@ environments](../../../installation/application#-virtual-environment)
 
 ## 🚀 Execution
 
-1. Type <AppInline /> followed by a `<space>`
-2. Type the path to your `.xlsx` file (or drag and drop file icon into the
-   terminal)
-3. Press `Enter`
+<ol>
+  <li>
+    {'Type '}
+    <AppInline />
+    {' followed by a '}
+    <code>&lt;space&gt;</code>
+  </li>
+  <li>
+    {'Type the path to your '}
+    <code>.xlsx</code>
+    {' file (or drag and drop file icon into the terminal)'}
+  </li>
+  <li>
+    <span>
+      Press <code>Enter</code>
+    </span>
+  </li>
+</ol>
 
 ### 📝 Examples
 

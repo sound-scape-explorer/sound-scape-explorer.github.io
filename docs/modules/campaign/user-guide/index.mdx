@@ -2,33 +2,49 @@
 sidebar_position: 2
 ---
 
-import {ExcelIcon, WindowsIcon} from '@site/src/components/Icons';
+
 import {ExcelTab} from '@site/src/components/ExcelTab';
+import {ExcelIcon, WindowsIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
 
 # 📖 User Guide
 
-## <ExcelIcon/> _Excel_ configuration
+<h2>
+  <ExcelIcon /> _Excel_ configuration
+</h2>
 
-:::tip
-Paths referenced in the <ExcelIcon /> configuration are **relative** to this
-file.
-:::
+<Fragment>
+  :::tip
+  Paths referenced in the <ExcelIcon /> configuration are **relative** to this
+  file.
+  :::
 
-The <ExcelIcon /> configuration is divided in multiple tabs:
+</Fragment>
 
-### <ExcelTab background="#eeeeee">Help</ExcelTab>
+<Fragment>
+  The <ExcelIcon /> configuration is divided in multiple tabs:
+</Fragment>
+
+<h3>
+  <ExcelTab background={'#eeeeee'}>Help</ExcelTab>
+</h3>
 
 This tab provides quick information.
 
-### <ExcelTab background="#ffffa6">Settings</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Settings</ExcelTab>
+</h3>
 
 Specify your campaign settings in this tab.
 
 #### `audio_path` Important Note
 
 :::danger
-For <WindowsIcon /> Windows users, ensure that the `audio_path` does **not**
-contain spaces to avoid disrupting the audio server's functionality.
+
+<Fragment>
+  For <WindowsIcon /> Windows users, ensure that the `audio_path` does **not**
+  contain spaces to avoid disrupting the audio server's functionality.
+</Fragment>
 
 If you've already generated processing data, rectify the `audio_path` within
 your configuration file and **refresh the configuration** to implement the
@@ -39,53 +55,79 @@ This issue is known and a fix is currently under development.
 Apologies for any inconvenience caused!
 :::
 
-### <ExcelTab background="#ffffa6">Files</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Files</ExcelTab>
+</h3>
 
 Specify file paths, sites, dates, and labels in this tab.
 
-### <ExcelTab background="#ffffa6">Bands</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Bands</ExcelTab>
+</h3>
 
 Specify your filtering bands in this tab.
 
-### <ExcelTab background="#ffffa6">Integrations</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Integrations</ExcelTab>
+</h3>
 
 Specify integration intervals in this tab.
 
-### <ExcelTab background="#ffffa6">Ranges</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Ranges</ExcelTab>
+</h3>
 
 Specify dates and time spans in this tab.
 
-### <ExcelTab background="#ffffa6">Trajectories</ExcelTab>
+<h3>
+  <ExcelTab background={'#ffffa6'}>Trajectories</ExcelTab>
+</h3>
 
 Specify trajectories in this tab.
 
-### <ExcelTab background="#b4c7dc">Extractors</ExcelTab>
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Extractors</ExcelTab>
+</h3>
 
 Configure extraction settings in this tab.
 
-Refer to the <ExcelTab background="#eeeeee">ListExtractors</ExcelTab> tab for
-available extractors.
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListExtractors</ExcelTab> tab
+  for available extractors.
+</Fragment>
 
-### <ExcelTab background="#b4c7dc">Digesters</ExcelTab>
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Digesters</ExcelTab>
+</h3>
 
 Configure _digesters_ (metrics) in this tab.
 
-Refer to the <ExcelTab background="#eeeeee">ListDigesters</ExcelTab> tab for
-available digesters.
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListDigesters</ExcelTab> tab for
+  available digesters.
+</Fragment>
 
-### <ExcelTab background="#b4c7dc">Reducers</ExcelTab>
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Reducers</ExcelTab>
+</h3>
 
 Configure reduction settings in this tab.
 
-Refer to the <ExcelTab background="#eeeeee">ListReducers</ExcelTab> tab for
-available reducers.
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListReducers</ExcelTab> tab for
+  available reducers.
+</Fragment>
 
-### <ExcelTab background="#b4c7dc">Autoclusters</ExcelTab>
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Autoclusters</ExcelTab>
+</h3>
 
 Configure autoclustering settings in this tab.
 
-Refer to the <ExcelTab background="#eeeeee">ListAutoclusters</ExcelTab> tab for
-available autoclusters.
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListAutoclusters</ExcelTab> tab
+  for available autoclusters.
+</Fragment>
 
 ## ⏭️ Next Step
 

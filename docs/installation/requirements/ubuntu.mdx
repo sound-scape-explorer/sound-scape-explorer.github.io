@@ -3,26 +3,23 @@ sidebar_position: 2
 title: Ubuntu
 ---
 
+
 import {APP_NAME} from '@site/constants';
-import {
-  PythonIcon,
-  StorageIcon,
-  UbuntuIcon,
-  BashIcon,
-  CurlIcon,
-  FfmpegIcon,
-  NodeIcon,
-  PnpmIcon,
-  TerminalIcon,
-} from '@site/src/components/Icons';
+import {Dependencies} from '@site/src/components/Dependencies';
+import {BashIcon, NodeIcon, PnpmIcon, PythonIcon, TerminalIcon, UbuntuIcon,} from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
+import {Fragment} from 'react';
 
 # <UbuntuIcon /> Ubuntu
 
-The steps provided below have been tested on <UbuntuIcon /> Ubuntu 20.04
-and <UbuntuIcon /> Ubuntu 22.04.
+<Fragment>
+  The steps provided below have been tested on <UbuntuIcon /> Ubuntu 20.04 and{' '}
+  <UbuntuIcon /> Ubuntu 22.04.
+</Fragment>
 
-## <BashIcon /> Oneliner <SizeInfo size='~500 MB' />
+<h2>
+  <BashIcon /> Oneliner <SizeInfo size="~500 MB" />
+</h2>
 
 Execute this single command to automatically install all necessary system
 dependencies, consuming roughly 500 MB of storage:
@@ -33,14 +30,20 @@ dependencies, consuming roughly 500 MB of storage:
 
 ## 👣 Step-by-Step Installation
 
-### <UbuntuIcon /> System Update & Essential Dependencies
+<h3>
+  <UbuntuIcon /> System Update & Essential Dependencies
+</h3>
 
 This section ensures your system is updated and equipped with useful
 dependencies:
 
-- <CurlIcon /> [curl](https://curl.se/)
-- <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
-- <StorageIcon /> [HDF5 Tools](https://support.hdfgroup.org/tools/)
+<Dependencies
+  noPython
+  noNode
+  noPnpm
+  hdfTools
+  noCCompiler
+/>
 
 ```bash
 sudo apt update && \
@@ -48,7 +51,9 @@ sudo apt upgrade -y && \
 sudo apt install -y curl ffmpeg hdf5-tools
 ```
 
-### <PythonIcon /> Python
+<h3>
+  <PythonIcon /> Python
+</h3>
 
 Install <PythonIcon /> Python and related components:
 
@@ -60,9 +65,13 @@ sudo apt install -y python3.10 python3.10-distutils python3.10-dev python3-pip p
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
-### <NodeIcon /> Node.js
+<h3>
+  <NodeIcon /> Node.js
+</h3>
 
-Install <NodeIcon /> Node.js with the following command:
+<Fragment>
+  Install <NodeIcon /> Node.js with the following command:
+</Fragment>
 
 ```bash
 sudo apt update && \
@@ -74,9 +83,13 @@ sudo apt update && \
 sudo apt install -y nodejs
 ```
 
-### <PnpmIcon /> pnpm
+<h3>
+  <PnpmIcon /> pnpm
+</h3>
 
-Install <PnpmIcon /> pnpm with the following command:
+<Fragment>
+  Install <PnpmIcon /> pnpm with the following command:
+</Fragment>
 
 ```bash
 sudo npm -g i pnpm
@@ -84,8 +97,10 @@ sudo npm -g i pnpm
 
 ## 🗑️ Uninstallation
 
-To remove the installed requirements, open a <TerminalIcon /> terminal window
-and execute the following command:
+<Fragment>
+  To remove the installed requirements, open a <TerminalIcon /> terminal window
+  and execute the following command:
+</Fragment>
 
 ```bash
 sudo npm -g uninstall pnpm && \
@@ -98,5 +113,7 @@ sudo apt autoremove -y
 
 ## ⏭️ Next Step
 
-Upon completion, close your <TerminalIcon /> terminal and proceed with the
-[installation of {APP_NAME}](../application).
+<Fragment>
+  Upon completion, close your <TerminalIcon /> terminal and proceed with the
+  [installation of {APP_NAME}](../application).
+</Fragment>

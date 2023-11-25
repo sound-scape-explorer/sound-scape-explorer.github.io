@@ -3,71 +3,146 @@ sidebar_position: 1
 title: Windows
 ---
 
+
+import {APP_NAME} from '@site/constants';
+import {Dependencies} from '@site/src/components/Dependencies';
 import {
-  WindowsIcon,
+  ChocolateyIcon,
   CIcon,
   MicrosoftIcon,
-  ChocolateyIcon,
   PowershellIcon,
   PythonIcon,
-  NodeIcon,
-  PnpmIcon,
-  CurlIcon,
-  FfmpegIcon,
   TerminalIcon,
+  WindowsIcon,
 } from '@site/src/components/Icons';
-import {APP_NAME} from '@site/constants';
 import {WinKey} from '@site/src/components/WinKey';
+import {Fragment} from 'react';
 
 # <WindowsIcon /> Windows
 
-The steps provided below have been tested on <WindowsIcon /> Windows 10
-and <WindowsIcon /> Windows 11.
+<Fragment>
+  The steps provided below have been tested on <WindowsIcon /> Windows 10 and{' '}
+  <WindowsIcon /> Windows 11.
+</Fragment>
 
-## <CIcon /> C Compiler
+<h2>
+  <CIcon /> C Compiler
+</h2>
 
 In order to install the
 [hdbscan](https://github.com/scikit-learn-contrib/hdbscan) python package later
 on, a C compiler will be required.
 
-You can install it on <WindowsIcon /> Windows through the [Visual Studio Build
-Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+<Fragment>
+  You can install it on <WindowsIcon /> Windows through the [Visual Studio Build
+  Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+</Fragment>
 
 ### 🛠️ Procedure
 
-1. Navigate to <MicrosoftIcon /> [Microsft C++ Build
-   Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-2. Click on `Download Build Tools` to download the executable
-3. Run the executable (proceed until you get the menu _Installing - Visual
-   Studio Build Tools..._)
-4. Check the first box for `Desktop development with C++`
-5. Click on `Install` (requires 6 Gb of disk space)
-6. Wait for the installation to complete. Once done, you can close the Visual
-   Studio Build Tools window
+<ol>
+  <li>
+    {'Navigate to '}
+    <MicrosoftIcon />
+    {'  '}
+    <a
+      href={'https://visualstudio.microsoft.com/visual-cpp-build-tools/'}
+      target={'_blank' + ''}
+    >
+      {'Microsoft C++ Build Tools'}
+    </a>
+  </li>
+  <li>
+    <span>Click on `Download Build Tools` to download the executable</span>
+  </li>
+  <li>
+    <span>
+      {'Run the executable (proceed until you get the menu '}
+      <i>Installing - Visual Studio Build Tools...</i>
+      {')'}
+    </span>
+  </li>
+  <li>
+    <span>Check the first box for `Desktop development with C++`</span>
+  </li>
+  <li>
+    <span>Click on `Install` (requires 6 Gb of disk space)</span>
+  </li>
+  <li>
+    <span>
+      Wait for the installation to complete. Once done, you can close the Visual
+      Studio Build Tools window
+    </span>
+  </li>
+</ol>
 
-## <ChocolateyIcon /> Chocolatey
+<h2>
+  <ChocolateyIcon /> Chocolatey
+</h2>
 
-We recommend using <ChocolateyIcon /> [Chocolatey](https://chocolatey.org/) as
-a package manager to install the necessary requirements for the application
-on <WindowsIcon /> Windows.
+<Fragment>
+  We recommend using <ChocolateyIcon /> [Chocolatey](https://chocolatey.org/) as
+  a package manager to install the necessary requirements for the application on{' '}
+  <WindowsIcon /> Windows.
+</Fragment>
 
 ### 🛠️ Procedure
 
-1. Click on the start menu (or press <WinKey /> on your keyboard)
-2. Type _<PowershellIcon /> PowerShell_
-3. Right-click on the _<PowershellIcon /> PowerShell_ icon
-4. Select _Run as Administrator_ (this will open a new elevated terminal)
-5. Navigate to <ChocolateyIcon /> [Chocolatey installation
-   page](https://chocolatey.org/install)
-6. Scroll to find the installation command
-7. Copy the command
-8. Paste it in your elevated terminal
-9. Press `Enter` to execute the command. Wait for the installation to finish.
-10. Keep the terminal open for subsequent steps
+<ol>
+  <li>
+    {'Click on the start menu (or press '}
+    <WinKey />
+    {' on your keyboard)'}
+  </li>
+  <li>
+    {'Type '}
+    <i>
+      <PowershellIcon />
+      {' PowerShell'}
+    </i>
+  </li>
+  <li>
+    {'Right-click on the '}
+    <i>
+      <PowershellIcon />
+      {' PowerShell'}
+    </i>
+    {' icon'}
+  </li>
+  <li>
+    {'Select '}
+    <i>Run as Administrator</i>
+    {' (this will open a new elevated terminal)'}
+  </li>
+  <li>
+    {'Navigate to '}
+    <ChocolateyIcon />
+    {'  '}
+    <a
+      href={'https://chocolatey.org/install'}
+      target={'_blank'}
+    >
+      {'Chocolatey installation page'}
+    </a>
+  </li>
+  <li>Scroll to find the installation command</li>
+  <li>Copy the command</li>
+  <li>Paste it in your elevated terminal</li>
+  <li>
+    {'Press '}
+    <code>Enter</code>
+    {' to execute the command. Wait for the installation to finish.'}
+  </li>
+  <li>Keep the terminal open for subsequent steps</li>
+</ol>
 
-## <PythonIcon /> Python
+<h2>
+  <PythonIcon /> Python
+</h2>
 
-For <PythonIcon /> Python installation, use the following command:
+<Fragment>
+  For <PythonIcon /> Python installation, use the following command:
+</Fragment>
 
 ```powershell
 choco install python3 --version=3.10.11 -y
@@ -77,10 +152,10 @@ choco install python3 --version=3.10.11 -y
 
 Install the additional dependencies required by the application:
 
-- <NodeIcon /> [Node.js](https://nodejs.org/)
-- <PnpmIcon /> [pnpm](https://pnpm.io/)
-- <CurlIcon /> [curl](https://curl.se/)
-- <FfmpegIcon /> [ffmpeg](https://www.ffmpeg.org/)
+<Dependencies
+  noPython
+  noCCompiler
+/>
 
 Use the command below to install these dependencies:
 
@@ -90,9 +165,11 @@ choco install nodejs-lts pnpm curl ffmpeg -y
 
 ## 🗑️ Uninstallation
 
-To remove the installed requirements, open an elevated <PowershellIcon />
-PowerShell window (as described in the <ChocolateyIcon />
-[Chocolatey](#-chocolatey) section) and run the following command:
+<Fragment>
+  To remove the installed requirements, open an elevated <PowershellIcon />
+  PowerShell window (as described in the <ChocolateyIcon />
+  [Chocolatey](#-chocolatey) section) and run the following command:
+</Fragment>
 
 ```powershell
 choco uninstall python3 nodejs-lts pnpm curl ffmpeg -y
@@ -100,5 +177,7 @@ choco uninstall python3 nodejs-lts pnpm curl ffmpeg -y
 
 ## ⏭️ Next step
 
-Once completed, close your <TerminalIcon /> terminal and proceed to the
-[installation of {APP_NAME}](../application).
+<Fragment>
+  Once completed, close your <TerminalIcon /> terminal and proceed to the
+  [installation of {APP_NAME}](../application).
+</Fragment>

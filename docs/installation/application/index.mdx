@@ -2,50 +2,82 @@
 sidebar_position: 2
 ---
 
-import {VERSION, SIZE} from '../../env.ts';
+
 import {APP_NAME} from '@site/constants';
-import {SourceLink} from '@site/src/components/SourceLink';
 import {AppDirectory} from '@site/src/components/AppDirectory';
-import {
-  AppIcon,
-  WindowsIcon,
-  UbuntuIcon,
-  MacOsIcon,
-  PythonIcon,
-} from '@site/src/components/Icons';
+import {AppIcon, MacOsIcon, PythonIcon, UbuntuIcon, WindowsIcon,} from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {Fragment} from 'react';
+import {SIZE, VERSION} from '../../env.ts';
 
 # 💻 Application
 
 This section will guide you through the installation process for the <AppIcon
 /> {APP_NAME} application.
 
-## 📥 Download <SizeInfo size={SIZE} />
+<h2>
+  📥 Download <SizeInfo size={SIZE} />
+</h2>
 
-1. Download <SourceLink version={VERSION} size={SIZE} />
-2. Extract the archive (use _Extract here_)
-3. Open the folder <AppDirectory version={VERSION} />
-4. Proceed to the next steps
+<ol>
+  <li>
+    {'Download '}
+    <SourceLink
+      version={VERSION}
+      size={SIZE}
+    />
+  </li>
+  <li>
+    {'Extract the archive (use '}
+    <i>Extract here</i>
+    {')'}
+  </li>
+  <li>
+    {'Open the folder '}
+    <AppDirectory version={VERSION} />
+  </li>
+  <li>{'Proceed to the next steps'}</li>
+</ol>
 
 ## 🔮 Virtual Environment
 
-A virtual environment is established to manage <PythonIcon /> Python
-dependencies.
+<Fragment>
+  A virtual environment is established to manage <PythonIcon /> Python
+  dependencies.
+</Fragment>
 
 It needs creation only once but can be activated multiple times.
 
-### `venv` on <WindowsIcon /> Windows
+<h3>
+  `venv` on <WindowsIcon /> Windows
+</h3>
 
-Double click on `start.bat` and wait for `venv` creation and activation.
+Double-click on `start.bat` and wait for `venv` creation and activation.
 
-### `venv` on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+<h3>
+  `venv` on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+</h3>
 
-1. Open a new terminal session
-2. Type `cd` followed by a `<space>` and the path to the <AppDirectory
-       version={VERSION} /> folder
-   :::tip
-   Instead of manual entry, drag and drop the folder icon into your terminal.
-   :::
+<ol>
+  <li>
+    <Fragment>Open a new terminal session</Fragment>
+  </li>
+  <li>
+    {'Type '}
+    <code>cd</code>
+    {' followed by a '}
+    <code>&lt;space&gt;</code>
+    {' and the path to the '}
+    <AppDirectory version={VERSION} />
+    {' folder'}
+  </li>
+  :::tip
+  Instead of manual entry, drag and drop the folder icon into your
+  terminal.
+  :::
+
+</ol>
 
 #### Create `venv`
 
@@ -67,12 +99,18 @@ Run this command to activate the virtual environment:
 You will need to repeat this step each time you open a new terminal session.
 :::
 
-## 🧩 Modules <SizeInfo size={'~14 GB'} />
+<h2>
+  🧩 Modules <SizeInfo size={'~14 GB'} />
+</h2>
 
-Modules constitute the components of <AppIcon /> {APP_NAME} and occupy
-approximately 14 GB of disk space.
+<Fragment>
+  Modules constitute the components of <AppIcon /> {APP_NAME} and occupy
+  approximately 14 GB of disk space.
+</Fragment>
 
-### Modules on <WindowsIcon /> Windows
+<h3>
+  Modules on <WindowsIcon /> Windows
+</h3>
 
 Install all modules sequentially using the following command:
 
@@ -89,7 +127,9 @@ pnpm install:processing:cuda:windows
 
 :::
 
-### Modules on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+<h3>
+  Modules on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+</h3>
 
 Install all modules at once with this command:
 
@@ -110,8 +150,10 @@ pnpm install:processing:cuda
 
 ## 🗑️ Uninstallation
 
-To remove the application and its dependencies, delete the <AppDirectory
-version={VERSION} /> folder.
+<Fragment>
+  To remove the application and its dependencies, delete the{' '}
+  <AppDirectory version={VERSION} /> folder.
+</Fragment>
 
 ## ⏭️ Next Step
 

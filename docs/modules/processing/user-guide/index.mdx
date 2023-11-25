@@ -2,31 +2,42 @@
 sidebar_position: 2
 ---
 
-import {StorageIcon, ExcelIcon} from '@site/src/components/Icons';
+
+import {ExcelIcon, StorageIcon} from '@site/src/components/Icons';
 import {ProcessingMenuBlock} from '@site/src/components/ProcessingMenuBlock';
+import {Fragment} from 'react';
 
 # 📖 User Guide
 
-Upon module initiation, the <ExcelIcon /> configuration will load, and
-a <StorageIcon /> storage file will either be created or opened. Subsequently,
-the 📑 [Menu](#-menu) will be displayed.
+<Fragment>
+  Upon module initiation, the <ExcelIcon /> configuration will load, and a{' '}
+  <StorageIcon /> storage file will either be created or opened. Subsequently,
+  the 📑 [Menu](#-menu) will be displayed.
+</Fragment>
 
-Most users typically opt for the `Run All` option to execute all metrics
-specified in the <ExcelIcon /> configuration.
+<Fragment>
+  Most users typically opt for the `Run All` option to execute all metrics
+  specified in the <ExcelIcon /> configuration.
+</Fragment>
 
 ## 📑 Menu
 
 Upon module initiation, the following menu will appear:
 
-:::tip
-Use the `arrow` and `Enter` keys to navigate through the menu.
-:::
+<Fragment>
+  :::tip
+  Use the `arrow` and `Enter` keys to navigate through the menu.
+  :::
+
+</Fragment>
 
 <ProcessingMenuBlock />
 
 ## 📋 Most Common Use Case
 
-For executing all metrics specified in your <ExcelIcon /> configuration file:
+<Fragment>
+  For executing all metrics specified in your <ExcelIcon /> configuration file:
+</Fragment>
 
 1. Choose `Run All`
 2. Wait for processing completion. When the menu reappears, the
