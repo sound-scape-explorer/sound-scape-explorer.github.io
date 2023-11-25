@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2023-11-25T18:26:12.000Z</updated>
+    <updated>2023-11-25T22:20:22.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,9 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2023-11-25T18:26:12.000Z</updated>
+        <updated>2023-11-25T22:20:22.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!</p>]]></content>
+        <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -27,8 +27,8 @@
         <summary type="html"><![CDATA[Dear colleagues,]]></summary>
         <content type="html"><![CDATA[<p>Dear colleagues,</p>
 <p>I trust this message finds you well. In our ongoing efforts to enhance
-communication and transparency between the business and development teams, I am
-pleased to announce the implementation of a new centralized documentation
+communication and transparency between the business and development teams, I
+am pleased to announce the implementation of a new centralized documentation
 portal for the <!-- -->SoundScapeExplorer<!-- --> project.</p>
 <p>This portal serves as a comprehensive hub for all project-related
 documentation, updates, and other pertinent information. It is designed to
