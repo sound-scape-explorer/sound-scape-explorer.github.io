@@ -35,6 +35,9 @@ dependencies:
   lunr:
     specifier: ^2.3.9
     version: 2.3.9
+  plotly.js-dist:
+    specifier: ^2.27.1
+    version: 2.27.1
   prism-react-renderer:
     specifier: ^2.1.0
     version: 2.2.0(react@18.2.0)
@@ -7404,6 +7407,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 3.0.0
+
+  /plotly.js-dist@2.27.1:
+    resolution: {integrity: sha512-0ANRbzVXbi4H01njmpOSPSUoo6NVTZC/gJJhn4J2lUx6Woc5j1Fye3A0+VwXYV2+UxCEU7WTkyaI2y8l4bCu4A==}
+    dev: false
 
   /postcss-calc@8.2.4(postcss@8.4.31):
     resolution: {integrity: sha512-SmWMSJmB8MRnnULldx0lQIyhSNvuDl9HfrZkaqqE/WHAhToYsAvDq+yAsA/kIyINDszOp3Rh0GFoNuH5Ypsm3Q==}

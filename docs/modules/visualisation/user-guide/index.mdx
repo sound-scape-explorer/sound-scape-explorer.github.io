@@ -3,6 +3,17 @@ sidebar_position: 2
 ---
 
 import {
+  DownloadPngIcon,
+  DownloadSvgIcon,
+  ExportCsvIcon,
+  LastCameraIcon,
+  OrbitalIcon,
+  PanIcon,
+  ResetCameraIcon,
+  TurntableIcon,
+  ZoomIcon,
+} from '@site/src/components/ScatterIcons';
+import {
   AudioIcon,
   ColorsIcon,
   DetailsIcon,
@@ -26,7 +37,8 @@ available viewport efficiently.
 In a minimalist design, each window can be effortlessly toggled between hidden
 or shown states by interacting with the menu icons.
 
-Discover more about the 🧭 [Menu](#-menu) for additional help.
+Discover more about the 🧭 [Menu](#-menu)
+and 📊 [Plot controls](#-plot-controls) for additional help.
 
 ## 🧭 Menu
 
@@ -46,5 +58,23 @@ Discover more about the 🧭 [Menu](#-menu) for additional help.
 | <TrajectoriesIcon/> | Trajectories | Display trajectories.                             | `x`               |
 | <IndicatorsIcon/>   | Indicators   | Display acoustic indicators.                      | `v`               |
 | <DigestedIcon/>     | Digested     | Display digested metrics.                         | `b`               |
+
+</Fragment>
+
+## 📊 Plot controls
+
+<Fragment>
+
+| Icon               | Function     | Description                            |
+| ------------------ | ------------ | -------------------------------------- |
+| <ZoomIcon/>        | Zoom         | Set cursor to zoom mode.               |
+| <PanIcon/>         | Pan          | Set cursor to pan mode.                |
+| <OrbitalIcon/>     | Orbital      | Set cursor to orbital rotation mode.   |
+| <TurntableIcon/>   | Turntable    | Set cursor to turntable rotation mode. |
+| <ResetCameraIcon/> | Reset camera | Reset camera to default position.      |
+| <LastCameraIcon/>  | Load camera  | Set camera to last saved position.     |
+| <DownloadPngIcon/> | Download PNG | Download scatter as PNG.               |
+| <DownloadSvgIcon/> | Download SVG | Download scatter as SVG.               |
+| <ExportCsvIcon/>   | Eport CSV    | Export scatter as CSV.                 |
 
 </Fragment>
