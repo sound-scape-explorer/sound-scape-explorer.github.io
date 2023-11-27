@@ -35,7 +35,6 @@ export const PanIcon = () => <Icon name={'pan'} />;
 export const OrbitalIcon = () => <Icon name={'3d_rotate'} />;
 export const TurntableIcon = () => <Icon name={'z-axis'} />;
 export const ResetCameraIcon = () => <Icon name={'home'} />;
-export const LastCameraIcon = () => <Icon name={'movie'} />;
 export const DownloadPngIcon = () => <Icon name={'camera'} />;
 export const DownloadSvgIcon = () => <Icon name={'camera-retro'} />;
 export const ExportCsvIcon = () => <Icon name={'disk'} />;
