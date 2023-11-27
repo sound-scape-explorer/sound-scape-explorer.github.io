@@ -2,7 +2,20 @@
 sidebar_position: 2
 ---
 
-import {VisMenuIcon} from '@site/src/components/VisMenuIcon';
+import {
+  AudioIcon,
+  ColorsIcon,
+  DetailsIcon,
+  DigestedIcon,
+  HelpIcon,
+  ImportIcon,
+  IndicatorsIcon,
+  LabelsIcon,
+  SelectionIcon,
+  SettingsIcon,
+  TimeIcon,
+  TrajectoriesIcon,
+} from '@site/src/components/VisIcons';
 import {Fragment} from 'react';
 
 # 📖 User Guide
@@ -19,19 +32,19 @@ Discover more about the 🧭 [Menu](#-menu) for additional help.
 
 <Fragment>
 
-| Icon                                | Function     | Description                                       | Keyboard Shortcut |
-| ----------------------------------- | ------------ | ------------------------------------------------- | ----------------- |
-| <VisMenuIcon name="import" />       | Import       | Load a local `.h5` storage file.                  | `i`               |
-| <VisMenuIcon name="settings" />     | Settings     | Adjust user interface settings.                   | `,`               |
-| <VisMenuIcon name="help" />         | Help         | Access help links and keyboard shortcuts.         | `h`               |
-| <VisMenuIcon name="selection" />    | Selection    | Select band, integration, extractor, and reducer. | `s`               |
-| <VisMenuIcon name="colors" />       | Colors       | Colour intervals by index, timestamp, or label.   | `c`               |
-| <VisMenuIcon name="labels" />       | Labels       | Filter intervals by labels.                       | `z`               |
-| <VisMenuIcon name="time" />         | Time         | Filter intervals by timestamps.                   | `t`               |
-| <VisMenuIcon name="details" />      | Details      | Show details about the selected interval.         | `d`               |
-| <VisMenuIcon name="audio" />        | Audio        | Show audio for the selected interval.             | `a`               |
-| <VisMenuIcon name="trajectories" /> | Trajectories | Display trajectories.                             | `x`               |
-| <VisMenuIcon name="indicators" />   | Indicators   | Display acoustic indicators.                      | `v`               |
-| <VisMenuIcon name="digested" />     | Digested     | Display digested metrics.                         | `b`               |
+| Icon                | Function     | Description                                       | Keyboard Shortcut |
+| ------------------- | ------------ | ------------------------------------------------- | ----------------- |
+| <ImportIcon/>       | Import       | Load a local `.h5` storage file.                  | `i`               |
+| <SettingsIcon/>     | Settings     | Adjust user interface settings.                   | `,`               |
+| <HelpIcon/>         | Help         | Access help links and keyboard shortcuts.         | `h`               |
+| <SelectionIcon/>    | Selection    | Select band, integration, extractor, and reducer. | `s`               |
+| <ColorsIcon/>       | Colors       | Colour intervals by index, timestamp, or label.   | `c`               |
+| <LabelsIcon/>       | Labels       | Filter intervals by labels.                       | `z`               |
+| <TimeIcon/>         | Time         | Filter intervals by timestamps.                   | `t`               |
+| <DetailsIcon/>      | Details      | Show details about the selected interval.         | `d`               |
+| <AudioIcon/>        | Audio        | Show audio for the selected interval.             | `a`               |
+| <TrajectoriesIcon/> | Trajectories | Display trajectories.                             | `x`               |
+| <IndicatorsIcon/>   | Indicators   | Display acoustic indicators.                      | `v`               |
+| <DigestedIcon/>     | Digested     | Display digested metrics.                         | `b`               |
 
 </Fragment>

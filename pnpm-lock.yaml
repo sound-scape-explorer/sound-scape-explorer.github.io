@@ -17,6 +17,9 @@ dependencies:
   '@fontsource/merriweather':
     specifier: ^5.0.8
     version: 5.0.8
+  '@ionic/react':
+    specifier: ^7.5.6
+    version: 7.5.6(react-dom@18.2.0)(react@18.2.0)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.37)(react@18.2.0)
@@ -26,6 +29,9 @@ dependencies:
   docusaurus-lunr-search:
     specifier: ^3.3.0
     version: 3.3.0(@docusaurus/core@3.0.0)(react-dom@18.2.0)(react@18.2.0)
+  ionicons:
+    specifier: ^7.2.1
+    version: 7.2.1
   lunr:
     specifier: ^2.3.9
     version: 2.3.9
@@ -2358,6 +2364,27 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
+  /@ionic/core@7.5.6:
+    resolution: {integrity: sha512-bYQp2twwm61uA0Q31ToVIpQWsiQ9so1dRoWZPD+l+y4fVuFmOCLYeS6XTLTm73jVBq40JfEcsac7eYC4DxoemQ==}
+    dependencies:
+      '@stencil/core': 4.7.2
+      ionicons: 7.2.1
+      tslib: 2.6.2
+    dev: false
+
+  /@ionic/react@7.5.6(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-/2NrJuKGllZzJTDbaBuep/0GFCDO7YhWAvda/FugqS1WLuqNoW2p3LYk0uUqMWCoXVtx972hoyQJzCNf55axkQ==}
+    peerDependencies:
+      react: '>=16.8.6'
+      react-dom: '>=16.8.6'
+    dependencies:
+      '@ionic/core': 7.5.6
+      ionicons: 7.2.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      tslib: 2.6.2
+    dev: false
+
   /@jest/schemas@29.6.3:
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -2595,6 +2622,12 @@ packages:
       eval: 0.1.8
       p-map: 4.0.0
       webpack-sources: 3.2.3
+
+  /@stencil/core@4.7.2:
+    resolution: {integrity: sha512-sPPDYrXiTbfeUF5CCyfqysXK/yfTHC4xYR1+nHzGkS2vhRSBOLp0oPuB+xkJLKA+K2ZqDJUxpOnDxy1CLWwBXA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: false
 
   /@surma/rollup-plugin-off-main-thread@2.2.3:
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -5784,6 +5817,12 @@ packages:
     resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}
     dependencies:
       loose-envify: 1.4.0
+
+  /ionicons@7.2.1:
+    resolution: {integrity: sha512-2pvCM7DGVEtbbj48PJzQrCADCQrqjU1nUYX9l9PyEWz3ZfdnLdAouqwPxLdl8tbaF9cE7OZRSlyQD7oLOLnGoQ==}
+    dependencies:
+      '@stencil/core': 4.7.2
+    dev: false
 
   /ipaddr.js@1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
