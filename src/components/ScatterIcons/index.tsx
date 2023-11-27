@@ -1,4 +1,4 @@
-import Plotly from 'plotly.js-dist';
+import {Fragment, useEffect, useState} from 'react';
 
 import styles from './styles.module.css';
 
@@ -9,24 +9,38 @@ interface Props {
   name: string;
 }
 
+interface PlotlyIcon {
+  width: number;
+  height: number;
+  path: string;
+  transform: string;
+}
+
 const Icon = ({name}: Props) => {
-  const icon = Plotly.Icons[name];
-  const width = icon.width;
-  const height = icon.height;
-  const path = icon.path;
-  const transform = icon.transform;
+  const [icon, setIcon] = useState<null | PlotlyIcon>(null);
+
+  useEffect(() => {
+    (async () => {
+      const Plotly = await import('plotly.js-dist');
+      setIcon(Plotly.Icons[name]);
+    })();
+  }, [name]);
 
   return (
-    <svg
-      viewBox={`0 0 ${width} ${height}`}
-      className={styles.icon}
-    >
-      <path
-        d={path}
-        transform={transform}
-        className={styles.path}
-      />
-    </svg>
+    <Fragment>
+      {icon !== null && (
+        <svg
+          viewBox={`0 0 ${icon.width} ${icon.height}`}
+          className={styles.icon}
+        >
+          <path
+            d={icon.path}
+            transform={icon.transform}
+            className={styles.path}
+          />
+        </svg>
+      )}
+    </Fragment>
   );
 };
 
