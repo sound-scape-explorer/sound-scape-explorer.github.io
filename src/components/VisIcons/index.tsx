@@ -12,6 +12,7 @@ import {
   helpOutline,
   layersOutline,
   listOutline,
+  timerOutline,
 } from 'ionicons/icons';
 
 import styles from './styles.module.css';
@@ -39,5 +40,6 @@ export const TimeIcon = () => <VisIcon icon={calendarOutline} />;
 export const DetailsIcon = () => <VisIcon icon={listOutline} />;
 export const AudioIcon = () => <VisIcon icon={headsetOutline} />;
 export const TrajectoriesIcon = () => <VisIcon icon={analyticsOutline} />;
+export const RelativeTrajectoriesIcon = () => <VisIcon icon={timerOutline} />;
 export const IndicatorsIcon = () => <VisIcon icon={barChartOutline} />;
 export const DigestedIcon = () => <VisIcon icon={gridOutline} />;
