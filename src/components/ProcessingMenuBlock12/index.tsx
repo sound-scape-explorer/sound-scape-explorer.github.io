@@ -1,7 +1,9 @@
 import {APP_DESCRIPTION} from '@site/constants';
 import CodeBlock from '@theme/CodeBlock';
 
-const code = `👋 Welcome to ${APP_DESCRIPTION}!
+const code = (
+  version: Props['version'],
+) => `👋 Welcome to ${APP_DESCRIPTION} v${version}!
 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ File    ┃ Path                                      ┃
@@ -19,9 +21,11 @@ const code = `👋 Welcome to ${APP_DESCRIPTION}!
    ---------------
    Run autoclusters
    Run trajectories
+   Run relative trajectories
    Run digests
    ---------------
    Run all
+   ---------------
    Export dataframe as .csv
    Export computation UMAPs as .npy
    Export mean distances matrix as .npy
@@ -29,6 +33,10 @@ const code = `👋 Welcome to ${APP_DESCRIPTION}!
    ---------------
    Quit`;
 
-export const ProcessingMenuBlock = () => (
-  <CodeBlock language="bash">{code}</CodeBlock>
+interface Props {
+  version: string;
+}
+
+export const ProcessingMenuBlock12 = ({version}: Props) => (
+  <CodeBlock language="bash">{code(version)}</CodeBlock>
 );
