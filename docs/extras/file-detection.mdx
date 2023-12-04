@@ -1,11 +1,10 @@
+import {ExcelTab} from '@site/src/components/ExcelTab';
 import {FileDetectionCommandBlock} from '@site/src/components/FileDetectionCommandBlock';
 import {FileDetectionCommandInline} from '@site/src/components/FileDetectionCommandInline';
 import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
 
 # 📁 File Detection
-
-Hello
 
 <Fragment>
   :::warning
@@ -22,13 +21,22 @@ environments](../installation/application#-virtual-environment)
 ## 🔍 Context
 
 <Fragment>
-  This command allows the detection of audio files to add to the <ExcelIcon />{' '}
+  This command allows the detection of audio files to add to the <ExcelIcon />
   configuration file.
 </Fragment>
 
 ## 🚀 Execution
 
 <ol>
+  <li>
+    {'Create a '}
+    <ExcelIcon />
+    {' configuration file and fill the '}
+    <ExcelTab background={'#ffffa6'}>Settings</ExcelTab>
+    {' tab (especially '}
+    <code>audio_path</code>
+    {')'}
+  </li>
   <li>
     {'Type '}
     <FileDetectionCommandInline />
@@ -41,9 +49,8 @@ environments](../installation/application#-virtual-environment)
     {' configuration file into the terminal (or type path)'}
   </li>
   <li>
-    <Fragment>
-      Press <code>Enter</code>
-    </Fragment>
+    {'Press '}
+    <code>Enter</code>
   </li>
 </ol>
 
