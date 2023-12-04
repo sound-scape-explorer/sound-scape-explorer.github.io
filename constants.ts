@@ -15,3 +15,5 @@ export const APP_GITHUB_DISCUSSIONS =
   'https://github.com/sound-scape-explorer/sound-scape-explorer/discussions';
 export const CODE_GITHUB =
   'https://github.com/sound-scape-explorer/sound-scape-explorer';
+export const CODE_CHANGELOG =
+  'https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md';

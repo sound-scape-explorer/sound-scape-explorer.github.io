@@ -15,6 +15,7 @@ import {
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
+  CODE_CHANGELOG,
   CODE_GITHUB,
 } from './constants';
 
@@ -184,6 +185,10 @@ const config: Config = {
             {
               label: `${APP_NAME} repository`,
               href: CODE_GITHUB,
+            },
+            {
+              label: `${APP_NAME} changelog`,
+              href: CODE_CHANGELOG,
             },
           ],
         },
