@@ -1,0 +1,52 @@
+import {FileDetectionCommandBlock} from '@site/src/components/FileDetectionCommandBlock';
+import {FileDetectionCommandInline} from '@site/src/components/FileDetectionCommandInline';
+import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+
+# 📁 File Detection
+
+Hello
+
+<Fragment>
+  :::warning
+  Ensure you have an active <PythonIcon /> Python `venv` in a terminal window.
+  :::
+
+</Fragment>
+
+:::info
+[Learn how to activate 🔮 virtual
+environments](../installation/application#-virtual-environment)
+:::
+
+## 🔍 Context
+
+<Fragment>
+  This command allows the detection of audio files to add to the <ExcelIcon />{' '}
+  configuration file.
+</Fragment>
+
+## 🚀 Execution
+
+<ol>
+  <li>
+    {'Type '}
+    <FileDetectionCommandInline />
+    {', then add '}
+    <code>&lt;space&gt;</code>
+  </li>
+  <li>
+    {'Drag and drop your '}
+    <ExcelIcon />
+    {' configuration file into the terminal (or type path)'}
+  </li>
+  <li>
+    <Fragment>
+      Press <code>Enter</code>
+    </Fragment>
+  </li>
+</ol>
+
+### 📝 Example
+
+<FileDetectionCommandBlock />
