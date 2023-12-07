@@ -3,7 +3,12 @@ sidebar_position: 1
 ---
 
 import {AppInline} from '@site/src/components/AppInline';
-import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
+import {
+  ExcelIcon,
+  PythonIcon,
+  UbuntuIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
 import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
 import {Fragment} from 'react';
 import ReactPlayer from 'react-player';
@@ -52,24 +57,34 @@ environments](../../../installation/application#-virtual-environment)
     {'Type the path to your '}
     <code>.xlsx</code>
     {' file (or drag and drop file icon into the terminal)'}
-
-    <details>
-      <summary>Drag and drop screencast</summary>
-
-      <ReactPlayer
-        playing
-        controls
-        url="/screencasts/processing_drag_and_drop_windows.mp4"
-      />
-
-    </details>
-
   </li>
   <li>
     {'Press '}
     <code>Enter</code>
   </li>
 </ol>
+
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/processing_windows.mp4"
+  />
+</details>
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/processing_ubuntu.mp4"
+  />
+</details>
 
 ### 📝 Examples
 
