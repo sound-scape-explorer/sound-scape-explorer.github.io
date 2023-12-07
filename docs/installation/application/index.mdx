@@ -14,6 +14,7 @@ import {
 import {SizeInfo} from '@site/src/components/SizeInfo';
 import {SourceLink} from '@site/src/components/SourceLink';
 import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
 import {SIZE, VERSION} from '../../env.ts';
 
 # 💻 Application
@@ -81,11 +82,6 @@ Double-click on `start.bat` and wait for `venv` creation and activation.
     <AppDirectory version={VERSION} />
     {' folder'}
   </li>
-  :::tip
-  Instead of manual entry, drag and drop the folder icon into your
-  terminal.
-  :::
-
 </ol>
 
 #### Create `venv`
@@ -103,6 +99,17 @@ Run this command to activate the virtual environment:
 ```bash
 . venv/bin/activate
 ```
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/venv_ubuntu.mp4"
+  />
+</details>
 
 <h2>
   🧩 Modules <SizeInfo size={'~14 GB'} />
