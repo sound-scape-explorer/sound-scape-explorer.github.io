@@ -3,10 +3,16 @@ sidebar_position: 2
 title: Ubuntu
 ---
 
-
 import {APP_NAME} from '@site/constants';
 import {Dependencies} from '@site/src/components/Dependencies';
-import {BashIcon, NodeIcon, PnpmIcon, PythonIcon, TerminalIcon, UbuntuIcon,} from '@site/src/components/Icons';
+import {
+  BashIcon,
+  NodeIcon,
+  PnpmIcon,
+  PythonIcon,
+  TerminalIcon,
+  UbuntuIcon,
+} from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
 import {Fragment} from 'react';
 
@@ -48,7 +54,7 @@ dependencies:
 ```bash
 sudo apt update && \
 sudo apt upgrade -y && \
-sudo apt install -y curl ffmpeg hdf5-tools
+sudo apt install -y gcc curl ffmpeg hdf5-tools
 ```
 
 <h3>
