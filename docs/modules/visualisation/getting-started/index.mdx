@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 import {
   ChromeIcon,
   ExcelIcon,
@@ -16,6 +15,7 @@ import {VisCommandBlock} from '@site/src/components/VisCommandBlock';
 import {VisCommandInline} from '@site/src/components/VisCommandInline';
 import {VizCommandInline} from '@site/src/components/VizCommandInline';
 import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
 
 # 🏃 Getting started
 
@@ -67,6 +67,17 @@ will open.
   :::
 
 </Fragment>
+
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/visualisation_windows.mp4"
+  />
+</details>
 
 ## 🔧 `audio:front` Command
 
