@@ -14,7 +14,9 @@ import {
   UbuntuIcon,
 } from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
+import {UbuntuRequirementsCommandBlock} from '@site/src/components/UbuntuRequirementsCommandBlock';
 import {Fragment} from 'react';
+import {VERSION} from '../../env';
 
 # <UbuntuIcon /> Ubuntu
 
@@ -30,9 +32,7 @@ import {Fragment} from 'react';
 Execute this single command to automatically install all necessary system
 dependencies, consuming roughly 500 MB of storage:
 
-```bash
-/bin/bash <(wget -qO- https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer/next/bamdad/bin/requirements-ubuntu.sh)
-```
+<UbuntuRequirementsCommandBlock version={VERSION} />
 
 ## 👣 Step-by-Step Installation
 
