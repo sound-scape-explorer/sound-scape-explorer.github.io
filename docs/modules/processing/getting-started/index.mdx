@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-
 import {AppInline} from '@site/src/components/AppInline';
 import {ExcelIcon, PythonIcon} from '@site/src/components/Icons';
 import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
 import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
 
 # 🏃 Getting started
 
@@ -52,11 +52,22 @@ environments](../../../installation/application#-virtual-environment)
     {'Type the path to your '}
     <code>.xlsx</code>
     {' file (or drag and drop file icon into the terminal)'}
+
+    <details>
+      <summary>Drag and drop screencast</summary>
+
+      <ReactPlayer
+        playing
+        controls
+        url="/screencasts/processing_drag_and_drop.mp4"
+      />
+
+    </details>
+
   </li>
   <li>
-    <span>
-      Press <code>Enter</code>
-    </span>
+    {'Press '}
+    <code>Enter</code>
   </li>
 </ol>
 
