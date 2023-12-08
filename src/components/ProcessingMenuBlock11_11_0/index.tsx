@@ -37,6 +37,6 @@ interface Props {
   version: string;
 }
 
-export const ProcessingMenuBlock12 = ({version}: Props) => (
+export const ProcessingMenuBlock11_11_0 = ({version}: Props) => (
   <CodeBlock language="bash">{code(version)}</CodeBlock>
 );
