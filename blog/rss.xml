@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Fri, 08 Dec 2023 13:47:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Dec 2023 22:51:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,25 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Fri, 08 Dec 2023 13:47:43 GMT</pubDate>
+            <pubDate>Fri, 08 Dec 2023 22:51:56 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Announcing new version 12.0.0]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2023/12/08/version-12.0.0</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2023/12/08/version-12.0.0</guid>
+            <pubDate>Fri, 08 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 12.0.0 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 12.0.0 has been released!</p>
+<p>This new version introduces new generated relative trajectories data and
+quality of life improvements.</p>
+<p>This major version bump has been motivated by the new installation procedure
+of <span></span> Python dependencies.</p>
+<p>It also aligns with the complete rewrite of the documentation available on this
+portal.</p>
+<p>The main improvements available are the following:</p>
+<ul><li><img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon">  <!-- -->SSE<ul><li>Rewritten whole documentation</li><li>Improved installation process</li><li>Added screencasts</li></ul></li><li>📣 Campaign<ul><li>Added <code>sse_fill</code> helper for automatic file detection</li></ul></li><li>🧮 Processing<ul><li>Added relative trajectories generation</li><li>Improved console feedbacks</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Added relative trajectories interface</li><li>Improved labels UX</li><li>Added PWA mode for easy offline access</li><li>Various layout updates and bug fixes</li></ul></li></ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Introduction to new centralized documentation]]></title>
