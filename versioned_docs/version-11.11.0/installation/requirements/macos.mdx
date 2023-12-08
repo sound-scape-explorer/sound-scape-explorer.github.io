@@ -1,0 +1,81 @@
+---
+sidebar_position: 3
+title: macOS
+---
+
+
+import {APP_NAME} from '@site/constants';
+import {Dependencies} from '@site/src/components/Dependencies';
+import {HomebrewIcon, MacOsIcon, TerminalIcon, XcodeIcon,} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+
+# <MacOsIcon /> macOS
+
+<Fragment>
+  The steps outlined below have been successfully tested on <MacOsIcon /> macOS
+  13 and <MacOsIcon /> macOS 14.
+</Fragment>
+
+<h2>
+  <HomebrewIcon /> Homebrew
+</h2>
+
+<Fragment>
+  Using the package manager <HomebrewIcon /> [Homebrew](https://brew.sh/) is
+  recommended to install the application requirements.
+</Fragment>
+
+### 🛠️ Procedure
+
+<ol>
+  <li>
+    <Fragment>Navigate to [brew.sh](https://brew.sh/)</Fragment>
+  </li>
+  <li>
+    {'Follow the installation instructions provided for '}
+    <HomebrewIcon />
+    {' Homebrew'}
+  </li>
+  <li>
+    {'Open a '}
+    <TerminalIcon />
+    {' terminal to proceed with the next steps'}
+  </li>
+</ol>
+
+## 📦 Dependencies
+
+Execute the following command to install dependencies and update your path:
+
+<Dependencies />
+
+```bash
+brew install gcc curl ffmpeg python@3.10 node@20 pnpm && \
+echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
+```
+
+<h3>
+  <XcodeIcon /> Xcode Command Line Tools
+</h3>
+
+:::info
+This step is optional. Additional context is needed.
+:::
+
+## 🗑️ Uninstallation
+
+<Fragment>
+  To remove the installed requirements, open a <TerminalIcon /> terminal window
+  and execute the following command:
+</Fragment>
+
+```bash
+brew uninstall gcc curl ffmpeg python@3.10 node@20 pnpm
+```
+
+## ⏭️ Next Step
+
+<Fragment>
+  Upon completion, close your <TerminalIcon /> terminal and proceed to the
+  [installation of {APP_NAME}](../application).
+</Fragment>

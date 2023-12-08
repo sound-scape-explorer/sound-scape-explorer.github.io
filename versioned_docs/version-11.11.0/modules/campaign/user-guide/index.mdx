@@ -1,0 +1,120 @@
+---
+sidebar_position: 2
+---
+
+import {ExcelTab} from '@site/src/components/ExcelTab';
+import {ExcelIcon, WindowsIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+
+# 📖 User Guide
+
+<h2>
+  <ExcelIcon /> _Excel_ configuration
+</h2>
+
+<Fragment>
+  :::tip
+  Paths referenced in the <ExcelIcon /> configuration are **relative** to this
+  file.
+  :::
+
+</Fragment>
+
+:::tip
+You can automatically [detect and add audio files](../../../extras/file-detection).
+:::
+
+<Fragment>
+  The <ExcelIcon /> configuration is divided in multiple tabs:
+</Fragment>
+
+<h3>
+  <ExcelTab background={'#eeeeee'}>Help</ExcelTab>
+</h3>
+
+This tab provides quick information.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Settings</ExcelTab>
+</h3>
+
+Specify your campaign settings in this tab.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Files</ExcelTab>
+</h3>
+
+Specify file paths, sites, dates, and labels in this tab.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Bands</ExcelTab>
+</h3>
+
+Specify your filtering bands in this tab.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Integrations</ExcelTab>
+</h3>
+
+Specify integration intervals in this tab.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Ranges</ExcelTab>
+</h3>
+
+Specify dates and time spans in this tab.
+
+<h3>
+  <ExcelTab background={'#ffffa6'}>Trajectories</ExcelTab>
+</h3>
+
+Specify trajectories in this tab.
+
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Extractors</ExcelTab>
+</h3>
+
+Configure extraction settings in this tab.
+
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListExtractors</ExcelTab> tab
+  for available extractors.
+</Fragment>
+
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Digesters</ExcelTab>
+</h3>
+
+Configure _digesters_ (metrics) in this tab.
+
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListDigesters</ExcelTab> tab for
+  available digesters.
+</Fragment>
+
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Reducers</ExcelTab>
+</h3>
+
+Configure reduction settings in this tab.
+
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListReducers</ExcelTab> tab for
+  available reducers.
+</Fragment>
+
+<h3>
+  <ExcelTab background={'#b4c7dc'}>Autoclusters</ExcelTab>
+</h3>
+
+Configure autoclustering settings in this tab.
+
+<Fragment>
+  Refer to the <ExcelTab background={'#eeeeee'}>ListAutoclusters</ExcelTab> tab
+  for available autoclusters.
+</Fragment>
+
+## ⏭️ Next Step
+
+You can now generate your data using the 🧮 [Processing](../../processing)
+module.

@@ -1,0 +1,41 @@
+---
+sidebar_position: 1
+---
+
+
+import {APP_NAME} from '@site/constants';
+import {Dependencies} from '@site/src/components/Dependencies';
+import {AppIcon, MacOsIcon, UbuntuIcon, WindowsIcon,} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+
+# 📋 Requirements
+
+<Fragment>
+  For the installation of the <AppIcon /> {APP_NAME} application, the following
+  prerequisites must be present on your system:
+</Fragment>
+
+<Dependencies />
+
+## 🌐 Supported Operating Systems
+
+Refer to the following links for detailed instructions on installing
+requirements based on your operating system:
+
+<ul>
+  <li>
+    <WindowsIcon />
+    {'  '}
+    <a href={'./windows'}>Windows</a>
+  </li>
+  <li>
+    <UbuntuIcon />
+    {'  '}
+    <a href={'./ubuntu'}>Ubuntu</a>
+  </li>
+  <li>
+    <MacOsIcon />
+    {'  '}
+    <a href={'./macos'}>macOS</a>
+  </li>
+</ul>
