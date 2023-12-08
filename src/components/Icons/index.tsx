@@ -201,3 +201,17 @@ export const GithubIcon = () => (
     color="#181717"
   />
 );
+
+export const TypescriptIcon = () => (
+  <SimpleIcon
+    icon="typescript"
+    color="#3178C6"
+  />
+);
+
+export const VueIcon = () => (
+  <SimpleIcon
+    icon="vuedotjs"
+    color="#4FC08D"
+  />
+);
