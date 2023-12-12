@@ -3,10 +3,14 @@ sidebar_position: 3
 title: macOS
 ---
 
-
 import {APP_NAME} from '@site/constants';
 import {Dependencies} from '@site/src/components/Dependencies';
-import {HomebrewIcon, MacOsIcon, TerminalIcon, XcodeIcon,} from '@site/src/components/Icons';
+import {
+  HomebrewIcon,
+  MacOsIcon,
+  TerminalIcon,
+  XcodeIcon,
+} from '@site/src/components/Icons';
 import {Fragment} from 'react';
 
 # <MacOsIcon /> macOS
@@ -16,9 +20,9 @@ import {Fragment} from 'react';
   13 and <MacOsIcon /> macOS 14.
 </Fragment>
 
-<h2>
-  <HomebrewIcon /> Homebrew
-</h2>
+<Fragment>
+  ## <HomebrewIcon /> Homebrew
+</Fragment>
 
 <Fragment>
   Using the package manager <HomebrewIcon /> [Homebrew](https://brew.sh/) is
@@ -54,9 +58,9 @@ brew install gcc curl ffmpeg python@3.10 node@20 pnpm && \
 echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
 ```
 
-<h3>
-  <XcodeIcon /> Xcode Command Line Tools
-</h3>
+<Fragment>
+  ### <XcodeIcon /> Xcode Command Line Tools
+</Fragment>
 
 :::info
 This step is optional. Additional context is needed.
