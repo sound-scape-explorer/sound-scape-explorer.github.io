@@ -7,6 +7,7 @@ import {AppDirectory} from '@site/src/components/AppDirectory';
 import {
   AppIcon,
   MacOsIcon,
+  NvidiaIcon,
   PythonIcon,
   UbuntuIcon,
   WindowsIcon,
@@ -145,14 +146,19 @@ pnpm i; pnpm install:front; pnpm install:processing:windows
 Use right-click to paste in Windows terminals.
 :::
 
+<Fragment>
+
 :::tip
-For accelerated processing with a compatible GPU, include additional dependencies:
+For accelerated processing with a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include additional
+dependencies:
 
 ```bash
 pnpm install:processing:cuda:windows
 ```
 
 :::
+
+</Fragment>
 
 <Fragment>
   ### Modules on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
@@ -166,14 +172,19 @@ pnpm install:front && \
 pnpm install:processing
 ```
 
+<Fragment>
+
 :::tip
-For accelerated processing with a compatible GPU, include additional dependencies:
+For accelerated processing with a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include additional
+dependencies:
 
 ```bash
 pnpm install:processing:cuda
 ```
 
 :::
+
+</Fragment>
 
 ## 🗑️ Uninstallation
 

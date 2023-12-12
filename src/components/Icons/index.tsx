@@ -215,3 +215,10 @@ export const VueIcon = () => (
     color="#4FC08D"
   />
 );
+
+export const NvidiaIcon = () => (
+  <SimpleIcon
+    icon="nvidia"
+    color="#76B900"
+  />
+);
