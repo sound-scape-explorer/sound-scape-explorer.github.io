@@ -88,13 +88,119 @@ contribute to the code.
 - Follow all coding standards set by existing code in the repo. Using your own
   preferences over the established ones for the project just ends up making the
   code messy.
-- Use a commit message using [angular commit
-  guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md). The
-  first line of commit messages should not be longer than 70 characters. Any
-  subsequent lines should not be longer than 80 characters.
+- Use a commit message using our [Commit Message Guidelines](#commit-message-guidelines).
 - An explanation of what the commit's changes do in your commit message is
   extremely useful. It helps people to more quickly understand what your code is
   doing.
-- When you submit a pull request, be willing to accept criticism. We don't
-  criticise to make you feel bad - we want you to know where you may have made a
-  mistake and this helps you grow as a developer.
+- When you submit a pull request, be willing to accept criticism. We don't criticise to make you feel bad - we want you to know where you may have made a mistake and this helps you grow as a developer.
+
+## Commit Message Guidelines
+
+_This specification is inspired by and supersedes the [Angular Commit Message
+Guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)._
+
+We have very precise rules over how our Git commit messages must be formatted.
+This format leads to **easier to read commit history**.
+
+Each commit message consists of a **header**, a **body**, and a **footer**.
+
+```
+<header>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+The `header` is mandatory and must conform to the [Commit Message Header](#commit-message-header) format.
+
+The `body` is optional.
+When the body is present it must be at least 20 characters long and must conform to the [Commit Message Body](#commit-message-body) format.
+
+The `footer` is optional. The [Commit Message Footer](#commit-footer) format describes what the footer is used for and the structure it must have.
+
+### Commit Message Header
+
+```
+<type>(<scope>): <short summary>
+  │       │             │
+  │       │             └─⫸ Summary in present tense. Capitalized. No period at the end.
+  │       │
+  │       └─⫸ Commit Scope: App|Bin|Examples|Front|Processing
+  │
+  └─⫸ Commit Type: docs|feat|fix|perf|refactor
+```
+
+The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
+
+#### Type
+
+Must be one of the following:
+
+- **chore**: Miscellaneous changes that will get ignored by release pipelines
+- **docs**: Documentation only changes
+- **feat**: A new feature
+- **fix**: A bug fix
+- **perf**: A code change that improves performance
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **test**: Adding missing tests or correcting existing tests
+
+#### Scope
+
+The scope should be the name of the module affected (as perceived by the person reading the changelog generated from commit messages).
+
+The following is the list of supported scopes:
+
+- `App`
+- `Bin`
+- `Examples`
+- `Front`
+- `Processing`
+
+You can narrow the scope by domains using `/`.
+
+For instance, `Front/Worker` or `Processing/Storage`.
+
+#### Summary
+
+Use the summary field to provide a succinct description of the change:
+
+- use the imperative, present tense: "change" not "changed" nor "changes"
+- capitalize the first letter
+- no dot (.) at the end
+
+### Commit Message Body
+
+Just as in the summary, use the imperative, present tense: "fix" not "fixed" nor "fixes".
+
+Explain the motivation for the change in the commit message body. This commit message should explain _why_ you are making the change.
+You can include a comparison of the previous behavior with the new behavior in order to illustrate the impact of the change.
+
+### Commit Message Footer
+
+The footer can contain information about breaking changes and deprecations and is also the place to reference GitHub issues, and other PRs that this commit closes or is related to.
+For example:
+
+```
+BREAKING CHANGE: <breaking change summary>
+<BLANK LINE>
+<breaking change description + migration instructions>
+<BLANK LINE>
+<BLANK LINE>
+Fixes #<issue number>
+```
+
+or
+
+```
+DEPRECATED: <what is deprecated>
+<BLANK LINE>
+<deprecation description + recommended update path>
+<BLANK LINE>
+<BLANK LINE>
+Closes #<pr number>
+```
+
+Breaking Change section should start with the phrase "BREAKING CHANGE: " followed by a summary of the breaking change, a blank line, and a detailed description of the breaking change that also includes migration instructions.
+
+Similarly, a Deprecation section should start with "DEPRECATED: " followed by a short description of what is deprecated, a blank line, and a detailed description of the deprecation that also mentions the recommended update path.
