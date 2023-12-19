@@ -2,6 +2,7 @@
 sidebar_position: 2
 ---
 
+
 import {ExcelTab} from '@site/src/components/ExcelTab';
 import {ExcelIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
@@ -22,6 +23,10 @@ import {Fragment} from 'react';
 
 :::tip
 You can automatically [detect and add audio files](../../../extras/file-detection).
+:::
+
+:::tip
+Most column headers have documentation, available by hovering with mouse cursor.
 :::
 
 <Fragment>
@@ -46,6 +51,12 @@ Specify your campaign settings in this tab.
 
 Specify file paths, sites, dates, and labels in this tab.
 
+:::tip
+Label properties must be prefixed with `label_`. We also recommend capitalizing them.
+
+Example: `label_REPLICA`
+:::
+
 <Fragment>
   ### <ExcelTab background={'#ffffa6'}>Bands</ExcelTab>
 </Fragment>
@@ -69,6 +80,12 @@ Specify dates and time spans in this tab.
 </Fragment>
 
 Specify trajectories in this tab.
+
+:::warning
+
+`label_property` and `label_value` are case-sensitive!
+
+:::
 
 <Fragment>
   ### <ExcelTab background={'#b4c7dc'}>Extractors</ExcelTab>
