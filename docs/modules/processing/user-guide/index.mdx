@@ -2,8 +2,11 @@
 sidebar_position: 2
 ---
 
+
 import {ExcelIcon, StorageIcon} from '@site/src/components/Icons';
-import {ProcessingMenuBlock12_0_0} from '@site/src/components/ProcessingMenuBlock12_0_0';
+import {
+  ProcessingMenuBlock12_2_0
+} from '@site/src/components/ProcessingMenuBlock12_2_0';
 import {Fragment} from 'react';
 import {VERSION} from '../../../env';
 
@@ -25,15 +28,17 @@ import {VERSION} from '../../../env';
 Upon module initiation, the following menu will appear:
 
 <Fragment>
-:::tip
-Use the `arrow` keys or `j`/`k` to navigate through the menu.
+  :::tip
+  Use the `arrow` keys or `j`/`k` to navigate through the menu.
 
 Press `Enter` to run the selected choice.
 :::
 
 </Fragment>
 
-<ProcessingMenuBlock12_0_0 version={VERSION} />
+<Fragment>
+  <ProcessingMenuBlock12_2_0 version={VERSION} />
+</Fragment>
 
 ## 📋 Most Common Use Case
 
