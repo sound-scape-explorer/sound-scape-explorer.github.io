@@ -23,17 +23,17 @@ State in storage:
 ✅ Present
 
 ? Choose your action
-❯ ✅ Refresh configuration
-  ✅ Run extractions and aggregations
-  ✅ Run reductions
+❯ ❌ Refresh configuration
+  ❌ Run extractions and aggregations
+  ❌ Run reductions
   ---------------
-  ✅ Run computation UMAPs and mean distances matrix (needed for autocluster and relative trajectories)
+  ❌ Run computation UMAPs and mean distances matrix (needed for autocluster and relative trajectories)
   Purge computation UMAPs and mean distances matrix
   ---------------
-  ✅ Run autoclusters
-  ✅ Run trajectories
-  ✅ Run relative trajectories
-  ✅ Run digests
+  ❌ Run autoclusters
+  ❌ Run trajectories
+  ❌ Run relative trajectories
+  ❌ Run digests
   ---------------
   Run all
   ---------------
