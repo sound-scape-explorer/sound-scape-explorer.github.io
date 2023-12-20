@@ -1,0 +1,182 @@
+---
+sidebar_position: 1
+title: Windows
+---
+
+import {APP_NAME} from '@site/constants';
+import {Dependencies} from '@site/src/components/Dependencies';
+import {
+  ChocolateyIcon,
+  CIcon,
+  MicrosoftIcon,
+  PowershellIcon,
+  PythonIcon,
+  TerminalIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
+import {WinKey} from '@site/src/components/WinKey';
+import {Fragment} from 'react';
+
+# <WindowsIcon /> Windows
+
+<Fragment>
+  The steps provided below have been tested on <WindowsIcon /> Windows 10 and{' '}
+  <WindowsIcon /> Windows 11.
+</Fragment>
+
+<Fragment>
+  ## <CIcon /> C Compiler
+</Fragment>
+
+In order to install the
+[hdbscan](https://github.com/scikit-learn-contrib/hdbscan) python package later
+on, a C compiler will be required.
+
+<Fragment>
+  You can install it on <WindowsIcon /> Windows through the [Visual Studio Build
+  Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+</Fragment>
+
+### 🛠️ Procedure
+
+<ol>
+  <li>
+    {'Navigate to '}
+    <MicrosoftIcon />
+    {'  '}
+    <a
+      href={'https://visualstudio.microsoft.com/visual-cpp-build-tools/'}
+      target={'_blank' + ''}
+    >
+      {'Microsoft C++ Build Tools'}
+    </a>
+  </li>
+  <li>
+    <span>Click on `Download Build Tools` to download the executable</span>
+  </li>
+  <li>
+    <span>
+      {'Run the executable (proceed until you get the menu '}
+      <i>Installing - Visual Studio Build Tools...</i>
+      {')'}
+    </span>
+  </li>
+  <li>
+    <span>Check the first box for `Desktop development with C++`</span>
+  </li>
+  <li>
+    <span>Click on `Install` (requires 6 Gb of disk space)</span>
+  </li>
+  <li>
+    <span>
+      Wait for the installation to complete. Once done, you can close the Visual
+      Studio Build Tools window
+    </span>
+  </li>
+</ol>
+
+<Fragment>
+  ## <ChocolateyIcon /> Chocolatey
+</Fragment>
+
+<Fragment>
+  We recommend using <ChocolateyIcon /> [Chocolatey](https://chocolatey.org/) as
+  a package manager to install the necessary requirements for the application on{' '}
+  <WindowsIcon /> Windows.
+</Fragment>
+
+### 🛠️ Procedure
+
+<ol>
+  <li>
+    {'Click on the start menu (or press '}
+    <WinKey />
+    {' on your keyboard)'}
+  </li>
+  <li>
+    {'Type '}
+    <i>
+      <PowershellIcon />
+      {' PowerShell'}
+    </i>
+  </li>
+  <li>
+    {'Right-click on the '}
+    <i>
+      <PowershellIcon />
+      {' PowerShell'}
+    </i>
+    {' icon'}
+  </li>
+  <li>
+    {'Select '}
+    <i>Run as Administrator</i>
+    {' (this will open a new elevated terminal)'}
+  </li>
+  <li>
+    {'Navigate to '}
+    <ChocolateyIcon />
+    {'  '}
+    <a
+      href={'https://chocolatey.org/install'}
+      target={'_blank'}
+    >
+      {'Chocolatey installation page'}
+    </a>
+  </li>
+  <li>Scroll to find the installation command</li>
+  <li>Copy the command</li>
+  <li>Paste it in your elevated terminal</li>
+  <li>
+    {'Press '}
+    <code>Enter</code>
+    {' to execute the command. Wait for the installation to finish.'}
+  </li>
+  <li>Keep the terminal open for subsequent steps</li>
+</ol>
+
+<Fragment>
+  ## <PythonIcon /> Python
+</Fragment>
+
+<Fragment>
+  For <PythonIcon /> Python installation, use the following command:
+</Fragment>
+
+```powershell
+choco install python3 --version=3.10.11 -y
+```
+
+## 📦 Other Dependencies
+
+Install the additional dependencies required by the application:
+
+<Dependencies
+  noPython
+  noCCompiler
+/>
+
+Use the command below to install these dependencies:
+
+```powershell
+choco install nodejs-lts pnpm curl ffmpeg -y
+```
+
+## 🗑️ Uninstallation
+
+<Fragment>
+  To remove the installed requirements, open an elevated <PowershellIcon />
+  PowerShell window (as described in the <ChocolateyIcon />
+  [Chocolatey](#-chocolatey) section) and run the following command:
+</Fragment>
+
+```powershell
+choco uninstall python3 nodejs-lts pnpm curl ffmpeg -y
+```
+
+## ⏭️ Next step
+
+<Fragment>
+  Once completed, close your <TerminalIcon /> terminal and proceed to the
+  [installation of {APP_NAME}](../application).
+</Fragment>
