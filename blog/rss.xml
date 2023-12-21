@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 21 Dec 2023 00:45:21 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Dec 2023 00:51:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,19 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 21 Dec 2023 00:45:21 GMT</pubDate>
+            <pubDate>Thu, 21 Dec 2023 00:51:02 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 12.2.0]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2023/12/20/version-12.2.0</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2023/12/20/version-12.2.0</guid>
+            <pubDate>Wed, 20 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 12.2.0 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 12.2.0 has been released!</p>
+<p>This new version introduces various bug fixes and quality of life improvements.</p>
+<ul><li>🧮 Processing<ul><li>Add data validation checks before actions</li><li>Display data presence in storage in menu</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Improve audio player behaviour</li><li>Improve grid layouts</li><li>Clean notifications</li><li>Display build version</li></ul></li></ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 12.1.0]]></title>
