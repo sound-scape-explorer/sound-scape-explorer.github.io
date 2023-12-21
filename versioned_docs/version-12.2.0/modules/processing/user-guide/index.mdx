@@ -1,0 +1,70 @@
+---
+sidebar_position: 2
+---
+
+
+import {ExcelIcon, StorageIcon} from '@site/src/components/Icons';
+import {
+  ProcessingMenuBlock12_2_0
+} from '@site/src/components/ProcessingMenuBlock12_2_0';
+import {Fragment} from 'react';
+import {VERSION} from '../../../env';
+
+# 📖 User Guide
+
+<Fragment>
+  Upon module initiation, the <ExcelIcon /> configuration will load, and a{' '}
+  <StorageIcon /> storage file will either be created or opened. Subsequently,
+  the 📑 [Menu](#-menu) will be displayed.
+</Fragment>
+
+<Fragment>
+  Most users typically opt for the `Run All` option to execute all metrics
+  specified in the <ExcelIcon /> configuration.
+</Fragment>
+
+## 📑 Menu
+
+Upon module initiation, the following menu will appear:
+
+<Fragment>
+  :::tip
+  Use the `arrow` keys or `j`/`k` to navigate through the menu.
+
+Press `Enter` to run the selected choice.
+:::
+
+</Fragment>
+
+<Fragment>
+  <ProcessingMenuBlock12_2_0 version={VERSION} />
+</Fragment>
+
+## 📋 Most Common Use Case
+
+<Fragment>
+  For executing all metrics specified in your <ExcelIcon /> configuration file:
+</Fragment>
+
+1. Choose `Run All`
+2. Wait for processing completion. When the menu reappears, the
+   processing has finished
+3. To visualise your data, select `Quit`, then proceed to the [Visualisation User Guide](../../visualisation)
+
+## 👉 Commands
+
+- [Refresh configuration](./refresh-configuration)
+- [Run extractions and aggregations](./run-extractions-and-aggregations)
+- [Run reductions](./run-reductions)
+- [Run computation UMAPs and mean distances matrix](./run-computations)
+- [Purge computation UMAPs and mean distances matrix](./purge-computations)
+- [Run autoclusters](./run-autoclusters)
+- [Run trajectories](./run-trajectories)
+- [Run relative trajectories](./run-relative-trajectories)
+- [Run digests](./run-digests)
+- [Run all](./run-all)
+- [Export dataframe](./export-dataframe)
+- [Export computation UMAPs](./export-computations)
+- [Export mean distances matrix](./export-mdm)
+- [Repack storage](./repack-storage)
+- [Quit](./quit)
