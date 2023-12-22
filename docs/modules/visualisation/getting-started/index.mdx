@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+
+import {AudioCommandBlock} from '@site/src/components/AudioCommandBlock';
 import {
   ChromeIcon,
   ExcelIcon,
@@ -19,19 +21,6 @@ import ReactPlayer from 'react-player';
 
 # 🏃 Getting started
 
-## 🔗 Compatibility
-
-<Fragment>
-  While the web app is compatible with most browsers, we've encountered
-  intermittent issues with <FirefoxIcon /> Firefox on <WindowsIcon /> Windows 11
-  and <SafariIcon /> Safari on <MacOsIcon /> macOS 14. For optimal performance,
-  we recommend using <ChromeIcon /> Chrome.
-</Fragment>
-
-<Fragment>
-  ## 🔧 <VisCommandInline /> Command
-</Fragment>
-
 <Fragment>
   :::warning
   Ensure you have an active <PythonIcon /> Python `venv` in a terminal window.
@@ -44,7 +33,27 @@ import ReactPlayer from 'react-player';
 environments](../../../installation/application#-virtual-environment)
 :::
 
-This command swiftly initiates both the `Audio` and `Front` services.
+The 👁️‍🗨️ Visualisation module uses two services to run properly:
+
+- `Front` service
+- Power the user interfaces
+- The default port is `5530`
+- `Audio` service
+- Serve audio files from your file system
+- The default port is `5531`
+
+## 🔗 Compatibility
+
+<Fragment>
+  While the web app is compatible with most browsers, we've encountered
+  intermittent issues with <FirefoxIcon /> Firefox on <WindowsIcon /> Windows 11
+  and <SafariIcon /> Safari on <MacOsIcon /> macOS 14. For optimal performance,
+  we recommend using <ChromeIcon /> Chrome.
+</Fragment>
+
+## 🔧 `sse_vis` Command
+
+This command initiates both the `Audio` and `Front` services.
 
 <Fragment>
   In an active `venv` terminal, enter the following command to start both
@@ -57,14 +66,6 @@ This command swiftly initiates both the `Audio` and `Front` services.
 After pressing `<Enter>`, both services will launch, and your default browser
 will open.
 
-<Fragment>
-  :::note
-  You can alternatively use <VizCommandInline /> as an alias
-  for the <VisCommandInline /> command.
-  :::
-
-</Fragment>
-
 <details>
   <summary>
     <WindowsIcon /> Windows screencast
@@ -76,7 +77,25 @@ will open.
   />
 </details>
 
-## 🔧 `audio:front` Command
+<Fragment>
+  :::note
+  You can alternatively use <VizCommandInline /> as an alias
+  for the <VisCommandInline /> command.
+  :::
+
+</Fragment>
+
+## 🔧 `sse_audio` Command
+
+Use the `sse_audio` command to start only the `Audio` service.
+
+This can be useful in case you are using the 👁️‍🗨️ [Visualisation online](../../../extras/visualisation-online).
+
+<AudioCommandBlock />
+
+## 🔧 Advanced Commands
+
+### `audio:front` Command
 
 Simultaneously start both the `Front` and `Audio` services.
 
@@ -84,7 +103,7 @@ Simultaneously start both the `Front` and `Audio` services.
 pnpm audio:front relative/or/absolute/path/to/audio/folder
 ```
 
-## 🔧 `audio` Command
+### `audio` Command
 
 Start the `Audio` service on port [5531](http://localhost:5531).
 
@@ -92,7 +111,7 @@ Start the `Audio` service on port [5531](http://localhost:5531).
 pnpm audio -- relative/or/absolute/path/to/audio/folder
 ```
 
-## 🔧 `front` Command
+### `front` Command
 
 Start the `Front` service on port [5530](http://localhost:5530).
 
