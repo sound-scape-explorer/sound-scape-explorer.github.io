@@ -1,12 +1,25 @@
 import {APP_NAME} from '@site/constants';
 import CodeBlock from '@theme/CodeBlock';
+import {useMemo} from 'react';
 
-const code = `# Windows
-${APP_NAME.toLowerCase()} D:\\campaign\\config.xlsx
+interface Props {
+  isCse?: boolean;
+}
+
+const code = (command: string) => `# Windows
+${command} D:\\campaign\\config.xlsx
 
 # Ubuntu / macOS
-${APP_NAME.toLowerCase()} campaign/config.xlsx`;
+${command} campaign/config.xlsx`;
 
-export const ProcessingCommandBlock = () => (
-  <CodeBlock language="bash">{code}</CodeBlock>
-);
+export const ProcessingCommandBlock = ({isCse = false}: Props) => {
+  const command = useMemo(() => {
+    if (isCse) {
+      return 'cse';
+    }
+
+    return APP_NAME.toLowerCase();
+  }, [isCse]);
+
+  return <CodeBlock language="bash">{code(command)}</CodeBlock>;
+};

@@ -222,3 +222,12 @@ export const NvidiaIcon = () => (
     color="#76B900"
   />
 );
+
+export const CseIcon = () => (
+  <img
+    className={styles.cseIcon}
+    src="/img/logo-cse.svg"
+    role="img"
+    alt="CSE Icon"
+  />
+);

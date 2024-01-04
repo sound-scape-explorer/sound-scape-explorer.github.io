@@ -1,0 +1,50 @@
+---
+sidebar_position: 1
+---
+
+
+import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
+import {ExcelFile} from '@site/src/components/ExcelFile';
+import {ExcelIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+import {VERSION} from '../../../env.ts';
+
+# 🏃 Getting started
+
+:::tip
+For optimal organization, consider creating **one folder per campaign** to
+store your configuration and storage files.
+:::
+
+The <ExcelIcon /> configuration is in `.xlsx` format.
+
+## 📥 Download
+
+<Fragment>
+  {'Download the default '}
+  <ExcelIcon />
+  <ExcelFile
+    version={VERSION}
+    isCse
+  >{`v${VERSION} configuration`}</ExcelFile>
+  {'.'}
+</Fragment>
+
+## 🏠 Local
+
+<ol>
+  <li>
+    {'Go to '}
+    <ExampleDirectory
+      version={VERSION}
+      isCse
+    />
+  </li>
+  <li>Open the `new-campaign` folder</li>
+  <li>
+    {'Duplicate and modify the default '}
+    <ExcelIcon />
+    {'  '}
+    <code>config.xlsx</code>
+  </li>
+</ol>

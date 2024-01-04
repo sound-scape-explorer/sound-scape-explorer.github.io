@@ -1,21 +1,29 @@
+import {APP_DESCRIPTION} from '@site/constants';
 import CodeBlock from '@theme/CodeBlock';
 import {useMemo} from 'react';
 
 interface Props {
   next?: boolean;
   version?: string;
+  isCse?: boolean;
 }
 
-export const ExportingDocsBlock = ({next, version}: Props) => {
+export const ExportingDocsBlock = ({next, version, isCse = false}: Props) => {
   const code = useMemo(() => {
-    let endpoint = 'https://sound-scape-explorer.github.io/docs';
+    let endpoint = `https://sound-scape-explorer.github.io/docs/${version}`;
     let titleSuffix = '';
     let fileSuffix = '';
+    let appName = APP_DESCRIPTION;
+
+    if (isCse) {
+      endpoint = 'https://sound-scape-explorer.github.io/docs/CSE';
+      appName = 'CoralSoundExplorer';
+    }
 
     if (next) {
       titleSuffix = ' Next';
       fileSuffix = '-next';
-      endpoint += '/next';
+      endpoint = 'https://sound-scape-explorer.github.io/docs/next';
     } else {
       titleSuffix = version ? ` ${version}` : '';
       fileSuffix = version ? `-${version}` : '';
@@ -28,9 +36,9 @@ export const ExportingDocsBlock = ({next, version}: Props) => {
 --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" \\
 --coverImage="https://sound-scape-explorer.github.io/img/logo.png" \\
 --cssStyle=":root{background: transparent}" \\
---coverTitle="SoundScapeExplorer Docs${titleSuffix}" \\
---outputPDFFilename="SoundScapeExplorer-docs${fileSuffix}.pdf"`;
-  }, []);
+--coverTitle="${appName} Docs${titleSuffix}" \\
+--outputPDFFilename="${appName}-docs${fileSuffix}.pdf"`;
+  }, [isCse]);
 
   return <CodeBlock language="bash">{code}</CodeBlock>;
 };

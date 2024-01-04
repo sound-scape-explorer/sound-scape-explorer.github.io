@@ -1,0 +1,214 @@
+---
+sidebar_position: 2
+---
+
+
+import {AppDirectory} from '@site/src/components/AppDirectory';
+import {
+  CseIcon,
+  MacOsIcon,
+  NvidiaIcon,
+  PythonIcon,
+  UbuntuIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
+import {SizeInfo} from '@site/src/components/SizeInfo';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
+import {SIZE, VERSION} from '../../env.ts';
+
+# 💻 Application
+
+<Fragment>
+  This section will guide you through the installation process for the
+  <CseIcon /> CSE application.
+</Fragment>
+
+<Fragment>
+  ## 📥 Download <SizeInfo size={SIZE} />
+</Fragment>
+
+<ol>
+  <li>
+    {'Download '}
+    <SourceLink
+      version={VERSION}
+      size={SIZE}
+      isCse
+    />
+  </li>
+  <li>
+    {'Extract the archive (use '}
+    <i>Extract here</i>
+    {')'}
+  </li>
+  <li>
+    {'Open the folder '}
+    <AppDirectory
+      version={VERSION}
+      isCse
+    />
+  </li>
+  <li>{'Proceed to the next steps'}</li>
+</ol>
+
+## 🔮 Virtual Environment
+
+<Fragment>
+  A virtual environment is established to manage <PythonIcon /> Python
+  dependencies.
+</Fragment>
+
+It needs creation only once but can be activated multiple times.
+
+:::tip
+You will need to repeat this step each time you open a new terminal session.
+:::
+
+<Fragment>
+  ### `venv` on <WindowsIcon /> Windows
+</Fragment>
+
+Double-click on `start.bat` and wait for `venv` creation and activation.
+
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/venv_windows.mp4"
+  />
+</details>
+
+<Fragment>
+  ### `venv` on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+</Fragment>
+
+<ol>
+  <li>
+    <Fragment>Open a new terminal session</Fragment>
+  </li>
+  <li>
+    {'Type '}
+    <code>cd</code>
+    {' followed by a '}
+    <code>&lt;space&gt;</code>
+    {' and the path to the '}
+    <AppDirectory
+      version={VERSION}
+      isCse
+    />
+    {' folder'}
+  </li>
+</ol>
+
+#### Create `venv`
+
+Execute the following command to create a virtual environment:
+
+```bash
+python3.10 -m venv venv
+```
+
+#### Activate `venv`
+
+Run this command to activate the virtual environment:
+
+```bash
+. venv/bin/activate
+```
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/venv_ubuntu.mp4"
+  />
+</details>
+
+<Fragment>
+  ## 🧩 Modules <SizeInfo size={'~14 GB'} />
+</Fragment>
+
+<Fragment>
+  Modules constitute the components of <CseIcon /> CSE and occupy approximately
+  14 GB of disk space.
+</Fragment>
+
+<Fragment>
+  ### Modules on <WindowsIcon /> Windows
+</Fragment>
+
+Install all modules sequentially using the following command:
+
+```powershell
+pnpm i; pnpm install:front; pnpm install:processing:windows
+```
+
+:::tip
+Use right-click to paste in Windows terminals.
+:::
+
+<Fragment>
+
+:::tip
+For accelerated processing with
+a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include
+additional
+dependencies:
+
+```bash
+pnpm install:processing:cuda:windows
+```
+
+:::
+
+</Fragment>
+
+<Fragment>
+  ### Modules on <UbuntuIcon /> Ubuntu / <MacOsIcon /> macOS
+</Fragment>
+
+Install all modules at once with this command:
+
+```bash
+pnpm i && \
+pnpm install:front && \
+pnpm install:processing
+```
+
+<Fragment>
+
+:::tip
+For accelerated processing with
+a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include
+additional
+dependencies:
+
+```bash
+pnpm install:processing:cuda
+```
+
+:::
+
+</Fragment>
+
+## 🗑️ Uninstallation
+
+<Fragment>
+  To remove the application and its dependencies, delete the
+  <AppDirectory
+    version={VERSION}
+    isCse
+  /> folder.
+</Fragment>
+
+## ⏭️ Next Step
+
+Proceed to the 🧩 [Modules](../../modules/) documentation.

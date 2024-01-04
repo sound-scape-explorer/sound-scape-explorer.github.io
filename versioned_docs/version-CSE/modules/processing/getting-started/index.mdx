@@ -1,0 +1,94 @@
+---
+sidebar_position: 1
+---
+
+
+import {AppInline} from '@site/src/components/AppInline';
+import {
+  ExcelIcon,
+  PythonIcon,
+  UbuntuIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
+import {
+  ProcessingCommandBlock
+} from '@site/src/components/ProcessingCommandBlock';
+import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
+
+# 🏃 Getting started
+
+## 📋 Requirements
+
+To generate data, ensure you have:
+
+<ul>
+  <li>
+    <Fragment>Ran the 🔧 [Installation](../../../installation)</Fragment>
+  </li>
+  <li>
+    <Fragment>
+      {'Completed a '}
+      <ExcelIcon />
+      {' configuration appropriately'}
+    </Fragment>
+  </li>
+  <li>
+    {'An active '}
+    <PythonIcon />
+    {' Python '}
+    <code>venv</code>
+    {' in a terminal window'}
+  </li>
+</ul>
+
+:::info
+[Learn how to activate 🔮 virtual
+environments](../../../installation/application#-virtual-environment)
+:::
+
+## 🚀 Execution
+
+<ol>
+  <li>
+    {'Type '}
+    <AppInline isCse />
+    {' followed by a '}
+    <code>&lt;space&gt;</code>
+  </li>
+  <li>
+    {'Type the path to your '}
+    <code>.xlsx</code>
+    {' file (or drag and drop file icon into the terminal)'}
+  </li>
+  <li>
+    {'Press '}
+    <code>Enter</code>
+  </li>
+</ol>
+
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/processing_windows.mp4"
+  />
+</details>
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/screencasts/processing_ubuntu.mp4"
+  />
+</details>
+
+### 📝 Examples
+
+<ProcessingCommandBlock isCse />

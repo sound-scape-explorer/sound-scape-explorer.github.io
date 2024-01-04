@@ -1,7 +1,20 @@
 import {APP_NAME} from '@site/constants';
+import {useMemo} from 'react';
 
 import {CodeInline} from '../CodeInline';
 
-export const FileDetectionCommandInline = () => (
-  <CodeInline>{APP_NAME.toLowerCase()}_fill</CodeInline>
-);
+interface Props {
+  isCse?: boolean;
+}
+
+export const FileDetectionCommandInline = ({isCse = false}: Props) => {
+  const command = useMemo(() => {
+    if (isCse) {
+      return 'cse';
+    }
+
+    return APP_NAME.toLowerCase();
+  }, [isCse]);
+
+  return <CodeInline>{command}_fill</CodeInline>;
+};

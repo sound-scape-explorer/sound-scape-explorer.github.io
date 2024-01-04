@@ -1,7 +1,11 @@
 import {APP_DESCRIPTION} from '@site/constants';
 import CodeBlock from '@theme/CodeBlock';
+import {useMemo} from 'react';
 
-const code = (version: Props['version']) => `Loading configuration...
+const code = (
+  version: Props['version'],
+  name: string,
+) => `Loading configuration...
 Config loaded: /app/examples/campaigns/coral-reef-light/coral-reef-light.xlsx
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Setting                     ┃ Value                                                       ┃
@@ -16,7 +20,7 @@ Config loaded: /app/examples/campaigns/coral-reef-light/coral-reef-light.xlsx
 │ computation_umap_iterations │ 10                                                          │
 │ display_umap_seed           │ 42000                                                       │
 └─────────────────────────────┴─────────────────────────────────────────────────────────────┘
-👋 Welcome to ${APP_DESCRIPTION} v${version}!
+👋 Welcome to ${name} v${version}!
 
 State in storage:
 ❌ Missing
@@ -45,8 +49,17 @@ State in storage:
 
 interface Props {
   version: string;
+  isCse?: boolean;
 }
 
-export const ProcessingMenuBlock12_3_0 = ({version}: Props) => (
-  <CodeBlock language="bash">{code(version)}</CodeBlock>
-);
+export const ProcessingMenuBlock12_3_0 = ({version, isCse = false}: Props) => {
+  const appName = useMemo(() => {
+    if (isCse) {
+      return 'CoralSoundExplorer';
+    }
+
+    return APP_DESCRIPTION;
+  }, [isCse]);
+
+  return <CodeBlock language="bash">{code(version, appName)}</CodeBlock>;
+};

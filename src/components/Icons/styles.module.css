@@ -4,3 +4,10 @@
   transform: translate3d(0, 0.1em, 0);
   margin: 0 0.1em;
 }
+
+.cseIcon {
+  height: 1em;
+  width: 1em;
+  transform: scale3d(1.4, 1.4, 1.4) translate3d(0, 0.1em, 0);
+  margin: 0 0.1em;
+}

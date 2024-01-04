@@ -1,12 +1,25 @@
 import {APP_NAME} from '@site/constants';
 import CodeBlock from '@theme/CodeBlock';
+import {useMemo} from 'react';
 
-const code = `# Windows
-${APP_NAME.toLowerCase()}_vis C:\\path\\to\\config.xlsx
+const code = (command: string) => `# Windows
+${command}_vis C:\\path\\to\\config.xlsx
 
 # Ubuntu / macOS
-(venv)$> ${APP_NAME.toLowerCase()}_vis /path/to/config.xlsx`;
+(venv)$> ${command}_vis /path/to/config.xlsx`;
 
-export const VisCommandBlock = () => (
-  <CodeBlock language="bash">{code}</CodeBlock>
-);
+interface Props {
+  isCse?: boolean;
+}
+
+export const VisCommandBlock = ({isCse = false}: Props) => {
+  const command = useMemo(() => {
+    if (isCse) {
+      return 'cse';
+    }
+
+    return APP_NAME.toLowerCase();
+  }, [isCse]);
+
+  return <CodeBlock language="bash">{code(command)}</CodeBlock>;
+};

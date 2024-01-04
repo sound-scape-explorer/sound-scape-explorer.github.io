@@ -5,11 +5,21 @@ interface UseVersionReplacer {
   directory: string;
 }
 
-export function useVersionReplacer(version?: string): UseVersionReplacer {
+interface Props {
+  version?: string;
+  isCse?: boolean;
+}
+
+export function useVersionReplacer({
+  version,
+  isCse = false,
+}: Props): UseVersionReplacer {
   const directory = useMemo(() => {
     let directory = APP_DIRECTORY;
 
-    if (version) {
+    if (version && isCse) {
+      directory = 'coral-sound-explorer-VERSION'.replace('VERSION', version);
+    } else if (version) {
       directory = APP_DIRECTORY.replace('VERSION', version);
     }
 
