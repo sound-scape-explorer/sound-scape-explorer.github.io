@@ -1,0 +1,61 @@
+---
+authors: [bamdad]
+---
+
+import {APP_NAME} from '@site/constants';
+import {AppIcon} from '@site/src/components/Icons';
+
+# New version 12.3.0
+
+🎉 Version 12.3.0 has been released!
+
+This new version introduces various bug fixes and quality of life improvements.
+
+<ul>
+  <li>
+    <AppIcon />
+    {'  '}
+    {APP_NAME}
+    <ul>
+      <li>Added MIT license</li>
+    </ul>
+  </li>
+  <li>
+    {'📣 Campaign'}
+    <ul>
+      <li>
+        {'Remove '}
+        <code>vae</code>
+        {' and '}
+        <code>sparce_pca</code>
+        {' from available reducers to prevent usage'}
+      </li>
+      <li>Translate labels to English for _CoralReefLight_ campaign</li>
+      <li>Regenerate processed data for _CoralReefLight_ campaign</li>
+    </ul>
+  </li>
+  <li>
+    {'🧮 Processing'}
+    <ul>
+      <li>
+        {'Remove Windows fix menu option. Use prior versions if you need it!'}
+      </li>
+      <li>
+        {'Remove repack menu option and replace it with custom documentation'}
+      </li>
+    </ul>
+  </li>
+  <li>
+    {'👁️‍🗨️ Visualisation'}
+    <ul>
+      <li>Display dates and times un human readable formats</li>
+      <li>Add timezone setting to optionally apply time shift</li>
+      <li>Add exports to relative trajectories</li>
+      <li>Allow plot backgrounds to change dynamically upon setting change</li>
+      <li>Use `cycleDay` as default color type</li>
+      <li>Display labels correctly on PNG exports</li>
+      <li>Transpose exported CSV data for relative trajectories</li>
+      <li>Fix line breaks on Firefox for all CSV exports</li>
+    </ul>
+  </li>
+</ul>
