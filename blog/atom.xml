@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-01-04T01:17:56.000Z</updated>
+    <updated>2024-01-04T02:14:20.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,38 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-01-04T01:17:56.000Z</updated>
+        <updated>2024-01-04T02:14:20.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version CSE]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE"/>
+        <updated>2024-01-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version CSE has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version CSE has been released!</p>
+<p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
+12.3.0</a>.</p>
+<ul><li><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/logo-cse.svg" role="img" alt="CSE Icon"> CSE<ul><li>Added sponsors list</li><li>Replace <code>sse</code> command prefixes with <code>cse</code></li></ul></li><li>📣 Campaign<ul><li>Update examples configuration files (names and links to documentation)</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Obfuscate indicators from <em>Menu</em> and <em>Details</em> components</li></ul></li></ul>]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 12.3.0]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0"/>
+        <updated>2024-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 12.3.0 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 12.3.0 has been released!</p>
+<p>This new version introduces various bug fixes and quality of life improvements.</p>
+<ul><li><img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon">  <!-- -->SSE<ul><li>Added MIT license</li></ul></li><li>📣 Campaign<ul><li>Remove <code>vae</code> and <code>sparce_pca</code> from available reducers to prevent usage</li><li>Translate labels to English for <em>CoralReefLight</em> campaign</li><li>Regenerate processed data for <em>CoralReefLight</em> campaign</li></ul></li><li>🧮 Processing<ul><li>Remove Windows fix menu option. Use prior versions if you need it!</li><li>Remove repack menu option and replace it with custom documentation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display dates and times un human readable formats</li><li>Add timezone setting to optionally apply time shift</li><li>Add exports to relative trajectories</li><li>Allow plot backgrounds to change dynamically upon setting change</li><li>Use <code>cycleDay</code> as default color type</li><li>Display labels correctly on PNG exports</li><li>Transpose exported CSV data for relative trajectories</li><li>Fix line breaks on Firefox for all CSV exports</li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
