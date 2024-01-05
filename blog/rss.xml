@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 04 Jan 2024 02:14:20 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jan 2024 13:31:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 04 Jan 2024 02:14:20 GMT</pubDate>
+            <pubDate>Fri, 05 Jan 2024 13:31:44 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
         </item>
@@ -25,6 +25,7 @@
             <content:encoded><![CDATA[<p>🎉 Version CSE has been released!</p>
 <p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
 12.3.0</a>.</p>
+<p>Read the dedicated documentation <a href="https://sound-scape-explorer.github.io/docs/CSE/">here</a>.</p>
 <ul><li><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/logo-cse.svg" role="img" alt="CSE Icon"> CSE<ul><li>Added sponsors list</li><li>Replace <code>sse</code> command prefixes with <code>cse</code></li></ul></li><li>📣 Campaign<ul><li>Update examples configuration files (names and links to documentation)</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Obfuscate indicators from <em>Menu</em> and <em>Details</em> components</li></ul></li></ul>]]></content:encoded>
         </item>
         <item>
