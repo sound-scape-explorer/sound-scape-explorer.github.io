@@ -1,6 +1,30 @@
 ---
 bamdad:
   name: Bamdad Sabbagh
-  title: SoundScapeExplorer maintainer
   url: https://bamdad.fr
-  image_url: https://github.com/bamdadsabbagh.png
+  image_url: /img/cse/authors/bamdad-sabbagh.jpeg
+
+jeremy:
+  name: Jérémy Rouch
+  url: https://www.researchgate.net/profile/Jeremy-Rouch
+  image_url: /img/cse/authors/jeremy-rouch.jpeg
+
+lana:
+  name: Lana Minier
+  url: https://www.researchgate.net/profile/Lana-Minier-2
+  image_url: /img/cse/authors/lana-minier.jpeg
+
+frederic:
+  name: Frédéric Sèbe
+  url: https://celya.universite-lyon.fr/membres-de-celya/frederic-sebe--37274.kjsp
+  image_url: /img/cse/authors/frederic-sebe.png
+
+nicolas:
+  name: Nicolas Mathevon
+  url: https://www.eneslab.com/nicolas-mathevon
+  image_url: /img/cse/authors/nicolas-mathevon.jpeg
+
+remi:
+  name: Rémi Emonet
+  url: https://home.heeere.com/
+  image_url: /img/cse/authors/remi-emonet.jpg

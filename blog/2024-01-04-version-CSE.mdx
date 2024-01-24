@@ -1,7 +1,9 @@
 ---
-authors: [bamdad]
+authors: [jeremy, bamdad, lana, frederic, nicolas, remi]
 ---
 
+import {CseAuthors} from '@site/src/components/CseAuthors';
+import {CseSponsors} from '@site/src/components/CseSponsors';
 import {AppIcon, CseIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
 
@@ -42,3 +44,19 @@ Read the dedicated documentation [here](/docs/CSE/).
     </ul>
   </li>
 </ul>
+
+## Authors
+
+<Fragment>
+  <CseIcon /> CSE is authored by
+</Fragment>
+
+<CseAuthors />
+
+## Sponsors
+
+<Fragment>
+  <CseIcon /> CSE is sponsored by
+</Fragment>
+
+<CseSponsors />
