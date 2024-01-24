@@ -94,7 +94,7 @@ const config: Config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/docusaurus.png',
+            href: '/img/logo.png',
           },
           {
             tagName: 'link',
