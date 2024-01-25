@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 25 Jan 2024 10:59:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Jan 2024 11:54:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 25 Jan 2024 10:59:45 GMT</pubDate>
+            <pubDate>Thu, 25 Jan 2024 11:54:49 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
         </item>
@@ -21,8 +21,9 @@
             <link>https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE</link>
             <guid>https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE</guid>
             <pubDate>Thu, 04 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[🎉 Version CSE has been released!]]></description>
-            <content:encoded><![CDATA[<p>🎉 Version CSE has been released!</p>
+            <description><![CDATA[Description]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ArAE" id="description">Description<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h2>
+<p>🎉 Version CSE has been released!</p>
 <p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
 12.3.0</a>.</p>
 <p>Read the dedicated documentation <a href="https://sound-scape-explorer.github.io/docs/CSE/">here</a>.</p>

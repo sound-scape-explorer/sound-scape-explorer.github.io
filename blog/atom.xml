@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-01-25T10:59:45.000Z</updated>
+    <updated>2024-01-25T11:54:49.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-01-25T10:59:45.000Z</updated>
+        <updated>2024-01-25T11:54:49.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
         <author>
@@ -24,8 +24,9 @@
         <id>https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE</id>
         <link href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE"/>
         <updated>2024-01-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version CSE has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version CSE has been released!</p>
+        <summary type="html"><![CDATA[Description]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ArAE" id="description">Description<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h2>
+<p>🎉 Version CSE has been released!</p>
 <p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" role="img" alt="App Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
 12.3.0</a>.</p>
 <p>Read the dedicated documentation <a href="https://sound-scape-explorer.github.io/docs/CSE/">here</a>.</p>
