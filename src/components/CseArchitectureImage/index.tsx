@@ -1,10 +1,10 @@
 import styles from './styles.module.css';
 
-export const ArchitectureImage = () => (
+export const CseArchitectureImage = () => (
   <div className={styles.container}>
     <img
       alt={'architecture'}
-      src="/img/architecture.svg"
+      src="/img/cse/architecture.png"
       className={styles.image}
       role="img"
     />
