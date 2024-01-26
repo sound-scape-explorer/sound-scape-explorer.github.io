@@ -35,7 +35,7 @@
     "remove": "^0.1.5"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.0",
+    "@docusaurus/module-type-aliases": "3.1.1",
     "@docusaurus/plugin-google-gtag": "^3.1.0",
     "@docusaurus/plugin-pwa": "^3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
