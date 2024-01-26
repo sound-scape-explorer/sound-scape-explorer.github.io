@@ -39,7 +39,7 @@
     "@docusaurus/plugin-google-gtag": "^3.1.0",
     "@docusaurus/plugin-pwa": "^3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
-    "@docusaurus/types": "3.1.0",
+    "@docusaurus/types": "3.1.1",
     "@iconify/react": "^4.1.1",
     "@types/react": "^18.2.48",
     "@typescript-eslint/parser": "^6.19.0",
