@@ -38,7 +38,7 @@
     "@docusaurus/module-type-aliases": "3.1.0",
     "@docusaurus/plugin-google-gtag": "^3.1.0",
     "@docusaurus/plugin-pwa": "^3.1.0",
-    "@docusaurus/tsconfig": "3.1.0",
+    "@docusaurus/tsconfig": "3.1.1",
     "@docusaurus/types": "3.1.0",
     "@iconify/react": "^4.1.1",
     "@types/react": "^18.2.48",
