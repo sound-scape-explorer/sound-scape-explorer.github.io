@@ -226,7 +226,7 @@ export const NvidiaIcon = () => (
 export const CseIcon = () => (
   <img
     className={styles.cseIcon}
-    src="/img/logo-cse.svg"
+    src="/img/cse/logo.svg"
     role="img"
     alt="CSE Icon"
   />

@@ -11,6 +11,11 @@ const sponsors: Sponsor[] = [
     url: 'https://www.univ-st-etienne.fr/',
   },
   {
+    slug: 'enes-lab',
+    image: '/img/cse/sponsors/enes-lab.jpg',
+    url: 'https://www.eneslab.com/',
+  },
+  {
     slug: 'laboratoire-hubert-curien',
     image: '/img/cse/sponsors/laboratoire-hubert-curien.svg',
     url: 'https://laboratoirehubertcurien.univ-st-etienne.fr/',
