@@ -1,10 +1,12 @@
+import {Fragment} from 'react';
+
 interface Sponsor {
   slug: string;
   image: string;
   url: string;
 }
 
-const sponsors: Sponsor[] = [
+export const sponsors: Sponsor[] = [
   {
     slug: 'universite-jean-monnet',
     image: '/img/cse/sponsors/universite-jean-monnet.png',
@@ -47,7 +49,7 @@ const sponsors: Sponsor[] = [
   },
 ];
 
-export function CseSponsors() {
+function Container({children}) {
   return (
     <div
       style={{
@@ -58,8 +60,17 @@ export function CseSponsors() {
         alignItems: 'center',
       }}
     >
+      {children}
+    </div>
+  );
+}
+
+export function CseSponsors() {
+  return (
+    <Container>
       {sponsors.map((sponsor) => (
         <a
+          key={sponsor.slug}
           href={sponsor.url}
           target={'_blank'}
           rel={'noopener noreferrer'}
@@ -72,6 +83,47 @@ export function CseSponsors() {
           />
         </a>
       ))}
-    </div>
+    </Container>
+  );
+}
+
+export function CseSponsorsInline() {
+  return (
+    <Fragment>
+      <Container>
+        {sponsors.slice(0, 3).map((sponsor) => (
+          <a
+            key={sponsor.slug}
+            href={sponsor.url}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+            itemProp={'url'}
+          >
+            <img
+              width={200}
+              alt={sponsor.slug}
+              src={sponsor.image}
+            />
+          </a>
+        ))}
+      </Container>
+      <Container>
+        {sponsors.slice(3).map((sponsor) => (
+          <a
+            key={sponsor.slug}
+            href={sponsor.url}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+            itemProp={'url'}
+          >
+            <img
+              width={100}
+              alt={sponsor.slug}
+              src={sponsor.image}
+            />
+          </a>
+        ))}
+      </Container>
+    </Fragment>
   );
 }
