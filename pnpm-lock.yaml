@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.0.8
     version: 5.0.8
   '@ionic/react':
-    specifier: ^7.7.0
-    version: 7.7.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^7.7.1
+    version: 7.7.1(react-dom@18.2.0)(react@18.2.0)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.52)(react@18.2.0)
@@ -2380,21 +2380,21 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@ionic/core@7.7.0:
-    resolution: {integrity: sha512-ewbvX8u4+FNRBAw1nqBuCy4dI8OLTxoqZgm4qRs4zbrNLJInwTpYjCPzYueN0KE9ufP0n9HhS23lfcrQzJC7Hg==}
+  /@ionic/core@7.7.1:
+    resolution: {integrity: sha512-Su4VFwztN8vKyHsIgHMmzQ1ZrIajNzMR7hg2fcv15Y2yrzLpK06PcUf9QutBM9KyP0wQIngwfnO68vrAnqR+xQ==}
     dependencies:
       '@stencil/core': 4.12.0
       ionicons: 7.2.2
       tslib: 2.6.2
     dev: false
 
-  /@ionic/react@7.7.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ULZLQwuUDz/qDzzdBAn15zKs9LUEp5nl6hMIx8kdWgsEzW95vSKwGaH5Rf1GmYjIhmZfQrW1by02mmho4ahSQg==}
+  /@ionic/react@7.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-rfTUAUSqVMzg+R1CEMclSOLwXByJ06qtRXhpyVvJetQFUUVHA8inHdULTJqKN10c0XeZr+WyapGX04IktB9WfQ==}
     peerDependencies:
       react: '>=16.8.6'
       react-dom: '>=16.8.6'
     dependencies:
-      '@ionic/core': 7.7.0
+      '@ionic/core': 7.7.1
       ionicons: 7.2.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
