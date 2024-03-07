@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.0.8
     version: 5.0.8
   '@ionic/react':
-    specifier: ^7.7.0
-    version: 7.7.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^7.7.4
+    version: 7.7.4(react-dom@18.2.0)(react@18.2.0)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.52)(react@18.2.0)
@@ -2380,21 +2380,21 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@ionic/core@7.7.0:
-    resolution: {integrity: sha512-ewbvX8u4+FNRBAw1nqBuCy4dI8OLTxoqZgm4qRs4zbrNLJInwTpYjCPzYueN0KE9ufP0n9HhS23lfcrQzJC7Hg==}
+  /@ionic/core@7.7.4:
+    resolution: {integrity: sha512-zThio3ZfbTu+3eM6QBdyeEk5OBc7M0ApFwSlP/G7rrFVcTPm12FNvG9VPD+aN5NwnYy0EsV3hlMkxbawoqjVLw==}
     dependencies:
-      '@stencil/core': 4.12.0
+      '@stencil/core': 4.12.5
       ionicons: 7.2.2
       tslib: 2.6.2
     dev: false
 
-  /@ionic/react@7.7.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ULZLQwuUDz/qDzzdBAn15zKs9LUEp5nl6hMIx8kdWgsEzW95vSKwGaH5Rf1GmYjIhmZfQrW1by02mmho4ahSQg==}
+  /@ionic/react@7.7.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-UBNBUjBN1fmCUyH8hetu0/q3F4pSNFVpjhh3Bt3s/bUXy0ksCuGbiYg/hET9QW1ja17ijq0+coqREXEB8lTmrA==}
     peerDependencies:
       react: '>=16.8.6'
       react-dom: '>=16.8.6'
     dependencies:
-      '@ionic/core': 7.7.0
+      '@ionic/core': 7.7.4
       ionicons: 7.2.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2624,6 +2624,12 @@ packages:
 
   /@stencil/core@4.12.0:
     resolution: {integrity: sha512-qAQcfNmp2sdxAh1DlyUhHfDmIUS7mhI+5LAhPphg74zK9sKgFL5vpLzgjs0wohpjlmI4msgJFYiRB8lxVPqjPg==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: false
+
+  /@stencil/core@4.12.5:
+    resolution: {integrity: sha512-vSyFjY7XSEx0ufa9SebOd437CvnneaTXlCpuGDhjUDxAjGBlu6ie5qHyubobVGBth//aErc6wZPHc6W75Vp3iQ==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false
