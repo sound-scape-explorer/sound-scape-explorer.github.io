@@ -1,6 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
+
 
 import {APP_NAME} from '@site/constants';
 import {AppDirectory} from '@site/src/components/AppDirectory';
@@ -13,28 +14,36 @@ import {
   WindowsIcon,
 } from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
-import {SourceLink} from '@site/src/components/SourceLink';
+import {VenvScriptWindows} from '@site/src/components/VenvScriptWindows';
 import {Fragment} from 'react';
 import ReactPlayer from 'react-player';
-import {SIZE, VERSION} from '../../env.ts';
+// noinspection ES6PreferShortImport
+import {VERSION} from '../../../../env.ts';
 
 # 💻 Application
 
-This section will guide you through the installation process for the <AppIcon
-/> {APP_NAME} application.
+This section will guide you through the installation process for the 🧮 Processing module.
 
-<Fragment>
-  ## 📥 Download <SizeInfo size={SIZE} />
-</Fragment>
+## 📥 Download
 
 <ol>
-  <li>
-    {'Download '}
-    <SourceLink
-      version={VERSION}
-      size={SIZE}
-    />
-  </li>
+  <li>{'Download the installation script (right click, save as) '}</li>
+  <ul>
+    <li>
+      <WindowsIcon />
+      {' Windows: '}
+      <VenvScriptWindows version={VERSION} />
+    </li>
+    <li>
+      <UbuntuIcon />
+      {' Ubuntu / '}
+      <MacOsIcon />
+      {' macOS: '}
+      <VenvScriptWindows version={VERSION} />
+    </li>
+  </ul>
+  <li>Create a new folder on your local disk</li>
+  <li>Place the script downloaded at step 1. in that folder</li>
   <li>
     {'Extract the archive (use '}
     <i>Extract here</i>
@@ -139,7 +148,7 @@ Run this command to activate the virtual environment:
 Install all modules sequentially using the following command:
 
 ```powershell
-pnpm i; pnpm install:front; pnpm install:audio; pnpm install:processing:windows
+pnpm i; pnpm install:processing:windows
 ```
 
 :::tip
@@ -149,7 +158,9 @@ Use right-click to paste in Windows terminals.
 <Fragment>
 
 :::tip
-For accelerated processing with a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include additional
+For accelerated processing with
+a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include
+additional
 dependencies:
 
 ```bash
@@ -167,16 +178,15 @@ pnpm install:processing:cuda:windows
 Install all modules at once with this command:
 
 ```bash
-pnpm i && \
-pnpm install:front && \
-pnpm install:audio && \
-pnpm install:processing
+pnpm i && pnpm install:processing
 ```
 
 <Fragment>
 
 :::tip
-For accelerated processing with a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include additional
+For accelerated processing with
+a <NvidiaIcon /> [Nvidia](https://www.nvidia.com/) compatible GPU, include
+additional
 dependencies:
 
 ```bash

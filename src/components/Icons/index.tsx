@@ -153,7 +153,6 @@ export const AppIcon = () => (
   <img
     className={styles.icon}
     src="/img/logo.png"
-    role="img"
     alt="App Icon"
   />
 );
@@ -227,7 +226,6 @@ export const CseIcon = () => (
   <img
     className={styles.cseIcon}
     src="/img/cse/logo.svg"
-    role="img"
     alt="CSE Icon"
   />
 );

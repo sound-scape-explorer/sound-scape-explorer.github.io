@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import Heading from '@theme/Heading';
 import clsx from 'clsx';
 import {ComponentProps, ComponentType, ReactElement} from 'react';
@@ -14,6 +13,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Campaign',
+    // eslint-disable-next-line no-undef
     Svg: require('@site/static/img/undraw_spreadsheets_re_alt0.svg').default,
     description: (
       <>
@@ -27,6 +27,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Processing',
+    // eslint-disable-next-line no-undef
     Svg: require('@site/static/img/undraw_data_processing_yrrv.svg').default,
     description: (
       <>
@@ -40,6 +41,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Visualisation',
+    // eslint-disable-next-line no-undef
     Svg: require('@site/static/img/undraw_winter_designer_a-2-m7.svg').default,
     description: (
       <>
@@ -53,14 +55,11 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description}: Readonly<FeatureItem>) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg
-          className={styles.featureSvg}
-          role="img"
-        />
+        <Svg className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -70,7 +69,7 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">

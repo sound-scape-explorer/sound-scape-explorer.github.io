@@ -5,7 +5,7 @@ export const UserFlowImage = () => (
     <img
       src="/img/flow.svg"
       className={styles.image}
-      role="img"
+      alt="user-flow"
     />
   </div>
 );
