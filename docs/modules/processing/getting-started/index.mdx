@@ -4,17 +4,13 @@ sidebar_position: 2
 
 
 import {AppInline} from '@site/src/components/AppInline';
-import {
-  ExcelIcon,
-  PythonIcon,
-  UbuntuIcon,
-  WindowsIcon,
-} from '@site/src/components/Icons';
+import {ExcelIcon, UbuntuIcon, WindowsIcon} from '@site/src/components/Icons';
 import {
   ProcessingCommandBlock
 } from '@site/src/components/ProcessingCommandBlock';
 import {Fragment} from 'react';
 import ReactPlayer from 'react-player';
+import {VERSION} from '../../../env';
 
 # 🏃 Getting started
 
@@ -33,18 +29,16 @@ To generate data, ensure you have:
       {' configuration appropriately'}
     </Fragment>
   </li>
-  <li>
-    {'An active '}
-    <PythonIcon />
-    {' Python '}
-    <code>venv</code>
-    {' in a terminal window'}
-  </li>
 </ul>
 
 ## 🚀 Execution
 
 <ol>
+  <li>
+    {'Run the provided '}
+    <code>sse-processing-{VERSION}</code>
+    {' script'}
+  </li>
   <li>
     {'Type '}
     <AppInline />
