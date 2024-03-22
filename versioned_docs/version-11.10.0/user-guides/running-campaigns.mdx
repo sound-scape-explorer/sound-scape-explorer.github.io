@@ -2,25 +2,45 @@
 sidebar_position: 1
 ---
 
-import {VERSION} from '../version.ts';
-import {APP_NAME} from '@site/constants.ts';
+
+import {APP_NAME} from '@site/constants';
 import {AppDirectory} from '@site/src/components/AppDirectory';
 import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
+import {Fragment} from 'react';
+import {VERSION} from '../version';
 
 # Running campaigns
 
 ## Requirements
 
-- System requirements installed
-- {APP_NAME} modules installed
+<Fragment>
+  <ul>
+    <li>System requirements installed</li>
+    <li>{APP_NAME} modules installed</li>
+  </ul>
+</Fragment>
 
 ## Windows
 
-1. Copy the example folder `new-campaign` located in <ExampleDirectory version={VERSION} />
-2. Paste the example folder where you want and rename it
-3. Open your campaign folder and edit the `.xlsx` configuration file
-4. In your <AppDirectory/> folder, double click on `start.bat`
-5. You can now use [{APP_NAME} modules](./modules-presentation)
+<Fragment>
+  <ol>
+    <li>
+      {'Copy the example folder '}
+      <code>new-campaign</code>
+      {' located in '}
+      <ExampleDirectory version={VERSION} />
+    </li>
+    <li>Paste the example folder where you want and rename it</li>
+    <li>Open your campaign folder and edit the `.xlsx` configuration file</li>
+    <li>
+      {'In your '}
+      <AppDirectory />
+      {' folder, double-click on '}
+      <code>start.bat</code>
+    </li>
+    <li>You can now use [{APP_NAME} modules](./modules-presentation)</li>
+  </ol>
+</Fragment>
 
 ## Ubuntu / macOS
 

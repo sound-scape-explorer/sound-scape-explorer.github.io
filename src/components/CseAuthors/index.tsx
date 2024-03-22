@@ -47,8 +47,9 @@ export function CseAuthors() {
         gap: '2em',
       }}
     >
-      {authors.map((author) => (
+      {authors.map((author, i) => (
         <div
+          key={i}
           className="avatar"
           style={{
             display: 'grid',

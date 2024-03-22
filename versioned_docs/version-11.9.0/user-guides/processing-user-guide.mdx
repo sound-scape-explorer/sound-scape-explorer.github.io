@@ -2,9 +2,14 @@
 sidebar_position: 3
 ---
 
+
 import {AppInline} from '@site/src/components/AppInline';
-import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
-import {ProcessingMenuBlock11} from '@site/src/components/ProcessingMenuBlock11';
+import {
+  ProcessingCommandBlock
+} from '@site/src/components/ProcessingCommandBlock';
+import {
+  ProcessingMenuBlock11
+} from '@site/src/components/ProcessingMenuBlock11';
 import ContextWarning from '../_blocks/context-warning.mdx';
 
 # Processing user guide
@@ -15,7 +20,7 @@ import ContextWarning from '../_blocks/context-warning.mdx';
 
 <ol>
   <li>
-    {'Open a shell window. (Double click '}
+    {'Open a shell window. (Double-click '}
     <code>start.bat</code>
     {' on Windows or use '}
     <code>cd</code>
@@ -83,9 +88,7 @@ Use you `arrow` and `Enter` keys to navigate through it.
 Digest your Excel configuration file and copy all its information inside
 your storage file.
 
-> **Note**
->
-> You will need to run this again if you change your configuration file.
+> **Note**You will need to run this again if you change your configuration file.
 
 ### Run extractions and aggregations command
 
@@ -93,9 +96,7 @@ Extract data from your audio files either through neural networks or indicators 
 
 Take the raw data and aggregate them using your integration settings.
 
-> **Note**
->
-> These raw data can optionally be stored with the `persist` option.
+> **Note**These raw data can optionally be stored with the `persist` option.
 
 ### Run reductions command
 
@@ -154,14 +155,10 @@ HDF5 technology works.
 Repacking allows you to create a new file with your data but with the smallest
 possible size.
 
-> **Note**
+> **Note**This command is only available on UNIX systems at the moment.On Debian based distributions, install it with```bashsudo apt install hdf5-tools
 >
-> This command is only available on UNIX systems at the moment.
+> ```
 >
-> On Debian based distributions, install it with
->
-> ```bash
-> sudo apt install hdf5-tools
 > ```
 
 ### Quit command

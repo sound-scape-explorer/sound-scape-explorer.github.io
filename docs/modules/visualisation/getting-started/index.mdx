@@ -1,111 +1,61 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-import {AudioCommandBlock} from '@site/src/components/AudioCommandBlock';
-import {
-  ChromeIcon,
-  ExcelIcon,
-  FirefoxIcon,
-  MacOsIcon,
-  PythonIcon,
-  SafariIcon,
-  WindowsIcon,
-} from '@site/src/components/Icons';
-import {VisCommandBlock} from '@site/src/components/VisCommandBlock';
-import {VisCommandInline} from '@site/src/components/VisCommandInline';
-import {VizCommandInline} from '@site/src/components/VizCommandInline';
+
+import {ExcelIcon, StorageIcon, WindowsIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
-import ReactPlayer from 'react-player';
 
 # 🏃 Getting started
 
-<Fragment>
-  :::warning
-  Ensure you have an active <PythonIcon /> Python `venv` in a terminal window.
-  :::
+<ol>
+  <li>Start the `sound-scape-explorer` application</li>
+  <li>
+    {'On the home screen, either click on'}
+    <ol>
+      <li>
+        {'Add a '}
+        <ExcelIcon />
+        {' configuration file'}
+      </li>
+      <li>
+        {'Add a '}
+        <StorageIcon />
+        {' storage file'}
+      </li>
+    </ol>
+  </li>
+  <li>Click on `Visualise` to open a new window</li>
+  <li>Refer to the [User Guide](../user-guide)</li>
+</ol>
 
-</Fragment>
-
-:::info
-[Learn how to activate 🔮 virtual
-environments](../../../installation/application/#-virtual-environment)
+:::tip
+You can open multiple 👁️‍🗨️ Visualisation windows by clicking on the `Visualise` button
 :::
 
-The 👁️‍🗨️ Visualisation module uses two services to run properly:
-
-- `Front` service
-- Power the user interfaces
-- The default port is `5530`
-- `Audio` service
-- Serve audio files from your file system
-- The default port is `5531`
-
-## 🔗 Compatibility
-
 <Fragment>
-  While the web app is compatible with most browsers, we've encountered
-  intermittent issues with <FirefoxIcon /> Firefox on <WindowsIcon /> Windows 11
-  and <SafariIcon /> Safari on <MacOsIcon /> macOS 14. For optimal performance,
-  we recommend using <ChromeIcon /> Chrome.
-</Fragment>
 
-## 🔧 `sse_vis` Command
+:::note
 
-This command initiates both the `Audio` and `Front` services.
+We recommend providing a <ExcelIcon /> configuration file in the home screen
 
-<Fragment>
-  In an active `venv` terminal, enter the following command to start both
-  services (replace the path to your configuration file by dragging and dropping
-  the <ExcelIcon /> configuration file icon into your terminal):
-</Fragment>
-
-<VisCommandBlock />
-
-After pressing `<Enter>`, both services will launch, and your default browser
-will open.
-
-<details>
-  <summary>
-    <WindowsIcon /> Windows screencast
-  </summary>
-  <ReactPlayer
-    controls
-    loop
-    url="/screencasts/visualisation_windows.mp4"
-  />
-</details>
-
-<Fragment>
-  :::note
-  You can alternatively use <VizCommandInline /> as an alias
-  for the <VisCommandInline /> command.
-  :::
+:::
 
 </Fragment>
 
-## 🔧 `sse_audio` Command
+<Fragment>
 
-Use the `sse_audio` command to start only the `Audio` service.
+:::info
 
-This can be useful in case you are using the 👁️‍🗨️ [Visualisation online](../../../extras/visualisation-online/).
+Upon the user's initial addition of a <ExcelIcon /> configuration
+or <StorageIcon /> storage file on <WindowsIcon /> Windows systems, a
+notification from Windows Defender Firewall will prompt you to grant access,
+which requires approval.
 
-<AudioCommandBlock />
+:::
 
-## 🔧 Advanced Commands
+</Fragment>
 
-### `audio` Command
+## ⏭️ Next Step
 
-Start the `Audio` service on port [5531](http://localhost:5531).
-
-```bash
-pnpm audio -- relative/or/absolute/path/to/audio/folder
-```
-
-### `front` Command
-
-Start the `Front` service on port [5530](http://localhost:5530).
-
-```bash
-pnpm front
-```
+Proceed to the 📖 [User Guide](../user-guide/) documentation.

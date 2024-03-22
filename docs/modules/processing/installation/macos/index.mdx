@@ -3,7 +3,7 @@ sidebar_position: 3
 title: macOS
 ---
 
-import {APP_NAME} from '@site/constants';
+
 import {Dependencies} from '@site/src/components/Dependencies';
 import {
   HomebrewIcon,
@@ -51,11 +51,13 @@ import {Fragment} from 'react';
 
 Execute the following command to install dependencies and update your path:
 
-<Dependencies />
+<Dependencies
+  noNode
+  noPnpm
+/>
 
 ```bash
-brew install gcc curl ffmpeg python@3.10 node@20 pnpm && \
-echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
+brew install python@3.10 gcc curl ffmpeg
 ```
 
 <Fragment>
@@ -74,12 +76,9 @@ This step is optional. Additional context is needed.
 </Fragment>
 
 ```bash
-brew uninstall gcc curl ffmpeg python@3.10 node@20 pnpm
+brew uninstall python@3.10 gcc curl ffmpeg
 ```
 
 ## ⏭️ Next Step
 
-<Fragment>
-  Upon completion, close your <TerminalIcon /> terminal and proceed to the
-  [installation of {APP_NAME}](../../application/).
-</Fragment>
+Proceed to the 🏃 [Getting started](../../getting-started/) documentation.

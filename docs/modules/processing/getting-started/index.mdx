@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
+
 
 import {AppInline} from '@site/src/components/AppInline';
 import {
@@ -9,19 +10,32 @@ import {
   UbuntuIcon,
   WindowsIcon,
 } from '@site/src/components/Icons';
-import {ProcessingCommandBlock} from '@site/src/components/ProcessingCommandBlock';
+import {
+  ProcessingCommandBlock
+} from '@site/src/components/ProcessingCommandBlock';
 import {Fragment} from 'react';
 import ReactPlayer from 'react-player';
+import {VERSION} from '../../../env';
 
 # 🏃 Getting started
 
 ## 📋 Requirements
 
+<Fragment>
+
+:::warning
+Ensure you open the 🧮 Processing module with the
+provided <code>sse-processing-{VERSION}</code> script to enable
+the <PythonIcon /> Python virtual environment.
+:::
+
+</Fragment>
+
 To generate data, ensure you have:
 
 <ul>
   <li>
-    <Fragment>Ran the 🔧 [Installation](../../../installation/)</Fragment>
+    <Fragment>Ran the 🔧 [Installation](../installation/)</Fragment>
   </li>
   <li>
     <Fragment>
@@ -38,11 +52,6 @@ To generate data, ensure you have:
     {' in a terminal window'}
   </li>
 </ul>
-
-:::info
-[Learn how to activate 🔮 virtual
-environments](../../../installation/application/#-virtual-environment)
-:::
 
 ## 🚀 Execution
 

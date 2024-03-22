@@ -4,6 +4,4 @@
   padding: 4px;
   transform: translate3d(0, 4px, 0);
   fill: var(--ifm-color-primary);
-  /*border-radius: 5px;*/
-  /*border: 1px solid var(--ifm-color-primary);*/
 }

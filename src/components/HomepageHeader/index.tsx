@@ -3,6 +3,7 @@ import '@fontsource/merriweather';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {APP_NAME} from '@site/constants';
+// @ts-expect-error: TS2307
 import demo from '@site/static/img/demo.png';
 import Logo from '@site/static/img/logo.svg';
 import Heading from '@theme/Heading';
@@ -24,13 +25,10 @@ export const HomepageHeader = () => {
             <img
               src={demo}
               className={styles.demo}
+              alt="demo"
             />
           </div>
-          <Logo
-            className={styles.logo}
-            role="img"
-          />{' '}
-          {siteConfig.title}
+          <Logo className={styles.logo} /> {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
           {siteConfig.tagline} using {APP_NAME} software.
