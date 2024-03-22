@@ -1,4 +1,6 @@
 import {ConfigCommandBlock} from '@site/src/components/ConfigCommandBlock';
+import {ConfigCommandInline} from '@site/src/components/ConfigCommandInline';
+import {Fragment} from 'react';
 import ContextWarning from '../_blocks/context-warning.mdx';
 
 # Extracting `.xlsx` from `.h5`
@@ -15,12 +17,27 @@ to create the storage file.
 
 ## Run
 
-1. Open a shell window. (Double-click `start.bat` on Windows or use `cd` on
-   Ubuntu / macOS)
-2. Type <ConfigCommandInline/> followed by a `<space>`
-3. Drag and drop your `.h5` storage file to the shell window
-4. Press `Enter`
+<Fragment>
+  <ol>
+    <li>
+      {'Open a shell window. (Double-click '}
+      <code>start.bat</code>
+      {' on Windows or use '}
+      <code>cd</code>
+      {' on Ubuntu / macOS)'}
+    </li>
+    <li>
+      {'Type '}
+      <ConfigCommandInline />
+      {' followed by a '}
+      <code>{'<space>'}</code>
+    </li>
+    <li>Drag and drop your `.h5` storage file to the shell window</li>
+    <li>Press `Enter`</li>
+  </ol>
+</Fragment>
 
-Example:
-
-<ConfigCommandBlock />
+<Fragment>
+  Example:
+  <ConfigCommandBlock />
+</Fragment>
