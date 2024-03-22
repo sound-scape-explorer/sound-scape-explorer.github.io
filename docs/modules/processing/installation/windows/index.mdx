@@ -16,6 +16,7 @@ import {
 import {VenvScriptWindows} from '@site/src/components/VenvScriptWindows';
 import {WinKey} from '@site/src/components/WinKey';
 import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
 // noinspection ES6PreferShortImport
 import {VERSION} from '../../../../env.ts';
 
@@ -208,7 +209,16 @@ choco install curl ffmpeg -y
 You will need to double-click on this script everytime you want to use the 🧮 Processing module.
 :::
 
-TODO: Add screencast
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/sse-13/install-processing-windows.mp4"
+  />
+</details>
 
 ## 🗑️ Uninstallation
 

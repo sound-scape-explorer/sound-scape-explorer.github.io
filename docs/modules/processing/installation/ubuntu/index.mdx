@@ -17,6 +17,7 @@ import {
 } from '@site/src/components/UbuntuRequirementsCommandBlock13';
 import {VenvScriptLinux} from '@site/src/components/VenvScriptLinux';
 import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
 // noinspection ES6PreferShortImport
 import {VERSION} from '../../../../env';
 
@@ -123,7 +124,16 @@ dependencies, consuming roughly 500 MB of storage:
 You will need to double-click on this script everytime you want to use the 🧮 Processing module.
 :::
 
-TODO: Add screencast
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/sse-13/install-processing-ubuntu.mp4"
+  />
+</details>
 
 ## 🗑️ Uninstallation
 
