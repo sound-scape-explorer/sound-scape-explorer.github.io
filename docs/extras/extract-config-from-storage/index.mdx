@@ -3,8 +3,8 @@ title: 📦 Extract Config from Storage
 ---
 
 
-import {ConfigCommandBlock} from '@site/src/components/ConfigCommandBlock';
-import {ConfigCommandInline} from '@site/src/components/ConfigCommandInline';
+import {ExtractCommandBlock} from '@site/src/components/ExtractCommandBlock';
+import {ExtractCommandInline} from '@site/src/components/ExtractCommandInline';
 import {ExcelIcon, PythonIcon, StorageIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
 import {VERSION} from '../../env';
@@ -38,7 +38,7 @@ the <PythonIcon /> Python virtual environment.
 <ol>
   <li>
     {'Type '}
-    <ConfigCommandInline />
+    <ExtractCommandInline />
     {', then add '}
     <code>&lt;space&gt;</code>
   </li>
@@ -55,4 +55,4 @@ the <PythonIcon /> Python virtual environment.
 
 ### 📝 Example
 
-<ConfigCommandBlock />
+<ExtractCommandBlock />
