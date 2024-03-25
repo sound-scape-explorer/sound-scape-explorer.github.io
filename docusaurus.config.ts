@@ -68,6 +68,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/${APP_ORG}/${APP_REPO}/tree/main/`,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All posts',
         },
         theme: {
           customCss: './src/css/custom.css',
