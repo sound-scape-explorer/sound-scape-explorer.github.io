@@ -3,15 +3,16 @@ sidebar_position: 3
 title: macOS
 ---
 
-
 import {Dependencies} from '@site/src/components/Dependencies';
 import {
   HomebrewIcon,
   MacOsIcon,
   TerminalIcon,
-  XcodeIcon,
 } from '@site/src/components/Icons';
+import {VenvScriptLinux} from '@site/src/components/VenvScriptLinux';
 import {Fragment} from 'react';
+// noinspection ES6PreferShortImport
+import {VERSION} from '../../../../env';
 
 # <MacOsIcon /> macOS
 
@@ -20,8 +21,22 @@ import {Fragment} from 'react';
   13 and <MacOsIcon /> macOS 14.
 </Fragment>
 
+## 📋 System requirements
+
 <Fragment>
-  ## <HomebrewIcon /> Homebrew
+
+:::info
+
+If you have already installed the requirements for the
+latest major version {VERSION.split('.')[0]}, you
+can directly skip to 🧮 [Processing module](#-processing-module) installation.
+
+:::
+
+</Fragment>
+
+<Fragment>
+  ### <HomebrewIcon /> Homebrew
 </Fragment>
 
 <Fragment>
@@ -29,7 +44,7 @@ import {Fragment} from 'react';
   recommended to install the application requirements.
 </Fragment>
 
-### 🛠️ Procedure
+#### 🛠️ Procedure
 
 <ol>
   <li>
@@ -47,7 +62,7 @@ import {Fragment} from 'react';
   </li>
 </ol>
 
-## 📦 Dependencies
+### 📦 Dependencies
 
 Execute the following command to install dependencies and update your path:
 
@@ -60,15 +75,41 @@ Execute the following command to install dependencies and update your path:
 brew install python@3.10 gcc curl ffmpeg
 ```
 
-<Fragment>
-  ### <XcodeIcon /> Xcode Command Line Tools
-</Fragment>
+## 🧮 Processing module
 
-:::info
-This step is optional. Additional context is needed.
+<ol>
+  <li>
+    {
+      'Create a new folder on your local disk where you want the module to be installed'
+    }
+  </li>
+  <li>
+    {'Open a '}
+    <TerminalIcon />
+    {' terminal window'}
+  </li>
+  <li>Navigate to that folder with `cd`</li>
+  <li>
+    {
+      'Copy, paste then execute the following command to download the installation script'
+    }
+    <VenvScriptLinux version={VERSION} />
+  </li>
+  <li>Navigate to the folder with `Finder` application</li>
+  <li>
+    {'Right-click on the file'}
+    {<code>sse-processing-{VERSION}.sh</code>}
+  </li>
+  <li>Select `Run as a program`</li>
+</ol>
+
+:::tip
+You will need to double-click on this script everytime you want to use the 🧮 Processing module.
 :::
 
 ## 🗑️ Uninstallation
+
+### 📋 System requirements
 
 <Fragment>
   To remove the installed requirements, open a <TerminalIcon /> terminal window
@@ -78,6 +119,10 @@ This step is optional. Additional context is needed.
 ```bash
 brew uninstall python@3.10 gcc curl ffmpeg
 ```
+
+### 🧮 Processing module
+
+Delete the folder you created when [installing](#-processing-module) the module.
 
 ## ⏭️ Next Step
 
