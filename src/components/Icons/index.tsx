@@ -236,3 +236,9 @@ export const ElectronIcon = () => (
     color="#47848F"
   />
 );
+export const PyPiIcon = () => (
+  <SimpleIcon
+    icon="pypi"
+    color="#3775A9"
+  />
+);
