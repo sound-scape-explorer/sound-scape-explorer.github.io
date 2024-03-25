@@ -1,0 +1,58 @@
+---
+title: 📦 Extract Config from Storage
+---
+
+
+import {ConfigCommandBlock} from '@site/src/components/ConfigCommandBlock';
+import {ConfigCommandInline} from '@site/src/components/ConfigCommandInline';
+import {ExcelIcon, PythonIcon, StorageIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 📦 Extract <ExcelIcon /> Config from <StorageIcon /> Storage
+
+<Fragment>
+
+:::warning
+Ensure you open the 🧮 Processing module with the
+provided <code>sse-processing-{VERSION}</code> script to enable
+the <PythonIcon /> Python virtual environment.
+:::
+
+</Fragment>
+
+## 🔍 Context
+
+<Fragment>
+  This command allows the extraction of the <ExcelIcon /> configuration file
+  from an existing <StorageIcon /> storage file.
+</Fragment>
+
+<Fragment>
+  The resulting `storage.config-{VERSION}.xlsx` file represents the{' '}
+  <ExcelIcon /> configuration used in creating the <StorageIcon /> storage file.
+</Fragment>
+
+## 🚀 Execution
+
+<ol>
+  <li>
+    {'Type '}
+    <ConfigCommandInline />
+    {', then add '}
+    <code>&lt;space&gt;</code>
+  </li>
+  <li>
+    {'Drag and drop your '}
+    <StorageIcon />
+    {' storage file into the terminal (or type path)'}
+  </li>
+  <li>
+    {'Press '}
+    <code>Enter</code>
+  </li>
+</ol>
+
+### 📝 Example
+
+<ConfigCommandBlock />
