@@ -229,3 +229,10 @@ export const CseIcon = () => (
     alt="CSE Icon"
   />
 );
+
+export const ElectronIcon = () => (
+  <SimpleIcon
+    icon="electron"
+    color="#47848F"
+  />
+);
