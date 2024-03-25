@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Fri, 22 Mar 2024 16:42:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Mar 2024 02:48:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,21 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Fri, 22 Mar 2024 16:42:15 GMT</pubDate>
+            <pubDate>Mon, 25 Mar 2024 02:48:35 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.1.6]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6</guid>
+            <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.1.6 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.1.6 has been released!</p>
+<p>This new major version syncs with <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> <!-- -->
+<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE">CSE</a>'s latest improvements and improves ease of
+installation and overall use:</p>
+<ul><li>🧮 Processing<ul><li>Publish package to <span></span>  <a href="https://pypi.org/project/sound-scape-explorer/" target="_blank" rel="noopener nofollow">PyPI</a></li><li>Improve silhouette computation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Bundle module to native desktop applications</li><li>Improve audio delivery performance with new audio API</li></ul></li></ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version CSE]]></title>

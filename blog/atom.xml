@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-03-22T16:42:15.000Z</updated>
+    <updated>2024-03-25T02:48:35.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,25 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-03-22T16:42:15.000Z</updated>
+        <updated>2024-03-25T02:48:35.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.1.6]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6"/>
+        <updated>2024-03-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.1.6 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.1.6 has been released!</p>
+<p>This new major version syncs with <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> <!-- -->
+<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE">CSE</a>'s latest improvements and improves ease of
+installation and overall use:</p>
+<ul><li>🧮 Processing<ul><li>Publish package to <span></span>  <a href="https://pypi.org/project/sound-scape-explorer/" target="_blank" rel="noopener nofollow">PyPI</a></li><li>Improve silhouette computation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Bundle module to native desktop applications</li><li>Improve audio delivery performance with new audio API</li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
