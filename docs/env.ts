@@ -1,4 +1,4 @@
-export const VERSION = '13.1.6';
+export const VERSION = '13.1.7';
 
 export const SIZES = {
   windows: '246 MB',
