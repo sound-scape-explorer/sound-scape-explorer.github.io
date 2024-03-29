@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Mon, 25 Mar 2024 18:09:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Mar 2024 16:46:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,22 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Mon, 25 Mar 2024 18:09:41 GMT</pubDate>
+            <pubDate>Fri, 29 Mar 2024 16:46:28 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.1.7]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/03/29/version-13.1.7</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/03/29/version-13.1.7</guid>
+            <pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.1.7 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.1.7 has been released!</p>
+<p>This new version fixes a blocking regression bug:</p>
+<ul>
+<li>🧮 Processing</li>
+<li>Add back <code>maad</code> package and use latest version</li>
+</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.1.6]]></title>
