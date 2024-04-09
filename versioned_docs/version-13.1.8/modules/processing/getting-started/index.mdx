@@ -1,0 +1,83 @@
+---
+sidebar_position: 2
+---
+
+
+import {AppInline} from '@site/src/components/AppInline';
+import {ExcelIcon, UbuntuIcon, WindowsIcon} from '@site/src/components/Icons';
+import {
+  ProcessingCommandBlock
+} from '@site/src/components/ProcessingCommandBlock';
+import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
+import {VERSION} from '../../../env';
+
+# 🏃 Getting started
+
+## 📋 Requirements
+
+To generate data, ensure you have:
+
+<ul>
+  <li>
+    <Fragment>Ran the 🔧 [Installation](../installation/)</Fragment>
+  </li>
+  <li>
+    <Fragment>
+      {'Completed a '}
+      <ExcelIcon />
+      {' configuration appropriately'}
+    </Fragment>
+  </li>
+</ul>
+
+## 🚀 Execution
+
+<ol>
+  <li>
+    {'Run the provided '}
+    <code>sse-processing-{VERSION}</code>
+    {' script'}
+  </li>
+  <li>
+    {'Type '}
+    <AppInline />
+    {' followed by a '}
+    <code>&lt;space&gt;</code>
+  </li>
+  <li>
+    {'Type the path to your '}
+    <code>.xlsx</code>
+    {' file (or drag and drop file icon into the terminal)'}
+  </li>
+  <li>
+    {'Press '}
+    <code>Enter</code>
+  </li>
+</ol>
+
+<details>
+  <summary>
+    <WindowsIcon /> Windows screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/sse-13/run-processing-windows.mp4"
+  />
+</details>
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/sse-13/run-processing-ubuntu.mp4"
+  />
+</details>
+
+### 📝 Examples
+
+<ProcessingCommandBlock />
