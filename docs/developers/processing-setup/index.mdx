@@ -1,0 +1,231 @@
+---
+sidebar_position: 3
+---
+
+
+import {PythonIcon} from '@site/src/components/Icons';
+
+# 🧮 Processing setup
+
+## Environment
+
+```bash
+# Navigate to source root directory
+cd sound-scape-explorer
+
+# Create virtual environment
+python3.10 -m venv venv
+
+# Activate environment
+source venv/bin/activate
+
+# Install processing in dev mode
+pip install -e processing
+
+# Edit and run code...
+```
+
+## Basic user flows
+
+1. When user runs `sse` command, it will trigger the `processing.cli:start_processing` function
+2. When user selects a menu choice, it will trigger one or more actions from `processing.actions`
+
+## File structure
+
+```text
+sound-scape-explorer/processing/
+├── processing/ --> Package source
+│   ├── actions/ --> Menu choices
+│   ├── common/
+│   ├── config/
+│   ├── digesters/
+│   ├── errors/
+│   ├── extractors/
+│   ├── lib/ --> Legacy code
+│   ├── loaders/
+│   ├── reducers/
+│   ├── storage/
+│   ├── utils/
+│   ├── cli.py --> User CLI entrypoints
+│   └── main.py --> User menu
+└── pyproject.toml --> Package configuration
+```
+
+:::info
+Code completion and styling is provided by:
+
+<ul>
+  <li>
+    {'Builtin '}
+    <PythonIcon />
+    {' Python type hints'}
+  </li>
+  <li>[isort](https://pypi.org/project/isort/) (formatter)</li>
+  <li>[black](https://pypi.org/project/black/) (formatter)</li>
+  <li>[flake8](https://pypi.org/project/flake8/) (diagnostics)</li>
+</ul>
+
+Configure your editor accordingly to improve your development experience.
+:::
+
+## Custom action examples
+
+<details>
+  <summary>
+    `refresh_configuration.py`
+  </summary>
+
+```python
+from processing.actions.refresh_configuration import refresh_configuration
+from processing.config.Config import Config
+from processing.storage.Storage import Storage
+
+config_path = "/path/to/config.xlsx"
+storage_path = "/path/to/storage.h5"
+
+config = Config(config_path)
+storage = Storage(storage_path)
+
+refresh_configuration(config, storage)
+
+# Import other action or create custom...
+```
+
+</details>
+
+<details>
+  <summary>
+    `display_menu_without_storage.py`
+  </summary>
+
+```python
+from processing.main import main
+
+storage = None
+config_path = "/path/to/config.xlsx"
+
+main(storage, config_path)
+
+# Interact with console...
+```
+
+</details>
+
+<details>
+  <summary>
+    `load_config_and_print_files.py`
+  </summary>
+
+```python
+from processing.config.Config import Config
+
+config_path = "/path/to/config.xlsx"
+config = Config(config_path)
+
+for file in config.files:
+print(file) # FileConfig object
+```
+
+</details>
+
+<details>
+  <summary>
+    `load_storage_and_print_files.py`
+  </summary>
+
+```python
+from processing.config.files.FileStorage import FileStorage
+from processing.config.settings.SettingsStorage import SettingsStorage
+from processing.storage.Storage import Storage
+
+storage_path =
+"/home/bamdad/git/sound-scape-explorer/examples/campaigns/coral-reef-light/coral-reef-light.h5"
+storage = Storage(storage_path)
+
+settings = SettingsStorage.read_from_storage(storage)
+files = FileStorage.read_from_storage(storage, settings)
+
+for file in files:
+print(file) # FileConfig object
+```
+
+</details>
+
+<details>
+  <summary>`load_storage_extract_and_reduce.py`</summary>
+
+```python
+import numpy as np
+
+from processing.common.TimelineWalker import TimelineWalker
+from processing.config.bands.BandConfig import BandConfig
+from processing.config.files.FileStorage import FileStorage
+from processing.config.integrations.IntegrationConfig import IntegrationConfig
+from processing.config.settings.SettingsStorage import SettingsStorage
+from processing.config.sites.SiteStorage import SiteStorage
+from processing.extractors.VggExtractor import VggExtractor
+from processing.reducers.UmapReducer import UmapReducer
+from processing.storage.Storage import Storage
+from processing.utils.create_timelines import create_timelines
+
+# INFO: This example could gain clarity by:
+# - Using consistent setters for objects
+# - Providing less arguments to `create_timelines()`
+# - Wrap timeline behavior behind simple API
+
+# Reading settings, files and sites from storage
+storage_path = "/path/to/storage.h5"
+storage = Storage(storage_path)
+
+settings = SettingsStorage.read_from_storage(storage)
+files = FileStorage.read_from_storage(storage, settings)
+sites = SiteStorage.read_from_storage(storage, settings)
+
+# Creating custom band, integration and extractor
+band = BandConfig(0, "human", 20, 20000)
+integration = IntegrationConfig(0, "15s", 15)
+
+vgg = VggExtractor()
+vgg.index = 0
+vgg.expected_sample_rate = 44100
+
+# Creating manual timelines (this section could be simplified greatly)
+timelines = create_timelines(
+sites=sites,
+integrations=[integration],
+settings=settings,
+storage=storage,
+)
+
+tw = TimelineWalker()
+tw.storage = storage
+tw.bands = [band]
+tw.integrations = [integration]
+tw.timelines = timelines
+tw.extractors = [vgg]
+
+# Getting ready to walk the timeline and yield features
+features = []
+
+for (
+features_seconds,
+labels,
+interval_details, # arbitrary server unique slug for storage indexing
+interval, # Interval object
+band, # BandConfig object
+extractor, # ExtractorConfig object
+timeline, # current Timeline object
+) in tw.walk():
+features_aggregated = list(np.mean(features_seconds, axis=0))
+features.append(features_aggregated)
+
+# Creating custom reducer
+reducer = UmapReducer()
+reducer.load(3, None, features)
+
+features_reduced = reducer.calculate()
+
+# Using reduced features...
+```
+
+</details>

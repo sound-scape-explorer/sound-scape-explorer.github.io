@@ -1,0 +1,54 @@
+---
+sidebar_position: 2
+---
+
+
+import {GithubIcon} from '@site/src/components/Icons';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 📁 Get codebase
+
+## 📥 Download zip
+
+<Fragment>
+  <SourceLink
+    version={VERSION}
+    size={'125 MB'}
+  />
+</Fragment>
+
+<Fragment>
+  ## <GithubIcon /> Git clone
+</Fragment>
+
+```bash
+# with HTTPS
+git clone https://github.com/sound-scape-explorer/sound-scape-explorer.git
+
+# with SSH
+git clone git@github.com:sound-scape-explorer/sound-scape-explorer.git
+```
+
+## File structure
+
+```txt
+sound-scape-explorer/
+├── assets/ --> Icons
+├── audio/ --> Audio service
+├── bin/ --> Shell scripts
+├── examples/ --> Campaigns
+├── front/ --> Front service
+├── processing/ --> Processing module
+├── visualisation/ --> Visualisation module (Front + Audio)
+├── CHANGELOG.md --> Commit history
+└── package.json
+```
+
+## Setup
+
+Please refer to the following sections for setting up specific modules:
+
+- 🧮 [Processing](./processing/)
+- 👁️‍🗨️ [Visualisation](./visualisation/)
