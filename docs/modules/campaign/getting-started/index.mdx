@@ -5,6 +5,9 @@ sidebar_position: 1
 
 import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
 import {ExcelFile} from '@site/src/components/ExcelFile';
+import {
+  GithubDirectoryDownloadLink
+} from '@site/src/components/GithubDirectoryDownloadLink';
 import {ExcelIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
 import {VERSION} from '../../../env.ts';
@@ -40,3 +43,16 @@ The <ExcelIcon /> configuration is in `.xlsx` format.
     <code>config.xlsx</code>
   </li>
 </ol>
+
+## 💡 Examples
+
+<ul>
+  <li>
+    <GithubDirectoryDownloadLink
+      version={VERSION}
+      folderPath={'examples/campaigns/coral-reef-light'}
+      name={'Coral Reef Light'}
+      size={'275 MB'}
+    />
+  </li>
+</ul>
