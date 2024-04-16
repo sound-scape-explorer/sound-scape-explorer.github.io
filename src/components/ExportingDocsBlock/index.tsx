@@ -1,4 +1,5 @@
 import {APP_DESCRIPTION} from '@site/constants';
+import versions from '@site/versions.json';
 import CodeBlock from '@theme/CodeBlock';
 import {useMemo} from 'react';
 
@@ -18,6 +19,12 @@ export const ExportingDocsBlock = ({next, version, isCse = false}: Props) => {
     if (isCse) {
       endpoint = 'https://sound-scape-explorer.github.io/docs/CSE';
       appName = 'CoralSoundExplorer';
+    }
+
+    const latestReleasedVersion = versions[0];
+    const isCurrentVersion = version === latestReleasedVersion;
+    if (isCurrentVersion) {
+      endpoint = 'https://sound-scape-explorer.github.io/docs';
     }
 
     if (next) {
