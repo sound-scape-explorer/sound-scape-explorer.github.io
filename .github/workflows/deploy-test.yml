@@ -17,6 +17,8 @@ jobs:
           node-version: 20
       - name: Install pnpm
         run: npm install -g pnpm
+      - name: Update pnpm
+        run: npm -g update pnpm
       - name: Install dependencies
         run: pnpm i
       - name: Test build website
