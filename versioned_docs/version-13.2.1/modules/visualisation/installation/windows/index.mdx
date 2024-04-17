@@ -1,0 +1,46 @@
+---
+sidebar_position: 1
+title: Windows
+---
+
+
+import {SIZES, VERSION} from '@site/docs/env';
+import {WindowsIcon} from '@site/src/components/Icons';
+import {VisualisationLink} from '@site/src/components/VisualisationLink';
+import {WinKey} from '@site/src/components/WinKey';
+import {Fragment} from 'react';
+
+<Fragment>
+  # <WindowsIcon /> Windows
+</Fragment>
+
+## 🛠️ Procedure
+
+<ol>
+  <li>
+    {'Download '}
+    <VisualisationLink
+      version={VERSION}
+      system={'windows'}
+      size={SIZES.windows}
+    />
+  </li>
+  <li>{'Double-click to install'}</li>
+</ol>
+
+## 🗑️ Uninstallation
+
+<ol>
+  <li>
+    {'Click on the start menu (or press '}
+    <WinKey />
+    {' on your keyboard)'}
+  </li>
+  <li>Type and open `Apps & Features` settings window</li>
+  <li>Search for `sound-scape-explorer`</li>
+  <li>Click on `Uninstall`</li>
+</ol>
+
+## ⏭️ Next Step
+
+Proceed to the 🏃 [Getting started](../../getting-started/) documentation.

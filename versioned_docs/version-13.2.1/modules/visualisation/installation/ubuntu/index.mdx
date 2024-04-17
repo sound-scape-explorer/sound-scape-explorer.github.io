@@ -1,0 +1,37 @@
+---
+sidebar_position: 2
+title: Ubuntu
+---
+
+
+import {SIZES, VERSION} from '@site/docs/env';
+import {BashIcon, UbuntuIcon} from '@site/src/components/Icons';
+import {SizeInfo} from '@site/src/components/SizeInfo';
+import {
+  VisualisationBlockDebian
+} from '@site/src/components/VisualisationBlockDebian';
+import {Fragment} from 'react';
+
+<Fragment>
+  # <UbuntuIcon /> Ubuntu
+</Fragment>
+
+<Fragment>
+  ## <BashIcon /> Oneliner <SizeInfo size={SIZES.debian} />
+</Fragment>
+
+Paste the following command into a terminal then press `Enter` to start the installation.
+
+<Fragment>
+  <VisualisationBlockDebian version={VERSION} />
+</Fragment>
+
+## 🗑️ Uninstallation
+
+```bash
+sudo apt remove -y sound-scape-explorer
+```
+
+## ⏭️ Next Step
+
+Proceed to the 🏃 [Getting started](../../getting-started/) documentation.
