@@ -27,7 +27,7 @@ export const GithubDirectoryDownloadLink = ({
       return 'main';
     }
 
-    return version;
+    return `v${version}`;
   }, [version]);
 
   const fullUrl = useMemo(() => {
