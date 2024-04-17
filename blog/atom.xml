@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-04-17T12:02:22.000Z</updated>
+    <updated>2024-04-17T13:36:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-04-17T12:02:22.000Z</updated>
+        <updated>2024-04-17T13:36:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
         <author>
@@ -28,6 +28,21 @@
         <content type="html"><![CDATA[<p>🎉 Version 13.2.0 has been released!</p>
 <p>This new version introduces various bug fixes and quality of life improvements.</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Display interval details when hovering scatter point</li><li>Allow single running instance of module</li><li>Improve error catching when reading storage</li><li>Ensure file paths are properly generated</li><li>Return default 16 bit depth if missing from audio file header</li></ul></li></ul>]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.2.1]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/04/17/version-13.2.1</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/04/17/version-13.2.1"/>
+        <updated>2024-04-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.2.1 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.2.1 has been released!</p>
+<p>This new version introduces various bug fixes and quality of life improvements.</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Fix audio service errors when requesting whole file</li><li><p>Fix audio service errors when requesting slice ending after actual audio
+file</p></li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
