@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 18 Apr 2024 10:57:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Apr 2024 11:06:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 18 Apr 2024 10:57:01 GMT</pubDate>
+            <pubDate>Thu, 18 Apr 2024 11:06:26 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
         </item>
@@ -23,7 +23,8 @@
             <pubDate>Thu, 18 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[🎉 Version 13.2.3 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.2.3 has been released!</p>
-<ul><li>🧮 Processing<ul><li>Make supported file extensions detection case insensitive</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li><p>Prevent audio service from crashing when requesting unavailable file</p></li><li>Print better front audio errors</li><li>Use dedicated and visible drag zone</li><li>Add lock to scatter camera when dragging</li><li>Display audio duration with player</li><li>Apply timezone settings globally</li><li>Add color legend for scale <code>isDay</code></li><li>Various QoL improvements</li></ul></li></ul>]]></content:encoded>
+<ul><li>🧮 Processing<ul><li>Make supported file extensions detection case insensitive</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Prevent audio service from crashing when requesting unavailable file</li><li>Print better front audio errors</li><li>Use dedicated and visible drag zone</li><li>Add lock to scatter camera when dragging</li><li>Display audio duration with player</li><li>Apply timezone settings globally</li><li>Add color legend for scale <code>isDay</code></li><li>Various QoL improvements</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1323-2024-04-18" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.2.0]]></title>
