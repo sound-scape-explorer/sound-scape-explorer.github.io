@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-04-18T06:56:58.000Z</updated>
+    <updated>2024-04-18T10:57:01.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,22 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-04-18T06:56:58.000Z</updated>
+        <updated>2024-04-18T10:57:01.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.2.3]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/04/18/version-13.2.3</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/04/18/version-13.2.3"/>
+        <updated>2024-04-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.2.3 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.2.3 has been released!</p>
+<ul><li>🧮 Processing<ul><li>Make supported file extensions detection case insensitive</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li><p>Prevent audio service from crashing when requesting unavailable file</p></li><li>Print better front audio errors</li><li>Use dedicated and visible drag zone</li><li>Add lock to scatter camera when dragging</li><li>Display audio duration with player</li><li>Apply timezone settings globally</li><li>Add color legend for scale <code>isDay</code></li><li>Various QoL improvements</li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
