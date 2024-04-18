@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+
 import {ExcelFile} from '@site/src/components/ExcelFile';
 import {GithubDirectoryDownloadLink} from '@site/src/components/GithubDirectoryDownloadLink';
 import {ExcelIcon} from '@site/src/components/Icons';
@@ -28,11 +29,17 @@ The <ExcelIcon /> configuration is in `.xlsx` format.
 
 <ul>
   <li>
-    <GithubDirectoryDownloadLink
-      version={VERSION}
-      folderPath={'examples/campaigns/coral-reef-light'}
-      name={'Coral Reef Light'}
-      size={'275 MB'}
-    />
+    {'Coral Reef Light'}
+    <ul>
+      <li>
+        <GithubDirectoryDownloadLink
+          version={VERSION}
+          isCse
+          folderPath={'examples/campaigns/coral-reef-light'}
+          name={'Audio, configuration and storage files'}
+          size={'275 MB (hosted at github)'}
+        />
+      </li>
+    </ul>
   </li>
 </ul>

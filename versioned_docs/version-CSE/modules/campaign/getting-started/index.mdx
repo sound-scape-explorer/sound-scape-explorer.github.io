@@ -5,8 +5,10 @@ sidebar_position: 1
 
 import {ExampleDirectory} from '@site/src/components/ExampleDirectory';
 import {ExcelFile} from '@site/src/components/ExcelFile';
+import {ExternalLink} from '@site/src/components/ExternalLink';
+import {GithubDirectoryDownloadLink} from '@site/src/components/GithubDirectoryDownloadLink';
 import {ExcelIcon} from '@site/src/components/Icons';
-import {Fragment} from 'react';
+import React, {Fragment} from 'react';
 import {VERSION} from '../../../env.ts';
 
 # 🏃 Getting started
@@ -48,3 +50,49 @@ The <ExcelIcon /> configuration is in `.xlsx` format.
     <code>config.xlsx</code>
   </li>
 </ol>
+
+## 💡 Examples
+
+<ul>
+  <li>
+    {'Coral Reef Light'}
+    <ul>
+      <li>
+        <GithubDirectoryDownloadLink
+          version={VERSION}
+          isCse
+          folderPath={'examples/campaigns/coral-reef-light'}
+          name={'Audio, configuration and storage files'}
+          size={'275 MB (hosted at github)'}
+        />
+      </li>
+    </ul>
+  </li>
+  <li>
+    {'Coral Reef Full Campaign'}
+    <ul>
+      <li>The BoraBora campaign for publication</li>
+      <li>
+        <ExternalLink
+          link={'https://zenodo.org/records/10794463/files/audio.zip'}
+          text={'Audio'}
+          size={'3.1 GB (hosted at zenodo)'}
+        />
+      </li>
+      <li>
+        <ExternalLink
+          link={'https://zenodo.org/records/10794463/files/BoraBora-CSE.xlsx'}
+          text={'Configuration'}
+          size={'301 KB (hosted at zenodo)'}
+        />
+      </li>
+      <li>
+        <ExternalLink
+          link={'https://zenodo.org/records/10794463/files/BoraBora_CSE.h5'}
+          text={'Storage'}
+          size={'192 MB (hosted at zenodo)'}
+        />
+      </li>
+    </ul>
+  </li>
+</ul>
