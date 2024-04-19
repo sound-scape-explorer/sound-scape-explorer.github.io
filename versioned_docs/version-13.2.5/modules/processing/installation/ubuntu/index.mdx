@@ -1,0 +1,150 @@
+---
+sidebar_position: 2
+title: Ubuntu
+---
+
+
+import {Dependencies} from '@site/src/components/Dependencies';
+import {BashIcon, PythonIcon, TerminalIcon, UbuntuIcon,} from '@site/src/components/Icons';
+import {SizeInfo} from '@site/src/components/SizeInfo';
+import {UbuntuRequirementsCommandBlock13} from '@site/src/components/UbuntuRequirementsCommandBlock13';
+import {VenvScriptLinux} from '@site/src/components/VenvScriptLinux';
+import {Fragment} from 'react';
+import ReactPlayer from 'react-player';
+// noinspection ES6PreferShortImport
+import {VERSION} from '../../../../env';
+
+# <UbuntuIcon /> Ubuntu
+
+<Fragment>
+  The steps provided below have been tested on <UbuntuIcon /> Ubuntu 20.04 and{' '}
+  <UbuntuIcon /> Ubuntu 22.04.
+</Fragment>
+
+## 📋 System requirements
+
+<Fragment>
+
+:::info
+
+If you have already installed the requirements for the
+latest major version {VERSION.split('.')[0]}, you
+can directly skip to 🧮 [Processing module](#-processing-module) installation.
+
+:::
+
+</Fragment>
+
+<Fragment>
+  ### <BashIcon /> Oneliner <SizeInfo size="~500 MB" />
+</Fragment>
+
+Execute this single command to automatically install all necessary system
+dependencies, consuming roughly 500 MB of storage:
+
+<UbuntuRequirementsCommandBlock13 version={VERSION} />
+
+<details>
+  <summary>
+    👣 Step-by-Step Installation
+  </summary>
+
+  <Fragment>
+    #### <UbuntuIcon /> System Update & Essential Dependencies
+
+    This section ensures your system is updated and equipped with useful
+    dependencies:
+
+    <Dependencies
+      noPython
+      noNode
+      noPnpm
+      hdfTools
+    />
+
+    ```bash
+    sudo apt update && \
+    sudo apt upgrade -y && \
+    sudo apt install -y gcc curl ffmpeg hdf5-tools
+    ```
+
+    #### <PythonIcon /> Python
+
+    Install <PythonIcon /> Python and related components:
+
+    ```bash
+    sudo apt update && \
+    sudo apt install -y software-properties-common && \
+    sudo add-apt-repository -y ppa:deadsnakes/ppa && \
+    sudo apt install -y python3.10 python3.10-distutils python3.10-dev python3-pip python3.10-venv && \
+    curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+    ```
+
+  </Fragment>
+</details>
+
+## 🧮 Processing module
+
+<ol>
+  <li>
+    {
+      'Create a new folder on your local disk where you want the module to be installed'
+    }
+  </li>
+  <li>
+    {'Open a '}
+    <TerminalIcon />
+    {' terminal window'}
+  </li>
+  <li>Navigate to that folder with `cd`</li>
+  <li>
+    {
+      'Copy, paste then execute the following command to download the installation script'
+    }
+    <VenvScriptLinux version={VERSION} />
+  </li>
+  <li>Navigate to the folder with `Files` application</li>
+  <li>
+    {'Right-click on the file'}
+    {<code>sse-processing-{VERSION}.sh</code>}
+  </li>
+  <li>Select `Run as a program`</li>
+</ol>
+
+:::tip
+You will need to double-click on this script everytime you want to use the 🧮 Processing module.
+:::
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu screencast
+  </summary>
+  <ReactPlayer
+    controls
+    loop
+    url="/sse-13/install-processing-ubuntu.mp4"
+  />
+</details>
+
+## 🗑️ Uninstallation
+
+### 📋 System requirements
+
+<Fragment>
+  To remove the installed requirements, open a <TerminalIcon /> terminal window
+  and execute the following command:
+</Fragment>
+
+```bash
+sudo apt remove -y curl ffmpeg hdf5-tools python3.10 python3.10-distutils python3.10-dev python3-pip python3.10-venv && \
+sudo apt update && \
+sudo apt autoremove -y
+```
+
+### 🧮 Processing module
+
+Delete the folder you created when [installing](#-processing-module) the module.
+
+## ⏭️ Next Step
+
+Proceed to the 🏃 [Getting started](../../getting-started/) documentation.
