@@ -13,7 +13,11 @@ export const APP_DIRECTORY = 'sound-scape-explorer-VERSION';
 export const APP_DISCORD_INVITE = 'https://discord.gg/eRsQPDBeXg';
 export const APP_GITHUB_DISCUSSIONS =
   'https://github.com/sound-scape-explorer/sound-scape-explorer/discussions';
-export const CODE_GITHUB =
+export const SSE_GITHUB =
   'https://github.com/sound-scape-explorer/sound-scape-explorer';
-export const CODE_CHANGELOG =
+export const SSE_REPOSITORY =
   'https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md';
+export const CSE_GITHUB =
+  'https://github.com/sound-scape-explorer/coral-sound-explorer';
+export const CSE_REPOSITORY =
+  'https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md';

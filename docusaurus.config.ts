@@ -15,8 +15,10 @@ import {
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
-  CODE_CHANGELOG,
-  CODE_GITHUB,
+  CSE_GITHUB,
+  CSE_REPOSITORY,
+  SSE_GITHUB,
+  SSE_REPOSITORY,
 } from './constants';
 
 const config: Config = {
@@ -139,12 +141,12 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/sound-scape-explorer/sound-scape-explorer/issues/new/choose',
+          href: 'https://github.com/sound-scape-explorer/sound-scape-explorer/issues',
           label: 'Issues',
           position: 'right',
         },
         {
-          href: APP_GITHUB,
+          href: SSE_GITHUB,
           label: 'GitHub',
           position: 'right',
         },
@@ -187,16 +189,24 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
+              label: 'Docs repository',
               href: APP_GITHUB,
             },
             {
-              label: `${APP_NAME} repository`,
-              href: CODE_GITHUB,
+              label: 'SSE repository',
+              href: SSE_GITHUB,
             },
             {
-              label: `${APP_NAME} changelog`,
-              href: CODE_CHANGELOG,
+              label: 'SSE changelog',
+              href: SSE_REPOSITORY,
+            },
+            {
+              label: 'CSE repository',
+              href: CSE_GITHUB,
+            },
+            {
+              label: 'CSE changelog',
+              href: CSE_REPOSITORY,
             },
           ],
         },
