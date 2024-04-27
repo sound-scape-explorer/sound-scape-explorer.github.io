@@ -1,25 +1,25 @@
 import Head from '@docusaurus/Head';
 import {APP_DESCRIPTION} from '@site/constants';
-import {useMemo} from 'react';
+import React, {useMemo} from 'react';
 
 interface Props {
-  children: string;
-  categories?: string[];
+  title: string;
+  pre?: string[];
 }
 
-export const Title = ({children, categories}: Props) => {
-  const title = useMemo(() => {
+const divider = '|';
+const addDivider = (s: string) => {
+  return `${s} ${divider} `;
+};
+
+export const Title = ({title, pre}: Props) => {
+  const complete = useMemo(() => {
     let string = '';
-    const divider = '|';
 
-    const addDivider = (s: string) => {
-      return (s += ` ${divider} `);
-    };
+    string += title;
 
-    string += children;
-
-    if (categories) {
-      for (const category of categories) {
+    if (pre) {
+      for (const category of pre) {
         string = addDivider(string);
         string += category;
       }
@@ -34,7 +34,7 @@ export const Title = ({children, categories}: Props) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{complete}</title>
       </Head>
     </>
   );
