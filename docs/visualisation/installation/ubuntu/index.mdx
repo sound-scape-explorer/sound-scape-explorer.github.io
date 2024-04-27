@@ -3,18 +3,22 @@ sidebar_position: 2
 title: Ubuntu
 ---
 
-import {SIZES, VERSION} from '@site/docs/env';
 import {BashIcon, UbuntuIcon} from '@site/src/components/Icons';
 import {SizeInfo} from '@site/src/components/SizeInfo';
 import {Title} from '@site/src/components/Title';
 import {VisualisationBlockDebian} from '@site/src/components/VisualisationBlockDebian';
 import {Fragment} from 'react';
+import {SIZES, VERSION} from '../../../env';
 
 <Fragment>
   # <UbuntuIcon /> Ubuntu
 </Fragment>
 
-<Title pre={['🔧 Installation<', '👁️‍🗨️ Visualisation']}>Ubuntu</Title>
+<Title
+  pre={['🔧 Installation<', '👁️‍🗨️ Visualisation']}
+  title={'Ubuntu'}
+  version={VERSION}
+/>
 
 <Fragment>
   ## <BashIcon /> Oneliner <SizeInfo size={SIZES.debian} />

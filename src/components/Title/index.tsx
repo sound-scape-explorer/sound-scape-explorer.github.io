@@ -1,10 +1,11 @@
 import Head from '@docusaurus/Head';
-import {APP_DESCRIPTION} from '@site/constants';
+import {APP_DESCRIPTION, APP_NAME} from '@site/constants';
 import React, {useMemo} from 'react';
 
 interface Props {
   title: string;
   pre?: string[];
+  version?: string;
 }
 
 const divider = '|';
@@ -12,7 +13,7 @@ const addDivider = (s: string) => {
   return `${s} ${divider} `;
 };
 
-export const Title = ({title, pre}: Props) => {
+export const Title = ({title, pre, version}: Props) => {
   const complete = useMemo(() => {
     let string = '';
 
@@ -25,8 +26,13 @@ export const Title = ({title, pre}: Props) => {
       }
     }
 
-    string = addDivider(string);
-    string += APP_DESCRIPTION;
+    if (version) {
+      string = addDivider(string);
+      string += `${APP_NAME} ${version}`;
+    } else {
+      string = addDivider(string);
+      string += APP_DESCRIPTION;
+    }
 
     return string;
   }, []);
