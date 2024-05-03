@@ -2,9 +2,11 @@
 sidebar_position: 1
 ---
 
+
 import {Dependencies} from '@site/src/components/Dependencies';
 import {
   ChocolateyIcon,
+  FfmpegIcon,
   MacOsIcon,
   NodeIcon,
   PnpmIcon,
@@ -78,7 +80,7 @@ choco install nodejs-lts pnpm -y
 </Fragment>
 
 ```powershell
-choco uninstall nodejs-lts pnpm -y
+choco uninstall nodejs-lts pnpm ffmpeg -y
 ```
 
 <Fragment>
@@ -90,6 +92,14 @@ choco uninstall nodejs-lts pnpm -y
 <Fragment>
   Open a <TerminalIcon /> terminal window and run the commands below.
 </Fragment>
+
+<Fragment>
+  Install <FfmpegIcon /> ffmpeg:
+</Fragment>
+
+```bash
+sudo apt install -y ffmpeg
+```
 
 <Fragment>
   Install <NodeIcon /> Node.js with the following command:
@@ -121,7 +131,7 @@ sudo npm -g i pnpm
 
 ```bash
 sudo npm -g uninstall pnpm && \
-sudo apt remove -y nodejs && \
+sudo apt remove -y ffmpeg nodejs && \
 sudo rm /etc/apt/sources.list.d/nodesource.list && \
 sudo rm /etc/apt/keyrings/nodesource.gpg && \
 sudo apt update && \
@@ -140,7 +150,7 @@ sudo apt autoremove -y
 </Fragment>
 
 ```bash
-brew install node@20 pnpm && \
+brew install node@20 pnpm ffmpeg && \
 echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
 ```
 
@@ -150,5 +160,5 @@ Open a <TerminalIcon /> terminal window
 and execute the following command:
 
 ```bash
-brew uninstall node@20 pnpm
+brew uninstall node@20 pnpm ffmpeg
 ```

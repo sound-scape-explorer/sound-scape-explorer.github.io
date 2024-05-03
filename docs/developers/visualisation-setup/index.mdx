@@ -2,6 +2,7 @@
 sidebar_position: 4
 ---
 
+
 import {ElectronIcon} from '@site/src/components/Icons';
 import {Title} from '@site/src/components/Title';
 import {Fragment} from 'react';
@@ -18,7 +19,7 @@ import {VERSION} from '../../env';
 <Fragment>
 
 :::warning
-This parts does not explain module bundling with <ElectronIcon /> Electron.
+This parts does not explain module bundling with <ElectronIcon/> Electron.
 It provides a basic setup to work with Front and Audio services.
 :::
 
@@ -40,14 +41,23 @@ pnpm install:front
 # In 2 distinct terminals
 # ---
 
-# run
-pnpm audio $(which ffmpeg) $(which ffprobe) /path/to/audio/folder
-
-# and
+# one for the front service localhost:5530
 pnpm front
 
-# audio service is available at localhost:5531
+# the other for audio service localhost:5531
+# examples for different systems below
+
+# unix
+pnpm audio $(which ffmpeg) $(which ffprobe) /path/to/audio/folder
+
+# windows
+pnpm audio C:\path\to\ffmpeg.exe C:\path\to\ffprobe.exe C:\path\to\audio\folder
+
+# windows example for ffmpeg installed through choco
+pnpm audio C:\ProgramData\chocolatey\lib\ffmpeg\tools\ffmpeg\bin\ffmpeg.exe C:\ProgramData\chocolatey\lib\ffmpeg\tools\ffmpeg\bin\ffprobe.exe C:\path\to\audio
+
 # front service is available at localhost:5530
+# audio service is available at localhost:5531
 ```
 
 ## Front file structure

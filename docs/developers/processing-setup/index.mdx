@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 
+
 import {PythonIcon} from '@site/src/components/Icons';
 import {Title} from '@site/src/components/Title';
 import {VERSION} from '../../env';
@@ -24,7 +25,8 @@ cd sound-scape-explorer
 python3.10 -m venv venv
 
 # Activate environment
-source venv/bin/activate
+source venv/bin/activate # unix
+.\venv\Scripts\activate # windows
 
 # Install processing in dev mode
 pip install -e processing
@@ -129,7 +131,7 @@ config_path = "/path/to/config.xlsx"
 config = Config(config_path)
 
 for file in config.files:
-    print(file) # FileConfig object
+print(file) # FileConfig object
 ```
 
 </details>
@@ -151,7 +153,7 @@ settings = SettingsStorage.read_from_storage(storage)
 files = FileStorage.read_from_storage(storage, settings)
 
 for file in files:
-    print(file) # FileConfig object
+print(file) # FileConfig object
 ```
 
 </details>
@@ -196,10 +198,10 @@ vgg.expected_sample_rate = 44100
 
 # Creating manual timelines (this section could be simplified greatly)
 timelines = create_timelines(
-    sites=sites,
-    integrations=[integration],
-    settings=settings,
-    storage=storage,
+sites=sites,
+integrations=[integration],
+settings=settings,
+storage=storage,
 )
 
 tw = TimelineWalker()
@@ -213,16 +215,16 @@ tw.extractors = [vgg]
 features = []
 
 for (
-    features_seconds,
-    labels,
-    interval_details,  # arbitrary server unique slug for storage indexing
-    interval,  # Interval object
-    band,  # BandConfig object
-    extractor,  # ExtractorConfig object
-    timeline,  # current Timeline object
+features_seconds,
+labels,
+interval_details, # arbitrary server unique slug for storage indexing
+interval, # Interval object
+band, # BandConfig object
+extractor, # ExtractorConfig object
+timeline, # current Timeline object
 ) in tw.walk():
-    features_aggregated = list(np.mean(features_seconds, axis=0))
-    features.append(features_aggregated)
+features_aggregated = list(np.mean(features_seconds, axis=0))
+features.append(features_aggregated)
 
 # Creating custom reducer
 reducer = UmapReducer()
