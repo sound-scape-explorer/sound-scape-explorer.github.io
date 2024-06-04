@@ -1,0 +1,38 @@
+---
+authors: [bamdad]
+---
+
+
+import {ExcelIcon} from '@site/src/components/Icons';
+import {Fragment} from 'react';
+
+# New version 13.3.0
+
+🎉 Version 13.3.0 has been released!
+
+<ul>
+  <li>
+    {'👁️‍🗨️ Visualisation'}
+    <ul>
+      <li>Add 2d selection to clipboard</li>
+      <li>Add user settings for 2d scatters</li>
+      <li>Improve draggables (modals) behaviour</li>
+      <li>Improve state behaviour</li>
+      <li>Improve scatter performance</li>
+      <li>Improve scatter layout and camera</li>
+      <li>Improve scatter render loop</li>
+      <li>Improve storage performance</li>
+      <li>Refactor states and hooks</li>
+    </ul>
+  </li>
+</ul>
+
+[Read CHANGELOG](https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1330-2024-06-04)
+
+## Add 2d selection to clipboard
+
+<Fragment>
+  When this setting is enabled, the selected interval points are converted to
+  corresponding file indexes then paste clipboard content as a column in your
+  <ExcelIcon /> Excel configuration file.
+</Fragment>
