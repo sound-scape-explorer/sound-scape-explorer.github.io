@@ -1,0 +1,38 @@
+---
+sidebar_position: 5
+---
+
+import {ExcelIcon, StorageIcon} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {VERSION} from '../env';
+
+# 🤔 FAQ
+
+<Title
+  title="🤔 FAQ"
+  version={VERSION}
+/>
+
+Most common user issues:
+
+<details>
+  <summary>
+    ### #1 I get timeline overlapping errors when extracting my files
+  </summary>
+
+Verify your <ExcelIcon /> configuration for the files mentioned
+in console's error.
+
+The application does not allow two audio events happening
+at the same time in a given interval for a given <b>site</b>.
+
+</details>
+
+<details>
+  <summary>
+    ### #2 I generated a full <StorageIcon /> storage file and can not visualise it
+  </summary>
+
+Make sure to `Quit` the Processing menu before loading to Visualisation.
+
+</details>
