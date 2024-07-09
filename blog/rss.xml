@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 20 Jun 2024 20:10:02 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jul 2024 16:26:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,19 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 20 Jun 2024 20:10:02 GMT</pubDate>
+            <pubDate>Tue, 09 Jul 2024 16:26:51 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.4.3]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/07/09/version-13.4.3</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/07/09/version-13.4.3</guid>
+            <pubDate>Tue, 09 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.4.3 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.4.3 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Force cell objects to strings for audio service start</li><li>Sanitize relative file paths when building interval details</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1343-2024-07-09" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.4.0]]></title>
