@@ -1,0 +1,164 @@
+---
+sidebar_position: 1
+---
+
+
+import {Dependencies} from '@site/src/components/Dependencies';
+import {
+  ChocolateyIcon,
+  FfmpegIcon,
+  MacOsIcon,
+  NodeIcon,
+  PnpmIcon,
+  PowershellIcon,
+  TerminalIcon,
+  UbuntuIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import React, {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 📋 Requirements
+
+<Title
+  pre={['👩‍💻 Developers']}
+  title={'📋 Requirements'}
+  version={VERSION}
+/>
+
+The following dependencies are needed to run the application in developer mode:
+
+<Dependencies
+  version={VERSION}
+  noPython
+  noCCompiler
+  noCurl
+  noFfmpeg
+/>
+
+Choose the procedure depending on your operating system:
+
+<ul>
+  <li>
+    <WindowsIcon />
+    {'  '}
+    <a href="#-windows">Windows</a>
+  </li>
+  <li>
+    <UbuntuIcon />
+    {'  '}
+    <a href="#-ubuntu">Ubuntu</a>
+  </li>
+  <li>
+    <MacOsIcon />
+    {'  '}
+    <a href="#-macos">macOS</a>
+  </li>
+</ul>
+
+<Fragment>
+  ## <WindowsIcon /> Windows
+</Fragment>
+
+### 🔧 Installation
+
+<Fragment>
+  Use the <ChocolateyIcon /> Chocolatey command below in an elevated (admin){' '}
+  <PowershellIcon /> Powershell terminal:
+</Fragment>
+
+```powershell
+choco install nodejs-lts pnpm -y
+```
+
+### 🗑️ Uninstallation
+
+<Fragment>
+  Run the following command in an elevated (admin) <PowershellIcon /> Powershell
+  terminal:
+</Fragment>
+
+```powershell
+choco uninstall nodejs-lts pnpm ffmpeg -y
+```
+
+<Fragment>
+  ## <UbuntuIcon /> Ubuntu
+</Fragment>
+
+### 🔧 Installation
+
+<Fragment>
+  Open a <TerminalIcon /> terminal window and run the commands below.
+</Fragment>
+
+<Fragment>
+  Install <FfmpegIcon /> ffmpeg:
+</Fragment>
+
+```bash
+sudo apt install -y ffmpeg
+```
+
+<Fragment>
+  Install <NodeIcon /> Node.js with the following command:
+</Fragment>
+
+```bash
+sudo apt update && \
+sudo apt install -y ca-certificates curl gnupg && \
+sudo mkdir -p /etc/apt/keyrings && \
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && \
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list && \
+sudo apt update && \
+sudo apt install -y nodejs
+```
+
+<Fragment>
+  Install <PnpmIcon /> pnpm with the following command:
+</Fragment>
+
+```bash
+sudo npm -g i pnpm
+```
+
+### 🗑️ Uninstallation
+
+<Fragment>
+  Open a <TerminalIcon /> terminal window and execute the following command:
+</Fragment>
+
+```bash
+sudo npm -g uninstall pnpm && \
+sudo apt remove -y ffmpeg nodejs && \
+sudo rm /etc/apt/sources.list.d/nodesource.list && \
+sudo rm /etc/apt/keyrings/nodesource.gpg && \
+sudo apt update && \
+sudo apt autoremove -y
+```
+
+<Fragment>
+  ## <MacOsIcon /> macOS
+</Fragment>
+
+### 🔧 Installation
+
+<Fragment>
+  Execute the following command in a <TerminalIcon /> terminal window to install
+  and update your path:
+</Fragment>
+
+```bash
+brew install node@20 pnpm ffmpeg && \
+echo 'export PATH="/usr/local/opt/node@20/bin:$PATH" >> ~/.profile'
+```
+
+### 🗑️ Uninstallation
+
+Open a <TerminalIcon /> terminal window
+and execute the following command:
+
+```bash
+brew uninstall node@20 pnpm ffmpeg
+```
