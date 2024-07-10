@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-07-09T16:26:51.000Z</updated>
+    <updated>2024-07-10T19:01:49.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,23 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-07-09T16:26:51.000Z</updated>
+        <updated>2024-07-10T19:01:49.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.5.0]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.0</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.0"/>
+        <updated>2024-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.5.0 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.5.0 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Add point filtering to <code>Temporal</code> draggable</li><li>Add options and value range for indicator based coloring</li><li>Add range coloring for numeric user labels</li><li>Add color map inversion button</li><li>Add global <code>&lt;Escape&gt;</code> keyboard shortcut to toggle menu and draggables display</li><li>Add global <code>&lt;Tab&gt;</code> keyboard shortcut to cycle through active draggables</li><li>Add global <code>x</code> keyboard shortcut to close the current draggable</li><li>Persist user settings between sessions</li><li>Switch default coloring flavor (map) from <code>Dark2</code> to <code>Spectral</code></li><li>Add option to disable automatic <code>Audio</code> open on scatter click</li><li>Update keyboard shortcut mapping (see help)</li><li>Rename <code>Indicators</code> draggable to <code>Temporal</code></li><li>Improve common draggable interfaces</li><li>Improve overall user experience</li><li>Improve overall code quality</li><li>Add security checks to Audio submodule</li><li>Update <code>h5wasm</code> dependency</li><li>Add various fixes and improvements</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -313,36 +327,6 @@ of <span></span> Python dependencies.</p>
 portal.</p>
 <p>The main improvements available are the following:</p>
 <ul><li><img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="App Icon">  <!-- -->SSE<ul><li>Rewritten whole documentation</li><li>Improved installation process</li><li>Added screencasts</li></ul></li><li>📣 Campaign<ul><li>Added <code>sse_fill</code> helper for automatic file detection</li><li><code>audio_path</code> containing spaces on Windows are now fixed!</li></ul></li><li>🧮 Processing<ul><li>Added relative trajectories generation</li><li>Improved console feedbacks</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Added relative trajectories interface</li><li>Improved labels UX</li><li>Added PWA mode for easy offline access</li><li>Various layout updates and bug fixes</li></ul></li></ul>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introduction to new centralized documentation]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2023/11/14/introduction-to-new-centralized-documentation"/>
-        <updated>2023-11-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Dear colleagues,]]></summary>
-        <content type="html"><![CDATA[<p>Dear colleagues,</p>
-<p>I trust this message finds you well. In our ongoing efforts to enhance
-communication and transparency between the business and development teams, I
-am pleased to announce the implementation of a new centralized documentation
-portal for the <!-- -->SoundScapeExplorer<!-- --> project.</p>
-<p>This portal serves as a comprehensive hub for all project-related
-documentation, updates, and other pertinent information. It is designed to
-function as a showcase for the platform, providing a convenient space to
-publish evolving documentation for upcoming versions while archiving the older
-ones. Additionally, it facilitates easy export of documentation in PDF format,
-enabling offline access for your convenience.</p>
-<p>I invite you to use and share the following link to others:
-<a href="https://sound-scape-explorer.github.io/" target="_blank" rel="noopener noreferrer">sound-scape-explorer.github.io</a></p>
-<p>Your feedback on this initiative is highly valuable, and I encourage you to
-share any thoughts or suggestions you may have.</p>
-<p>Thank you for your attention, and I look forward to further advancing our
-collaboration through improved access to project information.</p>
-<p>Best regards,</p>
-<p>Bamdad</p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
