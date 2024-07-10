@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Wed, 10 Jul 2024 19:01:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jul 2024 20:05:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Wed, 10 Jul 2024 19:01:49 GMT</pubDate>
+            <pubDate>Wed, 10 Jul 2024 20:05:27 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
         </item>
@@ -25,6 +25,16 @@
             <content:encoded><![CDATA[<p>🎉 Version 13.5.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add point filtering to <code>Temporal</code> draggable</li><li>Add options and value range for indicator based coloring</li><li>Add range coloring for numeric user labels</li><li>Add color map inversion button</li><li>Add global <code>&lt;Escape&gt;</code> keyboard shortcut to toggle menu and draggables display</li><li>Add global <code>&lt;Tab&gt;</code> keyboard shortcut to cycle through active draggables</li><li>Add global <code>x</code> keyboard shortcut to close the current draggable</li><li>Persist user settings between sessions</li><li>Switch default coloring flavor (map) from <code>Dark2</code> to <code>Spectral</code></li><li>Add option to disable automatic <code>Audio</code> open on scatter click</li><li>Update keyboard shortcut mapping (see help)</li><li>Rename <code>Indicators</code> draggable to <code>Temporal</code></li><li>Improve common draggable interfaces</li><li>Improve overall user experience</li><li>Improve overall code quality</li><li>Add security checks to Audio submodule</li><li>Update <code>h5wasm</code> dependency</li><li>Add various fixes and improvements</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.5.2]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2</guid>
+            <pubDate>Wed, 10 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.5.2 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.4.3]]></title>
@@ -216,22 +226,6 @@ installation and overall use:</p>
             <content:encoded><![CDATA[<p>🎉 Version 12.1.0 has been released!</p>
 <p>This new version introduces various bug fixes and quality of life improvements.</p>
 <ul><li>📣 Campaign<ul><li>Update <span></span> configuration examples</li></ul></li><li>🧮 Processing<ul><li>Handle Mean Distances Matrices that are bigger than available memory<ul><li>The application no longer crashes when this occurs. Generated labels are replaced with a placeholder.</li></ul></li><li>Add memory resource limiter helper utility</li></ul></li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Announcing new version 12.0.0]]></title>
-            <link>https://sound-scape-explorer.github.io/blog/2023/12/08/version-12.0.0</link>
-            <guid>https://sound-scape-explorer.github.io/blog/2023/12/08/version-12.0.0</guid>
-            <pubDate>Fri, 08 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[🎉 Version 12.0.0 has been released!]]></description>
-            <content:encoded><![CDATA[<p>🎉 Version 12.0.0 has been released!</p>
-<p>This new version introduces new generated relative trajectories data, numerous
-bug fixes and quality of life improvements.</p>
-<p>This major version bump has been motivated by the new installation procedure
-of <span></span> Python dependencies.</p>
-<p>It also aligns with the complete rewrite of the documentation available on this
-portal.</p>
-<p>The main improvements available are the following:</p>
-<ul><li><img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="App Icon">  <!-- -->SSE<ul><li>Rewritten whole documentation</li><li>Improved installation process</li><li>Added screencasts</li></ul></li><li>📣 Campaign<ul><li>Added <code>sse_fill</code> helper for automatic file detection</li><li><code>audio_path</code> containing spaces on Windows are now fixed!</li></ul></li><li>🧮 Processing<ul><li>Added relative trajectories generation</li><li>Improved console feedbacks</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Added relative trajectories interface</li><li>Improved labels UX</li><li>Added PWA mode for easy offline access</li><li>Various layout updates and bug fixes</li></ul></li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
