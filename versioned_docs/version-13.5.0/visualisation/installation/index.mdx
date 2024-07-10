@@ -1,0 +1,47 @@
+---
+sidebar_position: 1
+---
+
+import {
+  ElectronIcon,
+  MacOsIcon,
+  UbuntuIcon,
+  WindowsIcon,
+} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 🔧 Installation
+
+<Title
+  pre={['👁️‍🗨️ Visualisation']}
+  title={'🔧 Installation'}
+  version={VERSION}
+/>
+
+<Fragment>
+  The 👁️‍🗨️ Visualisation module is bundled with <ElectronIcon /> Electron.
+</Fragment>
+
+## 🌐 Operating Systems
+
+Refer to the following links for detailed instructions based on your operating system:
+
+<ul>
+  <li>
+    <WindowsIcon />
+    {'  '}
+    <a href={'./windows/'}>Windows</a>
+  </li>
+  <li>
+    <UbuntuIcon />
+    {'  '}
+    <a href={'./ubuntu/'}>Ubuntu</a>
+  </li>
+  <li>
+    <MacOsIcon />
+    {'  '}
+    <a href={'./macos/'}>macOS</a>
+  </li>
+</ul>
