@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 14:07:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Jul 2024 15:51:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,19 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Wed, 17 Jul 2024 14:07:35 GMT</pubDate>
+            <pubDate>Thu, 18 Jul 2024 15:51:48 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.5.2]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/07/11/version-13.5.2</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/07/11/version-13.5.2</guid>
+            <pubDate>Thu, 11 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.5.2 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.5.0]]></title>
@@ -25,16 +35,6 @@
             <content:encoded><![CDATA[<p>🎉 Version 13.5.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add point filtering to <code>Temporal</code> draggable</li><li>Add options and value range for indicator based coloring</li><li>Add range coloring for numeric user labels</li><li>Add color map inversion button</li><li>Add global <code>&lt;Escape&gt;</code> keyboard shortcut to toggle menu and draggables display</li><li>Add global <code>&lt;Tab&gt;</code> keyboard shortcut to cycle through active draggables</li><li>Add global <code>x</code> keyboard shortcut to close the current draggable</li><li>Persist user settings between sessions</li><li>Switch default coloring flavor (map) from <code>Dark2</code> to <code>Spectral</code></li><li>Add option to disable automatic <code>Audio</code> open on scatter click</li><li>Update keyboard shortcut mapping (see help)</li><li>Rename <code>Indicators</code> draggable to <code>Temporal</code></li><li>Improve common draggable interfaces</li><li>Improve overall user experience</li><li>Improve overall code quality</li><li>Add security checks to Audio submodule</li><li>Update <code>h5wasm</code> dependency</li><li>Add various fixes and improvements</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[New version 13.5.2]]></title>
-            <link>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2</link>
-            <guid>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2</guid>
-            <pubDate>Wed, 10 Jul 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[🎉 Version 13.5.2 has been released!]]></description>
-            <content:encoded><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
-<ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.4.3]]></title>

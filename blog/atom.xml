@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-07-17T14:07:35.000Z</updated>
+    <updated>2024-07-18T15:51:48.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,23 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-07-17T14:07:35.000Z</updated>
+        <updated>2024-07-18T15:51:48.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.5.2]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/07/11/version-13.5.2</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/07/11/version-13.5.2"/>
+        <updated>2024-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.5.2 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -28,20 +42,6 @@
         <content type="html"><![CDATA[<p>🎉 Version 13.5.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add point filtering to <code>Temporal</code> draggable</li><li>Add options and value range for indicator based coloring</li><li>Add range coloring for numeric user labels</li><li>Add color map inversion button</li><li>Add global <code>&lt;Escape&gt;</code> keyboard shortcut to toggle menu and draggables display</li><li>Add global <code>&lt;Tab&gt;</code> keyboard shortcut to cycle through active draggables</li><li>Add global <code>x</code> keyboard shortcut to close the current draggable</li><li>Persist user settings between sessions</li><li>Switch default coloring flavor (map) from <code>Dark2</code> to <code>Spectral</code></li><li>Add option to disable automatic <code>Audio</code> open on scatter click</li><li>Update keyboard shortcut mapping (see help)</li><li>Rename <code>Indicators</code> draggable to <code>Temporal</code></li><li>Improve common draggable interfaces</li><li>Improve overall user experience</li><li>Improve overall code quality</li><li>Add security checks to Audio submodule</li><li>Update <code>h5wasm</code> dependency</li><li>Add various fixes and improvements</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New version 13.5.2]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2024/07/10/version-13.5.2"/>
-        <updated>2024-07-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version 13.5.2 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
-<ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
