@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-07-18T15:51:48.000Z</updated>
+    <updated>2024-07-19T13:23:35.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,24 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-07-18T15:51:48.000Z</updated>
+        <updated>2024-07-19T13:23:35.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New version 13.6.1]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0"/>
+        <updated>2024-07-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Version 13.6.1 has been released!]]></summary>
+        <content type="html"><![CDATA[<p>🎉 Version 13.6.1 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Upgrade to <a href="https://blog.vuejs.org/posts/vue-3-4" target="_blank" rel="noopener noreferrer">Vue 3.4</a></li><li>Use <code>Shift+Tab</code> to cycle through draggables backwards</li><li>Use <code>Enter</code> submission on temporal filter thresholds</li><li>Add dev settings for automatic view selection</li><li>Add undo and redo actions to trajectories</li><li>Add undo and redo actions to audios</li><li>Fix cycling scale colors</li><li>Use temporal filtering for scatter CSV exports</li><li>Improve Menu and Draggables readability</li><li>Improve global lifecycle calls</li><li>Prevent using keyboard on view loading</li><li>Purge temporal thresholds on view unloading</li><li>Add various improvements and fixes</li></ul>🧮 Processing<ul><li>Force string conversion from storage</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1361-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.1</a></p>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1360-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.0</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -307,20 +322,6 @@ installation and overall use:</p>
         <content type="html"><![CDATA[<p>🎉 Version 12.2.0 has been released!</p>
 <p>This new version introduces various bug fixes and quality of life improvements.</p>
 <ul><li>🧮 Processing<ul><li>Add data validation checks before actions</li><li>Display data presence in storage in menu</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Improve audio player behaviour</li><li>Improve grid layouts</li><li>Clean notifications</li><li>Display build version</li></ul></li></ul>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New version 12.1.0]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2023/12/19/version-12.1.0</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2023/12/19/version-12.1.0"/>
-        <updated>2023-12-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version 12.1.0 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version 12.1.0 has been released!</p>
-<p>This new version introduces various bug fixes and quality of life improvements.</p>
-<ul><li>📣 Campaign<ul><li>Update <span></span> configuration examples</li></ul></li><li>🧮 Processing<ul><li>Handle Mean Distances Matrices that are bigger than available memory<ul><li>The application no longer crashes when this occurs. Generated labels are replaced with a placeholder.</li></ul></li><li>Add memory resource limiter helper utility</li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>

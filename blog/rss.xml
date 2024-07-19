@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 18 Jul 2024 15:51:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 13:23:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,20 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 18 Jul 2024 15:51:48 GMT</pubDate>
+            <pubDate>Fri, 19 Jul 2024 13:23:35 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New version 13.6.1]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0</guid>
+            <pubDate>Fri, 19 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 Version 13.6.1 has been released!]]></description>
+            <content:encoded><![CDATA[<p>🎉 Version 13.6.1 has been released!</p>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Upgrade to <a href="https://blog.vuejs.org/posts/vue-3-4" target="_blank" rel="noopener noreferrer">Vue 3.4</a></li><li>Use <code>Shift+Tab</code> to cycle through draggables backwards</li><li>Use <code>Enter</code> submission on temporal filter thresholds</li><li>Add dev settings for automatic view selection</li><li>Add undo and redo actions to trajectories</li><li>Add undo and redo actions to audios</li><li>Fix cycling scale colors</li><li>Use temporal filtering for scatter CSV exports</li><li>Improve Menu and Draggables readability</li><li>Improve global lifecycle calls</li><li>Prevent using keyboard on view loading</li><li>Purge temporal thresholds on view unloading</li><li>Add various improvements and fixes</li></ul>🧮 Processing<ul><li>Force string conversion from storage</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1361-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.1</a></p>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1360-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.5.2]]></title>
@@ -216,16 +227,6 @@ installation and overall use:</p>
             <content:encoded><![CDATA[<p>🎉 Version 12.2.0 has been released!</p>
 <p>This new version introduces various bug fixes and quality of life improvements.</p>
 <ul><li>🧮 Processing<ul><li>Add data validation checks before actions</li><li>Display data presence in storage in menu</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Improve audio player behaviour</li><li>Improve grid layouts</li><li>Clean notifications</li><li>Display build version</li></ul></li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[New version 12.1.0]]></title>
-            <link>https://sound-scape-explorer.github.io/blog/2023/12/19/version-12.1.0</link>
-            <guid>https://sound-scape-explorer.github.io/blog/2023/12/19/version-12.1.0</guid>
-            <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[🎉 Version 12.1.0 has been released!]]></description>
-            <content:encoded><![CDATA[<p>🎉 Version 12.1.0 has been released!</p>
-<p>This new version introduces various bug fixes and quality of life improvements.</p>
-<ul><li>📣 Campaign<ul><li>Update <span></span> configuration examples</li></ul></li><li>🧮 Processing<ul><li>Handle Mean Distances Matrices that are bigger than available memory<ul><li>The application no longer crashes when this occurs. Generated labels are replaced with a placeholder.</li></ul></li><li>Add memory resource limiter helper utility</li></ul></li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
