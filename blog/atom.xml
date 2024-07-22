@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-07-19T13:24:10.000Z</updated>
+    <updated>2024-07-22T10:16:16.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-07-19T13:24:10.000Z</updated>
+        <updated>2024-07-22T10:16:16.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
         <author>
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New version 13.6.1]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.0"/>
+        <id>https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.1</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/07/19/version-13.6.1"/>
         <updated>2024-07-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[🎉 Version 13.6.1 has been released!]]></summary>
         <content type="html"><![CDATA[<p>🎉 Version 13.6.1 has been released!</p>
