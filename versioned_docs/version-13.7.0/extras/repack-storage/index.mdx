@@ -1,0 +1,41 @@
+import {StorageIcon, UbuntuIcon} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 🔄 Repack storage
+
+<Title
+  pre={['✨ Extras']}
+  title={'🔄 Repack storage'}
+  version={VERSION}
+/>
+
+<Fragment>
+  :::warning
+  Currently, this command is exclusively available on <UbuntuIcon /> Ubuntu
+  systems.
+  :::
+
+</Fragment>
+
+<Fragment>
+  When you frequently overwrite your <StorageIcon /> storage file, the space
+  previously occupied by the deleted dataset isn't immediately freed due to HDF5
+  technology's workings.
+</Fragment>
+
+Repacking enables the creation of a new file containing your data but optimized
+for the smallest possible size.
+
+## 🛠️ Procedure
+
+<Fragment>
+  Navigate to where your <StorageIcon /> storage file is located.
+</Fragment>
+
+Then run:
+
+```bash
+h5repack old_storage.h5 new_storage.h5
+```
