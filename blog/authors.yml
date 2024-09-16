@@ -3,6 +3,8 @@ bamdad:
   name: Bamdad Sabbagh
   url: https://bamdad.fr
   image_url: /img/cse/authors/bamdad-sabbagh.jpeg
+  socials:
+    github: bamdadfr
 
 jeremy:
   name: Jérémy Rouch
@@ -28,3 +30,5 @@ remi:
   name: Rémi Emonet
   url: https://home.heeere.com/
   image_url: /img/cse/authors/remi-emonet.jpg
+  socials:
+    github: twitwi
