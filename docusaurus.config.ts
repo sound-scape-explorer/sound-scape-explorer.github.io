@@ -72,6 +72,7 @@ const config: Config = {
           editUrl: `https://github.com/${APP_ORG}/${APP_REPO}/tree/main/`,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'All posts',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
