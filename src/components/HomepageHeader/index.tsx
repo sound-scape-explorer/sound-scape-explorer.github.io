@@ -36,7 +36,7 @@ export const HomepageHeader = () => {
         <div className={styles.buttons}>
           <Link
             className={`button button--secondary button--lg ${styles.button}`}
-            to="/docs"
+            to="/docs/"
           >
             Get started{' '}
             <Book

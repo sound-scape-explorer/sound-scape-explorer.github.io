@@ -133,7 +133,7 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
         },
-        {to: '/docs', label: 'Docs', position: 'left'},
+        {to: '/docs/', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://sound-scape-explorer.github.io/sound-scape-explorer',
