@@ -116,8 +116,11 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/demo.png',
+    // announcementBar: {
+    //   id: 'v13.8.0',
+    //   content: 'New version 13.8.0 released!',
+    // },
     navbar: {
       title: APP_NAME,
       logo: {
@@ -125,17 +128,20 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
         {
           type: 'docsVersionDropdown',
+          // dropdownItemsBefore: [
+          //   {
+          //     type: 'docsVersion',
+          //     value: 'CSE',
+          //     label: 'CSE',
+          //     to: '/docs/CSE/',
+          //   },
+          //   {type: 'html', value: '<hr />'},
+          // ],
         },
-        {to: '/docs', label: 'Docs', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/docs/', label: 'Docs', position: 'left'},
+        {to: '/blog/', label: 'Blog', position: 'left'},
         {
           href: 'https://sound-scape-explorer.github.io/sound-scape-explorer',
           label: 'Visualise',
@@ -161,7 +167,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs',
+              to: '/docs/',
             },
             {
               label: 'Contributing guidelines',
