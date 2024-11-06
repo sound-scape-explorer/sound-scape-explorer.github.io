@@ -6,13 +6,14 @@ import {APP_NAME} from '@site/constants';
 // @ts-expect-error: TS2307
 import demo from '@site/static/img/demo.png';
 import Logo from '@site/static/img/logo.svg';
+// @ts-expect-error: TS2307
 import Heading from '@theme/Heading';
 import clsx from 'clsx';
 import {Book} from 'react-feather';
 
 import styles from './index.module.css';
 
-export const HomepageHeader = () => {
+export const HomepageHero = () => {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>

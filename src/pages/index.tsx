@@ -4,17 +4,18 @@ import '@fontsource/jetbrains-mono';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {APP_NAME} from '@site/constants';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import {HomepageHeader} from '@site/src/components/HomepageHeader';
+import {HomepageHero} from '@site/src/components/HomepageHero';
 import Layout from '@theme/Layout';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
+      // @ts-expect-error retro compatibility
       title={`Welcome to ${APP_NAME}`}
       description={siteConfig.tagline}
     >
-      <HomepageHeader />
+      <HomepageHero />
       <main>
         <HomepageFeatures />
       </main>
