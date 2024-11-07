@@ -118,7 +118,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    image: 'img/demo.png',
+    image: 'img/demo-13.8.0.png',
     announcementBar: {
       id: '20241107',
       content:
