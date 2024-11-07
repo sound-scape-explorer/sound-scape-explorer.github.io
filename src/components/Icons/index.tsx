@@ -153,9 +153,11 @@ export const AppIcon = () => (
   <img
     className={styles.icon}
     src="/img/logo.png"
-    alt="App Icon"
+    alt="SoundScapeExplorer Icon"
   />
 );
+
+export const SseIcon = AppIcon;
 
 export const FirefoxIcon = () => (
   <SimpleIcon
@@ -226,7 +228,7 @@ export const CseIcon = () => (
   <img
     className={styles.cseIcon}
     src="/img/cse/logo.svg"
-    alt="CSE Icon"
+    alt="CoralSoundExplorer Icon"
   />
 );
 
