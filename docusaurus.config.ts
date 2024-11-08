@@ -15,8 +15,10 @@ import {
   APP_ORG,
   APP_REPO,
   APP_TAGLINE,
+  CSE_FRONT_ONLINE,
   CSE_GITHUB,
   CSE_REPOSITORY,
+  SSE_FRONT_ONLINE,
   SSE_GITHUB,
   SSE_REPOSITORY,
 } from './constants';
@@ -72,6 +74,7 @@ const config: Config = {
           editUrl: `https://github.com/${APP_ORG}/${APP_REPO}/tree/main/`,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'All posts',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -115,8 +118,12 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/demo.png',
+    image: 'img/demo-13.8.0.png',
+    announcementBar: {
+      id: '20241107',
+      content:
+        '<a href="/blog/2024/11/07/sse-13.8-cse-1.1">New SSE version 13.8.0 and CSE 1.1.0 released!</a>',
+    },
     navbar: {
       title: APP_NAME,
       logo: {
@@ -124,27 +131,33 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
         {
           type: 'docsVersionDropdown',
+          // dropdownItemsBefore: [
+          //   {
+          //     type: 'docsVersion',
+          //     value: 'CSE',
+          //     label: 'CSE',
+          //     to: '/docs/CSE/',
+          //   },
+          //   {type: 'html', value: '<hr />'},
+          // ],
         },
         {to: '/docs/', label: 'Docs', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog/', label: 'Blog', position: 'left'},
         {
-          href: 'https://sound-scape-explorer.github.io/sound-scape-explorer',
-          label: 'Visualise',
-          position: 'left',
+          href: APP_DISCORD_INVITE,
+          label: 'Discord',
+          position: 'right',
         },
         {
           href: 'https://github.com/sound-scape-explorer/sound-scape-explorer/issues',
           label: 'Issues',
           position: 'right',
         },
+        // TODO: Add CSE online and SSE online
+        // TODO: Update screenshots
+        // TODO: Update CSE version
         {
           href: SSE_GITHUB,
           label: 'GitHub',
@@ -160,7 +173,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs',
+              to: '/docs/',
             },
             {
               label: 'Contributing guidelines',
@@ -185,28 +198,32 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'Docs repository',
+              label: 'Docs Repository',
               href: APP_GITHUB,
             },
             {
-              label: 'SSE repository',
+              label: 'SSE Repository',
               href: SSE_GITHUB,
             },
             {
-              label: 'SSE changelog',
+              label: 'SSE Changelog',
               href: SSE_REPOSITORY,
             },
             {
-              label: 'CSE repository',
+              label: 'SSE Visualisation online',
+              href: SSE_FRONT_ONLINE,
+            },
+            {
+              label: 'CSE Repository',
               href: CSE_GITHUB,
             },
             {
-              label: 'CSE changelog',
+              label: 'CSE Changelog',
               href: CSE_REPOSITORY,
+            },
+            {
+              label: 'CSE Visualisation online',
+              href: CSE_FRONT_ONLINE,
             },
           ],
         },

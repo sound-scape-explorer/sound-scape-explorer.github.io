@@ -21,3 +21,8 @@ export const CSE_GITHUB =
   'https://github.com/sound-scape-explorer/coral-sound-explorer';
 export const CSE_REPOSITORY =
   'https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md';
+
+export const SSE_FRONT_ONLINE =
+  'https://sound-scape-explorer.github.io/sound-scape-explorer/';
+export const CSE_FRONT_ONLINE =
+  'https://sound-scape-explorer.github.io/coral-sound-explorer/';
