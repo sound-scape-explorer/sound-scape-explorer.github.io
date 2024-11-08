@@ -122,7 +122,7 @@ const config: Config = {
     announcementBar: {
       id: '20241107',
       content:
-        '<a href="/blog/2024/11/07/sse-13.8-cse-1.1">New SSE version 13.8.0 and CSE 1.1.0 released!</a>',
+        '<a href="/blog/2024/11/07/sse-13.8-cse-1.1">New SSE 13.8.0 and CSE 1.1.0 released!</a>',
     },
     navbar: {
       title: APP_NAME,
@@ -155,9 +155,6 @@ const config: Config = {
           label: 'Issues',
           position: 'right',
         },
-        // TODO: Add CSE online and SSE online
-        // TODO: Update screenshots
-        // TODO: Update CSE version
         {
           href: SSE_GITHUB,
           label: 'GitHub',
