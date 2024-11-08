@@ -1,0 +1,104 @@
+---
+sidebar_position: 3
+---
+
+import {ExcelIcon} from '@site/src/components/Icons';
+import {
+  DownloadPngIcon,
+  DownloadSvgIcon,
+  ExportCsvIcon,
+  OrbitalIcon,
+  PanIcon,
+  ResetCameraIcon,
+  TurntableIcon,
+  ZoomIcon,
+} from '@site/src/components/ScatterIcons';
+import {Title} from '@site/src/components/Title';
+import {
+  AudioIcon,
+  ColorsIcon,
+  DetailsIcon,
+  DigestedIcon,
+  HelpIcon,
+  ImportIcon,
+  IndicatorsIcon,
+  LabelsIcon,
+  RelativeTrajectoriesIcon,
+  SelectionIcon,
+  SettingsIcon,
+  TimeIcon,
+  TrajectoriesIcon13_6,
+} from '@site/src/components/VisIcons';
+import {Fragment} from 'react';
+import {VERSION} from '../../env';
+
+# 📖 User Guide
+
+<Title
+  pre={['👁️‍🗨️ Visualisation']}
+  title={'📖 User Guide'}
+  version={VERSION}
+/>
+
+The visualisation interface relies on floating windows to organize the
+available viewport efficiently.
+
+In a minimalist design, each window can be effortlessly toggled between hidden
+or shown states by interacting with the menu icons.
+
+Discover more about the 🧭 [Menu](#-menu)
+and 📊 [Plot controls](#-plot-controls) for additional help.
+
+## 🧭 Menu
+
+<Fragment>
+
+| Icon                        | Function              | Description                                       |
+| --------------------------- | --------------------- | ------------------------------------------------- |
+| <ImportIcon/>               | Open                  | Load a local `.h5` storage file.                  |
+| <SettingsIcon/>             | Settings              | Adjust user interface settings.                   |
+| <HelpIcon/>                 | Help                  | Access help links and keyboard shortcuts.         |
+| <SelectionIcon/>            | View                  | Select band, integration, extractor, and reducer. |
+| <ColorsIcon/>               | Colors                | Colour intervals by index, timestamp, or label.   |
+| <LabelsIcon/>               | Labels                | Filter intervals by labels.                       |
+| <IndicatorsIcon/>           | Temporal              | Display acoustic indicators.                      |
+| <DigestedIcon/>             | Heatmaps              | Display digested metrics.                         |
+| <TimeIcon/>                 | Calendar              | Filter intervals by timestamps.                   |
+| <DetailsIcon/>              | Details               | Show details about the selected interval.         |
+| <AudioIcon/>                | Audio                 | Show audio for the selected interval.             |
+| <TrajectoriesIcon13_6/>     | Trajectories          | Display trajectories.                             |
+| <RelativeTrajectoriesIcon/> | Relative Trajectories | Display relative trajectories.                    |
+
+</Fragment>
+
+## 📊 Plot controls
+
+<Fragment>
+
+| Icon               | Function     | Description                            |
+| ------------------ | ------------ | -------------------------------------- |
+| <ZoomIcon/>        | Zoom         | Set cursor to zoom mode.               |
+| <PanIcon/>         | Pan          | Set cursor to pan mode.                |
+| <OrbitalIcon/>     | Orbital      | Set cursor to orbital rotation mode.   |
+| <TurntableIcon/>   | Turntable    | Set cursor to turntable rotation mode. |
+| <ResetCameraIcon/> | Reset camera | Reset camera to default position.      |
+| <DownloadPngIcon/> | Download PNG | Download scatter as PNG.               |
+| <DownloadSvgIcon/> | Download SVG | Download scatter as SVG.               |
+| <ExportCsvIcon/>   | Export CSV   | Export scatter as CSV.                 |
+
+</Fragment>
+
+<Fragment>
+
+## ⏳ Loading a new <ExcelIcon /> configuration
+
+:::tip
+
+The 👁️‍🗨️ Visualisation module can handle only one <ExcelIcon />
+configuration file at a time.
+
+You will need to stop current services in order to load a [new one](../getting-started/).
+
+:::
+
+</Fragment>
