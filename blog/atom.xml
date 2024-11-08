@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-10-24T22:30:53.000Z</updated>
+    <updated>2024-11-08T12:07:13.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,30 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-10-24T22:30:53.000Z</updated>
+        <updated>2024-11-08T12:07:13.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New SSE 13.8.0 and CSE 1.1.0]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1"/>
+        <updated>2024-11-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This dual release adds new nn-based extractors to both  SSE and{' '}]]></summary>
+        <content type="html"><![CDATA[<p>This dual release adds new nn-based extractors to both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE and<!-- --> <!-- -->
+<img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE.</p><p>While the new <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE 1.1.0 only features these two new extractors, <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE 13.8.0 continues to improve
+on its own with new features, performance improvements and bug fixes.</p><p>Please find more below.</p>
+<h2 class="anchor anchorWithStickyNavbar_b3ls" id="cse-110-most-impactful-changes">CSE 1.1.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#cse-110-most-impactful-changes" class="hash-link" aria-label="Direct link to CSE 1.1.0 most impactful changes" title="Direct link to CSE 1.1.0 most impactful changes">​</a></h2>
+<ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#110-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.1.0</a></p>
+<h2 class="anchor anchorWithStickyNavbar_b3ls" id="sse-1380-most-impactful-changes">SSE 13.8.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#sse-1380-most-impactful-changes" class="hash-link" aria-label="Direct link to SSE 13.8.0 most impactful changes" title="Direct link to SSE 13.8.0 most impactful changes">​</a></h2>
+<img src="https://sound-scape-explorer.github.io/assets/images/demo-13.8.0-ab71aed7d7d617fd3013952b453fcf12.png" alt="SSE 13.8.0 demo screenshot">
+<ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Construct relative audio paths correctly when loading config from Electron</li><li>Add <code>Timeline</code> component to <code>Calendar</code> draggable</li><li>Add <code>Calendar</code> transport and navigation actions</li><li>Add first iteration of <code>Histograms</code> (draggable for stacked histogram plots)</li><li>Add VU meter to <code>Audio</code> draggable</li><li>Add view loading progress bar</li><li>Add shared <code>FilteringInfo</code> component for easy overview of active filters and interval navigation</li><li>Add sites selection to <code>Labels</code> draggable</li><li>Streamline <code>Temporal</code> draggable</li><li>Allow folding of user labels and improve <code>Labels</code> draggable UX</li><li>Allow plot size overwrite for high resolution heatmap raster exports</li><li>Allow access to <code>Settings</code> without storage</li><li>Display current amplification gain within <code>Audio</code> draggable</li><li>Prevent <code>Scatter</code> clicks on trajectories</li><li>Set default FFT size to 4096</li><li>Update keyboard navigation</li><ul><li>Use <code>&lt;space&gt;</code> for toggling audio play</li><li>Use <code>&lt;Tab&gt;</code> to switch between the two most recent draggables</li><li>Use <code>&lt;Shift+Tab&gt;</code> to cycle through all opened draggables</li></ul><li>Improve global context sharing</li><li>Improve global error handling</li><li>Improve global styling</li><li>Improve draggable stacking and multiple display behaviour</li><li>Improve plot rendering and layouts</li><li>Improve plot titles and export names</li><li>Improve scatter rendering speed</li><li>Improve audio data flow</li><li>Improve audio peak detection precision</li><li>Improve colors generation speed</li><li>Improve heatmap code structure</li><li>Improve storage read speed from web worker</li><li>Improve time based filtering speed</li><li>Upgrade dependencies to latest</li><ul><li><code>Vue.js</code></li><li><code>Plotly.js</code></li><li><code>chroma.js</code></li></ul></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.8.0</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -127,7 +148,7 @@
         <content type="html"><![CDATA[<p>🎉 Version 13.3.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add 2d selection to clipboard</li><li>Add user settings for 2d scatters</li><li>Improve draggables (modals) behaviour</li><li>Improve state behaviour</li><li>Improve scatter performance</li><li>Improve scatter layout and camera</li><li>Improve storage performance</li><li>Refactor states and hooks</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1330-2024-06-04" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>
-<h2 class="anchor anchorWithStickyNavbar_zwEn" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_b3ls" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard">​</a></h2>
 <p>When this setting is enabled, the selected interval points are converted to
 corresponding file indexes then paste clipboard content as a column in your
 <span></span> Excel configuration file.</p>]]></content>
@@ -261,7 +282,7 @@ file</p></li></ul></li></ul>]]></content>
         <updated>2024-03-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[🎉 Version 13.1.6 has been released!]]></summary>
         <content type="html"><![CDATA[<p>🎉 Version 13.1.6 has been released!</p>
-<p>This new major version syncs with <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> <!-- -->
+<p>This new major version syncs with <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> <!-- -->
 <a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE">CSE</a>'s latest features and improves ease of
 installation and overall use:</p>
 <ul><li>🧮 Processing<ul><li>Publish package to <span></span>  <a href="https://pypi.org/project/sound-scape-explorer/" target="_blank" rel="noopener nofollow">PyPI</a></li><li>Improve silhouette computation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Bundle module to native desktop applications</li><li>Improve audio delivery performance with new audio API</li></ul></li></ul>]]></content>
@@ -276,17 +297,17 @@ installation and overall use:</p>
         <link href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE"/>
         <updated>2024-01-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Description]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_zwEn" id="description">Description<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_b3ls" id="description">Description<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h2>
 <p>🎉 Version CSE has been released!</p>
-<p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="App Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
+<p>This specific version for publication is based on <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> <a href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0">SSE
 12.3.0</a>.</p>
 <p>Read the dedicated documentation <a href="https://sound-scape-explorer.github.io/docs/CSE/">here</a>.</p>
-<ul><li><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> CSE<ul><li>Added sponsors list</li><li>Replace <code>sse</code> command prefixes with <code>cse</code></li></ul></li><li>📣 Campaign<ul><li>Update examples configuration files (names and links to documentation)</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Obfuscate indicators from <em>Menu</em> and <em>Details</em> components</li></ul></li></ul>
-<h2 class="anchor anchorWithStickyNavbar_zwEn" id="authors">Authors<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#authors" class="hash-link" aria-label="Direct link to Authors" title="Direct link to Authors">​</a></h2>
-<p><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> CSE is authored by</p>
+<ul><li><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE<ul><li>Added sponsors list</li><li>Replace <code>sse</code> command prefixes with <code>cse</code></li></ul></li><li>📣 Campaign<ul><li>Update examples configuration files (names and links to documentation)</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Obfuscate indicators from <em>Menu</em> and <em>Details</em> components</li></ul></li></ul>
+<h2 class="anchor anchorWithStickyNavbar_b3ls" id="authors">Authors<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#authors" class="hash-link" aria-label="Direct link to Authors" title="Direct link to Authors">​</a></h2>
+<p><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE is authored by</p>
 <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2em"><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/jeremy-rouch.jpeg" alt="Jérémy Rouch" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://www.researchgate.net/profile/Jeremy-Rouch" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Jérémy Rouch</span></a></div></div><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/bamdad-sabbagh.jpeg" alt="Bamdad Sabbagh" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://bamdad.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Bamdad Sabbagh</span></a></div></div><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/lana-minier.jpeg" alt="Lana Minier" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://www.researchgate.net/profile/Lana-Minier-2" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Lana Minier</span></a></div></div><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/frederic-sebe.png" alt="Frédéric Sèbe" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://celya.universite-lyon.fr/membres-de-celya/frederic-sebe--37274.kjsp" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Frédéric Sèbe</span></a></div></div><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/nicolas-mathevon.jpeg" alt="Nicolas Mathevon" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://www.eneslab.com/nicolas-mathevon" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Nicolas Mathevon</span></a></div></div><div class="avatar" style="display:grid;grid-template-rows:1fr 2em;gap:1em;justify-items:center;align-content:center"><img src="https://sound-scape-explorer.github.io/img/cse/authors/remi-emonet.jpg" alt="Rémi Emonet" class="avatar__photo" style="width:200px;height:200px;object-fit:cover;margin:0"><div class="avatar__name" style="font-size:150%;display:flex"><a href="https://home.heeere.com/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name" style="margin:0">Rémi Emonet</span></a></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_zwEn" id="sponsors">Sponsors<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#sponsors" class="hash-link" aria-label="Direct link to Sponsors" title="Direct link to Sponsors">​</a></h2>
-<p><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CSE Icon"> CSE is sponsored by</p>
+<h2 class="anchor anchorWithStickyNavbar_b3ls" id="sponsors">Sponsors<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE#sponsors" class="hash-link" aria-label="Direct link to Sponsors" title="Direct link to Sponsors">​</a></h2>
+<p><img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE is sponsored by</p>
 <div style="display:flex;flex-wrap:wrap;gap:2em;justify-content:center;align-items:center"><a href="https://www.univ-st-etienne.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="universite-jean-monnet" src="https://sound-scape-explorer.github.io/img/cse/sponsors/universite-jean-monnet.png"></a><a href="https://www.eneslab.com/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="enes-lab" src="https://sound-scape-explorer.github.io/img/cse/sponsors/enes-lab.jpg"></a><a href="https://laboratoirehubertcurien.univ-st-etienne.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="laboratoire-hubert-curien" src="https://sound-scape-explorer.github.io/img/cse/sponsors/laboratoire-hubert-curien.svg"></a><a href="https://www.saint-etienne-metropole.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="saint-etienne-metropole" src="https://sound-scape-explorer.github.io/img/cse/sponsors/saint-etienne-metropole.png"></a><a href="https://www.ofb.gouv.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="office-francais-biodiversite" src="https://sound-scape-explorer.github.io/img/cse/sponsors/office-francais-biodiversite.png"></a><a href="https://www.ephe.psl.eu/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="ecole-pratique-hautes-etudes" src="https://sound-scape-explorer.github.io/img/cse/sponsors/ecole-pratique-hautes-etudes.png"></a><a href="https://www.iufrance.fr/" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="institut-universitaire-france" src="https://sound-scape-explorer.github.io/img/cse/sponsors/institut-universitaire-france.png"></a><a href="https://celya.universite-lyon.fr/labex-celya-151124.kjsp" target="_blank" rel="noopener noreferrer" itemprop="url"><img width="200" alt="labex-celya" src="https://sound-scape-explorer.github.io/img/cse/sponsors/labex-celya.svg"></a></div>]]></content>
         <author>
             <name>Jérémy Rouch</name>
@@ -311,20 +332,6 @@ installation and overall use:</p>
         <author>
             <name>Rémi Emonet</name>
             <uri>https://home.heeere.com/</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New version 12.3.0]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2024/01/03/version-12.3.0"/>
-        <updated>2024-01-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version 12.3.0 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version 12.3.0 has been released!</p>
-<p>This new version introduces various bug fixes and quality of life improvements.</p>
-<ul><li><img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="App Icon">  <!-- -->SSE<ul><li>Added MIT license</li></ul></li><li>📣 Campaign<ul><li>Remove <code>vae</code> and <code>sparce_pca</code> from available reducers to prevent usage</li><li>Translate labels to English for <em>CoralReefLight</em> campaign</li><li>Regenerate processed data for <em>CoralReefLight</em> campaign</li></ul></li><li>🧮 Processing<ul><li>Remove Windows fix menu option. Use prior versions if you need it!</li><li>Remove repack menu option and replace it with custom documentation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display dates and times un human readable formats</li><li>Add timezone setting to optionally apply time shift</li><li>Add exports to relative trajectories</li><li>Allow plot backgrounds to change dynamically upon setting change</li><li>Use <code>cycleDay</code> as default color type</li><li>Display labels correctly on PNG exports</li><li>Transpose exported CSV data for relative trajectories</li><li>Fix line breaks on Firefox for all CSV exports</li></ul></li></ul>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
         </author>
     </entry>
 </feed>
