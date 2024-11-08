@@ -5,15 +5,13 @@ authors: [bamdad]
 
 import {CseIcon, SseIcon} from '@site/src/components/Icons';
 import {Fragment} from 'react';
+import demo from '@site/static/img/demo-13.8.0.png';
 
 # New SSE 13.8.0 and CSE 1.1.0
 
 <Fragment>
-  This dual release for <SseIcon/> SSE version 13.8.0 and <CseIcon/> CSE
-  version 1.1.0 adds new nn-based extractors (`melogram` and `melspectrum`).
-
-**Melogram** is now used as the default nn extractor, thus replacing **VGGish**.
-
+  This dual release for <SseIcon /> SSE 13.8.0 and <CseIcon /> CSE 1.1.0 adds
+  new nn-based extractors (*MelSpectrogram* and *MelSpectrum*).
 </Fragment>
 
 <!-- truncate -->
@@ -27,7 +25,6 @@ import {Fragment} from 'react';
       <li>Update examples</li>
       <ul>
         <li>Add new `melogram` and `melspectrum` neural network extractors</li>
-        <li>Replace `vgg` with `melogram` as default extractor</li>
       </ul>
     </ul>
   </li>
@@ -43,7 +40,16 @@ import {Fragment} from 'react';
   </li>
 </ul>
 
+[Read CHANGELOG for CSE 1.1.0](https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#110-2024-11-08)
+
 ## SSE 13.8.0 most impactful changes
+
+<Fragment>
+  <img
+    src={demo}
+    alt="SSE 13.8.0 demo screenshot"
+  />
+</Fragment>
 
 <ul>
   <li>
@@ -52,7 +58,6 @@ import {Fragment} from 'react';
       <li>Update examples</li>
       <ul>
         <li>Add new `melogram` and `melspectrum` neural network extractors</li>
-        <li>Replace `vgg` with `melogram` as default extractor</li>
       </ul>
     </ul>
   </li>
@@ -115,4 +120,4 @@ import {Fragment} from 'react';
 
 </ul>
 
-[Read CHANGELOG for 13.8.0](https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-06)
+[Read CHANGELOG for SSE 13.8.0](https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-08)
