@@ -16,8 +16,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.6.0",
-    "@docusaurus/preset-classic": "3.6.0",
+    "@docusaurus/core": "3.6.1",
+    "@docusaurus/preset-classic": "3.6.1",
     "@fontsource/jetbrains-mono": "^5.1.1",
     "@fontsource/merriweather": "^5.1.0",
     "@ionic/react": "^8.4.0",
@@ -35,11 +35,11 @@
     "remove": "^0.1.5"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/plugin-google-gtag": "^3.6.0",
-    "@docusaurus/plugin-pwa": "^3.6.0",
-    "@docusaurus/tsconfig": "3.6.0",
-    "@docusaurus/types": "3.6.0",
+    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/plugin-google-gtag": "^3.6.1",
+    "@docusaurus/plugin-pwa": "^3.6.1",
+    "@docusaurus/tsconfig": "3.6.1",
+    "@docusaurus/types": "3.6.1",
     "@iconify/react": "^5.0.2",
     "@types/react": "^18.3.12",
     "@typescript-eslint/parser": "^7.18.0",
