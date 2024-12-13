@@ -1,0 +1,79 @@
+---
+sidebar_position: 3
+---
+
+import ProcessingDevExamples13 from '@site/src/components/ProcessingDevExamples13.mdx';
+import {PythonIcon} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {VERSION} from '../../env';
+
+# 🧮 Processing setup
+
+<Title
+  pre={['👩‍💻 Developers']}
+  title={'🧮 Processing setup'}
+  version={VERSION}
+/>
+
+## Environment
+
+```bash
+# Navigate to source root directory
+cd sound-scape-explorer
+
+# Create virtual environment
+python3.10 -m venv venv
+
+# Activate environment
+source venv/bin/activate # unix
+.\venv\Scripts\activate # windows
+
+# Install processing in dev mode
+pip install -e processing
+
+# Edit and run code...
+```
+
+## Basic user flows
+
+1. When user runs `sse` command, it will trigger the `processing.cli:start_processing` function
+2. When user selects a menu choice, it will trigger one or more actions from `processing.actions`
+
+## File structure
+
+```text
+sound-scape-explorer/processing/
+├── processing/ --> Package source
+│   ├── actions/ --> Menu choices
+│   ├── common/
+│   ├── config/
+│   ├── digesters/
+│   ├── errors/
+│   ├── extractors/
+│   ├── lib/ --> Legacy code
+│   ├── loaders/
+│   ├── reducers/
+│   ├── storage/
+│   ├── utils/
+│   ├── cli.py --> User CLI entrypoints
+│   └── main.py --> User menu
+└── pyproject.toml --> Package configuration
+```
+
+:::info
+Code completion and styling are provided by:
+
+<ul>
+  <li>
+    <PythonIcon />
+    {' Python type hints'}
+  </li>
+  <li>[isort](https://pypi.org/project/isort/) (formatter)</li>
+  <li>[black](https://pypi.org/project/black/) (formatter)</li>
+  <li>[flake8](https://pypi.org/project/flake8/) (diagnostics)</li>
+</ul>
+
+Configure your editor accordingly to improve your development experience.
+:::
+
+<ProcessingDevExamples13 />

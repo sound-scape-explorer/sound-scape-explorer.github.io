@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+---
+
+import {ExcelFile} from '@site/src/components/ExcelFile';
+import {GithubDirectoryDownloadLink} from '@site/src/components/GithubDirectoryDownloadLink';
+import {CseIcon, ExcelIcon} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {Fragment} from 'react';
+import {VERSION} from '../../env.ts';
+
+# 🏃 Getting started
+
+<Title
+  pre={['📣 Campaign']}
+  title={'🏃 Getting started'}
+  version={VERSION}
+/>
+
+:::tip
+For optimal organization, consider creating **one folder per campaign** to
+store your configuration and storage files.
+:::
+
+The <ExcelIcon /> configuration is in `.xlsx` format.
+
+## 📥 Download
+
+<Fragment>
+  Download the default <ExcelIcon />{' '}
+  <ExcelFile version={VERSION}>v{VERSION} configuration</ExcelFile>.
+</Fragment>
+
+## 💡 Examples
+
+<ul>
+  <li>
+    {'Coral Reef Light'}
+    <ul>
+      <li>
+        <GithubDirectoryDownloadLink
+          version={VERSION}
+          isCse
+          folderPath={'examples/campaigns/coral-reef-light'}
+          name={'Audio, configuration and storage files'}
+          size={'275 MB (hosted at github)'}
+        />
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href={'/docs/CSE/modules/campaign/getting-started/#-examples'}>
+      Coral Reef Full Campaign (for <CseIcon /> CSE)
+    </a>
+  </li>
+</ul>
