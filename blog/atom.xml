@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-11-15T20:01:44.000Z</updated>
+    <updated>2024-12-13T11:05:04.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,30 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-11-15T20:01:44.000Z</updated>
+        <updated>2024-12-13T11:05:04.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New SSE 13.10.0 and CSE 1.3.0]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3"/>
+        <updated>2024-12-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for]]></summary>
+        <content type="html"><![CDATA[<p>This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for
+required computations.</p><p>Please find more below.</p>
+<h2 class="anchor anchorWithStickyNavbar_ASTf" id="cse-130-changes">CSE 1.3.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#cse-130-changes" class="hash-link" aria-label="Direct link to CSE 1.3.0 changes" title="Direct link to CSE 1.3.0 changes">​</a></h2>
+<ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
+computations</p></li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#130-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.3.0</a></p>
+<h2 class="anchor anchorWithStickyNavbar_ASTf" id="sse-13100-changes">SSE 13.10.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#sse-13100-changes" class="hash-link" aria-label="Direct link to SSE 13.10.0 changes" title="Direct link to SSE 13.10.0 changes">​</a></h2>
+<ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
+computations</p></li><li>Enforce absolute audio path</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li><p>Add centering action to timeline for easy navigation to current interval</p></li><li>Improve automatic plot resize</li><li>Improve automatic audio opening behaviour</li><li>Improve coloring performance</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13100-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.10.0</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -289,22 +310,6 @@ file</p></li></ul></li></ul>]]></content>
 </ul>
 </li>
 </ul>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New version 13.1.6]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2024/03/25/version-13.1.6"/>
-        <updated>2024-03-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version 13.1.6 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version 13.1.6 has been released!</p>
-<p>This new major version syncs with <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> <!-- -->
-<a href="https://sound-scape-explorer.github.io/blog/2024/01/04/version-CSE">CSE</a>'s latest features and improves ease of
-installation and overall use:</p>
-<ul><li>🧮 Processing<ul><li>Publish package to <span></span>  <a href="https://pypi.org/project/sound-scape-explorer/" target="_blank" rel="noopener nofollow">PyPI</a></li><li>Improve silhouette computation</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Bundle module to native desktop applications</li><li>Improve audio delivery performance with new audio API</li></ul></li></ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
