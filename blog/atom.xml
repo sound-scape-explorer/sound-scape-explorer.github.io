@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sound-scape-explorer.github.io/blog</id>
     <title>SoundScapeExplorer Blog</title>
-    <updated>2024-12-13T11:05:04.000Z</updated>
+    <updated>2025-03-26T03:37:22.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sound-scape-explorer.github.io/blog"/>
     <subtitle>SoundScapeExplorer Blog</subtitle>
@@ -11,9 +11,22 @@
         <title type="html"><![CDATA[👋]]></title>
         <id>https://sound-scape-explorer.github.io/blog/index</id>
         <link href="https://sound-scape-explorer.github.io/blog/index"/>
-        <updated>2024-12-13T11:05:04.000Z</updated>
+        <updated>2025-03-26T03:37:22.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the  blog!]]></summary>
         <content type="html"><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content>
+        <author>
+            <name>Bamdad Sabbagh</name>
+            <uri>https://bamdad.fr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New SSE 13.10.3]]></title>
+        <id>https://sound-scape-explorer.github.io/blog/2025/03/26/sse-13.10.3</id>
+        <link href="https://sound-scape-explorer.github.io/blog/2025/03/26/sse-13.10.3"/>
+        <updated>2025-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[{'🧮 Processing'}]]></summary>
+        <content type="html"><![CDATA[<ul><li>🧮 Processing<ul><li>Join paths correctly on Windows</li><li>Fallback to <code>ffprobe</code> audio reading when <code>mutagen</code> returns 0 duration from non standard header</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13103-2025-03-26" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.10.3</a></p>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
@@ -27,11 +40,11 @@
         <summary type="html"><![CDATA[This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for]]></summary>
         <content type="html"><![CDATA[<p>This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for
 required computations.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="cse-130-changes">CSE 1.3.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#cse-130-changes" class="hash-link" aria-label="Direct link to CSE 1.3.0 changes" title="Direct link to CSE 1.3.0 changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-130-changes">CSE 1.3.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#cse-130-changes" class="hash-link" aria-label="Direct link to CSE 1.3.0 changes" title="Direct link to CSE 1.3.0 changes">​</a></h2>
 <ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
 computations</p></li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#130-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.3.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="sse-13100-changes">SSE 13.10.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#sse-13100-changes" class="hash-link" aria-label="Direct link to SSE 13.10.0 changes" title="Direct link to SSE 13.10.0 changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-13100-changes">SSE 13.10.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#sse-13100-changes" class="hash-link" aria-label="Direct link to SSE 13.10.0 changes" title="Direct link to SSE 13.10.0 changes">​</a></h2>
 <ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
 computations</p></li><li>Enforce absolute audio path</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li><p>Add centering action to timeline for easy navigation to current interval</p></li><li>Improve automatic plot resize</li><li>Improve automatic audio opening behaviour</li><li>Improve coloring performance</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13100-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.10.0</a></p>]]></content>
@@ -48,10 +61,10 @@ computations</p></li><li>Enforce absolute audio path</li></ul></li><li>👁️�
         <summary type="html"><![CDATA[This dual release adds decile based deviation for relative trajectories, to]]></summary>
         <content type="html"><![CDATA[<p>This dual release adds decile based deviation for relative trajectories, to
 both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE and <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="cse-120-changes">CSE 1.2.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#cse-120-changes" class="hash-link" aria-label="Direct link to CSE 1.2.0 changes" title="Direct link to CSE 1.2.0 changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-120-changes">CSE 1.2.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#cse-120-changes" class="hash-link" aria-label="Direct link to CSE 1.2.0 changes" title="Direct link to CSE 1.2.0 changes">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples to integrate relative trajectories deviation</li></ul></li><li>🧮 Processing<ul><li>Compute 1st and 9th deciles for relative trajectories</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display relative trajectories deviation if available</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#120-2024-11-15" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.2.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="sse-1390-changes">SSE 13.9.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#sse-1390-changes" class="hash-link" aria-label="Direct link to SSE 13.9.0 changes" title="Direct link to SSE 13.9.0 changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-1390-changes">SSE 13.9.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#sse-1390-changes" class="hash-link" aria-label="Direct link to SSE 13.9.0 changes" title="Direct link to SSE 13.9.0 changes">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples to integrate relative trajectories deviation</li></ul></li><li>🧮 Processing<ul><li>Compute 1st and 9th deciles for relative trajectories</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display relative trajectories deviation if available</li><li><p>Add dynamic plot sizes for relative trajectories HD raster exports</p></li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1390-2024-11-15" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.9.0</a></p>]]></content>
         <author>
@@ -68,10 +81,10 @@ both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo
         <content type="html"><![CDATA[<p>This dual release adds new nn-based extractors to both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE and<!-- --> <!-- -->
 <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE.</p><p>While the new <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE 1.1.0 only features these two new extractors, <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE 13.8.0 continues to improve
 on its own with new features, performance improvements and bug fixes.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="cse-110-most-impactful-changes">CSE 1.1.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#cse-110-most-impactful-changes" class="hash-link" aria-label="Direct link to CSE 1.1.0 most impactful changes" title="Direct link to CSE 1.1.0 most impactful changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-110-most-impactful-changes">CSE 1.1.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#cse-110-most-impactful-changes" class="hash-link" aria-label="Direct link to CSE 1.1.0 most impactful changes" title="Direct link to CSE 1.1.0 most impactful changes">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#110-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.1.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="sse-1380-most-impactful-changes">SSE 13.8.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#sse-1380-most-impactful-changes" class="hash-link" aria-label="Direct link to SSE 13.8.0 most impactful changes" title="Direct link to SSE 13.8.0 most impactful changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-1380-most-impactful-changes">SSE 13.8.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#sse-1380-most-impactful-changes" class="hash-link" aria-label="Direct link to SSE 13.8.0 most impactful changes" title="Direct link to SSE 13.8.0 most impactful changes">​</a></h2>
 <img src="https://sound-scape-explorer.github.io/assets/images/demo-13.8.0-ab71aed7d7d617fd3013952b453fcf12.png" alt="SSE 13.8.0 demo screenshot">
 <ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Construct relative audio paths correctly when loading config from Electron</li><li>Add <code>Timeline</code> component to <code>Calendar</code> draggable</li><li>Add <code>Calendar</code> transport and navigation actions</li><li>Add first iteration of <code>Histograms</code> (draggable for stacked histogram plots)</li><li>Add VU meter to <code>Audio</code> draggable</li><li>Add view loading progress bar</li><li>Add shared <code>FilteringInfo</code> component for easy overview of active filters and interval navigation</li><li>Add sites selection to <code>Labels</code> draggable</li><li>Streamline <code>Temporal</code> draggable</li><li>Allow folding of user labels and improve <code>Labels</code> draggable UX</li><li>Allow plot size overwrite for high resolution heatmap raster exports</li><li>Allow access to <code>Settings</code> without storage</li><li>Display current amplification gain within <code>Audio</code> draggable</li><li>Prevent <code>Scatter</code> clicks on trajectories</li><li>Set default FFT size to 4096</li><li>Update keyboard navigation</li><ul><li>Use <code>&lt;space&gt;</code> for toggling audio play</li><li>Use <code>&lt;Tab&gt;</code> to switch between the two most recent draggables</li><li>Use <code>&lt;Shift+Tab&gt;</code> to cycle through all opened draggables</li></ul><li>Improve global context sharing</li><li>Improve global error handling</li><li>Improve global styling</li><li>Improve draggable stacking and multiple display behaviour</li><li>Improve plot rendering and layouts</li><li>Improve plot titles and export names</li><li>Improve scatter rendering speed</li><li>Improve audio data flow</li><li>Improve audio peak detection precision</li><li>Improve colors generation speed</li><li>Improve heatmap code structure</li><li>Improve storage read speed from web worker</li><li>Improve time based filtering speed</li><li>Upgrade dependencies to latest</li><ul><li><code>Vue.js</code></li><li><code>Plotly.js</code></li><li><code>chroma.js</code></li></ul></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.8.0</a></p>]]></content>
@@ -188,7 +201,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
         <content type="html"><![CDATA[<p>🎉 Version 13.3.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add 2d selection to clipboard</li><li>Add user settings for 2d scatters</li><li>Improve draggables (modals) behaviour</li><li>Improve state behaviour</li><li>Improve scatter performance</li><li>Improve scatter layout and camera</li><li>Improve storage performance</li><li>Refactor states and hooks</li></ul></li></ul>
 <p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1330-2024-06-04" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>
-<h2 class="anchor anchorWithStickyNavbar_ASTf" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__j7D" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard">​</a></h2>
 <p>When this setting is enabled, the selected interval points are converted to
 corresponding file indexes then paste clipboard content as a column in your
 <span></span> Excel configuration file.</p>]]></content>
@@ -290,26 +303,6 @@ file</p></li></ul></li></ul>]]></content>
         <content type="html"><![CDATA[<p>🎉 Version 13.1.8 has been released!</p>
 <p>This new version introduces various bug fixes and quality of life improvements.</p>
 <ul><li>🧮 Processing<ul><li>Ensure getting strings from configuration site names</li><li>Move <code>run all</code> menu choice to first position</li><li>Improve timeline error messages</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Improve audio host handling to avoid fetching errors</li><li>Add copy button and bug report redirect on error notifications</li></ul></li></ul>]]></content>
-        <author>
-            <name>Bamdad Sabbagh</name>
-            <uri>https://bamdad.fr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New version 13.1.7]]></title>
-        <id>https://sound-scape-explorer.github.io/blog/2024/03/29/version-13.1.7</id>
-        <link href="https://sound-scape-explorer.github.io/blog/2024/03/29/version-13.1.7"/>
-        <updated>2024-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[🎉 Version 13.1.7 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>🎉 Version 13.1.7 has been released!</p>
-<p>This new version fixes a blocking regression bug:</p>
-<ul>
-<li>🧮 Processing<!-- -->
-<ul>
-<li>Add back <code>maad</code> package and use latest version</li>
-</ul>
-</li>
-</ul>]]></content>
         <author>
             <name>Bamdad Sabbagh</name>
             <uri>https://bamdad.fr</uri>
