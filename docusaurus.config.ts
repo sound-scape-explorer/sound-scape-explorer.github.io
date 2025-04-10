@@ -143,6 +143,7 @@ const config: Config = {
           //   {type: 'html', value: '<hr />'},
           // ],
         },
+        {to: '/docs/CSE/', label: 'CSE', position: 'left'},
         {to: '/docs/', label: 'Docs', position: 'left'},
         {to: '/blog/', label: 'Blog', position: 'left'},
         {
