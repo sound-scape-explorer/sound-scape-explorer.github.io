@@ -11,7 +11,6 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      // @ts-expect-error retro compatibility
       title={`Welcome to ${APP_NAME}`}
       description={siteConfig.tagline}
     >
