@@ -4,7 +4,7 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Thu, 10 Apr 2025 22:16:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jan 2026 01:22:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[👋]]></title>
             <link>https://sound-scape-explorer.github.io/blog/index</link>
             <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Thu, 10 Apr 2025 22:16:22 GMT</pubDate>
+            <pubDate>Tue, 06 Jan 2026 01:22:43 GMT</pubDate>
             <description><![CDATA[Welcome to the  blog!]]></description>
             <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
         </item>
@@ -23,7 +23,7 @@
             <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[{'🧮 Processing'}]]></description>
             <content:encoded><![CDATA[<ul><li>🧮 Processing<ul><li>Join paths correctly on Windows</li><li>Fallback to <code>ffprobe</code> audio reading when <code>mutagen</code> returns 0 duration from non standard header</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13103-2025-03-26" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.10.3</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13103-2025-03-26" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for SSE 13.10.3</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New SSE 13.10.0 and CSE 1.3.0]]></title>
@@ -33,14 +33,14 @@
             <description><![CDATA[This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for]]></description>
             <content:encoded><![CDATA[<p>This dual release adds mean distances matrices memory allocation limit as well as PCA and embeddings usage for
 required computations.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-130-changes">CSE 1.3.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#cse-130-changes" class="hash-link" aria-label="Direct link to CSE 1.3.0 changes" title="Direct link to CSE 1.3.0 changes">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="cse-130-changes">CSE 1.3.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#cse-130-changes" class="hash-link" aria-label="Direct link to CSE 1.3.0 changes" title="Direct link to CSE 1.3.0 changes" translate="no">​</a></h2>
 <ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
 computations</p></li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#130-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.3.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-13100-changes">SSE 13.10.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#sse-13100-changes" class="hash-link" aria-label="Direct link to SSE 13.10.0 changes" title="Direct link to SSE 13.10.0 changes">​</a></h2>
+<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#130-2024-12-13" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for CSE 1.3.0</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="sse-13100-changes">SSE 13.10.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/12/13/sse-13.10-cse-1.3#sse-13100-changes" class="hash-link" aria-label="Direct link to SSE 13.10.0 changes" title="Direct link to SSE 13.10.0 changes" translate="no">​</a></h2>
 <ul><li>🧮 Processing<ul><li><p>Limit memory allocation to 4GB for mean distances matrices computations</p></li><li><p>Allow usage of PCA reducing or extractor embeddings for required
 computations</p></li><li>Enforce absolute audio path</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li><p>Add centering action to timeline for easy navigation to current interval</p></li><li>Improve automatic plot resize</li><li>Improve automatic audio opening behaviour</li><li>Improve coloring performance</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13100-2024-12-13" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.10.0</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#13100-2024-12-13" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for SSE 13.10.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New SSE 13.9.0 and CSE 1.2.0]]></title>
@@ -50,12 +50,12 @@ computations</p></li><li>Enforce absolute audio path</li></ul></li><li>👁️�
             <description><![CDATA[This dual release adds decile based deviation for relative trajectories, to]]></description>
             <content:encoded><![CDATA[<p>This dual release adds decile based deviation for relative trajectories, to
 both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE and <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-120-changes">CSE 1.2.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#cse-120-changes" class="hash-link" aria-label="Direct link to CSE 1.2.0 changes" title="Direct link to CSE 1.2.0 changes">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="cse-120-changes">CSE 1.2.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#cse-120-changes" class="hash-link" aria-label="Direct link to CSE 1.2.0 changes" title="Direct link to CSE 1.2.0 changes" translate="no">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples to integrate relative trajectories deviation</li></ul></li><li>🧮 Processing<ul><li>Compute 1st and 9th deciles for relative trajectories</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display relative trajectories deviation if available</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#120-2024-11-15" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.2.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-1390-changes">SSE 13.9.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#sse-1390-changes" class="hash-link" aria-label="Direct link to SSE 13.9.0 changes" title="Direct link to SSE 13.9.0 changes">​</a></h2>
+<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#120-2024-11-15" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for CSE 1.2.0</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="sse-1390-changes">SSE 13.9.0 changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/15/sse-13.9-cse-1.2#sse-1390-changes" class="hash-link" aria-label="Direct link to SSE 13.9.0 changes" title="Direct link to SSE 13.9.0 changes" translate="no">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples to integrate relative trajectories deviation</li></ul></li><li>🧮 Processing<ul><li>Compute 1st and 9th deciles for relative trajectories</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Display relative trajectories deviation if available</li><li><p>Add dynamic plot sizes for relative trajectories HD raster exports</p></li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1390-2024-11-15" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.9.0</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1390-2024-11-15" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for SSE 13.9.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New SSE 13.8.0 and CSE 1.1.0]]></title>
@@ -66,13 +66,13 @@ both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo
             <content:encoded><![CDATA[<p>This dual release adds new nn-based extractors to both <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE and<!-- --> <!-- -->
 <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE.</p><p>While the new <img class="cseIcon_AfLE" src="https://sound-scape-explorer.github.io/img/cse/logo.svg" alt="CoralSoundExplorer Icon"> CSE 1.1.0 only features these two new extractors, <img class="icon_wDXz" src="https://sound-scape-explorer.github.io/img/logo.png" alt="SoundScapeExplorer Icon"> SSE 13.8.0 continues to improve
 on its own with new features, performance improvements and bug fixes.</p><p>Please find more below.</p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="cse-110-most-impactful-changes">CSE 1.1.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#cse-110-most-impactful-changes" class="hash-link" aria-label="Direct link to CSE 1.1.0 most impactful changes" title="Direct link to CSE 1.1.0 most impactful changes">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="cse-110-most-impactful-changes">CSE 1.1.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#cse-110-most-impactful-changes" class="hash-link" aria-label="Direct link to CSE 1.1.0 most impactful changes" title="Direct link to CSE 1.1.0 most impactful changes" translate="no">​</a></h2>
 <ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#110-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for CSE 1.1.0</a></p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="sse-1380-most-impactful-changes">SSE 13.8.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#sse-1380-most-impactful-changes" class="hash-link" aria-label="Direct link to SSE 13.8.0 most impactful changes" title="Direct link to SSE 13.8.0 most impactful changes">​</a></h2>
+<p><a href="https://github.com/sound-scape-explorer/coral-sound-explorer/blob/main/CHANGELOG.md#110-2024-11-08" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for CSE 1.1.0</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="sse-1380-most-impactful-changes">SSE 13.8.0 most impactful changes<a href="https://sound-scape-explorer.github.io/blog/2024/11/07/sse-13.8-cse-1.1#sse-1380-most-impactful-changes" class="hash-link" aria-label="Direct link to SSE 13.8.0 most impactful changes" title="Direct link to SSE 13.8.0 most impactful changes" translate="no">​</a></h2>
 <img src="https://sound-scape-explorer.github.io/assets/images/demo-13.8.0-ab71aed7d7d617fd3013952b453fcf12.png" alt="SSE 13.8.0 demo screenshot">
 <ul><li>📣 Campaign<ul><li>Update examples</li><ul><li>Add new <code>melogram</code> and <code>melspectrum</code> neural network extractors</li></ul></ul></li><li>🧮 Processing<ul><li>Add new neural network extractors based on Mel values</li><ul><li>Mel spectrogram</li><li>Mel spectrum</li></ul></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Construct relative audio paths correctly when loading config from Electron</li><li>Add <code>Timeline</code> component to <code>Calendar</code> draggable</li><li>Add <code>Calendar</code> transport and navigation actions</li><li>Add first iteration of <code>Histograms</code> (draggable for stacked histogram plots)</li><li>Add VU meter to <code>Audio</code> draggable</li><li>Add view loading progress bar</li><li>Add shared <code>FilteringInfo</code> component for easy overview of active filters and interval navigation</li><li>Add sites selection to <code>Labels</code> draggable</li><li>Streamline <code>Temporal</code> draggable</li><li>Allow folding of user labels and improve <code>Labels</code> draggable UX</li><li>Allow plot size overwrite for high resolution heatmap raster exports</li><li>Allow access to <code>Settings</code> without storage</li><li>Display current amplification gain within <code>Audio</code> draggable</li><li>Prevent <code>Scatter</code> clicks on trajectories</li><li>Set default FFT size to 4096</li><li>Update keyboard navigation</li><ul><li>Use <code>&lt;space&gt;</code> for toggling audio play</li><li>Use <code>&lt;Tab&gt;</code> to switch between the two most recent draggables</li><li>Use <code>&lt;Shift+Tab&gt;</code> to cycle through all opened draggables</li></ul><li>Improve global context sharing</li><li>Improve global error handling</li><li>Improve global styling</li><li>Improve draggable stacking and multiple display behaviour</li><li>Improve plot rendering and layouts</li><li>Improve plot titles and export names</li><li>Improve scatter rendering speed</li><li>Improve audio data flow</li><li>Improve audio peak detection precision</li><li>Improve colors generation speed</li><li>Improve heatmap code structure</li><li>Improve storage read speed from web worker</li><li>Improve time based filtering speed</li><li>Upgrade dependencies to latest</li><ul><li><code>Vue.js</code></li><li><code>Plotly.js</code></li><li><code>chroma.js</code></li></ul></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-08" target="_blank" rel="noopener noreferrer">Read CHANGELOG for SSE 13.8.0</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1380-2024-11-08" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for SSE 13.8.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.7.0]]></title>
@@ -82,7 +82,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.7.0 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.7.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add audio analyzer for peak detection</li><li>Add audio loading state overlay</li><li>Add improved audio gain staging</li><li>Add optional scatter highlight for selected interval</li><li>Improve temporal x axis legends</li><li>Improve user settings saving consistency</li><li>Improve data generation performance</li><li>Improve render cycles</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1370-2024-09-16" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.7.0</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1370-2024-09-16" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for 13.7.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.6.1]]></title>
@@ -91,9 +91,9 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <pubDate>Fri, 19 Jul 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[🎉 Version 13.6.1 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.6.1 has been released!</p>
-<ul><li>👁️‍🗨️ Visualisation<ul><li>Upgrade to <a href="https://blog.vuejs.org/posts/vue-3-4" target="_blank" rel="noopener noreferrer">Vue 3.4</a></li><li>Use <code>Shift+Tab</code> to cycle through draggables backwards</li><li>Use <code>Enter</code> submission on temporal filter thresholds</li><li>Add dev settings for automatic view selection</li><li>Add undo and redo actions to trajectories</li><li>Add undo and redo actions to audios</li><li>Fix cycling scale colors</li><li>Use temporal filtering for scatter CSV exports</li><li>Improve Menu and Draggables readability</li><li>Improve global lifecycle calls</li><li>Prevent using keyboard on view loading</li><li>Purge temporal thresholds on view unloading</li><li>Add various improvements and fixes</li></ul>🧮 Processing<ul><li>Force string conversion from storage</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1361-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.1</a></p>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1360-2024-07-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG for 13.6.0</a></p>]]></content:encoded>
+<ul><li>👁️‍🗨️ Visualisation<ul><li>Upgrade to <a href="https://blog.vuejs.org/posts/vue-3-4" target="_blank" rel="noopener noreferrer" class="">Vue 3.4</a></li><li>Use <code>Shift+Tab</code> to cycle through draggables backwards</li><li>Use <code>Enter</code> submission on temporal filter thresholds</li><li>Add dev settings for automatic view selection</li><li>Add undo and redo actions to trajectories</li><li>Add undo and redo actions to audios</li><li>Fix cycling scale colors</li><li>Use temporal filtering for scatter CSV exports</li><li>Improve Menu and Draggables readability</li><li>Improve global lifecycle calls</li><li>Prevent using keyboard on view loading</li><li>Purge temporal thresholds on view unloading</li><li>Add various improvements and fixes</li></ul>🧮 Processing<ul><li>Force string conversion from storage</li></ul></li></ul>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1361-2024-07-19" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for 13.6.1</a></p>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1360-2024-07-19" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG for 13.6.0</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.5.2]]></title>
@@ -103,7 +103,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.5.2 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.5.2 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Prevent label range coloring from hanging scatter colors</li><li>Prevent color map inverts with non reversible categories</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1352-2024-07-10" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.5.0]]></title>
@@ -113,7 +113,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.5.0 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.5.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add point filtering to <code>Temporal</code> draggable</li><li>Add options and value range for indicator based coloring</li><li>Add range coloring for numeric user labels</li><li>Add color map inversion button</li><li>Add global <code>&lt;Escape&gt;</code> keyboard shortcut to toggle menu and draggables display</li><li>Add global <code>&lt;Tab&gt;</code> keyboard shortcut to cycle through active draggables</li><li>Add global <code>x</code> keyboard shortcut to close the current draggable</li><li>Persist user settings between sessions</li><li>Switch default coloring flavor (map) from <code>Dark2</code> to <code>Spectral</code></li><li>Add option to disable automatic <code>Audio</code> open on scatter click</li><li>Update keyboard shortcut mapping (see help)</li><li>Rename <code>Indicators</code> draggable to <code>Temporal</code></li><li>Improve common draggable interfaces</li><li>Improve overall user experience</li><li>Improve overall code quality</li><li>Add security checks to Audio submodule</li><li>Update <code>h5wasm</code> dependency</li><li>Add various fixes and improvements</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1350-2024-07-10" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.4.3]]></title>
@@ -123,7 +123,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.4.3 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.4.3 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Force cell objects to strings for audio service start</li><li>Sanitize relative file paths when building interval details</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1343-2024-07-09" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1343-2024-07-09" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.4.0]]></title>
@@ -133,7 +133,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.4.0 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.4.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add candelsticks rendering to indicators panel</li><li>Improve selection and functionality of indicators panel</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1340-2024-06-20" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1340-2024-06-20" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.3.1]]></title>
@@ -143,7 +143,7 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.3.1 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.3.1 has been released!</p>
 <ul><li>🧮 Processing<ul><li><p>Handle out of memory error during mean distances matrix calculation</p></li><li>Skip Silhouette calculation if no mean distances matrix available</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1331-2024-06-12" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1331-2024-06-12" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.3.0]]></title>
@@ -153,8 +153,8 @@ on its own with new features, performance improvements and bug fixes.</p><p>Plea
             <description><![CDATA[🎉 Version 13.3.0 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.3.0 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Add 2d selection to clipboard</li><li>Add user settings for 2d scatters</li><li>Improve draggables (modals) behaviour</li><li>Improve state behaviour</li><li>Improve scatter performance</li><li>Improve scatter layout and camera</li><li>Improve storage performance</li><li>Refactor states and hooks</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1330-2024-06-04" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>
-<h2 class="anchor anchorWithStickyNavbar__j7D" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard">​</a></h2>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1330-2024-06-04" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="add-2d-selection-to-clipboard">Add 2d selection to clipboard<a href="https://sound-scape-explorer.github.io/blog/2024/06/04/version-13.3.0#add-2d-selection-to-clipboard" class="hash-link" aria-label="Direct link to Add 2d selection to clipboard" title="Direct link to Add 2d selection to clipboard" translate="no">​</a></h2>
 <p>When this setting is enabled, the selected interval points are converted to
 corresponding file indexes then paste clipboard content as a column in your
 <span></span> Excel configuration file.</p>]]></content:encoded>
@@ -167,7 +167,7 @@ corresponding file indexes then paste clipboard content as a column in your
             <description><![CDATA[🎉 Version 13.2.5 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.2.5 has been released!</p>
 <ul><li>🧮 Processing<ul><li>Fix missing autocluster generated data when exporting as .csv</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1325-2024-04-19" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1325-2024-04-19" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.2.3]]></title>
@@ -177,7 +177,7 @@ corresponding file indexes then paste clipboard content as a column in your
             <description><![CDATA[🎉 Version 13.2.3 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.2.3 has been released!</p>
 <ul><li>🧮 Processing<ul><li>Make supported file extensions detection case insensitive</li></ul></li><li>👁️‍🗨️ Visualisation<ul><li>Prevent audio service from crashing when requesting unavailable file</li><li>Print better front audio errors</li><li>Use dedicated and visible drag zone</li><li>Add lock to scatter camera when dragging</li><li>Display audio duration with player</li><li>Apply timezone settings globally</li><li>Add color legend for scale <code>isDay</code></li><li>Various QoL improvements</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1323-2024-04-18" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1323-2024-04-18" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.2.4]]></title>
@@ -187,7 +187,7 @@ corresponding file indexes then paste clipboard content as a column in your
             <description><![CDATA[🎉 Version 13.2.4 has been released!]]></description>
             <content:encoded><![CDATA[<p>🎉 Version 13.2.4 has been released!</p>
 <ul><li>👁️‍🗨️ Visualisation<ul><li>Improve draggables behaviour and interactions</li><li>Improve info layout on scatter point hovering</li><li>Add various bug fixes and QoL improvements</li></ul></li></ul>
-<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1324-2024-04-18" target="_blank" rel="noopener noreferrer">Read CHANGELOG</a></p>]]></content:encoded>
+<p><a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md#1324-2024-04-18" target="_blank" rel="noopener noreferrer" class="">Read CHANGELOG</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New version 13.2.0]]></title>
