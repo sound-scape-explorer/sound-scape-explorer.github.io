@@ -44,6 +44,15 @@ export const WindowsIcon = () => (
   />
 );
 
+export const Windows10Icon = WindowsIcon;
+
+export const Windows11Icon = () => (
+  <SimpleIcon
+    icon="windows11"
+    color="#0078D6"
+  />
+);
+
 export const UbuntuIcon = () => (
   <SimpleIcon
     icon="ubuntu"

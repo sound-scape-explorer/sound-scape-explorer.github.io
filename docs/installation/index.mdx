@@ -7,12 +7,12 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 import {VERSION} from '../env';
+import ReactPlayer from 'react-player';
 
 ## Processing CLI tool
 
 [//]: # 'TODO'
 [//]: # '- [ ] Add macOS'
-[//]: # '- [ ] Add screencasts?'
 
 <Tabs>
   <TabItem
@@ -32,6 +32,16 @@ import {VERSION} from '../env';
     2. Download installation script
     - Right click and save as on <a href={`https://raw.githubusercontent.com/sound-scape-explorer/sound-scape-explorer/v${VERSION}/bin/sse-processing-${VERSION}.bat`}>this file</a>
     3. Double click on installation script to run
+
+    <details>
+      <summary>
+        Screencast
+      </summary>
+      <ReactPlayer
+        controls
+        src="/sse-14/windows-installation-cli.mp4"
+      />
+    </details>
 
   </TabItem>
   <TabItem
@@ -61,6 +71,16 @@ chmod +x sse-processing-${VERSION}.sh`}
 # or double click from your file browser`}
 </CodeBlock>
 
+    <details>
+      <summary>
+        Screencast
+      </summary>
+      <ReactPlayer
+        controls
+        src="/sse-14/ubuntu-installation-cli.mp4"
+      />
+    </details>
+
   </TabItem>
   <TabItem
     value="macOS"
@@ -79,6 +99,17 @@ chmod +x sse-processing-${VERSION}.sh`}
     default
   >
     Download and run <a href={`https://github.com/sound-scape-explorer/sound-scape-explorer/releases/download/v${VERSION}/sound-scape-explorer-${VERSION}.exe`}>{`sound-scape-explorer-${VERSION}.exe`}</a>
+
+    <details>
+      <summary>
+        Screencast
+      </summary>
+      <ReactPlayer
+        controls
+        src="/sse-14/windows-installation-electron.mp4"
+      />
+    </details>
+
   </TabItem>
   <TabItem
     value="ubuntu"
@@ -95,6 +126,16 @@ sudo apt install ./sound-scape-explorer-${VERSION}.deb && \\
 rm -f sound-scape-explorer-${VERSION}.deb && \\
 sudo -k`}
 </CodeBlock>
+
+    <details>
+      <summary>
+        Screencast
+      </summary>
+      <ReactPlayer
+        controls
+        src="/sse-14/ubuntu-installation-electron.mp4"
+      />
+    </details>
 
   </TabItem>
   <TabItem
