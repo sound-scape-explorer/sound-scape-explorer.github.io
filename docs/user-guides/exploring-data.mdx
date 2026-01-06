@@ -1,0 +1,120 @@
+---
+title: How to visualise a dataset
+sidebar_position: 3
+---
+
+import {SseIcon} from '@site/src/components/Icons';
+
+You have your `.json` and `.h5` files.
+
+## Preparing for exploration
+
+- Start the <SseIcon /> standalone app
+- In the `Audio` section, either
+  - Fill the audio path by inputting one of your files (<span style={{color: 'red'}}>1</span>)
+  - Or enter the path manually (<span style={{color: 'red'}}>2</span>)
+- Click on the start button (<span style={{color: 'red'}}>3</span>)
+- The audio engine will start (<span style={{color: 'red'}}>4</span>)
+- Allowing you to click
+  on the `Visualisation > Explore` button (<span style={{color: 'red'}}>5</span>)
+
+<figure>
+  ![Standalone app default screen with audio engine
+  OFF](/sse-14/visualisation/001.png)
+  <figcaption>
+    <center>
+      <i>Standalone app default screen with audio engine OFF</i>
+    </center>
+  </figcaption>
+</figure>
+
+<figure>
+  ![Standalone app default screen with audio engine
+  ON](/sse-14/visualisation/002.png)
+  <figcaption>
+    <center>
+      <i>Standalone app default screen with audio engine ON</i>
+    </center>
+  </figcaption>
+</figure>
+
+:::info
+On Windows systems, you might get a firewall notification. Accept the prompt.
+:::
+
+## Loading your dataset
+
+The following window opens after clicking on the `Explore` button.
+
+<figure>
+  ![](/sse-14/visualisation/003.png)
+  <figcaption>
+    <center>
+      <i>Visualisation app default screen</i>
+    </center>
+  </figcaption>
+</figure>
+
+One more final load into the visualisation app...
+
+Choose your `.h5` and load it.
+
+The `Open` panel will close and the `View` one will open.
+
+This is where you select your:
+
+- Extraction
+- Band
+- Integration
+- Reducer
+
+Once your selection done, the `View` panel automatically closes and
+data starts loading.
+
+:::info
+Depending on your dataset size, data can take minutes to load entirely.
+:::
+
+<figure>
+  ![](/sse-14/visualisation/004.png)
+  <figcaption>
+    <center>
+      <i>Visualisation app `View` panel</i>
+    </center>
+  </figcaption>
+</figure>
+
+## Exploring
+
+Data loading is complete!
+
+You are now in the main visualisation mode.
+
+This screen has three main parts:
+
+- The scatter (<span style={{color: 'red'}}>1</span>)
+- The camera controls and quick actions (<span style={{color: 'red'}}>2</span>)
+- The panel buttons (<span style={{color: 'red'}}>3</span>) [reference](../reference/visualisation-panels/)
+
+:::info
+In the center, the scatter (<span style={{color: 'red'}}>1</span>) displays
+points, either in 2D or 3D depending on your reducer setting.
+
+Each of these points represents an **audio interval**, with the length
+of your `Integration` value.
+
+The underlying represented data for each interval
+depends on your actual `Extractor` setting.
+
+This can be either neural network embeddings that have been reduced,
+or a combination of them, or even with raw or acoustic indices mixed in.
+:::
+
+<figure>
+  ![](/sse-14/visualisation/005.png)
+  <figcaption>
+    <center>
+      <i>Visualisation app with scatter loaded</i>
+    </center>
+  </figcaption>
+</figure>

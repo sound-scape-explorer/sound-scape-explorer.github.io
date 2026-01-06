@@ -1,0 +1,81 @@
+---
+title: How to export data
+sidebar_position: 5
+---
+
+The visualisation app allows exporting data to `.csv` files for external
+analysis.
+
+Most panels include an export button that downloads the currently displayed
+data.
+
+:::tip
+Exported filenames use the following naming convention:
+
+`SSE - [extraction name] - [band name] - [integration name] - [reducer name] - [export type]`
+
+You can opt out from the view details in the general settings.
+:::
+
+## Scatter exports
+
+Click the export button in the scatter controls to download:
+
+- Interval indices
+- Timestamps
+- Sites
+- Tags
+- Coordinates (from reducers)
+- Embeddings (from extractors)
+
+:::info
+Scatter exports will always exclude hidden points.
+:::
+
+## Temporal exports
+
+Export acoustic indicator values as CSV directly from the Temporal panel (see
+[Temporal filtering](./filtering-data/#temporal-filtering)).
+
+:::info
+Printed values are always scalars,
+corresponding to the aggregation method (mean, min, max).
+:::
+
+## Heatmaps exports
+
+Export heatmap data showing tag value distributions.
+
+## Trajectory exports
+
+Export trajectory path coordinates and timestamps.
+
+If multiple trajectories are shown, they will get concatenated in the `.csv`.
+
+If you enabled the average function for multiple trajectories, they will
+appear as a single `fused` entry in the `.csv`.
+
+## Relative Trajectory exports
+
+Export relative trajectory statistics showing how trajectories move relative to
+a reference point over time.
+
+For each trajectory, the CSV contains:
+
+- **Median distance**:
+  Median normalized distance from the reference point across all computation
+  iterations
+- **Lower decile (P10)**:
+  10th percentile of distances (showing lower bound of variation)
+- **Upper decile (P90)**:
+  90th percentile of distances (showing upper bound of variation)
+- **Timestamps**:
+  Time points for each measurement
+
+:::info
+Distances are normalized by the mean distance to the 100 nearest neighbors of
+the reference point, making trajectories comparable across different datasets.
+
+The reference point is calculated as the average of all trajectory starting
+positions within the same tag group.
+:::

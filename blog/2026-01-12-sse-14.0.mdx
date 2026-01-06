@@ -1,0 +1,117 @@
+---
+authors: [bamdad]
+---
+
+# Sound Scape Explorer v14.0 Released
+
+After months of development, we're excited to announce Sound Scape Explorer
+v14.0 - a complete architectural overhaul with major improvements to usability,
+performance, and stability.
+
+## What's New
+
+### JSON Configuration (Finally!)
+
+The biggest change: **Excel spreadsheets are gone**. Campaign configuration now
+uses JSON files with a modern React-based interface featuring guided workflows
+and contextual inline help. This enables:
+
+- Step-by-step guidance reducing cognitive load
+- Better validation and error messages
+- Version control friendly configurations
+- Programmatic campaign generation
+- Easier sharing and collaboration
+
+Legacy v13 `.xlsx` configurations can still be imported through the new Campaign
+module.
+
+### Expanded Neural Network Support
+
+Processing now supports multiple neural extractors:
+
+- **VGGish** - General audio embeddings
+- **PERCH** - Perceptual audio hashing
+- **SurfPERCH** - Surface-level perceptual features
+- **YAMNet** - Audio event detection
+- **BirdNET** - Specialized for avian bioacoustics
+- **Music Classifier** - Musical content analysis
+- **Plus scikit-maad acoustic indices** for traditional analysis
+- **Automatic model downloading** via Kaggle and GitHub integration
+
+Multiple extractors can be concatenated in a single extraction for richer
+embeddings.
+
+### Modern Tech Stack
+
+**Processing CLI:**
+
+- Migrated to Python 3.11
+- Replaced PyTorch with TensorFlow (with CUDA/Metal acceleration support)
+- New CLI flags: `--validate`, `--auto`, `--cpu`, `--memory`
+- Better handling of configuration errors and OOM events
+- Improved performance and memory management
+
+**Visualisation:**
+
+- Spatial selection boxes for 3D filtering
+- Enhanced audio player with dynamic spectrograms
+- Better heatmap interactions for data exploration
+- Improved scatter coloring with acoustic indicators
+- Redesigned UI components
+
+**Standalone app:**
+
+- Running all other modules: Campaign, Audio, Visualisation
+- Electron 39 upgrade with Wayland support on Linux
+
+### Quality of Life
+
+- Comprehensive documentation with screenshots and video tutorials
+- Automatic update notifications in standalone app
+- Rewritten trajectory implementation with improved visualisation
+- Consistent Leq values in dBFS
+
+## Breaking Changes
+
+v14 uses a completely new configuration format and storage structure. Key
+changes:
+
+- Configuration files are now JSON instead of Excel
+- Storage paths and HDF5 structure have been updated
+- Python 3.11 required (up from 3.10)
+- Datasets **must** be regenerated with the new Processing CLI
+
+The Campaign module includes a migration tool for importing v13 `.xlsx`
+configurations.
+
+## Testing and Quality
+
+This release includes comprehensive test coverage:
+
+- End-to-end Playwright tests for UI interactions
+- Processing pipeline integration tests
+- CI/CD automation for cross-platform builds
+- Security vulnerability patches throughout the stack
+
+## Getting Started
+
+- **Installation:**
+  [Installation Guide](/docs/installation/)
+- **Quick Start:**
+  [Quick Start Tutorial](/docs/quick-start/)
+- **Migration:**
+  [Campaign Configuration Guide](/docs/user-guides/creating-campaign/)
+- **Full Changelog:**
+  [CHANGELOG.md](https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md)
+
+## Acknowledgements
+
+Special thanks to the research teams at ENES (Équipe de Neuro-Éthologie
+Sensorielle) for their feedback and collaboration throughout this development
+cycle.
+
+---
+
+_Sound Scape Explorer v14.0 is available now on
+[GitHub Releases](https://github.com/sound-scape-explorer/sound-scape-explorer/releases)
+and [PyPI](https://pypi.org/project/sound-scape-explorer/)._

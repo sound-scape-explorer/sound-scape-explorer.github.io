@@ -1,22 +1,137 @@
 ---
-sidebar_position: 60
+sidebar_position: 6
+title: Developers
 ---
 
-import {Title} from '@site/src/components/Title';
-import {VERSION} from '../env';
+import {SourceLink} from '@site/src/components/SourceLink';
+import {VERSION} from '@site/docs/env';
 
-# 👩‍💻 Developers
+:::warning
+This guide uses Linux/Unix commands.
 
-<Title
-  title={'👩‍💻 Developers'}
+Windows users may need to adapt paths and use PowerShell or WSL.
+:::
+
+## Prerequisites
+
+- [git](https://git-scm.com/)
+- [ffmpeg](https://www.ffmpeg.org/)
+- [Python 3.11](https://www.python.org/)
+- [Node.js 20+](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+
+## Get codebase
+
+### git clone
+
+```bash
+# with HTTPS
+git clone https://github.com/sound-scape-explorer/sound-scape-explorer.git
+
+# with SSH
+git clone git@github.com:sound-scape-explorer/sound-scape-explorer.git
+```
+
+### Download zip
+
+<SourceLink
   version={VERSION}
+  size={'125 MB'}
 />
 
-Use this section to set you up before contributing to our codebase!
+## Monorepo structure
 
-## Guides
+```txt
+sound-scape-explorer/             # Monorepo root
+├── .github/workflows             # CI/CD pipeline definitions
+├── audio                         # "Audio" module (Express app)
+├── bin                           # User installation scripts
+├── campaign                      # "Campaign" module (React app)
+├── examples                      # Examples
+├── front                         # "Visualisation" module (Vue app)
+├── processing                    # "Processing CLI" module (Python app)
+├── shared                        # Shared utils, enums and schemas for JS packages
+└── visualisation                 # "Standalone" app (Electron app)
+```
 
-- 📋 [Requirements](./requirements/)
-- 📁 [Get codebase](./get-codebase/)
-- 🧮 [Processing setup](./processing-setup/)
-- 👁️‍🗨️ [Visualisation setup](./visualisation-setup/)
+## Python setup
+
+```bash
+cd processing
+python3.11 -m venv venv
+source venv/bin/activate
+./install_deps_with_dev.sh
+```
+
+## JS setup
+
+```bash
+# at monorepo root
+./reinstall_npm_packages.sh
+pnpm visualisation:prepare-bins
+```
+
+## Starting a development environment
+
+### Python
+
+The installation script sets up the environment in development mode with hot
+reload.
+
+Update your code and run `sse` commands from the activated _venv_ shell to see
+changes immediately.
+
+### JS
+
+You will need to start each module independently.
+
+We recommend using a terminal multiplexer like
+[tmux](https://github.com/tmux/tmux/wiki).
+
+```bash
+# Each terminal supposes monorepo root as current working directory
+
+# First terminal - Visualisation module
+# Will spawn at http://localhost:5530/
+cd front
+pnpm dev
+
+# Second terminal - Audio module
+# Will spawn at http://localhost:5531/
+cd audio
+pnpm dev $(which ffmpeg) $(which ffprobe) /path/to/audio/folder
+
+# Third terminal - Campaign module
+# Will spawn at http://localhost:5532/
+cd campaign
+pnpm dev
+
+# Fourth terminal - Electron module
+# Will spawn GUI
+cd visualisation
+npm run dev # !!!!! npm not pnpm
+```
+
+## Build
+
+### Python package
+
+```bash
+cd processing
+source venv/bin/activate
+python -m build
+```
+
+### Electron package
+
+```bash
+pnpm visualisation:prebuild
+cd visualisation
+npm run build
+```
+
+## Run tests
+
+```bash
+./run_tests_all.sh
+```

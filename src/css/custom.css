@@ -43,6 +43,7 @@ h6 {
 }
 
 :root {
+  background: #f8f8f8;
   --ifm-color-primary: #453ed0;
   --ifm-color-primary-dark: #3730c3;
   --ifm-color-primary-darker: #342db9;
@@ -52,10 +53,10 @@ h6 {
   --ifm-color-primary-lightest: #847fe0;
   --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  background: #f8f8f8;
 }
 
 [data-theme="dark"] {
+  background: #121212;
   --ifm-color-primary: #bbb8ff;
   --ifm-color-primary-dark: #918cff;
   --ifm-color-primary-darker: #7c76ff;
@@ -64,5 +65,8 @@ h6 {
   --ifm-color-primary-lighter: #fafaff;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background: #121212;
+
+  body {
+    color: var(--ifm-color-primary-lighter);
+  }
 }
