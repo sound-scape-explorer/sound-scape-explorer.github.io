@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksound_scape_explorer_github_io=globalThis.webpackChunksound_scape_explorer_github_io||[]).push([[20860],{30262(e,o,s){s.d(o,{getIconPaths:()=>c});var u=s(22602),n=s(80050),t=s(95525),a=s(48905);function c(e,o){const s=(0,u.fL)(e);return o===a.l.STANDARD?n[s]:t[s]}}}]);
