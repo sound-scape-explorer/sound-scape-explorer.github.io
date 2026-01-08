@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksound_scape_explorer_github_io=globalThis.webpackChunksound_scape_explorer_github_io||[]).push([[5820],{5820(e,r,s){s.d(r,{createArchitectureServices:()=>c.S});var c=s(83738);s(89932)}}]);
