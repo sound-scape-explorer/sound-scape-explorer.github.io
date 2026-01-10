@@ -1,0 +1,101 @@
+---
+title: CLI Commands
+sidebar_position: 1
+---
+
+## `sse`
+
+Main processing command for extracting data from audio files.
+
+### Usage
+
+```bash
+sse <config_path> [options]
+```
+
+### Arguments
+
+**`config_path`** (required)
+
+- Path to your `.json` configuration file
+
+### Options
+
+**`-c, --cpu`**
+
+- Disable GPU acceleration and force CPU-only processing
+- Useful for systems without CUDA or when GPU memory is insufficient
+
+**`-m, --memory MEMORY`**
+
+- Set maximum RAM limit in MB (Unix/macOS only)
+- Does not limit GPU VRAM
+- Example: `-m 8192` limits to 8GB RAM
+
+**`--validate`**
+
+- Validate configuration file and exit
+- Does not start processing or show interactive menu
+- Displays configuration summary and validation status
+
+**`--auto`**
+
+- Automatically run all processing steps without interactive menu
+- Useful for scripting and batch processing
+
+**`-h, --help`**
+
+- Show help message and exit
+
+### Examples
+
+**Interactive mode (default)**
+
+```bash
+sse /path/to/config.json
+```
+
+**Validate configuration only**
+
+```bash
+sse /path/to/config.json --validate
+```
+
+**Automatic processing without menu**
+
+```bash
+sse /path/to/config.json --auto
+```
+
+**Force CPU processing with memory limit**
+
+```bash
+sse /path/to/config.json --cpu --memory 8192
+```
+
+---
+
+## `sse_download`
+
+Download neural network models and resources for offline use.
+
+### Usage
+
+```bash
+sse_download
+```
+
+Downloads all required models:
+
+- VGGish
+- PERCH
+- SurfPERCH
+- YAMNet
+- BirdNET
+- Music Classifier
+
+Output confirms when download is complete and system is ready for offline use.
+
+:::tip
+This command runs automatically when using our installation scripts.
+:::

@@ -1,0 +1,253 @@
+---
+title: How to filter data points
+sidebar_position: 4
+---
+
+import {Button} from '@blueprintjs/core';
+import {
+  Calendar,
+  HeatGrid,
+  Tags,
+  SelectionBox,
+  SeriesFiltered,
+} from '@blueprintjs/icons';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+There are four ways to filter your data while exploring:
+
+1. By [tags](#tag-filtering)
+2. By [time](#calendar-filtering)
+3. By [coordinates](#spatial-filtering)
+4. By [acoustic values](#temporal-filtering)
+
+:::tip
+Often, you will find a bold green number in visualisation panel sidebars.
+
+Hover it to display a tooltip allowing you to check filtering state
+at a glance.
+
+![](/sse-14/visualisation/filtering/001.png)
+
+_Clicking on that number will cycle its display
+between **collected** (visible) and
+**filtered** (hidden) audio intervals._
+:::
+
+## Tag filtering
+
+- Open the <Button icon={<Tags />} /> `Tags` panel
+- Adjust panel size with sidebar buttons (<span style={{color: 'red'}}>1</span>)
+- Expand and collapse by clicking on tag names (<span style={{color: 'red'}}>2</span>)
+- Select tag value combinations you want to include (<span style={{color: 'red'}}>3</span>)
+- Run quick state actions for each tag (<span style={{color: 'red'}}>4</span>)
+
+![](/sse-14/visualisation/filtering/tags/002.png)
+
+:::tip
+Tag filtering is also available via the <Button icon={<HeatGrid />} /> `Heatmaps` panel.
+
+![](/sse-14/visualisation/filtering/tags/003.png)
+
+_Click on a heatmap square to trigger a toggle shortcut to the
+associated tag values._
+:::
+
+## Calendar filtering
+
+- Open the <Button icon={<Calendar />} /> `Calendar` panel
+- Adjust window size
+  - Using presets (<span style={{color: 'red'}}>1</span>)
+  - Or manually (<span style={{color: 'red'}}>5</span>)
+- Transport window (<span style={{color: 'red'}}>2</span>)
+- Select range
+  - Using range defined during `Campaign` configuration (<span style={{color: 'red'}}>3</span>)
+  - Or by manually entering dates (<span style={{color: 'red'}}>4</span>)
+
+Calendar view has 2 sections:
+
+- The track displaying the selected range (<span style={{color: 'red'}}>6</span>)
+  and the window position (<span style={{color: 'red'}}>5</span>)
+  - Each red line indicates interval presence
+- The actual window content (<span style={{color: 'red'}}>7</span>)
+
+![](/sse-14/visualisation/filtering/calendar/004.png)
+
+:::tip
+Window content displays intervals across sites. One site per row.
+
+Clicking intervals trigger the `Audio` player,
+as if you clicked on their scatter representations.
+:::
+
+:::warning
+Color coding in calendar window content has no relationship to actual
+scatter coloring.
+:::
+
+## Spatial filtering
+
+- Open the
+  <Button icon={<SelectionBox />} />
+  `Selection` panel
+- Add a new box by pressing the `+` button
+  (<span style={{color: 'red'}}>4</span>)
+- Select your new box index in the dropdown menu
+  (<span style={{color: 'red'}}>5</span>)
+
+You will end up in the following view:
+
+<figure>
+  ![](/sse-14/visualisation/filtering/spatial/002.png)
+  <figcaption>
+    <center>
+      <i>Selection panel new box view</i>
+    </center>
+  </figcaption>
+</figure>
+
+You can now edit your current box parameters using:
+
+- Quick controls
+  - Toggle box rendering to the scatter
+    (<span style={{color: 'red'}}>6</span>)
+  - Toggle box filtering
+    (<span style={{color: 'red'}}>7</span>)
+  - Randomize box color
+    (<span style={{color: 'red'}}>8</span>)
+- Spatial controls
+  - Adjust axis ranges
+    (<span style={{color: 'red'}}>11</span>)
+  - Adjust axis angles
+    (<span style={{color: 'red'}}>12</span>)
+  - Minimize or maximize all ranges
+    (<span style={{color: 'red'}}>9</span>)
+  - Reset angles to 0°
+    (<span style={{color: 'red'}}>10</span>)
+
+:::tip
+You can have multiple boxes loaded with
+different rendering and filtering state.
+:::
+
+Once done, use the sidebar buttons to interact with the boxes state
+
+- Clear all boxes at once
+  (<span style={{color: 'red'}}>1</span>)
+- Download boxes to a local `.json` file
+  (<span style={{color: 'red'}}>2</span>)
+- Load existing boxes from a local `.json` file
+  (<span style={{color: 'red'}}>3</span>)
+
+:::tip
+Selection boxes are automatically saved into your visualisation app.
+
+This internal sync mechanism caches your data based on your
+current configuration hash and selected view.
+
+_Beware that local storage does not carry around version updates._
+
+_Use export functions to sideload accordingly._
+:::
+
+### Examples
+
+<Tabs>
+  <TabItem
+    value="Multiple boxes OFF"
+    default
+  >
+    ![](/sse-14/visualisation/filtering/spatial/003.png)
+  </TabItem>
+  <TabItem value="Multiple boxes ON">
+    ![](/sse-14/visualisation/filtering/spatial/004.png)
+  </TabItem>
+  <TabItem value="JSON export">
+    ![](/sse-14/visualisation/filtering/spatial/005.png)
+
+    Filename uses the following naming convention:
+
+    `[config-filename]-selection-boxes-[extraction-index]-[band-index]-[integration-index]-[reduction-index].json`
+
+  </TabItem>
+</Tabs>
+
+## Temporal filtering
+
+- Open the
+  <Button icon={<SeriesFiltered />} />
+  `Temporal` panel
+- Select an acoustic indicator in the list
+  (<span style={{color: 'red'}}>1</span>)
+- Wait data to load from HDF5 storage, you will get the following render
+- Change how values are aggregated and plotted
+  (<span style={{color: 'red'}}>4</span>)
+  - mean values
+  - min values
+  - max values
+- Enter filtering boundaries, then press Enter
+  or click on `Apply` button to apply filtering.
+  (<span style={{color: 'red'}}>2</span>)
+- Export plot to `.csv`
+  (<span style={{color: 'red'}}>5</span>)
+- Change rendering mode (<span style={{color: 'red'}}>3</span>) between
+  - **Continuous plotting**: Shows individual data points
+    for each interval. Click any point to open the
+    Audio player for that specific interval. Best for
+    detailed analysis of individual measurements.
+  - **Candles plotting**
+    ([candlestick charts](https://en.wikipedia.org/wiki/Candlestick_chart)):
+    Groups data into time buckets, showing the range
+    (min/max) and first/last values for each period.
+    Useful for identifying patterns and trends over time.
+    - Allows you to define candle size
+      (<span style={{color: 'red'}}>6</span>)
+    - Use the `trim` button
+      (<span style={{color: 'red'}}>7</span>)
+      to toggle empty time spans plotting
+
+<Tabs>
+  <TabItem
+    value="Continuous plot"
+    default
+  >
+    <figure>
+      ![](/sse-14/visualisation/filtering/temporal/001.png)
+      <figcaption>
+        <center>
+          <i>Full width Temporal view with continuous Leq data</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="Candles plot (15 min)">
+    <figure>
+      ![](/sse-14/visualisation/filtering/temporal/002.png)
+      <figcaption>
+        <center>
+          <i>Temporal view with 15-minutes candles Leq data (trimmed)</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="Candles plot (1 h)">
+    <figure>
+      ![](/sse-14/visualisation/filtering/temporal/003.png)
+      <figcaption>
+        <center>
+          <i>Temporal view with 1-hour candles Leq data (full)</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="> -60 dBFS filtering">
+    <figure>
+      ![](/sse-14/visualisation/filtering/temporal/004.png)
+      <figcaption>
+        <center>
+          <i>Temporal view with 1-hour candles Leq data (full)</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+</Tabs>

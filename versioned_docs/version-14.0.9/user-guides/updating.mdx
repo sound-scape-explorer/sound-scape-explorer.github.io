@@ -1,0 +1,48 @@
+---
+title: How to update
+sidebar_position: 20
+---
+
+import {SseIcon} from '@site/src/components/Icons';
+
+Upon starting, the <SseIcon /> standalone app checks for available updates.
+
+## Downloading updates
+
+If it finds one, click on the button
+(<span style={{color: 'red'}}>1</span>)
+to open your main browser and download the latest packages:
+
+- Standalone app
+  - `.exe` package for Windows systems
+    (<span style={{color: 'red'}}>2</span>)
+  - `.deb` package for Debian based systems (i.e. Ubuntu 24)
+    (<span style={{color: 'red'}}>3</span>)
+  - `.dmg` for macOS systems
+    (<span style={{color: 'red'}}>4</span>)
+- Processing CLI tool
+  - `.bat` for Windows systems
+    (<span style={{color: 'red'}}>5</span>)
+  - `.sh` for UNIX systems (Linux and macOS)
+    (<span style={{color: 'red'}}>6</span>)
+
+![](/sse-14/updating/001.png)
+
+![Latest release GitHub window](/sse-14/updating/002.png)
+
+## Installing updates
+
+**Standalone app**
+
+- Windows: Run the new `.exe` installer
+- Ubuntu: Install with `sudo apt install ./sound-scape-explorer-[version].deb`
+- macOS: Open `.dmg` and drag to Applications (replaces existing)
+
+**Processing CLI**
+
+- Run the new `.bat` (Windows) or `.sh` (Linux/macOS) script
+- This will create the Python environment with new dependencies
+
+:::info
+We recommend keeping your CLI and standalone apps in sync.
+:::

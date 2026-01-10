@@ -1,0 +1,89 @@
+---
+title: How to listen to audio
+sidebar_position: 6
+---
+
+import {Resolve, UngroupObjects, Cog} from '@blueprintjs/icons';
+import {Button} from '@blueprintjs/core';
+import {useState} from 'react';
+
+export const FilterButton = () => {
+  const [clicked, setClicked] = useState(false);
+  return (
+    <Button
+      icon={clicked ? <Resolve /> : <UngroupObjects />}
+      onClick={() => setClicked((c) => !c)}
+    />
+  );
+};
+
+## Opening the Audio player
+
+Selecting an interval triggers the Audio player to appear.
+
+You can select intervals by clicking:
+
+- Points on the scatter plot
+- Intervals in the Calendar panel
+- Data points in the Temporal panel (continuous plot mode)
+
+![](/sse-14/visualisation/audio/001.png)
+
+## Audio controls
+
+The Audio panel provides the following controls:
+
+- **Playback controls**
+  (<span style={{color: 'red'}}>1</span>)
+  - Play, Pause, Stop buttons in sidebar
+
+- **Download audio**
+  (<span style={{color: 'red'}}>2</span>)
+  - Downloads the raw unfiltered audio file
+
+- **Context switching**
+  (<span style={{color: 'red'}}>3</span>)
+  - Click on "Interval" to cycle between File and Site definitions
+
+- **Copy dates**
+  (<span style={{color: 'red'}}>4</span>)
+  - Click on date/time headers to copy to clipboard
+
+- **Gain adjustment**
+  (<span style={{color: 'red'}}>5</span>)
+  - Adjust playback volume
+
+- **Playback rate**
+  (<span style={{color: 'red'}}>6</span>)
+  - Slider shows absolute rate in Hz
+  - Click the mode header (<span style={{color: 'red'}}>7</span>) to cycle between:
+    - `Absolute` [0, 2]
+    - `Speed` [-90%, 200%]
+    - `Chromatic` [~-40st, 12st] (semitones)
+
+- **Spectral filters**
+  (<span style={{color: 'red'}}>8</span>)
+  - Adjust high-pass and low-pass filters to recompute spectrogram
+  - Click filter headers to reset to your configuration's band settings
+  - Click
+    <FilterButton />
+    icon (<span style={{color: 'red'}}>9</span>) to lock filters to current
+    playback rate
+
+- **VU Meter with peak detection**
+  (<span style={{color: 'red'}}>10</span>)
+  - Real-time volume level indicator
+  - Shows current audio level and peak values
+  - Helps identify clipping or low-volume issues
+
+:::info
+Low pass filters are capped at the [Nyquist frequency](https://en.wikipedia.org/wiki/Nyquist_frequency) (half the sample rate).
+:::
+
+:::tip
+In <Button icon={<Cog />}/> Settings panel, you can adjust:
+
+- Filter slopes
+- Spectrogram FFT window size, color scale and label display/positioning.
+
+:::

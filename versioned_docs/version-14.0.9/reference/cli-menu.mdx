@@ -1,0 +1,107 @@
+---
+title: CLI Menu Options
+sidebar_position: 2
+---
+
+When running `sse <config.json>` without `--auto` or `--validate`, an interactive menu appears.
+
+## Menu Display
+
+The menu shows:
+
+- Welcome message with version
+- Device information (CPU/GPU)
+- Configuration settings table
+- Current storage state (✅ Present, ❌ Missing, ⚪ Not configured)
+- Available actions
+
+:::warning
+Remember to **Quit** before loading the `.h5` file into the visualisation module.
+:::
+
+## Main Actions
+
+### Run all
+
+Execute all processing steps in sequence:
+
+1. Extractions
+2. Aggregations
+3. Reductions
+4. Computations
+5. Autoclusters
+6. Metrics
+7. Trajectories
+8. Relative trajectories
+
+### Individual Processing Steps
+
+**Run extractions**
+
+- Extract features from audio files using configured extractors
+- Generates raw embeddings and timestamps
+
+**Run aggregations**
+
+- Aggregate extracted data into time windows
+- Creates intervals with integration periods
+
+**Run reductions**
+
+- Perform dimensionality reduction (UMAP/PCA)
+- Prepares data for visualisation
+
+**Run computations**
+
+- Compute embeddings and distance matrices
+- Used for clustering and analysis
+
+**Run autoclusters**
+
+- Automatic clustering using HDBSCAN
+- Generates cluster labels
+
+**Run computations**
+
+- Generate mean distance matrix (MDM) from reduced/embedded data
+- Iteration count improves UMAP stability (PCA/embeddings use single pass)
+
+**Run metrics**
+
+- Calculate statistics and analysis metrics
+- Includes diversity indices and temporal patterns
+
+**Run trajectories**
+
+- Trace paths through reduced space
+- Shows movement patterns over time
+
+**Run relative trajectories**
+
+- Calculate distances from reference points
+- Compares trajectories relative to baseline
+
+## Export Options
+
+**Export dataframe as .csv**
+
+- Export interval data as CSV file
+- Useful for external analysis in Excel/R/Python
+
+**Export computations as .npy**
+
+- Export embedding computations in NumPy format
+- For custom analysis or visualisation
+
+**Export mean distances matrix as .npy**
+
+- Export distance matrix in NumPy format
+- For custom clustering or analysis
+
+## Quit
+
+Exit the menu and close the application safely.
+
+:::tip
+Use arrow keys to navigate, Enter to select, and Ctrl+C to quit at any time.
+:::

@@ -1,0 +1,81 @@
+---
+title: How to color scatter
+sidebar_position: 7
+---
+
+import {Button} from '@blueprintjs/core';
+import {ColorFill} from '@blueprintjs/icons';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Open the <Button icon={<ColorFill />} /> `Colors` panel and
+access to the following controls:
+
+- Color Category
+  (<span style={{color: 'red'}}>1</span>)
+  and Color Option
+  (<span style={{color: 'red'}}>2</span>)
+  - `DEFAULT`: color by the hour in a day, by day or night,
+    or by interval index
+  - `TAGS`: use tag values for coloring
+  - `ACOUSTICS`: use acoustic values for coloring
+- Opacity values
+  (<span style={{color: 'red'}}>3</span>)
+  - For **excluded** (hidden) points
+  - For **included** (visible) points
+- Color flavor (palette)
+  (<span style={{color: 'red'}}>4</span>)
+- Color map reverse button
+  (<span style={{color: 'red'}}>5</span>)
+  and gradients
+  (<span style={{color: 'red'}}>6</span>)
+
+:::tip
+
+The gradient is rendered dynamically, relative to current
+color category and option.
+
+Hover the gradient color slices to display the actual underlying values.
+
+:::
+
+<Tabs>
+  <TabItem
+    default
+    value="Default view"
+  >
+    <figure>
+      ![](/sse-14/visualisation/coloring/001.png)
+      <figcaption>
+        <center>
+          <i>Default category with HoursInDay option.</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="Tags view">
+    <figure>
+      ![](/sse-14/visualisation/coloring/002.png)
+      <figcaption>
+        <center>
+          <i>
+            Tags category with AUTOCLUSTER_0 option.
+            <br />
+            `Act as numeric range` has been enabled as tag values are
+            digitizable.
+          </i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="Acoustics view">
+    <figure>
+      ![](/sse-14/visualisation/coloring/003.png)
+      <figcaption>
+        <center>
+          <i>Acoustics category with Leq option.</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+</Tabs>

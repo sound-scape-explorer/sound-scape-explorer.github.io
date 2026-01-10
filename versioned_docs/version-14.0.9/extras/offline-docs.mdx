@@ -1,0 +1,40 @@
+---
+title: Offline documentation
+---
+
+import {ExportingBlogBlock} from '@site/src/components/ExportingBlogBlock';
+import {ExportingDocsBlock} from '@site/src/components/ExportingDocsBlock';
+import {PdfIcon} from '@site/src/components/Icons';
+import {Title} from '@site/src/components/Title';
+import {Fragment} from 'react';
+import {VERSION} from '@site/docs/env';
+
+## Install docs as local web app
+
+- Using Chrome, navigate to https://sound-scape-explorer.github.io/
+- Click on the
+  <img
+    style={{width: '1em', height: '1em'}}
+    src="https://storage.googleapis.com/support-kms-prod/IXP8s7ymZF6tqtGlIECQYtQfOkZX6X9pHMsX"
+  />
+  install icon (located at the right side of the address bar)
+
+Docs will then be available on your computer as `SoundScapeExplorer Docs`.
+
+## Export to PDF
+
+:::warning
+The following exports require Node.js installed.
+:::
+
+### Current documentation
+
+To download the current {VERSION} version of the documentation, execute:
+
+<ExportingDocsBlock version={VERSION} />
+
+### Blog posts
+
+Execute the command below to export the blog content to PDF:
+
+<ExportingBlogBlock />

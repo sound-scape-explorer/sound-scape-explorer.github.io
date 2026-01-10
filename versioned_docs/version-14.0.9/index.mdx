@@ -1,0 +1,63 @@
+---
+sidebar_position: 0
+title: Welcome
+---
+
+import {APP_DESCRIPTION, APP_NAME} from '@site/constants';
+import {AppIcon} from '@site/src/components/Icons';
+import {VERSION} from '@site/docs/env';
+
+# Welcome to {APP_DESCRIPTION}
+
+## Introduction
+
+<AppIcon /> {APP_NAME} v{VERSION} is a comprehensive toolkit for bioacoustic
+research, providing tools to extract, analyse, and visualise patterns in audio
+recordings.
+
+It combines machine learning, acoustic indices, and interactive visualisation to
+help researchers explore soundscape data at scale.
+
+## The Two Modules
+
+**Processing CLI**
+
+- Python-based command-line tool for audio analysis
+- Extracts features using neural networks (VGGish, PERCH, YAMNet, BirdNET) and
+  acoustic indices
+- Performs dimensionality reduction (UMAP/PCA) and clustering (HDBSCAN)
+- Generates HDF5 files containing all processed data
+
+**Standalone Application**
+
+- Electron desktop app combining three integrated modules:
+  - **Campaign:** Configure audio files, tags, and extraction parameters
+  - **Audio Engine:** Manage audio playback with spectrograms and adjustable
+    rates
+  - **Visualisation:** Explore data with 3D scatter plots, filtering, and export
+    capabilities
+- Interactive filtering by tags, time, coordinates, and acoustics
+
+## Requirements
+
+**Processing CLI**
+
+- Python 3.11
+- 8GB+ RAM
+- 3.5 GB of disk space
+- Multi-core processor for efficient processing
+- Optional: NVIDIA GPU for accelerated extraction
+
+**Standalone Application**
+
+- Modern desktop OS (Windows 10+, Ubuntu 22+, macOS 13+)
+- OpenGL-compatible graphics
+- Audio playback capability
+
+## Getting Started
+
+- **Installation:** Follow the [Installation Guide](./installation/)
+- **First steps:** Complete the [Quick Start](./quick-start/) tutorial
+- **Support:** Visit [Get In Touch](./extras/contact/) for community resources
+
+Explore the sidebar to discover all features of {APP_DESCRIPTION}.

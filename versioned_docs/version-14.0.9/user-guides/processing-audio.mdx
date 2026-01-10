@@ -1,0 +1,80 @@
+---
+title: How to process audio files
+sidebar_position: 2
+---
+
+import {VideoPlayer} from '@site/src/components/VideoPlayer.tsx';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+You have your exported configuration as a `.json` file.
+
+## Starting the Processing CLI tool
+
+To generate your dataset:
+
+- Start the CLI tool script
+- Enter `sse <path-to-config.json>`
+- Then press `Enter`
+
+<figure>
+  <Tabs>
+    <TabItem
+      value="windows"
+      label="Windows 11"
+      default
+    >
+      <VideoPlayer
+        src="/sse-14/windows-quick-start.mp4"
+        start={65.5}
+        end={82}
+        loop
+      />
+    </TabItem>
+    <TabItem
+      value="ubuntu"
+      label="Ubuntu 24"
+    >
+      <VideoPlayer
+        src="/sse-14/ubuntu-quick-start.mp4"
+        start={58.5}
+        end={70}
+        loop
+      />
+    </TabItem>
+  </Tabs>
+  <figcaption>
+    <center>
+      <i>Processing CLI start examples</i>
+    </center>
+  </figcaption>
+</figure>
+
+You will arrive on the following menu.
+
+## Navigating the CLI menu
+
+<figure>
+  ![Processing CLI menu](/sse-14/processing/001.png)
+  <figcaption>
+    <center>
+      <i>Processing CLI menu</i>
+    </center>
+  </figcaption>
+</figure>
+
+Select `Run all` to start the data generation.
+
+Wait for the `h5` data file to be generated
+alongside your `.json` config file.
+
+Once completed, exit the menu by selecting `Quit` or pressing `ctrl+c`.
+
+:::tip
+
+For detailed information on CLI commands and menu options, see the
+[CLI Commands Reference](../reference/cli-commands/)
+and
+[CLI Menu Reference](../reference/cli-menu/).
+
+:::

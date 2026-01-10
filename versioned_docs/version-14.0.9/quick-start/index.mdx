@@ -1,0 +1,68 @@
+---
+sidebar_position: 2
+title: Quick start
+---
+
+import {VERSION} from '@site/docs/env.ts';
+import {VideoPlayer} from '@site/src/components/VideoPlayer.tsx';
+import {UbuntuIcon, Windows11Icon} from '@site/src/components/Icons';
+
+This guide walks through the complete workflow using the provided example dataset.
+
+## Download example
+
+Download the <a href={`https://download-directory.github.io/?url=https://github.com/sound-scape-explorer/sound-scape-explorer/tree/v${VERSION}/examples&filename=sse-example-${VERSION}`} target={'\_blank'}>example folder</a> and unzip it.
+
+## Create campaign configuration
+
+1. Open the standalone app
+2. Click `Campaign > Configure`
+3. Load the example `.json` file
+4. Update the `Audio Path` to point to the `audio` folder from the example
+5. Export your configured `.json` file
+
+See [How to configure a campaign](../user-guides/creating-campaign/) for details.
+
+:::warning
+On macOS, drag-n-drop folder from Finder to Audio Path field may not work.
+
+Please enter the path manually to follow through.
+:::
+
+## Generate dataset
+
+Run the Processing CLI with your configuration:
+
+```bash
+sse /path/to/your-campaign.json
+```
+
+Select `Run all` and wait for completion.
+
+See [How to extract data](../user-guides/processing-audio/) for details.
+
+## Visualise data
+
+1. Open the standalone app
+2. Load audio path and start the Audio engine
+3. Click `Visualisation > Explore`
+4. Load your `.h5` file
+5. Select your view
+
+See [How to visualise a dataset](../user-guides/exploring-data/) for details.
+
+## Screencasts
+
+<details>
+  <summary>
+    <Windows11Icon /> Windows 11 complete workflow
+  </summary>
+  <VideoPlayer src="/sse-14/windows-quick-start.mp4" />
+</details>
+
+<details>
+  <summary>
+    <UbuntuIcon /> Ubuntu 24 complete workflow
+  </summary>
+  <VideoPlayer src="/sse-14/ubuntu-quick-start.mp4" />
+</details>
