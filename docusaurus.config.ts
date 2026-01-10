@@ -128,9 +128,8 @@ const config: Config = {
   themeConfig: {
     image: 'img/demo-13.8.0.png',
     announcementBar: {
-      id: '20250326',
-      content:
-        '<a href="/blog/2025/03/26/sse-13.10.3">New SSE 13.10.3 released!</a>',
+      id: '20260112',
+      content: '<a href="/blog/2026/01/12/sse-14.0">SSE 14.0 released!</a>',
     },
     navbar: {
       title: APP_NAME,
