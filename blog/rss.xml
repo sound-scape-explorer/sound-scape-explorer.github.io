@@ -4,17 +4,114 @@
         <title>SoundScapeExplorer Blog</title>
         <link>https://sound-scape-explorer.github.io/blog</link>
         <description>SoundScapeExplorer Blog</description>
-        <lastBuildDate>Sat, 10 Jan 2026 08:10:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[👋]]></title>
-            <link>https://sound-scape-explorer.github.io/blog/index</link>
-            <guid>https://sound-scape-explorer.github.io/blog/index</guid>
-            <pubDate>Sat, 10 Jan 2026 08:10:32 GMT</pubDate>
-            <description><![CDATA[Welcome to the  blog!]]></description>
-            <content:encoded><![CDATA[Welcome to the <!-- -->SoundScapeExplorer<!-- --> blog!]]></content:encoded>
+            <title><![CDATA[Sound Scape Explorer v14.0 Released]]></title>
+            <link>https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0</link>
+            <guid>https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0</guid>
+            <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[After months of development, we're excited to announce Sound Scape Explorer]]></description>
+            <content:encoded><![CDATA[<p>After months of development, we're excited to announce Sound Scape Explorer
+v14.0 - a complete architectural overhaul with major improvements to usability,
+performance, and stability.</p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="whats-new">What's New<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#whats-new" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_osn3" id="json-configuration-finally">JSON Configuration (Finally!)<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#json-configuration-finally" class="hash-link" aria-label="Direct link to JSON Configuration (Finally!)" title="Direct link to JSON Configuration (Finally!)" translate="no">​</a></h3>
+<p>The biggest change: <strong>Excel spreadsheets are gone</strong>. Campaign configuration now
+uses JSON files with a modern React-based interface featuring guided workflows
+and contextual inline help. This enables:</p>
+<ul>
+<li class="">Step-by-step guidance reducing cognitive load</li>
+<li class="">Better validation and error messages</li>
+<li class="">Version control friendly configurations</li>
+<li class="">Programmatic campaign generation</li>
+<li class="">Easier sharing and collaboration</li>
+</ul>
+<p>Legacy v13 <code>.xlsx</code> configurations can still be imported through the new Campaign
+module.</p>
+<h3 class="anchor anchorTargetStickyNavbar_osn3" id="expanded-neural-network-support">Expanded Neural Network Support<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#expanded-neural-network-support" class="hash-link" aria-label="Direct link to Expanded Neural Network Support" title="Direct link to Expanded Neural Network Support" translate="no">​</a></h3>
+<p>Processing now supports multiple neural extractors:</p>
+<ul>
+<li class=""><strong>VGGish</strong> - General audio embeddings</li>
+<li class=""><strong>PERCH</strong> - Perceptual audio hashing</li>
+<li class=""><strong>SurfPERCH</strong> - Surface-level perceptual features</li>
+<li class=""><strong>YAMNet</strong> - Audio event detection</li>
+<li class=""><strong>BirdNET</strong> - Specialized for avian bioacoustics</li>
+<li class=""><strong>Music Classifier</strong> - Musical content analysis</li>
+<li class=""><strong>Plus scikit-maad acoustic indices</strong> for traditional analysis</li>
+<li class=""><strong>Automatic model downloading</strong> via Kaggle and GitHub integration</li>
+</ul>
+<p>Multiple extractors can be concatenated in a single extraction for richer
+embeddings.</p>
+<h3 class="anchor anchorTargetStickyNavbar_osn3" id="modern-tech-stack">Modern Tech Stack<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#modern-tech-stack" class="hash-link" aria-label="Direct link to Modern Tech Stack" title="Direct link to Modern Tech Stack" translate="no">​</a></h3>
+<p><strong>Processing CLI:</strong></p>
+<ul>
+<li class="">Migrated to Python 3.11</li>
+<li class="">Replaced PyTorch with TensorFlow (with CUDA/Metal acceleration support)</li>
+<li class="">New CLI flags: <code>--validate</code>, <code>--auto</code>, <code>--cpu</code>, <code>--memory</code></li>
+<li class="">Better handling of configuration errors and OOM events</li>
+<li class="">Improved performance and memory management</li>
+</ul>
+<p><strong>Visualisation:</strong></p>
+<ul>
+<li class="">Spatial selection boxes for 3D filtering</li>
+<li class="">Enhanced audio player with dynamic spectrograms</li>
+<li class="">Better heatmap interactions for data exploration</li>
+<li class="">Improved scatter coloring with acoustic indicators</li>
+<li class="">Redesigned UI components</li>
+</ul>
+<p><strong>Standalone app:</strong></p>
+<ul>
+<li class="">Running all other modules: Campaign, Audio, Visualisation</li>
+<li class="">Electron 39 upgrade with Wayland support on Linux</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_osn3" id="quality-of-life">Quality of Life<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#quality-of-life" class="hash-link" aria-label="Direct link to Quality of Life" title="Direct link to Quality of Life" translate="no">​</a></h3>
+<ul>
+<li class="">Comprehensive documentation with screenshots and video tutorials</li>
+<li class="">Automatic update notifications in standalone app</li>
+<li class="">Rewritten trajectory implementation with improved visualisation</li>
+<li class="">Consistent Leq values in dBFS</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="breaking-changes">Breaking Changes<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#breaking-changes" class="hash-link" aria-label="Direct link to Breaking Changes" title="Direct link to Breaking Changes" translate="no">​</a></h2>
+<p>v14 uses a completely new configuration format and storage structure. Key
+changes:</p>
+<ul>
+<li class="">Configuration files are now JSON instead of Excel</li>
+<li class="">Storage paths and HDF5 structure have been updated</li>
+<li class="">Python 3.11 required (up from 3.10)</li>
+<li class="">Datasets <strong>must</strong> be regenerated with the new Processing CLI</li>
+</ul>
+<p>The Campaign module includes a migration tool for importing v13 <code>.xlsx</code>
+configurations.</p>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="testing-and-quality">Testing and Quality<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#testing-and-quality" class="hash-link" aria-label="Direct link to Testing and Quality" title="Direct link to Testing and Quality" translate="no">​</a></h2>
+<p>This release includes comprehensive test coverage:</p>
+<ul>
+<li class="">End-to-end Playwright tests for UI interactions</li>
+<li class="">Processing pipeline integration tests</li>
+<li class="">CI/CD automation for cross-platform builds</li>
+<li class="">Security vulnerability patches throughout the stack</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="getting-started">Getting Started<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Installation:</strong>
+<a class="" href="https://sound-scape-explorer.github.io/docs/installation/">Installation Guide</a></li>
+<li class=""><strong>Quick Start:</strong>
+<a class="" href="https://sound-scape-explorer.github.io/docs/quick-start/">Quick Start Tutorial</a></li>
+<li class=""><strong>Migration:</strong>
+<a class="" href="https://sound-scape-explorer.github.io/docs/user-guides/creating-campaign/">Campaign Configuration Guide</a></li>
+<li class=""><strong>Full Changelog:</strong>
+<a href="https://github.com/sound-scape-explorer/sound-scape-explorer/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="">CHANGELOG.md</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_osn3" id="acknowledgements">Acknowledgements<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#acknowledgements" class="hash-link" aria-label="Direct link to Acknowledgements" title="Direct link to Acknowledgements" translate="no">​</a></h2>
+<p>Special thanks to the research teams at ENES (Équipe de Neuro-Éthologie
+Sensorielle) for their feedback and collaboration throughout this development
+cycle.</p>
+<hr>
+<p><em>Sound Scape Explorer v14.0 is available now on
+<a href="https://github.com/sound-scape-explorer/sound-scape-explorer/releases" target="_blank" rel="noopener noreferrer" class="">GitHub Releases</a>
+and <a href="https://pypi.org/project/sound-scape-explorer/" target="_blank" rel="noopener noreferrer" class="">PyPI</a>.</em></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[New SSE 13.10.3]]></title>
