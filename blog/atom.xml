@@ -33,12 +33,12 @@ module.</p>
 <h3 class="anchor anchorTargetStickyNavbar_osn3" id="expanded-neural-network-support">Expanded Neural Network Support<a href="https://sound-scape-explorer.github.io/blog/2026/01/12/sse-14.0#expanded-neural-network-support" class="hash-link" aria-label="Direct link to Expanded Neural Network Support" title="Direct link to Expanded Neural Network Support" translate="no">​</a></h3>
 <p>Processing now supports multiple neural extractors:</p>
 <ul>
-<li class=""><strong>VGGish</strong> - General audio embeddings</li>
-<li class=""><strong>PERCH</strong> - Perceptual audio hashing</li>
-<li class=""><strong>SurfPERCH</strong> - Surface-level perceptual features</li>
-<li class=""><strong>YAMNet</strong> - Audio event detection</li>
-<li class=""><strong>BirdNET</strong> - Specialized for avian bioacoustics</li>
-<li class=""><strong>Music Classifier</strong> - Musical content analysis</li>
+<li class=""><strong>VGGish</strong></li>
+<li class=""><strong>PERCH</strong></li>
+<li class=""><strong>SurfPERCH</strong></li>
+<li class=""><strong>YAMNet</strong></li>
+<li class=""><strong>BirdNET</strong></li>
+<li class=""><strong>Music Classifier</strong></li>
 <li class=""><strong>Plus scikit-maad acoustic indices</strong> for traditional analysis</li>
 <li class=""><strong>Automatic model downloading</strong> via Kaggle and GitHub integration</li>
 </ul>
