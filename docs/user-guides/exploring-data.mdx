@@ -4,6 +4,8 @@ sidebar_position: 3
 ---
 
 import {SseIcon} from '@site/src/components/Icons';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 You have your `.json` and `.h5` files.
 
@@ -11,32 +13,43 @@ You have your `.json` and `.h5` files.
 
 - Start the <SseIcon /> standalone app
 - In the `Audio` section, either
-  - Fill the audio path by inputting one of your files (<span style={{color: 'red'}}>1</span>)
-  - Or enter the path manually (<span style={{color: 'red'}}>2</span>)
-- Click on the start button (<span style={{color: 'red'}}>3</span>)
-- The audio engine will start (<span style={{color: 'red'}}>4</span>)
+  - Fill the audio path by inputting one of your files
+    (<span style={{color: 'red'}}>1</span>)
+  - Or enter the path manually
+    (<span style={{color: 'red'}}>2</span>)
+- Click on the start button
+  (<span style={{color: 'red'}}>3</span>)
+- The audio engine will start
+  (<span style={{color: 'red'}}>4</span>)
 - Allowing you to click
-  on the `Visualisation > Explore` button (<span style={{color: 'red'}}>5</span>)
+  on the `Visualisation > Explore` button
+  (<span style={{color: 'red'}}>5</span>)
 
-<figure>
-  ![Standalone app default screen with audio engine
-  OFF](/sse-14/visualisation/001.png)
-  <figcaption>
-    <center>
-      <i>Standalone app default screen with audio engine OFF</i>
-    </center>
-  </figcaption>
-</figure>
-
-<figure>
-  ![Standalone app default screen with audio engine
-  ON](/sse-14/visualisation/002.png)
-  <figcaption>
-    <center>
-      <i>Standalone app default screen with audio engine ON</i>
-    </center>
-  </figcaption>
-</figure>
+<Tabs>
+  <TabItem
+    default
+    value="Audio Engine OFF"
+  >
+    <figure>
+      ![](/sse-14/visualisation/001.png)
+      <figcaption>
+        <center>
+          <i>Standalone app default screen with audio engine OFF</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+  <TabItem value="Audio Engine ON">
+    <figure>
+      ![](/sse-14/visualisation/002.png)
+      <figcaption>
+        <center>
+          <i>Standalone app default screen with audio engine ON</i>
+        </center>
+      </figcaption>
+    </figure>
+  </TabItem>
+</Tabs>
 
 :::info
 On Windows systems, you might get a firewall notification. Accept the prompt.
@@ -44,22 +57,31 @@ On Windows systems, you might get a firewall notification. Accept the prompt.
 
 ## Loading your dataset
 
-The following window opens after clicking on the `Explore` button.
+A new visualisation window opens after clicking on the `Explore` button.
 
 <figure>
   ![](/sse-14/visualisation/003.png)
   <figcaption>
     <center>
-      <i>Visualisation app default screen</i>
+      <i>Visualisation app default Open screen</i>
     </center>
   </figcaption>
 </figure>
 
-One more final load into the visualisation app...
+One more final step...
 
 Choose your `.h5` and load it.
 
-The `Open` panel will close and the `View` one will open.
+The Open panel will close and the View one will open.
+
+<figure>
+  ![](/sse-14/visualisation/004.png)
+  <figcaption>
+    <center>
+      <i>Visualisation app View panel</i>
+    </center>
+  </figcaption>
+</figure>
 
 This is where you select your:
 
@@ -68,36 +90,39 @@ This is where you select your:
 - Integration
 - Reducer
 
-Once your selection done, the `View` panel automatically closes and
+Once your selection done, the View panel automatically closes and
 data starts loading.
 
 :::info
 Depending on your dataset size, data can take minutes to load entirely.
 :::
 
-<figure>
-  ![](/sse-14/visualisation/004.png)
-  <figcaption>
-    <center>
-      <i>Visualisation app `View` panel</i>
-    </center>
-  </figcaption>
-</figure>
-
 ## Exploring
 
 Data loading is complete!
 
-You are now in the main visualisation mode.
+You cano now see the scatter plot.
+
+<figure>
+  ![](/sse-14/visualisation/005.png)
+  <figcaption>
+    <center>
+      <i>Visualisation app with scatter plot loaded</i>
+    </center>
+  </figcaption>
+</figure>
 
 This screen has three main parts:
 
-- The scatter (<span style={{color: 'red'}}>1</span>)
-- The camera controls and quick actions (<span style={{color: 'red'}}>2</span>)
-- The panel buttons (<span style={{color: 'red'}}>3</span>) [reference](../reference/visualisation-panels/)
+- The scatter
+  (<span style={{color: 'red'}}>1</span>)
+- The camera controls and quick actions
+  (<span style={{color: 'red'}}>2</span>)
+- The panel buttons
+  (<span style={{color: 'red'}}>3</span>) ([reference](../reference/visualisation-panels/))
 
 :::info
-In the center, the scatter (<span style={{color: 'red'}}>1</span>) displays
+In the center, the scatter (<span style={{color: 'red'}}>1</span>) plots
 points, either in 2D or 3D depending on your reducer setting.
 
 Each of these points represents an **audio interval**, with the length
@@ -109,12 +134,3 @@ depends on your actual `Extractor` setting.
 This can be either neural network embeddings that have been reduced,
 or a combination of them, or even with raw or acoustic indices mixed in.
 :::
-
-<figure>
-  ![](/sse-14/visualisation/005.png)
-  <figcaption>
-    <center>
-      <i>Visualisation app with scatter loaded</i>
-    </center>
-  </figcaption>
-</figure>

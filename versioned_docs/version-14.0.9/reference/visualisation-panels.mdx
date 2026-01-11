@@ -21,23 +21,60 @@ import {
   Tags,
 } from '@blueprintjs/icons';
 
+export const Red = ({children}) => {
+  return (
+    <>
+      (<span style={{color: 'red'}}>{children}</span>)
+    </>
+  );
+};
+
 <div style={{display: 'grid', gridTemplateColumns: 'auto 1fr'}}>
-  {/* prettier-ignore */}
   <div>
-    - <Button icon={<Help />} /> (<span style={{color: 'red'}}>1</span>) Help
-    - <Button icon={<Cog />} /> (<span style={{color: 'red'}}>2</span>) Settings
-    - <Button icon={<DocumentOpen />} /> (<span style={{color: 'red'}}>3</span>) Open
-    - <Button icon={<EyeOpen />} /> (<span style={{color: 'red'}}>4</span>) View
-    - <Button icon={<ColorFill />} /> (<span style={{color: 'red'}}>5</span>) Colors
-    - <Button icon={<Calendar />} /> (<span style={{color: 'red'}}>6</span>) Calendar
-    - <Button icon={<Tags />} /> (<span style={{color: 'red'}}>7</span>) Tags
-    - <Button icon={<SelectionBox />} /> (<span style={{color: 'red'}}>8</span>) Selection
-    - <Button icon={<SeriesFiltered />} /> (<span style={{color: 'red'}}>9</span>) Temporal
-    - <Button icon={<HeatGrid />} /> (<span style={{color: 'red'}}>10</span>) Heatmaps
-    - <Button icon={<Music />} /> (<span style={{color: 'red'}}>11</span>) Audio
-    - <Button icon={<Array />} /> (<span style={{color: 'red'}}>12</span>) Details
-    - <Button icon={<Layout />} /> (<span style={{color: 'red'}}>13</span>) Trajectories
-    - <Button icon={<LayoutBalloon />} /> (<span style={{color: 'red'}}>14</span>) Relative trajectories
+    <ul>
+      <li>
+        <Button icon={<Help />} /> <Red>1</Red> Help
+      </li>
+      <li>
+        <Button icon={<Cog />} /> <Red>2</Red> Settings
+      </li>
+      <li>
+        <Button icon={<DocumentOpen />} /> <Red>3</Red> Open
+      </li>
+      <li>
+        <Button icon={<EyeOpen />} /> <Red>4</Red> View
+      </li>
+      <li>
+        <Button icon={<ColorFill />} /> <Red>5</Red> Colors
+      </li>
+      <li>
+        <Button icon={<Calendar />} /> <Red>6</Red> Calendar
+      </li>
+      <li>
+        <Button icon={<Tags />} /> <Red>7</Red> Tags
+      </li>
+      <li>
+        <Button icon={<SelectionBox />} /> <Red>8</Red> Selection
+      </li>
+      <li>
+        <Button icon={<SeriesFiltered />} /> <Red>9</Red> Temporal
+      </li>
+      <li>
+        <Button icon={<HeatGrid />} /> <Red>10</Red> Heatmaps
+      </li>
+      <li>
+        <Button icon={<Music />} /> <Red>11</Red> Audio
+      </li>
+      <li>
+        <Button icon={<Array />} /> <Red>12</Red> Details
+      </li>
+      <li>
+        <Button icon={<Layout />} /> <Red>13</Red> Trajectories
+      </li>
+      <li>
+        <Button icon={<LayoutBalloon />} /> <Red>14</Red> Relative trajectories
+      </li>
+    </ul>
   </div>
   <div>![](/sse-14/visualisation/006.png)</div>
 </div>

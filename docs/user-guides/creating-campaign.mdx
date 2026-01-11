@@ -11,43 +11,38 @@ import {SseIcon} from '@site/src/components/Icons';
 
 ## Opening the Campaign module
 
-<>
 - Open the <SseIcon /> standalone app
 - Click on `Campaign > Configure` button
-</>
 
 The welcome screen will display.
 
 ## Loading files
 
+Load your audio files by performing:
+
+- Click on the dropzone in gray
+- Or drag-n-drop your folder containing audio files onto it
+- Or load an existing configuration file by clicking on the `Load` button at the
+  top.
+
+Once done, you will be automatically redirected to the Settings screen.
+
+:::tip
+You can also import older v13 `.xlsx` configurations.
+:::
+
 <figure>
-  ![Campaign module's welcome screen](/sse-14/campaign/001.png)
+  ![](/sse-14/campaign/001.png)
   <figcaption>
     <center>
-      <i>Campaign module's welcome screen</i>
+      <i>Campaign module's Import screen</i>
     </center>
   </figcaption>
 </figure>
 
 <br />
 
-Either:
-
-- Click on the dropzone in gray
-- Or drag-n-drop your folder containing audio files onto it
-- Or load an existing configuration file by clicking on the `Load` button at the top.
-
-:::tip
-You can also import older v13 `.xlsx` configurations.
-:::
-
-Once done, you will arrive on the `Settings` screen.
-
-## Editing your configuration
-
-You can now edit your campaign by browsing the different screens.
-
-### `Settings` screen
+## Settings screen
 
 In this tab, you can interact with:
 
@@ -73,74 +68,69 @@ In this tab, you can interact with:
 </p>
 :::
 
-### `Files` screen
+## Files screen
 
 Here, you can:
 
-<>
-- Detect dates according to
-the audio file names (<span style={{color: 'red'}}>1</span>)
-
-- Add, change, delete tags (<span style={{color: 'red'}}>2</span>)
-
-- Fill tag values, reorder tags order... (<span style={{color: 'red'}}>3</span>)
-
-- Select the whole table by clicking on <span style={{color: 'red'}}>4</span>.
-  - You can then `ctrl+c` and paste into Excel for advanced edition
-  - Then select all your Excel table and paste it back to the Campaign table
-
+- Detect dates according to the audio file names
+  (<span style={{color: 'red'}}>1</span>)
+- Add, change, delete tags
+  (<span style={{color: 'red'}}>2</span>)
+- Fill tag values, change tag order...
+  (<span style={{color: 'red'}}>3</span>)
+- Select the whole table by clicking on <span style={{color: 'red'}}>4</span>
+  - You can then `ctrl+c` and paste into
+    Excel for advanced edition
+  - Then select all your Excel table and paste it
+    back to the Campaign table
 - To access all table shortcuts, press `?` on your keyboard
 
-</>
-
 <figure>
-  ![Campaign's module files screen](/sse-14/campaign/003.png)
+  ![](/sse-14/campaign/003.png)
   <figcaption>
     <center>
-      <i>Campaign module's files screen</i>
+      <i>Campaign module's Files screen</i>
     </center>
   </figcaption>
 </figure>
 
-### `Extractions` screen
+## Extractions screen
 
 In this tab, you will be able to create `Extractions`.
 
-An `Extraction` is an ensemble of parameters that will define the data extraction pipeline later on.
+An `Extraction` is an ensemble of parameters that will define the data
+extraction pipeline later on.
 
 The screen is divided in three sections:
 
-<>
-  - Extraction management (<span style={{color: 'red'}}>1</span>)
-
-    - Add, move, duplicate, delete extractions
-    - Import extractions from other existing configurations
-
-- Extraction title and templating (<span style={{color: 'red'}}>2</span>)
-
+- Extraction management (<span style={{color: 'red'}}>1</span>)
+  - Add, move, duplicate, delete extractions
+  - Import extractions from other existing configurations
+- Extraction title and templating
+  (<span style={{color: 'red'}}>2</span>)
 - Parameters (<span style={{color: 'red'}}>3</span>)
   - Refer to inline <Button icon={<Help />} /> for advanced help
 
-</>
-
 <figure>
-  ![Campaign's module extractions screen](/sse-14/campaign/004.png)
+  ![](/sse-14/campaign/004.png)
   <figcaption>
     <center>
-      <i>Campaign module's extractions screen</i>
+      <i>Campaign module's Extractions screen</i>
     </center>
   </figcaption>
 </figure>
 
-### `Export` screen
+## Export screen
 
 Download your configuration to a `.json` file that you
 will use to the feed the Processing module with.
 
-:::warning
-You can still download an "invalid" configuration to save an ongoing configuration.
+:::info
+You can still download an "invalid" configuration to save an ongoing
+configuration.
 
-Beware that this will likely result in errors if you decide to feed it to the Processing module.
+Beware that this will likely result in errors if you decide to feed it to the
+Processing module.
 :::
 
 <figure>
