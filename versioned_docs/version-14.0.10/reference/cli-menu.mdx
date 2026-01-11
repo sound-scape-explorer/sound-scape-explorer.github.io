@@ -53,18 +53,13 @@ Execute all processing steps in sequence:
 
 **Run computations**
 
-- Compute embeddings and distance matrices
-- Used for clustering and analysis
+- Generate mean distance matrix (MDM) from reduced/embedded data
+- Iteration count improves UMAP stability (PCA/embeddings use single pass)
 
 **Run autoclusters**
 
 - Automatic clustering using HDBSCAN
 - Generates cluster labels
-
-**Run computations**
-
-- Generate mean distance matrix (MDM) from reduced/embedded data
-- Iteration count improves UMAP stability (PCA/embeddings use single pass)
 
 **Run metrics**
 

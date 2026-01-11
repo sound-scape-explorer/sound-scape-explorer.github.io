@@ -4,6 +4,8 @@ sidebar_position: 20
 ---
 
 import {SseIcon} from '@site/src/components/Icons';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 Upon starting, the <SseIcon /> standalone app checks for available updates.
 
@@ -26,9 +28,15 @@ to open your main browser and download the latest packages:
   - `.sh` for UNIX systems (Linux and macOS)
     (<span style={{color: 'red'}}>6</span>)
 
-![](/sse-14/updating/001.png)
-
-![Latest release GitHub window](/sse-14/updating/002.png)
+<Tabs>
+  <TabItem
+    default
+    value="Standalone app with detected update"
+  >
+    ![](/sse-14/updating/001.png)
+  </TabItem>
+  <TabItem value="Update release page">![](/sse-14/updating/002.png)</TabItem>
+</Tabs>
 
 ## Installing updates
 
