@@ -1,4 +1,4 @@
-export const VERSION = '14.0.10';
+export const VERSION = '14.0.11';
 
 export const SIZES = {
   windows: '246 MB',
