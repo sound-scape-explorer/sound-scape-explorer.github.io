@@ -24,7 +24,7 @@ sse <config_path> [options]
 **`-c, --cpu`**
 
 - Disable GPU acceleration and force CPU-only processing
-- Useful for systems without CUDA or when GPU memory is insufficient
+- Useful when GPU memory is insufficient
 
 **`-m, --memory MEMORY`**
 
@@ -72,6 +72,27 @@ sse /path/to/config.json --auto
 ```bash
 sse /path/to/config.json --cpu --memory 8192
 ```
+
+---
+
+## `sse_install_cuda`
+
+Download optional dependencies to use CUDA acceleration.
+
+### Usage
+
+```bash
+sse_install_cuda
+```
+
+:::warning
+
+TensorFlow officially supports Linux and Windows WSL2 only.
+
+Refer to [official documentation](https://www.tensorflow.org/install/pip)
+for additional details.
+
+:::
 
 ---
 

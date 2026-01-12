@@ -35,6 +35,16 @@ choco install python --version=3.11.9 -y
 
 <VideoPlayer src="/sse-14/windows-installation-cli.mp4" />
 
+:::note GPU Acceleration
+
+GPU acceleration requires WSL2. For Windows native installation, only CPU processing is available.
+
+To enable GPU support, install SSE in WSL2 instead, then run `sse_install_cuda`.
+
+See [WSL2 setup guide](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+:::
+
   </TabItem>
   <TabItem
     value="ubuntu"
@@ -68,6 +78,14 @@ chmod +x sse-processing-${VERSION}.sh`}
 </CodeBlock>
 
 <VideoPlayer src="/sse-14/ubuntu-installation-cli.mp4" />
+
+:::tip GPU Acceleration
+
+After installation, run `sse_install_cuda` to enable CUDA acceleration.
+
+See [CLI Commands](../reference/cli-commands#sse_install_cuda) for details.
+
+:::
 
   </TabItem>
   <TabItem
