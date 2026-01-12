@@ -48,7 +48,8 @@ embeddings.</p>
 <p><strong>Processing CLI:</strong></p>
 <ul>
 <li class="">Migrated to Python 3.11</li>
-<li class="">Replaced PyTorch with TensorFlow (with CUDA/Metal acceleration support)</li>
+<li class="">Replaced PyTorch with TensorFlow
+(with CUDA acceleration for Linux and Windows WSL2)</li>
 <li class="">New CLI flags: <code>--validate</code>, <code>--auto</code>, <code>--cpu</code>, <code>--memory</code></li>
 <li class="">Better handling of configuration errors and OOM events</li>
 <li class="">Improved performance and memory management</li>
