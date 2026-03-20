@@ -1,0 +1,80 @@
+---
+sidebar_position: 3
+title: Visualisation panels
+---
+
+import {Button} from '@blueprintjs/core';
+import {
+  Array,
+  Calendar,
+  Cog,
+  ColorFill,
+  DocumentOpen,
+  EyeOpen,
+  HeatGrid,
+  Help,
+  Layout,
+  LayoutBalloon,
+  Music,
+  SelectionBox,
+  SeriesFiltered,
+  Tags,
+} from '@blueprintjs/icons';
+
+export const Red = ({children}) => {
+  return (
+    <>
+      (<span style={{color: 'red'}}>{children}</span>)
+    </>
+  );
+};
+
+<div style={{display: 'grid', gridTemplateColumns: 'auto 1fr'}}>
+  <div>
+    <ul>
+      <li>
+        <Button icon={<Help />} /> <Red>1</Red> Help
+      </li>
+      <li>
+        <Button icon={<Cog />} /> <Red>2</Red> Settings
+      </li>
+      <li>
+        <Button icon={<DocumentOpen />} /> <Red>3</Red> Open
+      </li>
+      <li>
+        <Button icon={<EyeOpen />} /> <Red>4</Red> View
+      </li>
+      <li>
+        <Button icon={<ColorFill />} /> <Red>5</Red> Colors
+      </li>
+      <li>
+        <Button icon={<Calendar />} /> <Red>6</Red> Calendar
+      </li>
+      <li>
+        <Button icon={<Tags />} /> <Red>7</Red> Tags
+      </li>
+      <li>
+        <Button icon={<SelectionBox />} /> <Red>8</Red> Selection
+      </li>
+      <li>
+        <Button icon={<SeriesFiltered />} /> <Red>9</Red> Temporal
+      </li>
+      <li>
+        <Button icon={<HeatGrid />} /> <Red>10</Red> Heatmaps
+      </li>
+      <li>
+        <Button icon={<Music />} /> <Red>11</Red> Audio
+      </li>
+      <li>
+        <Button icon={<Array />} /> <Red>12</Red> Details
+      </li>
+      <li>
+        <Button icon={<Layout />} /> <Red>13</Red> Trajectories
+      </li>
+      <li>
+        <Button icon={<LayoutBalloon />} /> <Red>14</Red> Relative trajectories
+      </li>
+    </ul>
+  </div>
+  <div>![](/sse-14/visualisation/006.png)</div>
+</div>
